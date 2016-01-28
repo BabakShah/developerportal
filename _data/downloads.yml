@@ -2,31 +2,35 @@
 ########Current Versions########
 ################################
 - platform: Android
+  architecture: "ARM7"
   version: "SDK 2.0"
   url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/android/download_sdk.html
   size: 14.5 MB
-    
+
 - platform: iOS
+  architecture: "Universal"
   version: "SDK 2.0"
   url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/ios/download_sdk.html
   size: 96.1 MB
-  
-- platform: Windows 32-bit
+
+- platform: Windows
+  architecture: x86
   version: "SDK 2.0"
   url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/download_sdk.html
   size: 19.1 MB
 
-- platform: Windows 64-bit
+- platform: Windows
+  architecture: x64
   version: "SDK 2.0"
   url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/download_sdk_64.html
-  size: 30.4 MB      
+  size: 30.4 MB
 ################################
 ################################
-################################      
-      
-      
+################################
 
-#      
+
+
+#
 #olditems:
 #- platform: Android
 #  subitems:
@@ -37,7 +41,7 @@
 #    - oldversion: "SDK 1.0"
 #      url:
 #      size:
-#    
+#
 #- platform: iOS
 #  subitems:
 #    - oldversion: "SDK 2.0"
@@ -47,7 +51,7 @@
 #    - oldversion: "SDK 1.0"
 #      url:
 #      size:
-#        
+#
 #- platform: Windows
 #  subitems:
 #    - oldversion: "SDK 2.0 64-bit"
@@ -61,7 +65,7 @@
 #    - oldversion: "SDK 2.0 32-bit"
 #      url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/download_sdk.html
 #      size: 19,121,672 bytes
-#      
+#
 #    - oldversion: "SDK 1.0 32-bit"
 #      url:
 #      size:

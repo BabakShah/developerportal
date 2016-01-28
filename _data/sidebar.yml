@@ -1,21 +1,21 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 # Spacing is really important here. A two-space indent appears below each level to indicate a new depth.
-# 
+#
 # Sidebar
 entries:
 - title: Sidebar # this title doesn't appear anywhere
   subcategories:
     - title: Overview
-      audience: writer, designer
+      audience: developer, designer
       platform: all
       product: all
       version: all
       print: true
 
       items:
-        - title: Getting started
+        - title: Getting Started
           url: /getting_started/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -23,7 +23,7 @@ entries:
 
         - title: Metrics
           url: /metrics/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -31,7 +31,7 @@ entries:
 
         - title: Accuracy
           url: /accuracy/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -39,7 +39,7 @@ entries:
 
         - title: Getting Optimal Results
           url: /gettingbestresults/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -47,64 +47,71 @@ entries:
 
         - title: On Privacy
           url: /privacy/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
           print: true
 
-
     - title: Platforms
-      audience: writer, designer
+      audience: developer, designer
       platform: all
       product: all
       version: all
       print: true
 
       items:
-        - title: Android
-          url: /android/
-          audience: writer, designer
+        - title: Android (Java)
+          url: /v3/android/
+          audience: developer, designer
           platform: all
           product: all
           version: all
           print: true
 
-        - title: iOS
-          url: /ios/
-          audience: writer, designer
+        - title: iOS (Objective-C)
+          url: /v3/ios/
+          audience: developer, designer
           platform: all
           product: all
           version: all
           print: true
 
         - title: Unity
-          url: /unity/
-          audience: writer, designer
+          url: /v2/unity/
+          audience: developer, designer
           platform: all
           product: all
           version: all
           print: true
 
-        - title: Windows
-          url: /windows/
-          audience: writer, designer
+        - title: Windows (C++, C#)
+          url: /v3/windows/
+          audience: developer, designer
           platform: all
           product: all
           version: all
           print: true
 
     - title: See Also
-      audience: writer, designer
+      audience: developer, designer
       platform: all
       product: all
       version: all
       print: true
 
       items:
+        - title: What's New
+          url: /whats_new/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
         - title: Sample Apps
           url: /sampleapps/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -112,7 +119,7 @@ entries:
 
         - title: Supported Video Formats
           url: /supportedvideoformats/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -120,24 +127,24 @@ entries:
 
         - title: Facial Landmarks
           url: /fpi/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
           print: true
-          
+
         - title: FAQ
           url: /faq/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
           print: true
           web: false
 
-        - title: Downloads
-          url: /downloads/
-          audience: writer, designer
+        - title: Thirdparty libraries
+          url: /licenses/
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -145,7 +152,7 @@ entries:
           web: true
 
     - title: Tag archives
-      audience: writers, designers
+      audience: developers, designers
       platform: all
       product: all
       version: all
@@ -155,7 +162,7 @@ entries:
 
           thirdlevel:
             - title: Tag archive pages
-              audience: writers, designers
+              audience: developers, designers
               platform: all
               version: all
               product: all
@@ -163,7 +170,7 @@ entries:
               thirdlevelitems:
                 - title: Getting started pages
                   url: /tag-getting-started.html
-                  audience: writers, designers
+                  audience: developers, designers
                   platform: all
                   version: all
                   product: all
@@ -171,9 +178,8 @@ entries:
 
                 - title: Formatting pages
                   url: /tag-formatting.html
-                  audience: writers, designers
+                  audience: developers, designers
                   platform: all
                   version: all
                   product: all
                   print: false
-

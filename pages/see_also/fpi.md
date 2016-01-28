@@ -35,7 +35,7 @@ The indices of the elements in the face points array correspond to specific loca
 </tr>
 <tr>
 <td> 2 </td>
-<td> Gnathion </td>
+<td> Tip of Chin </td>
 <td> 19 </td>
 <td> Outer Left Eye </td>
 </tr>
