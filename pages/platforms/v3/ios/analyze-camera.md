@@ -11,7 +11,7 @@ metadata: false
 
 **classdoc:** Detector [[ObjectiveC]({{ site.baseurl }}/pages/platforms/v3/ios/classdocs/interface_a_f_d_x_detector.html)]
 
-Using the built-in camera is a common way to obtain video for facial expression detection. Either the front and back camera of your iPhone, iPad or iPod Touch can be used to feed video directly:
+Using the built-in camera is a common way to obtain video for facial expression detection. Either the front or back camera of your iPhone, iPad or iPod Touch can be used to feed video directly:
 
 
 ### Creating the detector
@@ -20,7 +20,7 @@ Using the built-in camera is a common way to obtain video for facial expression 
 - (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingCamera:(AFDXCameraType)camera maximumFaces:(NSUInteger)maximumFaces;
 ```
 
-This method takes a reference to an object which adheres to the `AFDXDetectorDelegate` protocol, a parameter of type `AFDXCameraType` (`AFDX_CAMERA_FRONT` or `AFDX_CAMERA_BACK`) which specifies the camera to use, and the maximum number of faces to detect (currently only one face is detected).
+This method takes a reference to an object which adheres to the `AFDXDetectorDelegate` protocol, a parameter of type `AFDXCameraType` (`AFDX_CAMERA_FRONT` or `AFDX_CAMERA_BACK`) which specifies the camera to use, and the maximum number of faces to detect (..
 
 
 {% include ios/v3/detector/configure.md %}

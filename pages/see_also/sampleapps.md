@@ -9,7 +9,7 @@ metadata: false
 <img src={{ "/images/affdexmedemo.png" | prepend: site.baseurl }} title="AffdexMe">
 </center>
 
-AffdexMe is a demonstration of Affectiva's technology on the iOS and Android platforms. It has been featured on <a href=http://www.cbsnews.com/videos/future-uses-for-facial-recognition-technology/ target=_blank>CBS this Morning</a> as well as on stage for several <a href=https://www.ted.com/talks/rana_el_kaliouby_this_app_knows_how_you_feel_from_the_look_on_your_face?language=en target=_blank>TED</a> talks. It is available for testing on the <a href=https://itunes.apple.com/ca/app/affdexme/id971529011 target=_blank>iTunes App Store</a> as well as the <a href=https://play.google.com/store/apps/details?id=com.affectiva.affdexme target=_blank>Google Play Store</a>.
+AffdexMe is a demonstration of Affectiva's technology on the iOS and Android platforms. It has been featured on <a href=http://www.cbsnews.com/videos/future-uses-for-facial-recognition-technology/ target=_blank>CBS This Morning</a> as well as on stage for several <a href=https://www.ted.com/talks/rana_el_kaliouby_this_app_knows_how_you_feel_from_the_look_on_your_face?language=en target=_blank>TED</a> talks. It is available for testing on the <a href=https://itunes.apple.com/ca/app/affdexme/id971529011 target=_blank>iTunes App Store</a> as well as the <a href=https://play.google.com/store/apps/details?id=com.affectiva.affdexme target=_blank>Google Play Store</a>.
 
 
 The source code for these example apps as well as a Windows version are available on Affectiva's [GitHub page](https://github.com/Affectiva). 

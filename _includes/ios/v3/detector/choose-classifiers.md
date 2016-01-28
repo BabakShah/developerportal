@@ -1,5 +1,5 @@
 ### Choosing the classifiers
-Next step is to turn on the detection of the [metrics](/metrics) needed. By default, all classifiers are disabled. Here, we’ll turn on a few classifiers. For example:
+The next step is to turn on the detection of the [metrics](/metrics) needed. By default, all classifiers are disabled. Here, we’ll turn on a few classifiers. For example:
 
 ```objective-c
 // turning on a few emotions
@@ -11,7 +11,7 @@ detector.smile = YES;
 detector.browRaise = YES;
 detector.browFurrow = YES;
 
-// turning on a few emoji
+// turning on a few emojis
 detector.smiley = YES;
 detector.kissing = YES; // etc
 ```

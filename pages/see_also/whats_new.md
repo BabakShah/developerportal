@@ -13,24 +13,24 @@ metadata: false
 ### What's new in the Affdex SDK version 3.0
 
 * New API to allow tracking of multiple faces simultaneously.
-* Added a Face to Emoji mapper to allow the developer to recognize and track [13 Emojis](/metrics#emoji-expressions)
-* New API that returns the most likely emoji (`dominantEmoji`) posed in an image.
-* Added models to allow identification of [gender and presence of eye or sun glasses](/metrics#appearance)
-* New API that allows the developer to control the face detector configuration to use in the detection.
-* Added dynamic core detection to allow SDKs to make use of multiple CPU cores if available.
-* New Getting Started tutorials on the Developer Portal.
+* Added a Face to Emoji mapper to allow the developer to recognize and track [13 emojis](/metrics#emoji-expressions)
+* New API that returns the most likely emoji (`dominantEmoji`) posed in an image
+* Added models to allow identification of [gender and presence of eyeglasses or sunglasses](/metrics#appearance)
+* New API that allows the developer to control the face detector configuration to use in the detection
+* Added dynamic core detection to allow SDKs to make use of multiple CPU cores if available
+* New Getting Started tutorials on the Developer Portal
 * New version of the AffdexMe apps ([iOS](https://github.com/Affectiva/ios-sdk-samples/tree/master/apps/AffdexMe), [Android](https://github.com/Affectiva/affdexme-android) and [Windows](https://github.com/Affectiva/win-sdk-samples/tree/master/AffdexMe)):
-  - Track multiple faces in realtime.
+  - Track multiple faces in realtime
     On Windows this feature is enabled by default, but on iOS/Android it can be toggled from the settings menu.  
-  - Display the metrics for Facial Expression, Emotion, Appearance and Dominant Emoji.
-  - Allow users to take screenshots of the camera feed with the metrics overlay.
-  - Allow users to use the back camera to track the metrics.
-  - Optimize AffdexMe (Windows) metric and camera visualization class.
+  - Display the metrics for Facial Expression, Emotion, Appearance and Dominant Emoji
+  - Allow users to take screenshots of the camera feed with the metrics overlay
+  - Allow users to use the back camera to track the metrics
+  - Optimize AffdexMe (Windows) metric and camera visualization class
 * iOS SDK
-  - `AFDXFace` class re-organized into categories expressions, emotions, emoji and appearance.
+  - `AFDXFace` class re-organized into categories expressions, emotions, emoji and appearance
   - `Expressiveness` renamed into `Engagement`
   - Head angles renamed `HeadUpDown`, `HeadLeftRight`, `HeadRoll` to `Pitch`, `Yaw`, `Roll`
-  - Added API to allow embedding the license string as a variable in the app code.
+  - Added API to allow embedding the license string as a variable in the app code
 * Win SDK
   - Performance improvements
   - Fixed bug: The assembly version doesn't match the file metadata

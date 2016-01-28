@@ -1,5 +1,5 @@
 ### Choosing the classifiers
-Next step is to turn on the detection of the metrics needed. For example, to set on or off the detection of the smile and joy classifiers:  
+The next step is to turn on the detection of the metrics needed. For example, to turn on or off the detection of the smile and joy classifiers:  
 
 ```java
 detector.setDetectSmile(true);
