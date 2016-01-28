@@ -1,0 +1,42 @@
+<style>
+#downloadtable container-fluid {
+        width:700px;
+}
+#downloadtable .row{
+  border: 1px #ccc solid;
+  margin: 10px;
+  padding: 10px;
+}
+</style>
+<div id="downloadtable" class="container-fluid">
+  <div class="row" style="background-color:#c0c0c0;">
+    <div class="col-sm-3 text-center">
+      <strong>Platform</strong>
+    </div>
+    <div class="col-sm-3 text-center">
+      <strong>Architecture</strong>
+    </div>
+    <div class="col-sm-3 text-center">
+      <strong>Version</strong>
+    </div>
+    <div class="col-sm-3 text-center">
+      <strong>Size</strong>
+    </div>
+  </div>
+  {% for item in site.data.downloads %}
+  <div class="row" style="background-color:#F0F0F0;">
+    <div class="col-sm-3 text-center">
+      {{ item.platform }}
+    </div>
+    <div class="col-sm-3 text-center">
+      {{ item.architecture }}
+    </div>
+    <div class="col-sm-3 text-center">
+      <a href={{ item.url }} target=_blank>{{ item.version }}</a>
+    </div>
+    <div class="col-sm-3 text-center">
+      {{ item.size }}
+    </div>
+  </div>
+  {% endfor %}
+</div>

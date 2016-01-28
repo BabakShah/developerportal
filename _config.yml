@@ -12,7 +12,7 @@ topnav_title: Affdex Developer Portal
 
 topnav_version: ""
 
-homepage_title: Affdex Developer Portal 
+homepage_title: Affdex Developer Portal
 
 site_title: Affdex Developer Portal
 
@@ -22,7 +22,7 @@ baseurl: ""
 
 port: 4006
 
-host: 127.0.0.1 
+host: 127.0.0.1
 
 url: "http://developer.affectiva.com/"
 
@@ -47,10 +47,10 @@ floating_nav: true
 
 # suffix: index.html
 
-exclude: 
+exclude:
   - _drafts
   - bower_components
-  - .idea 
+  - .idea
   - _site
   - vendor
 
@@ -100,3 +100,6 @@ jekyll_ga:
   segment:                  # optional
   filters:                  # optional
   sort: true                # Sort posts by this metric
+  
+gems:
+  - jekyll-redirect-from
