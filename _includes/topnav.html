@@ -34,20 +34,22 @@
 
       {% for entry in topnav %}
         {% for subcategory in entry.subcategories %}
-            {% if subcategory.audience contains audience and subcategory.product contains product and subcategory.platform contains platform and subcategory.version contains version and subcategory.web != false %}
-            {% if subcategory.external_url %}
-                <li><a href="{{subcategory.external_url}}" target="_blank">{{subcategory.title}}</a></li>
-            {% elsif page.url contains subcategory.url %}
-                <li class="active"><a href="{{subcategory.url | prepend: site.baseurl | append: site.suffix}}">{{subcategory.title}}</a></li>
-             {% else %}
-                <li><a href="{{subcategory.url | prepend: site.baseurl | append: site.suffix}}">{{subcategory.title}}</a></li>
+            {% if subcategory.web != false %}
+                {% if subcategory.external_url %}
+                    <li><a href="{{subcategory.external_url}}" target="_blank">{{subcategory.title}}</a></li>
+                {% elsif page.url contains subcategory.url %}
+                    <li class="active"><a href="{{subcategory.url | prepend: site.baseurl | append: site.suffix}}">{{subcategory.title}}</a></li>
+                {% else %}
+                    <li><a href="{{subcategory.url | prepend: site.baseurl | append: site.suffix}}">{{subcategory.title}}</a></li>
+                {% endif %}
             {% endif %}
-          {% endif %}
         {% endfor %}
       {% endfor %}
       <!-- feedback function display
       {% if site.feedback_email %}<li><a class="fa fa-envelope-o mailto" href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B"> Feedback</a></li>{% endif %}
        -->
+
+
 
       <!-- entries with drop-downs appear here -->
       <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
@@ -55,12 +57,12 @@
 
       {% for entry in topnav_dropdowns %}
         {% for subcategory in entry.subcategories %}
-          {% if subcategory.audience contains audience and subcategory.product contains product and subcategory.platform contains platform and subcategory.version contains version and subcategory.web != false %}
+          {% if subcategory.web != false %}
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ subcategory.title }}<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 {% for subitem in subcategory.items %}
-                  {% if subitem.audience contains audience and subitem.product contains product and subitem.platform contains platform and subitem.version contains version and subitem.web != false% %}
+                  {% if subitem.web != false% %}
                     {% if subitem.external_url %}
                       <li><a href="{{subitem.external_url}}" target="_blank">{{subitem.title}}</a></li>
                     {% elsif page.url contains subitem.url %}
@@ -75,6 +77,8 @@
       </li>
         {% endfor %}
       {% endfor %}
+      
+      
 <!--      <li>
          <!-- start search -->
 <!--         <div id="search-demo-container">

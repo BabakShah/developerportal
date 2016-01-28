@@ -6,28 +6,28 @@ topnav:
   subcategories:
     - title: Affectiva
       external_url: http://www.affectiva.com
-      audience: writer, designer
+      audience: developer, designer
       platform: all
       product: all
       version: all
-  
+
     - title: Blog
       external_url: http://affectiva.com/blog
-      audience: writer, designer
+      audience: developer, designer
       platform: all
       product: all
       version: all
 
-    - title: Get Affdex SDK
-      external_url: http://www.affectiva.com/solutions/apis-sdks/
-      audience: writer, designer
+    - title: Get the SDK
+      url: /downloads/
+      audience: developer, designer
       platform: all
       product: all
       version: all
 
-    - title: Ask a Question
-      external_url: https://stackoverflow.com/tags/affdex-sdk
-      audience: writer, designer
+    - title: Support
+      url: /support/
+      audience: developer, designer
       platform: all
       product: all
       version: all
