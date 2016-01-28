@@ -12,8 +12,8 @@ Using our SDK, developers can now enrich digital experiences and apps by detecti
 * [Locate and track]({{ site.baseurl }}/metrics#face-tracking-and-head-angle-estimation) human faces in an image.
 * Measure and track facial expressions of [emotion]({{ site.baseurl }}/metrics#emotions) in real time.
 * Track 15 highly nuanced [facial expressions]({{ site.baseurl }}/metrics#facial-expressions) in real time.
-* Recognize aspects of [physical appearance]({{ site.baseurl }}/metrics#appearance) such as person's gender and glasses.
-* Identify 13 [emojis]({{ site.baseurl }}/metrics#emoji-expressions) from the posed facial images.
+* Recognize aspects of [physical appearance]({{ site.baseurl }}/metrics#appearance) such as a person's gender and whether they're wearing glasses.
+* Identify 13 [emojis]({{ site.baseurl }}/metrics#emoji-expressions) from posed facial images.
 
 All processing is done on device—no videos or images are sent to our cloud.  
 
