@@ -142,7 +142,7 @@ entries:
           print: true
           web: false
 
-        - title: Thirdparty libraries
+        - title: Third Party Libraries
           url: /licenses/
           audience: developer, designer
           platform: all

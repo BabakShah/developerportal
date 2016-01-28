@@ -22,7 +22,7 @@ Processing either discrete or continuous images does not entail the use of the d
 - (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate discreteImages:(BOOL)discrete maximumFaces:(NSUInteger)maximumFaces;
 ```
 
-Like the other methods, this initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, as well as a maximum number of faces (currently only one face is detected).
+Like the other methods, this initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, as well as a maximum number of faces (..
 
 The second parameter `discrete` is a flag that the detector uses to determine whether discrete images will be used or not. It should be set to `YES`.
 

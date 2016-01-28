@@ -18,7 +18,7 @@ A common use of the SDK is to process previously captured video files. Another w
 - (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingFile:(NSString *)path maximumFaces:(NSUInteger)maximumFaces;
 ```
 
-This initialization method also takes a reference to an object which adheres to the `AFDXDetectorDelegate` protocol, a path to a video file (with an extension of .mp4 or .m4v) on the device, and the maximum number of faces to detect (currently only one face is detected).
+This initialization method also takes a reference to an object which adheres to the `AFDXDetectorDelegate` protocol, a path to a video file (with an extension of .mp4 or .m4v) on the device, and the maximum number of faces to detect (..
 
 {% include ios/v3/detector/configure.md %}
 

@@ -16,11 +16,11 @@ SDK Developer Guide Release 3.0
 
 ## Using the SDK
 
-The purpose of the SDK is to detect facial expressions and their underlying emotions, appearance and emojis from facial images. The SDK is distributed as an archive. It includes assemblies enables integration with android application applications and the assets required by API in runtime:
+The purpose of the SDK is to detect facial expressions and their underlying emotions, appearance and emojis from facial images. The SDK is distributed as an archive. Its included assemblies enable integration with Android applications and the assets required by API in runtime:
 
-* **libs:** The Affdex jar file and it's dependency jars (dagger and javax.inject).
+* **libs:** The Affdex jar file and its dependency jars (dagger and javax.inject).
 * **jniLibs:** Native binaries used by the Affdex jar.
-* **src/main/assets:** The classifiers data files required by the Affdex library in runtime.
+* **src/main/assets:** The classifier data files required by the Affdex library in runtime.
 
 ## Getting started
 
@@ -48,10 +48,10 @@ Facial images can be captured from different sources. For each of the different 
 
 * [How to analyze a camera feed]({{ site.baseurl }}/v3/android/analyze-camera/)
 * [How to analyze a recorded video file]({{ site.baseurl }}/v3/android/analyze-video/)
-* [How to analyze a video frames feed]({{ site.baseurl }}/v3/android/analyze-frames/)
+* [How to analyze a video frame stream]({{ site.baseurl }}/v3/android/analyze-frames/)
 * [How to analyze a photo]({{ site.baseurl }}/v3/android/analyze-photo/)
 
-##### 3. Checkout Sample applications on GitHub
+##### 3. Check out sample applications on GitHub
 Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/android-sdk-samples)
 
 ## Class documentation
@@ -65,11 +65,11 @@ Sample applications for processing videos, and connecting to the camera are avai
 *	RAM, 1 GB
 
 ##### Tracking multiple faces (BETA)
-As of v3.0, the SDK exposes a parameter max_faces in the detectors constructor to specify the maximum number of faces to look for in an image. For the realtime use cases, to achieve a high accuracy and processing throughput (5+ processed frames per second), the SDK requires a cpu thread per face.
+As of v3.0, the SDK exposes a parameter max_faces in the detectors constructor to specify the maximum number of faces to look for in an image. For the realtime use cases, to achieve a high accuracy and processing throughput (5+ processed frames per second), the SDK requires a CPU thread per face.
 
-A recent dual core device, we can track up to 2 people in parallel with all the facial expressions, emotions and appearance metrics enabled.
+On a recent dual core device, we can track up to 2 people in parallel with all the facial expressions, emotions and appearance metrics enabled.
 
-If number of faces tracked is greater than the number of available cpu threads on the device, they will all be tracked, but at a cost of the processing frame rate.
+If the number of faces tracked is greater than the number of available CPU threads on the device, they will all be tracked, but at a cost of the processing frame rate.
 
 ##### Requirements
 

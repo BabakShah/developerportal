@@ -27,7 +27,7 @@ The classifiers for emotions have ROC scores greater than or equal to 0.8, with 
 
 The gender classifier uses the face bounding box tracked over a window of time, if available, to build confidence in its decision. If the confidence level does not meet the threshold within a window of 10 seconds, the gender is reported as _unknown_. The ROC score of the classifier is 0.95 and the average length of time taken to reach a decision is 3.4 seconds.  The ROC score of the glasses classifier is 0.9.  
 
-The emojis are driven by the expression classifiers. Classifiers for Tongue out, Wink and Eye widen expressions were introduced to widen the range of emojis supported. These have an ROC score of over 0.8.  
+The emojis are driven by the expression classifiers. Classifiers for Tongue Out, Wink and Eye Widen expressions were introduced to increase the range of emojis supported. These have an ROC score of over 0.8.  
 
 ## Effects of changes in head angles and face luminance
 
@@ -37,7 +37,7 @@ The best performance is in a range of +/- 25 degrees frontal, outside of which a
 
 ## Cultural differences
 
-Many scientific studies demonstrate the universality of facial expressions of emotions; however, each culture employs what we call "display rules” -- culturally-specific rules that govern when people amplify, dampen or altogether mask a facial expression of emotion. The research demonstrating the effect of display rules is extensive, covers the past 50 years, and is widely acknowledged. In Southeast Asia there are very clear display rules around how to display emotion, especially in the presence of strangers (a work meeting, a moderator in a research study, etc.): namely, dampen their expressions, especially negative ones.
+Many scientific studies demonstrate the universality of facial expressions of emotions; however, each culture employs what we call "display rules”—culturally-specific rules that govern when people amplify, dampen or altogether mask a facial expression of emotion. The research demonstrating the effect of display rules is extensive, covers the past 50 years, and is widely acknowledged. In Southeast Asia there are very clear display rules around how to display emotion, especially in the presence of strangers (a work meeting, a moderator in a research study, etc.): namely, dampen their expressions, especially negative ones.
 
 Our classifiers are trained against our massive emotion data repository that reflects data from 75 countries.   This has hardened our technology to account for cultural differences with high accuracy.
 
