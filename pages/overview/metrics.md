@@ -33,7 +33,7 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 {%include overview/emojis_table.html %}
 
 ***
-## Using the the metrics
+## Using the Metrics
 Emotion, Expression and Emoji metrics scores indicate when users show a specific emotion or expression (e.g., a smile) along with the degree of confidence. The metrics can be thought of as detectors: as the emotion or facial expression occurs and intensifies, the score rises from 0 (no expression) to 100 (expression fully present).
 
 In addition, we also expose a composite emotional metric called _valence_ which gives feedback on the overall experience. Valence values from 0 to 100 indicate a neutral to positive experience, while values from -100 to 0 indicate a negative to neutral experience.
