@@ -50,7 +50,7 @@ Our SDKs also provide the following metrics about the physical appearance:
 
 **Gender**
 
-The gender classifier attempts to identify the subject's gender. In the case of video or live feeds, it tracks a face over a window of time to build confidence in its decision. If the classifier is unable to reach a decision, the gender is reported as "Unknown".
+The gender classifier attempts to identify the human perception of gender expression. In the case of video or live feeds, it tracks a face over a window of time to build confidence in its decision. If the classifier is unable to reach a decision, the gender is reported as "Unknown".
 
 
 **Glasses**  
