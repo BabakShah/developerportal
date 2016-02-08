@@ -47,7 +47,7 @@ metadata: false
 * Better ease of use and accessibility by standardizing models for seven
 emotions:
   Anger, Sadness, Disgust, Joy, Surprise, Fear and Contempt.
-* New facial expressions for a total of 15 facial action units, including very
+* New facial expressions, including very
 nuanced expressions that are difficult even for the human eye to detect:
 
     Attention, Brow Furrow, Brow Raise, Inner Brow Raise, Eye Closure, Nose Wrinkle, Upper Lip Raise, Lip Suck, Lip Pucker, Lip Press, Mouth Open, Lip Corner Depressor, Chin Raise, Smirk, Smile.
