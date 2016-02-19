@@ -33,6 +33,7 @@ SDK Developer Guide Release 2.0
 <em><strong>Supported operating systems</strong></em>
 
 *   Windows 7 and above
+*   OS X
 
 ## Video Tutorial
 <iframe width="420" height="315" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
