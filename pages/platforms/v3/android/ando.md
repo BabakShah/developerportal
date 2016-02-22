@@ -16,21 +16,32 @@ SDK Developer Guide Release 3.0
 
 ## Using the SDK
 
-The purpose of the SDK is to detect facial expressions and their underlying emotions, appearance and emojis from facial images. The SDK is distributed as an archive. Its included assemblies enable integration with Android applications and the assets required by API in runtime:
+The SDK is distributed as an Android ".aar" archive. It can be included in an app by declaring a dependency on the SDK in the app's build.gradle file.
 
-* **libs:** The Affdex jar file and its dependency jars (dagger and javax.inject).
-* **jniLibs:** Native binaries used by the Affdex jar.
-* **src/main/assets:** The classifier data files required by the Affdex library in runtime.
+##### 1. Add Affectiva's repository as a repository for your application.  This tells gradle that it should scan the Affectiva software distribution site for the app's dependencies.  Add a declation to the app's root build.gradle file:
+```groovy
+allprojects {
+    repositories {
+        maven {
+            url "http://maven.affectiva.com"
+        }
+        ...
+    }
+}
+```
+For an example please see the [AffdexMe sample app's top-level build.gradle file](https://github.com/Affectiva/affdexme-android/blob/use-aar-file/build.gradle#L15-L19).
 
-## Getting started
+##### 2. Add a dependency declaration to your app's build.gradle file.  This will pick up the most recent bug fix release in the 3.0 series.
+```groovy
+dependencies {
+    ...
+    compile 'com.affectiva.sdk.android.affdex:sdk:3.0.+'
+    ...
+}
+```
+For an example please see the [AffdexMe sample app's app-level build.gradle file](https://github.com/Affectiva/affdexme-android/blob/use-aar-file/app/build.gradle#L40).
 
-##### 1. [Download]({{ site.baseurl }}/downloads/) and extract the SDK archive.
-##### 2. Import the Affdex API into your application
-* Copy the contents of the libs folder into your libs folder under ```app/libs```
-* Copy the contents of the ```src/main/assets``` folder into your app assets folder under ```app/src/main/assets```
-* Copy the jniLibs folder to your app to your app under ```app/```
-
- The SDK requires access to external storage on the Android device. Therefore, the ```AndroidManifest.xml``` needs to include permission for that it:
+##### 3. Add a few necessary declarations to your app's manifest.  First, the SDK requires access to external storage on the Android device. Therefore, the ```AndroidManifest.xml``` needs to include permission for that:
 
  ```xml
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -42,7 +53,33 @@ Additionally, if you use the `CameraDetector`, then you will need to add permiss
 <uses-permission android:name="android.permission.CAMERA" />
 ```
 
-##### 3. Capture and analyze faces
+Second, the SDK is required by Android's packaging system to declare a couple of parameters, android:allowBackup and android:label, that you may want to override.  To do this, add the "tools" namespace to your manifest's document element:
+
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    ...
+```
+
+The add a "tools:replace" attribute to the "application" element:
+
+```xml
+    <application
+        tools:replace="android:allowBackup,android:label"
+        ...
+```
+
+You can then add your own "allowBackup" and "label" attributes:
+
+```xml
+    <application
+        ...
+        android:allowBackup="false"
+        ...
+        android:label="@string/app_name">
+```
+
+##### 4. Capture and analyze faces
 
 Facial images can be captured from different sources. For each of the different sources, the SDK defines a detector class that can handle processing images acquired from that source:
 
