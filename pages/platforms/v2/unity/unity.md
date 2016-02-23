@@ -341,4 +341,4 @@ See the feature point indices [table]({{ site.baseurl }}/fpi/) for a full list o
 
 ## Special Notes on Builds
 
-The SDK DLL is 64-bit.  This means that when you build you should build to 64-bit.  If you get an error like "This platform is not currently supported by Affectiva's Unity Asset!" it probably means you built a 32-bit executable.  If you need a 32-bit version of the DLL please contact sdk@Affectiva.com .  If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.
+If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.
