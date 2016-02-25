@@ -341,4 +341,7 @@ See the feature point indices [table]({{ site.baseurl }}/fpi/) for a full list o
 
 ## Special Notes on Builds
 
-If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.
+<ul>
+  <li>If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.
+  <li>OS X builds only work as universal binaries.
+</ul>
