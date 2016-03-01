@@ -33,6 +33,7 @@ SDK Developer Guide Release 2.0
 <em><strong>Supported operating systems</strong></em>
 
 *   Windows 7 and above
+*   OS 10.9.5 and above
 
 ## Video Tutorial
 <iframe width="420" height="315" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
@@ -340,4 +341,7 @@ See the feature point indices [table]({{ site.baseurl }}/fpi/) for a full list o
 
 ## Special Notes on Builds
 
-The SDK DLL is 64-bit.  This means that when you build you should build to 64-bit.  If you get an error like "This platform is not currently supported by Affectiva's Unity Asset!" it probably means you built a 32-bit executable.  If you need a 32-bit version of the DLL please contact sdk@Affectiva.com .  If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.
+<ul>
+  <li>If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.
+  <li>OS X builds only work as universal and x86_64 binaries.
+</ul>
