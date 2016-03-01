@@ -3,9 +3,9 @@
 ################################
 - platform: Android
   architecture: "ARM7"
-  version: "SDK 3.0"
-  url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/android/affdex_sdk-3.0.0-161-android.zip
-  size: 14.5 MB
+  version: "SDK 3.0.1"
+  url: http://maven.affectiva.com/com/affectiva/android/affdexsdk/3.0.1/affdexsdk-3.0.1.aar
+  size: 6.5 MB
 
 - platform: iOS
   architecture: "Universal"
@@ -27,45 +27,3 @@
 ################################
 ################################
 ################################
-
-
-
-#
-#olditems:
-#- platform: Android
-#  subitems:
-#    - oldversion: "SDK 2.0"
-#      url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/android/download_sdk.html
-#      size: 14,255,519 bytes
-#
-#    - oldversion: "SDK 1.0"
-#      url:
-#      size:
-#
-#- platform: iOS
-#  subitems:
-#    - oldversion: "SDK 2.0"
-#      url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/ios/download_sdk.html
-#      size: 96,102,400 bytes
-#
-#    - oldversion: "SDK 1.0"
-#      url:
-#      size:
-#
-#- platform: Windows
-#  subitems:
-#    - oldversion: "SDK 2.0 64-bit"
-#      url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/download_sdk_64.html
-#      size: 30,396,320 bytes
-#
-#    - oldversion: "SDK 1.0 64-bit"
-#      url:
-#      size:
-#
-#    - oldversion: "SDK 2.0 32-bit"
-#      url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/download_sdk.html
-#      size: 19,121,672 bytes
-#
-#    - oldversion: "SDK 1.0 32-bit"
-#      url:
-#      size:
