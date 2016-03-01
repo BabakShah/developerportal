@@ -1,7 +1,6 @@
 # Adapted from https://code.google.com/p/google-api-ruby-client/
 
 require 'jekyll'
-require 'jekyll/post'
 require 'rubygems'
 require 'google/api_client'
 require 'chronic'
@@ -51,7 +50,7 @@ module Jekyll
       response = client.execute(:api_method => analytics.data.ga.get, :parameters => params)
       results = Hash[response.data.rows]
 
-      site.posts.each { |post|
+      site.posts.docs.each { |post|
         url = (site.config['baseurl'] || '') + post.url + '/'
         post.data.merge!("_ga" => (results[url]) ? results[url].to_i : 0)
       }
