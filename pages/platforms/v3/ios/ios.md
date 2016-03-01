@@ -22,6 +22,9 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 * **Framework_Simulator/Affdex.framework:** Framework for i386 and x86_64 simulator targets. It should be used with apps to be run on the simulator.
 * **Framework_Universal/Affdex.framework:** Framework for both device and simulator targets. It should be used to test the app binary to be run on both the simulator and on a device.
 
+{{ note }}The size of the Affdex iOS SDK framework has increased in version 3.0 significantly due to the inclusion of bitcode. 
+Bitcode is a new requirement from Apple for iOS apps that support watchOS and tvOS.{{ end }} 
+
 ## Getting started
 
 ##### 1. [Download]({{ site.baseurl }}/downloads/) and extract the archives
