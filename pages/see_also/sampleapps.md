@@ -14,6 +14,13 @@ AffdexMe is a demonstration of Affectiva's technology on the iOS and Android pla
 
 The source code for these example apps as well as a Windows version are available on Affectiva's [GitHub page](https://github.com/Affectiva). 
 
+Direct links for the project repositories can be found below:
+
+<center>
+<h2>  Choose Your Platform </h2>
+</center>
+<center><a href=https://github.com/Affectiva/android-sample-apps target=_blank><img src={{ "/images/android.png" | prepend: site.baseurl }} title="Android"></a><a href=https://github.com/Affectiva/ios-sdk-samples target=_blank><img src={{ "/images/apple.png" | prepend: site.baseurl }} title="iOS"></a><a href=https://github.com/Affectiva/win-sdk-samples target=_blank><img src={{ "/images/windows.png" | prepend: site.baseurl }} title="Windows"></a></center>
+
 <center>
 <h2> EmoSurvival </h2>
 <img src={{ "/images/PausedGame.png" | prepend: site.baseurl }} title="EmoSurvival">
@@ -27,4 +34,19 @@ Direct links for the project repositories can be found below:
 <center>
 <h2>  Choose Your Platform </h2>
 </center>
-<center><a href=https://github.com/Affectiva/android-sample-apps target=_blank><img src={{ "/images/android.png" | prepend: site.baseurl }} title="Android"></a><a href=https://github.com/Affectiva/ios-sdk-samples target=_blank><img src={{ "/images/apple.png" | prepend: site.baseurl }} title="iOS"></a><a href=https://github.com/Affectiva/win-sdk-samples target=_blank><img src={{ "/images/windows.png" | prepend: site.baseurl }} title="Windows"></a><a href=https://github.com/Affectiva/EmoSurvival target=_blank><img src={{ "/images/unity.png" | prepend: site.baseurl }} title="Unity" ></a></center>
+<center><a href=https://github.com/Affectiva/EmoSurvival target=_blank><img src={{ "/images/unity.png" | prepend: site.baseurl }} title="Unity" ></a></center>
+
+<center>
+<h2> UnityChan Emotion Mimcry </h2>
+<img src={{ "/images/Fog.png" | prepend: site.baseurl }} title="UnityChan Emotion Mimcry">
+</center>
+
+UnityChan is a character that Unity freely licenses to people.  UnityChan Emotion Mimcry has the character mimic the expressions of the user.  When the camera cannot detect any faces UnityChan is surrounded by fog.  The fog clears when a face is found.
+
+Direct links for the project repositories can be found below:
+
+
+<center>
+<h2>  Choose Your Platform </h2>
+</center>
+<center><a href=https://github.com/Affectiva/UnityChan target=_blank><img src={{ "/images/unity.png" | prepend: site.baseurl }} title="Unity" ></a></center>
