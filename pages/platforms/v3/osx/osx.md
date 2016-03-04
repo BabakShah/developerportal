@@ -43,10 +43,12 @@ Facial images can be captured from different sources. For each of the different 
 
 *	Any Mac running OS 10.10 or newer.
 
-##### Tracking multiple faces (BETA)
-As of v3.0, the SDK exposes a parameter `max_faces` in the detector's constructor to specify the maximum number of faces to look for in an image. To achieve high accuracy and processing throughput for realtime use cases, we recommend using a framerate of 5 processed frames per second.  
+##### Tracking multiple faces
+As of v3.0, the SDK exposes a parameter `max_faces` in the detectors constructor to specify the maximum number of faces to look for in an image. For the realtime use cases, to achieve a high accuracy and processing throughput (20+ processed frames per second), the SDK requires a CPU thread per face.
 
-If the number of faces tracked is greater than the number of available CPU threads on the device, they will all be tracked, but at a cost of the processing frame rate.
+On a recent dual core machine, we can track up to 3 people in parallel with all the facial expressions, emotions and appearance metrics enabled.
+
+If the number of faces tracked is greater than the number of available CPU threads on the machine, they will all be tracked, but at a cost of the processing frame rate. Therefore, make sure to plan for providing enough hardware power for the number of faces they are expecting to track with each camera.
 
 
 ##### Requirements

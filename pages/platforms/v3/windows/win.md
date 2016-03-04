@@ -60,7 +60,7 @@ Sample applications for processing videos, and connecting to the camera are avai
 *	Disk Space (min) : 950 MB
 
 ##### Tracking multiple faces
-As of v3.0, the SDK exposes a parameter max_faces in the detectors constructor to specify the maximum number of faces to look for in an image. For the realtime use cases, to achieve a high accuracy and processing throughput (20+ processed frames per second), the SDK requires a CPU thread per face.
+As of v3.0, the SDK exposes a parameter `max_faces` in the detectors constructor to specify the maximum number of faces to look for in an image. For the realtime use cases, to achieve a high accuracy and processing throughput (20+ processed frames per second), the SDK requires a CPU thread per face.
 
 On a recent dual core machine, we can track up to 3 people in parallel with all the facial expressions, emotions and appearance metrics enabled.
 
