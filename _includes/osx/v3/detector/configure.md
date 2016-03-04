@@ -4,13 +4,13 @@
 
 You must also specify a path to your license file. This file is provided by Affectiva when you register for the SDK, and must be added to your Xcode project. Xcode will copy the license file to the resources area of the app bundle; you can set the licensePath property as follows:
 
-```objective-c
+```objc
 detector.licensePath = [[NSBundle mainBundle] pathForResource:@"sdk" ofType:@"license"];
 ```
 
 Or you can set the licenseString variable to the path of your license file.
 
-```objective-c
+```objc
 detector.licenseString = @"....."; // change the ellipses to the license string.
 ```
 
@@ -18,13 +18,13 @@ detector.licenseString = @"....."; // change the ellipses to the license string.
 
 The SDK communicates results to your app via the `AFDXDetectorDelegate` protocol. Here are the methods that your app will need to know about.  
 
-```objective-c
+```objc
 - (void)detector:(AFDXDetector *)detector didStartDetectingFace:(AFDXFace *)face;
 ```
 
 This method is called in your code and signals when the detector detects a new face that has come into view. It is often used in conjunction with <code>detector:didStopDetectingFace:</code>. The implementation of this delegate method is optional.  
 
-```objective-c
+```objc
 - (void)detector:(AFDXDetector *)detector didStopDetectingFace:(AFDXFace *)face;
 ```
 
@@ -32,7 +32,7 @@ This method is called in your code and signals when the detector no longer detec
 
 
 
-```objective-c
+```objc
 - (void)detector:(AFDXDetector *)detector hasResults:(NSMutableDictionary *)faces forImage:(NSImage *)image atTime:(NSTimeInterval)time;
 ```
 

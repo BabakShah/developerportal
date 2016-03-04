@@ -37,10 +37,6 @@ Facial images can be captured from different sources. For each of the different 
 * [Analyze a video frame stream]({{ site.baseurl }}/v3/osx/analyze-frames/)
 * [Analyze a photo]({{ site.baseurl }}/v3/osx/analyze-photo/)
 
-##### 4. Check out sample applications on GitHub
-Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/osx-sdk-samples)
-
-
 ## Requirements & Dependencies
 
 ##### Hardware requirements (recommended)

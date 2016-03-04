@@ -2,7 +2,7 @@
 
 When the array of faces comes into the delegate method, your application can interpret the data as it sees fit. Here’s a code example:  
 
-```objective-c
+```objc
 // Convenience method to work with processed images.
 - (void)processedImageReady:(AFDXDetector *)detector image:(NSImage *)image faces:(NSDictionary *)faces atTime:(NSTimeInterval)time;
 {
