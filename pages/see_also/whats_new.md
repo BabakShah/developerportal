@@ -40,6 +40,7 @@ metadata: false
 
 
 ***
+
 ### What's new in the Affdex SDK version 2.0
 
 * Dramatically improved accuracy with new expression models trained over a broader set of facial images.

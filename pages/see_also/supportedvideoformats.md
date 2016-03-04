@@ -12,17 +12,17 @@ metadata: false
 
 ## for Video Processing using the Windows SDK 
 
-<br></br>
+<br />
 
 This software uses FFmpeg code licensed under the LGPLv2.1 for video decoding. FFmpeg supports decoding many video codecs. The following video codecs were tested and are known to work:
 
-<br></br>
+<br />
 
 <strong>Video Containers</strong>
 
 .MOV, .WMV, .FLV, .AVI, .MP4, .WEBM
 
-<br></br>
+<br />
 
 <strong>Video Codecs</strong>
 

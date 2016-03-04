@@ -19,7 +19,12 @@ Direct links for the project repositories can be found below:
 <center>
 <h2>  Choose Your Platform </h2>
 </center>
-<center><a href="https://github.com/Affectiva/android-sample-apps" target="_blank"><img src={{ "/images/android.png" | prepend: site.baseurl }} title="Android"></a><a href="https://github.com/Affectiva/ios-sdk-samples" target="_blank"><img src={{ "/images/apple.png" | prepend: site.baseurl }} title="iOS"></a><a href="https://github.com/Affectiva/win-sdk-samples" target="_blank"><img src={{ "/images/windows.png" | prepend: site.baseurl }} title="Windows"></a></center>
+<center>
+<a href="https://github.com/Affectiva/android-sample-apps" target="_blank"><img src="{{ "/images/android.png" | prepend: site.baseurl }}" title="Android"></a><a href="https://github.com/Affectiva/ios-sdk-samples" target="_blank"><img src="{{ "/images/apple.png" | prepend: site.baseurl }}" title="iOS"></a><a href="https://github.com/Affectiva/win-sdk-samples" target="_blank"><img src="{{ "/images/windows.png" | prepend: site.baseurl }}" title="Windows"></a>
+</center>
+
+
+<br />
 
 <center>
 <h2> EmoSurvival </h2>
@@ -32,12 +37,6 @@ Direct links for the project repositories can be found below:
 
 
 <center>
-<h2>  Choose Your Platform </h2>
-</center>
-<center><a href="https://github.com/Affectiva/EmoSurvival" target="_blank"><img src="{{ "/images/unity.png" | prepend: site.baseurl }}" title="Unity" ></a></center>
-
-<center>
-<h2> UnityChan Emotion Mimcry </h2>
 <img src="{{ "/images/Fog.png" | prepend: site.baseurl }}" title="UnityChan Emotion Mimcry">
 </center>
 
@@ -46,7 +45,5 @@ UnityChan is a character that Unity freely licenses to people.  UnityChan Emotio
 Direct links for the project repositories can be found below:
 
 
-<center>
-<h2>  Choose Your Platform </h2>
-</center>
-<center><a href="https://github.com/Affectiva/UnityChan" target="_blank"><img src="{{ "/images/unity.png" | prepend: site.baseurl }}" title="Unity" ></a></center>
+* <a href="https://github.com/Affectiva/EmoSurvival" target="_blank">EmoSurvival</a>
+* <a href="https://github.com/Affectiva/UnityChan" target="_blank">UnityChan</a>
