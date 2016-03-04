@@ -8,13 +8,12 @@ last_updated:
 summary:
 metadata: false
 ---
-**classdoc:** Detector [[ObjectiveC]({{ site.baseurl }}/pages/platforms/v3/osx/classdocs/interface_a_f_d_x_detector.html)]
 
 A common use of the SDK is to process previously captured video files. Another way to feed video into the detector is via a video file that is stored on the file system of your device.
 
 ### Creating the detector
 
-```objective-c
+```objc
 - (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingFile:(NSString *)path maximumFaces:(NSUInteger)maximumFaces;
 ```
 
@@ -23,7 +22,7 @@ This initialization method also takes a reference to an object which adheres to 
 {% include osx/v3/detector/configure.md %}
 
 
-```objective-c
+```objc
 - (void)detectorDidFinishProcessing:(AFDXDetector *)detector;
 ```
 
