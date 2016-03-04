@@ -16,7 +16,7 @@ Using the built-in camera is a common way to obtain video for facial expression 
 
 ### Creating the detector
 
-```objective-c
+```objc
 - (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingCamera:(AFDXCameraType)camera maximumFaces:(NSUInteger)maximumFaces;
 ```
 
@@ -29,7 +29,7 @@ This method takes a reference to an object which adheres to the `AFDXDetectorDel
 
 If you plan to use the camera to process facial frames using the Affdex SDK, you can specify the maximum number of frames per second. This is helpful to balance battery life with your processing requirements. The default (and recommended) rate is 5 frames per second, but you may also set it lower if you are using an older device such as an iPad 2, and need additional performance.  
 
-```objective-c
+```objc
 detector.maxProcessRate = 8.0;
 ```
 

@@ -23,16 +23,19 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 <strong>Valence</strong>: A measure of the positive or negative nature of the recorded person's experience. The range of values is from -100 to 100.
 
 ***
+
 ## Facial Expressions
 
 {%include overview/expressions_table.html %}
 
 ***
+
 ## Emoji Expressions
 
 {%include overview/emojis_table.html %}
 
 ***
+
 ## Using the Metrics
 Emotion, Expression and Emoji metrics scores indicate when users show a specific emotion or expression (e.g., a smile) along with the degree of confidence. The metrics can be thought of as detectors: as the emotion or facial expression occurs and intensifies, the score rises from 0 (no expression) to 100 (expression fully present).
 
@@ -41,7 +44,9 @@ In addition, we also expose a composite emotional metric called _valence_ which 
 <img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}" />
 
 <br />
+
 ***
+
 ## Appearance
 
 <img src="{{ "/images/graphic6.png" | prepend: site.baseurl }}" align="right" />
@@ -59,7 +64,9 @@ A confidence level of whether the subject in the image is wearing eyeglasses or 
 
 <br />
 <br />
+
 ***
+
 ## Face Tracking and Head Angle Estimation
 
 <img src="{{ "/images/graphic7.png" | prepend: site.baseurl }}" align="right">

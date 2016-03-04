@@ -28,6 +28,7 @@ Bitcode is a new requirement from Apple for iOS apps that support watchOS and tv
 ## Getting started
 
 ##### 1. [Download]({{ site.baseurl }}/downloads/) and extract the archives
+
 ##### 2. Import the Affdex API into your application
 * Choose the appropriate framework for your specific development situation (Device, Simulator, or Universal)
 * Your code must include the Objective-C header file `Affdex/Affdex.h`

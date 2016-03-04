@@ -18,7 +18,7 @@ Processing either discrete or continuous images does not entail the use of the d
 
 ### Creating the detector
 
-```objective-c
+```objc
 - (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate discreteImages:(BOOL)discrete maximumFaces:(NSUInteger)maximumFaces;
 ```
 
@@ -30,7 +30,7 @@ The second parameter `discrete` is a flag that the detector uses to determine wh
 {% include ios/v3/detector/configure.md %}
 
 
-```objective-c
+```objc
 - (void)detectorDidFinishProcessing:(AFDXDetector *)detector;
 ```
 
@@ -46,7 +46,7 @@ This method is called in your code when the detector has finished processing a v
 
 After successful initialization, the following method can be used to process images for detection:  
 
-```objective-c
+```objc
 - (void)processImage:(UIImage *)facePicture atTime:(NSTimeInterval)time;
 ```
 

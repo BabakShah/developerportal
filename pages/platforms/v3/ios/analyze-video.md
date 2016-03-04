@@ -14,7 +14,7 @@ A common use of the SDK is to process previously captured video files. Another w
 
 ### Creating the detector
 
-```objective-c
+```objc
 - (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingFile:(NSString *)path maximumFaces:(NSUInteger)maximumFaces;
 ```
 
@@ -23,7 +23,7 @@ This initialization method also takes a reference to an object which adheres to 
 {% include ios/v3/detector/configure.md %}
 
 
-```objective-c
+```objc
 - (void)detectorDidFinishProcessing:(AFDXDetector *)detector;
 ```
 

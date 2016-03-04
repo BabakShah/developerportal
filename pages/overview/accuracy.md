@@ -10,15 +10,15 @@ metadata: false
 ---
 <img src="{{ "/images/graphic4.png" | prepend: site.baseurl }}" align="right">
 
-<br></br>
+<br />
 We continuously train and test our emotion-sensing metrics to provide the most reliable and accurate classifiers. Our key emotions achieve accuracy in the high 90th percentile.  
-<br></br>
+<br />
 Our emotion metrics are trained and tested on very difficult datasets.  We sampled our test set, comprised of hundreds of thousands of facial frames, from more than 3.2 million facial videos.  This data is from more than 75 countries, representing real-world, spontaneous facial expressions, made under challenging conditions, such as varying lighting, different head movements, and variances in facial features due to ethnicity, age, gender, facial hair and glasses.  
-<br></br>
+<br />
 
 ## How do we measure our accuracy?
 
-Affectiva uses the area under a <a href=https://en.wikipedia.org/wiki/Receiver_operating_characteristic target=_blank>Receiver Operating Characteristic</a> (ROC) curve to report detector accuracy as this is the most generalized way to measure detector accuracy. The ROC score values range between 0 and 1 and the closer the value to 1 the more accurate the classifier is.
+Affectiva uses the area under a <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic" target="_blank">Receiver Operating Characteristic</a> (ROC) curve to report detector accuracy as this is the most generalized way to measure detector accuracy. The ROC score values range between 0 and 1 and the closer the value to 1 the more accurate the classifier is.
 Many facial expressions, such as smile, brow furrow, inner brow raise, brow raise, and nose wrinkle have an ROC score of over 0.9. 
 
 Some,  more nuanced, facial expressions, which are much harder for even humans to reliably identify, include    lip depressor, lip pucker and eye closure. These have an ROC score of over 0.8. 
@@ -33,7 +33,7 @@ The emojis are driven by the expression classifiers. Classifiers for Tongue Out,
 
 The best performance is in a range of +/- 25 degrees frontal, outside of which accuracy begins to suffer. Furthermore, for the effect of the differences in lighting conditions on accuracy, the classifier accuracy drops only when the face is extremely poorly illuminated or backlit. This occurs when the average pixel brightness of the face falls below 30 on a scale of 0 (pitch black) to 255 (white). In the example below, our classifiers can handle the three images on the right.
 
-<center><img src={{ "/images/lighting.png" | prepend: site.baseurl }}></center>
+<img src="{{ "/images/lighting.png" | prepend: site.baseurl }}" align="center">
 
 ## Cultural differences
 
