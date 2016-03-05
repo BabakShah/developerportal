@@ -49,6 +49,7 @@ Example,
 String fileName = "/sdcard/movie.mp4";
 VideoDetector detector = new VideoDetector(this, fileName);
 ```
+
 {% include android/v3/detector/configure.md %}
 
 {% include android/v3/detector/set-interface-classes.md %}

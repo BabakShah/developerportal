@@ -42,6 +42,7 @@ Example,
 ```java
 PhotoDetector detector = new PhotoDetector(this);
 ```
+
 {% include android/v3/detector/configure.md %}
 
 {% include android/v3/detector/set-interface-classes.md %}
