@@ -35,7 +35,7 @@ For an example please see the [AffdexMe sample app's top-level build.gradle file
 ```groovy
 dependencies {
     ...
-    compile 'com.affectiva.android:affdexsdk:3.0.+'
+    compile 'com.affectiva.android:affdexsdk:3.0.1'
     ...
 }
 ```
