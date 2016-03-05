@@ -45,7 +45,7 @@ For an example please see the [AffdexMe sample app's app-level build.gradle file
 
 ```xml
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
- ```
+```
 
 Additionally, if you use the `CameraDetector`, then you will need to add permission to access the camera:
 
