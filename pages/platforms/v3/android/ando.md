@@ -43,7 +43,7 @@ For an example please see the [AffdexMe sample app's app-level build.gradle file
 
 ##### 3. Add a few necessary declarations to your app's manifest.  First, the SDK requires access to external storage on the Android device. Therefore, the ```AndroidManifest.xml``` needs to include permission for that:
 
- ```xml
+```xml
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
  ```
 
