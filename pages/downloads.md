@@ -10,6 +10,8 @@ Use [this form](http://www.affectiva.com/45-day-free-trial/) to signup for a fre
 
 Contact sales@affectiva.com for more information about Developer and/or Commercial distribution licenses.
 
+Contact gaminginfo@affectiva.com if you would like to use the Unity SDK.
+
 #### Download the SDK
 
 Use the download links below to download the latest SDK version:
