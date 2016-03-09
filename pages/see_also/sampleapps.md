@@ -4,8 +4,8 @@ permalink: /sampleapps/
 metadata: false
 ---
 
+## AffdexMe
 <center>
-<h2> AffdexMe </h2>
 <img src="{{ "/images/affdexmedemo.png" | prepend: site.baseurl }}" title="AffdexMe">
 </center>
 
@@ -16,9 +16,7 @@ The source code for these example apps as well as a Windows version are availabl
 
 Direct links for the project repositories can be found below:
 
-<center>
-<h2>  Choose Your Platform </h2>
-</center>
+### Choose Your Platform
 <center>
 <a href="https://github.com/Affectiva/android-sample-apps" target="_blank"><img src="{{ "/images/android.png" | prepend: site.baseurl }}" title="Android"></a><a href="https://github.com/Affectiva/ios-sdk-samples" target="_blank"><img src="{{ "/images/apple.png" | prepend: site.baseurl }}" title="iOS"></a><a href="https://github.com/Affectiva/win-sdk-samples" target="_blank"><img src="{{ "/images/windows.png" | prepend: site.baseurl }}" title="Windows"></a>
 </center>
@@ -26,13 +24,16 @@ Direct links for the project repositories can be found below:
 
 <br />
 
+## Unity
+
+### EmoSurvival
 <center>
-<h2> EmoSurvival </h2>
 <img src="{{ "/images/PausedGame.png" | prepend: site.baseurl }}" title="EmoSurvival">
 </center>
 
 EmoSurvival is an emotion-enabled version of the "Nightmares" game from Unity's [survival shooter tutorial](https://unity3d.com/learn/tutorials/projects/survival-shooter-project).  Our enhancements to the original "Nightmares" game cause it to pause when the player turns away (or covers the camera), and has the monsters interact with the player's character based on the player's emotional state.
 
+### Unity-Chan
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MZCNWWyHa98" frameborder="0" allowfullscreen></iframe>
 </center>
@@ -41,6 +42,6 @@ Unity-Chan is a character that Unity freely licenses to people.  Unity-Chan Emot
 
 Direct links for the project repositories can be found below:
 
-
+### Choose Your Repository
 * <a href="https://github.com/Affectiva/EmoSurvival" target="_blank"><img src="/images/unity.png" title="Unity" > EmoSurvival</a>
 * <a href="https://github.com/Affectiva/UnityChan" target="_blank"><img src="/images/unity.png" title="Unity" > Unity-Chan</a>
