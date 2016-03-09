@@ -33,17 +33,14 @@ Direct links for the project repositories can be found below:
 
 EmoSurvival is an emotion-enabled version of the "Nightmares" game from Unity's [survival shooter tutorial](https://unity3d.com/learn/tutorials/projects/survival-shooter-project).  Our enhancements to the original "Nightmares" game cause it to pause when the player turns away (or covers the camera), and has the monsters interact with the player's character based on the player's emotional state.
 
-Direct links for the project repositories can be found below:
-
-
 <center>
-<img src="{{ "/images/Fog.png" | prepend: site.baseurl }}" title="UnityChan Emotion Mimcry">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MZCNWWyHa98" frameborder="0" allowfullscreen></iframe>
 </center>
 
-UnityChan is a character that Unity freely licenses to people.  UnityChan Emotion Mimcry has the character mimic the expressions of the user.  When the camera cannot detect any faces UnityChan is surrounded by fog.  The fog clears when a face is found.
+Unity-Chan is a character that Unity freely licenses to people.  Unity-Chan Emotion Mimicry has the character mimic the expressions of the user.  When the camera cannot detect any faces Unity-Chan is surrounded by fog.  The fog clears when a face is found.
 
 Direct links for the project repositories can be found below:
 
 
-* <a href="https://github.com/Affectiva/EmoSurvival" target="_blank">EmoSurvival</a>
-* <a href="https://github.com/Affectiva/UnityChan" target="_blank">UnityChan</a>
+* <a href="https://github.com/Affectiva/EmoSurvival" target="_blank"><img src="/images/unity.png" title="Unity" > EmoSurvival</a>
+* <a href="https://github.com/Affectiva/UnityChan" target="_blank"><img src="/images/unity.png" title="Unity" > Unity-Chan</a>
