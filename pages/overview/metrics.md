@@ -12,6 +12,13 @@ metadata: false
 
 The face provides a rich canvas of emotion. Humans are innately programmed to express and communicate emotion through facial expressions. Affdex scientifically measures and reports the emotions and facial expressions using sophisticated computer vision and machine learning techniques. When you use the Affdex Mobile SDK in your applications, you will receive facial expression output from Affdex in the form of Affdex metrics: seven emotion metrics, two composite metrics measuring the emotional experience, 15 facial expression metrics, and 13 emojis.
 
+## How do we map facial expressions to emotions?  
+
+The Emotion predictors use the observed facial expressions as input to calculate the likelihood of an emotion. Our Facial expression to emotion mapping builds on EMFACS mappings developed by [Friesen & Ekman](https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F243779859_EMFACS-7_Emotional_Facial_Action_Coding_System&sa=D&sntz=1&usg=AFQjCNGjUDwovizq9TJh-bviRvn5gS3X2Q). A facial expression can have either a positive or a negative effect on the likelihood of an emotion. The following table shows the relationship between the facial expressions and the emotions predictors.
+
+{% include overview/s_table.html %}
+
+
 ## Emotions
 
 {%include overview/emotions_table.html %}
