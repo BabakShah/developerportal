@@ -1,146 +1,42 @@
-<style>
-    .wrapper { float: left; clear: left; display: table; table-layout: fixed; }
-    img.img-responsive { display: table-cell; max-width: 100%; }
-    .s_table {    border: 1px solid black; border-collapse: collapse; }
-</style>
-
-<div class="container-fluid s_table">
-    <div class="row">
-        <div class="col-xs-3 text-center">
-            <strong>Emotion</strong>
-        </div>
-        <div class="col-xs-3 text-center">
-            <strong>Increase Likelihood</strong>
-        </div>
-        <div class="col-xs-3 text-center">
-            <strong>Decrease Likelihood</strong>
-        </div>
-        
-    </div>
-
-    <div class="row s_table">
-        <div class="col-xs-3 text-center">
-            <div>Joy</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Smile</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Brow raise</div>
-            <div>Brow furrow</div>
-        </div>
-        
-    </div>
-    
-    
-    <div class="row s_table">
-        <div class="col-xs-3 text-center">
-            <div>Anger</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Brow furrow</div>
-            <div>Chin raise</div>
-            <div>Lip press</div>
-            <div>Mouth open</div>
-            <div>Lip suck</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Brow raise</div>
-            <div>Inner Brow Raise</div>
-            <div>Nose wrinkle</div>
-            <div>Smile</div>
-        </div>
-        
-    </div>
-    
-    
-    <div class="row s_table">
-        <div class="col-xs-3 text-center">
-            <div>Disgust</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Nose wrinkle</div>
-            <div>Upper lip raise</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Lip suck</div>
-        </div>
-        
-    </div>
-    
-    
-    <div class="row s_table">
-        <div class="col-xs-3 text-center">
-            <div>Surprise</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Inner brow raise</div>
-            <div>Brow raise</div>
-            <div>Mouth open</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Brow furrow</div>
-        </div>
-        
-    </div>
-    
-    
-    <div class="row s_table">
-        <div class="col-xs-3 text-center">
-            <div>Fear</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Inner brow raise</div>
-            <div>Brow raise</div>
-            <div>Brow furrow</div>
-            <div>Mouth open</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Lip corner depressor</div>
-            <div>Smile</div>
-        </div>
-        
-    </div>
-    
-    
-    <div class="row s_table">
-        <div class="col-xs-3 text-center">
-            <div>Sadness</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Inner brow raise</div>
-            <div>Brow furrow</div>
-            <div>Lip corner depressor</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Brow raise</div>
-            <div>Mouth open</div>
-            <div>Lip suck</div>
-            <div>Lip press</div>
-            <div>Smile</div>
-        </div>
-        
-    </div>
-    
-    
-    <div class="row s_table">
-        <div class="col-xs-3 text-center">
-            <div>Contempt</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Brow furrow</div>
-            <div>Smirk</div>
-        </div>
-        <div class="col-xs-3 text-center">
-            <div>Smile</div>
-        </div>
-        
-    </div>
-</div>
-
-
-
-
-
-
-<br />
+<table class="table table-bordered">
+  <tr>
+    <td class="text-center">
+      <div>
+        <strong>Emotion</strong>
+      </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Increase Likelihood</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Decrease Likelihood</strong>
+       </div>
+    </td>
+  </tr>
+  {% for emotion in site.data.emotion_expression_mapping %}
+  <tr>
+    <td class="text-center vcenter">
+      <div class="content">
+        {{ emotion.name }}
+      </div>
+    </td>
+    <td class="text-center vcenter">
+      {% for expression in emotion.negative_expression %}
+      <div class="content">
+        {{ expression.name }}
+      </div>
+      {% endfor %}
+    </td>
+    <td class="text-center vcenter">
+      {% for expression in emotion.negative_expression %}
+      <div>
+        {{ expression.name }}
+      </div>
+      {% endfor %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
