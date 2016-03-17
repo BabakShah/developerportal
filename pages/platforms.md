@@ -15,16 +15,16 @@ The Affdex SDK is available for the following platforms:
 
 
 <center>
-<a href="{{ "/android" | prepend: site.baseurl }}">
+<a href="/android">
 <img src="{{ "/images/android.png" | prepend: site.baseurl }}" title="Android" />
 </a>
-<a href="{{ "/ios" | prepend: site.baseurl }}>
+<a href="/ios">
 <img src="{{ "/images/apple.png" | prepend: site.baseurl }}" title="iOS" />
 </a>
-<a href="{{ "/windows" | prepend: site.baseurl }}>
+<a href="/windows">
 <img src="{{ "/images/windows.png" | prepend: site.baseurl }}" title="Windows" />
 </a>
-<a href="{{ "/unity" | prepend: site.baseurl }}>
+<a href="/unity">
 <img src="{{ "/images/unity.png" | prepend: site.baseurl }}" title="Unity" />
 </a>
 </center>
