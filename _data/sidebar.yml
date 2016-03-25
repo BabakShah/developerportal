@@ -124,6 +124,14 @@ entries:
           product: all
           version: all
           print: true
+          
+        - title: Customer Games
+          url: /customergames/
+          audience: all
+          platform: all
+          product: all
+          version: all
+          print: true
 
         - title: Supported Video Formats
           url: /supportedvideoformats/
