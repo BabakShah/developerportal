@@ -16,7 +16,7 @@ By Flying Mollusk
 </center>
 Nevermind is a biofeedback-enhanced adventure thriller game that takes you into the darkly surreal world of the subconscious.
 
-As you explore the abstract world within the minds of trauma victims and solve the cryptic puzzles lurking within, a biofeedback sensor monitors your moment-to-moment anxiety. If you let your fears get the best of you, the game will become harder. If you’re able to calm yourself in the face of terror, the game will be more forgiving.  
+As you explore the abstract world within the minds of trauma victims and solve the cryptic puzzles lurking within, a biofeedback technology monitors your moment-to-moment anxiety. If you let your fears get the best of you, the game will become harder. If you’re able to calm yourself in the face of terror, the game will be more forgiving.  
 
 Nevermind strives to create a haunting gameplay experience that also teaches you how to be more aware of your internal responses to stressful situations. If you can learn to control your anxiety within the intense realm of Nevermind, imagine what you will be able to do when faced with stressful moments in the real world…  
 
