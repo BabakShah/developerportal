@@ -9,7 +9,7 @@
 
 - platform: iOS
   architecture: "Universal"
-  version: "SDK 3.0"
+  version: "SDK 3.0.1"
   url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/ios/affdex-sdk_iOS_3_0_1_374.zip
   size: 107.2 MB
 
