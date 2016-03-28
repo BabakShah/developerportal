@@ -1,6 +1,6 @@
 ---
-title: Customer Games
-permalink: /customergames/
+title: Powered by Affdex
+permalink: /poweredbyaffdex/
 metadata: false
 ---
 
