@@ -43,6 +43,8 @@ In addition, we also expose a composite emotional metric called _valence_ which 
 
 <img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}" />
 
+<br />
+
 ***
 
 ## Appearance
