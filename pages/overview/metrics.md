@@ -22,6 +22,10 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 
 <strong>Valence</strong>: A measure of the positive or negative nature of the recorded person's experience. The range of values is from -100 to 100.
 
+#### How do we map facial expressions to emotions?
+
+The Emotion predictors use the observed facial expressions as input to calculate the likelihood of an emotion. [See more information](/emotion_mapping/)
+
 ***
 
 ## Facial Expressions
