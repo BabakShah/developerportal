@@ -343,9 +343,19 @@ struct FeaturePoint
 See the feature point indices [table]({{ site.baseurl }}/fpi/) for a full list of feature points.
 
 
-## Special Notes on Builds
+## Special Notes
+
+This section outlines issues you may encounter depending on how you use the plugin.
+
+### Builds
 
 <ul>
-  <li>If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.
-  <li>OS X builds only work as universal and x86_64 binaries.
+  <li>If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.</li>
+  <li>OS X builds only work as universal and x86_64 binaries.</li>
 </ul>
+
+### Apple App Store Submission
+
+The Apple app store has a rigorous set of automated tests it runs on submissions to validate that applications meet their guidelines.  They will specifically expect certain parts of your game to be signed using a certification authority.  All files that need to be signed must be signed using the same signature authority.  This means that you as an individual, or your company, will need a signing certificate for not only your files, but for the files that come from Affectiva.  If the Affectiva files are signed by Affectiva and your other game files are signed by you, your submission will be rejected by the app store.  
+
+The order in which files and bundles are signed is also critical.  You must sign the inner-most files first.  Here is a <a href="http://stackoverflow.com/questions/7697508/how-do-you-codesign-framework-bundles-for-the-mac-app-store/11284404#11284404">Stack Overflow answer</a> that includes a shell script that signs in the proper order.
