@@ -8,7 +8,7 @@ last_updated:
 summary:
 metadata: false
 ---
-**classdoc:** CameraDetector [[c++]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/classaffdex_1_1_camera_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/html/1d7a795f-92f8-e0e5-f48a-79d1d1941091.htm)]
+**classdoc:** CameraDetector [[c++]({{ site.baseurl }}/pages/platforms/v3/cpp/classdocs/affdex-native/classaffdex_1_1_camera_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/html/1d7a795f-92f8-e0e5-f48a-79d1d1941091.htm)]
 
 Using a webcam is a common way to obtain video for facial expression detection. The ```CameraDetector``` can access a webcam connected to the device to capture frames and feed them directly to the facial expression engine.
 

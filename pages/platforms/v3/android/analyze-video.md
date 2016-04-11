@@ -60,4 +60,4 @@ VideoDetector detector = new VideoDetector(this, fileName);
 
 Once `start()` is called, the video frames are decoded, processed and the callback functions are used to notify of the decoded frames, results.
 
-{% include windows/v3/detector/stop.md %}
+{% include android/v3/detector/stop.md %}

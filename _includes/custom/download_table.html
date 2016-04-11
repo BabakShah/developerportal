@@ -1,42 +1,59 @@
 <style>
-#downloadtable container-fluid {
-        width:700px;
-}
-#downloadtable .row{
-  border: 1px #ccc solid;
-  margin: 10px;
-  padding: 10px;
+#cell
+{
+    vertical-align: middle;
 }
 </style>
-<div id="downloadtable" class="container-fluid">
-  <div class="row" style="background-color:#c0c0c0;">
-    <div class="col-sm-3 text-center">
-      <strong>Platform</strong>
-    </div>
-    <div class="col-sm-3 text-center">
-      <strong>Architecture</strong>
-    </div>
-    <div class="col-sm-3 text-center">
-      <strong>Version</strong>
-    </div>
-    <div class="col-sm-3 text-center">
-      <strong>Size</strong>
-    </div>
-  </div>
-  {% for item in site.data.downloads %}
-  <div class="row" style="background-color:#F0F0F0;">
-    <div class="col-sm-3 text-center">
-      {{ item.platform }}
-    </div>
-    <div class="col-sm-3 text-center">
-      {{ item.architecture }}
-    </div>
-    <div class="col-sm-3 text-center">
-      <a href="{{ item.url }}" target="_blank">{{ item.version }}</a>
-    </div>
-    <div class="col-sm-3 text-center">
-      {{ item.size }}
-    </div>
-  </div>
-  {% endfor %}
-</div>
+
+<table class="table table-bordered">
+  <tr style="background-color:#c0c0c0;">
+    <td class="text-center">
+      <div>
+        <strong>Platform</strong>
+      </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Architecture</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Version</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Size</strong>
+       </div>
+    </td>
+  </tr>
+    {% for platform in site.data.downloads.platforms %}
+    {% assign versions_array = platform.versions | where: "status", include.build_status %}
+    {% assign versions_array_size = versions_array | size %}
+    {% if versions_array_size > 0 %}
+      <tr>
+        <td id="cell" rowspan="{{ versions_array_size | plus: 1}}" class="text-center">
+          {{ platform.name }}
+        </td>
+      </tr>
+      {% for build in versions_array  %}
+        <tr>
+          <td id="cell" class="text-center">
+            {{ build.architecture }}
+          </td>
+          <td id="cell" class="text-center">
+            {% unless build.url contains '://' %}
+              {% assign build.url = build.url | prepend: site.url %}
+            {% endunless %}
+            <a href="{{ build.url }}" target="_blank">{{ build.version }}</a>
+          </td>
+          <td id="cell" class="text-center">
+            {{ build.size }}
+          </td>
+        </tr>
+      {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </tr>
+</table>

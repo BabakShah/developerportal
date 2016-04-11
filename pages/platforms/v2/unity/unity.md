@@ -10,7 +10,7 @@ summary:
 ---
 {% include linkrefs.html %}
 
-<img src="{{ "/images/unity.png" | prepend: site.baseurl }}" align="right">
+<img src="{{ "/images/unity.png" | prepend: site.baseurl }}" align="right" style="max-width: 6em;">
 
 SDK Developer Guide Release 2.0
 
@@ -40,7 +40,7 @@ Downloading the Unity SDK requires sending a manually signed license agreement. 
 *   OS 10.9.5 and above
 
 ## Video Tutorial
-<iframe width="420" height="315" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
 
 ## Class Documentation
 The classes that come with this asset are viewable [here](http://developer.affectiva.com/pages/platforms/v2/unity/AffdexUnityHelp/index.html).  
@@ -56,17 +56,17 @@ For each of the different sources, the underlining emotion recognition engine de
 
 ### Add detector to scene
 First step is to add a detector to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Detector):  
-<img src="{{ "/images/unity/AddComponentDetector.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/unity/AddComponentDetector.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
 You can now set the emotions and expressions you are interested in (the more you select the worse performance will be, so only select the ones you need):  
-<img src="{{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
 ### Add CameraInput to scene
 You can either use Affectiva's CameraInput script or write your own.  To use ours, add a camera input component to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Camera Input):  
-<img src="{{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
 Set the camera rate, camera location, width and height:  
-<img src="{{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
 Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x600, 1024x768, etc).  
 

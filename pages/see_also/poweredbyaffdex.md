@@ -12,7 +12,7 @@ Eventually we hope to have one page per game.  Please limit to one image OR vide
 By Flying Mollusk
 <a href="https://www.facebook.com/NevermindGame/" target="_blank"><img src="{{ "/images/fb-logo.png" | prepend: site.baseurl }}" title="Facebook"></a> <a href="https://twitter.com/nevermindgame" target="_blank"><img src="{{ "/images/twitter-logo.png" | prepend: site.baseurl }}" title="Twitter"></a> <a href="https://www.instagram.com/nevermindgame/" target="_blank"><img src="{{ "/images/insta-logo.png" | prepend: site.baseurl }}" title="Instagram"></a>
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_H-nkpFhl2Y" frameborder="0" allowfullscreen></iframe>
+   <iframe width="100%" height="400px" src="https://www.youtube.com/embed/_H-nkpFhl2Y" frameborder="0" allowfullscreen></iframe>
 </center>
 Nevermind is a biofeedback-enhanced adventure thriller game that takes you into the darkly surreal world of the subconscious.
 
@@ -27,7 +27,7 @@ Get it on <a href="http://store.steampowered.com/app/342260/">Steam <img src="{{
 # Bee Happy
 By <a href="http://zbarryte.com">Zachary Barryte</a>
 <center>
-<img src="{{ "/images/beehappy.png" | prepend: site.baseurl }}" title="Bee Happy">
+<img src="{{ "/images/beehappy.png" | prepend: site.baseurl }}" title="Bee Happy" style="height: 100%; width: 100%">
 </center>
 
 A demo made to showcase the Affdex SDK that smiles and laughs with the room. Animations, particle effects, and horrified bee screaming all become more delightful the higher the average happiness in the room is.
@@ -36,6 +36,6 @@ A demo made to showcase the Affdex SDK that smiles and laughs with the room. Ani
 By <a href="http://wildbluetech.com">Wild Blue Technology</a>
 <a href="https://www.facebook.com/wildbluetechnologies/" target="_blank"><img src="{{ "/images/fb-logo.png" | prepend: site.baseurl }}" title="Facebook"></a> <a href="https://twitter.com/wildbluetech" target="_blank"><img src="{{ "/images/twitter-logo.png" | prepend: site.baseurl }}" title="Twitter"></a> <a href="http://www.instagram.com/wildbluetech/" target="_blank"><img src="{{ "/images/insta-logo.png" | prepend: site.baseurl }}" title="Instagram"></a>
 <center>
-<img src="{{ "/images/doors.jpg" | prepend: site.baseurl }}" title="Doors">
+<img src="{{ "/images/doors.jpg" | prepend: site.baseurl }}" title="Doors" style="height: 100%; width: 100%">
 </center>
 Doors is a demo with the intent of showing game developers how a player’s emotions could change a game accordingly, making the game more immersive. By using a webcam and Affectiva’s SDK, the demo allows players to open doors based strictly on their emotions. The implication is made that it is possible for a player to go even further, manipulating major aspects of the game using emotional input.

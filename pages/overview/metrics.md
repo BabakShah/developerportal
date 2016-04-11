@@ -45,7 +45,7 @@ Emotion, Expression and Emoji metrics scores indicate when users show a specific
 
 In addition, we also expose a composite emotional metric called _valence_ which gives feedback on the overall experience. Valence values from 0 to 100 indicate a neutral to positive experience, while values from -100 to 0 indicate a negative to neutral experience.
 
-<img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}" />
+<img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%"/>
 
 <br />
 

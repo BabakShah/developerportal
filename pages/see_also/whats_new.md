@@ -10,6 +10,15 @@ summary:
 metadata: false
 ---
 
+### What's new in the Affdex SDK version 3.0.1
+* New platforms [OSX](/osx) and [Linux](/linux).
+* Android
+  - Switch the SDK packaging to the new android standard packaging (aar).
+* iOS SDK
+  - Fix bug [SDK-1](https://affectiva.atlassian.net/browse/SDK-1) - iOS Framework builds v3.0 are much bigger in size than v2.0.
+  - Fix bug [SDK-38](https://affectiva.atlassian.net/browse/SDK-38) - iOS device Framework contains i386 and x86_64 architectures.
+  - Fix bug [SDK-404](https://affectiva.atlassian.net/browse/SDK-404) - didStopDetectingFace: can pass nil for the face parameter.
+
 ### What's new in the Affdex SDK version 3.0
 
 * New API to allow tracking of multiple faces simultaneously.
