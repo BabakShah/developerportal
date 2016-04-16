@@ -6,7 +6,7 @@
   <div class="row">
     {% for platform in site.data.downloads.platforms %}
     <div class="col-md-1 text-center">
-      <a href="/{{ platform.name | downcase }}">
+      <a href="/{{ platform.name | downcase | remove: ' '}}">
         <img class="img-responsive" src="{{ platform.logo | prepend: site.baseurl }}" title="{{ platform.name }}" />
       </a>
       <strong>{{platform.name}}</strong>

@@ -11,7 +11,7 @@ metadata: false
 ---
 
 ### What's new in the Affdex SDK version 3.0.1
-* New platforms [OSX](/osx) and [Linux](/linux).
+* New platforms [OS X](/osx) and [Linux](/linux).
 * Android
   - Switch the SDK packaging to the new android standard packaging (aar).
 * iOS SDK
