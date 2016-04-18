@@ -32,8 +32,9 @@ Use the download links below to download the latest version of the SDK:
 {% endif %}
 
 {% endfor %}
+{% assign bcnum = beta_count | round %}
 
-{% if beta_count != 0 %}
+{% if bcnum > 0 %}
 
 #### In Development
 
