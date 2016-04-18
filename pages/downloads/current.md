@@ -20,12 +20,26 @@ Use the download links below to download the latest version of the SDK:
 #### Stable Release
 {% include custom/download_table.html build_status="stable" %}
 
-<!--
+
+{% assign beta_count = 0 %}
+
+{% for platform in site.data.downloads.platforms %}
+{% assign beta_array = platform.versions | where: "status","beta" %}
+{% assign beta_array_size = beta_array | size %}
+
+{% if beta_array_size > 0 %}
+{% capture beta_count %}{{ beta_count | plus:1 }}{% endcapture %}
+{% endif %}
+
+{% endfor %}
+
+{% if beta_count != 0 %}
+
 #### In Development
 
 Download release candidates of the SDK. The release candidates are in the final stage of testing. Feel free to [report bugs](mailto:sdk@affectiva.com?subject=Bug Report).  
 
 {% include custom/download_table.html build_status="beta" %}
--->
+{% endif %}
 
 Download an [older release](/downloads/previous).
