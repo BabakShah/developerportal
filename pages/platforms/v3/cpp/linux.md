@@ -39,7 +39,7 @@ For example, main.cpp initializes an instance of ```affdex::FrameDetector```
 
 int main(int argc, char ** argsv)
 {
-  affdex::FramDetector(1);
+  affdex::FrameDetector(1);
   return 0;
 }
 ```
