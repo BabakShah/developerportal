@@ -74,8 +74,8 @@ platforms:
     - status: stable
       architecture: x86_64
       version: "3.0"
-      url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/linux/affdex-cpp-sdk-linux-64bit-build-287.tar.gz
-      size: 26.5 MB
+      url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/linux/affdex-cpp-sdk-3.0-298-linux-64bit.tar.gz
+      size: 22.8 MB
 
   - name: OS X
     logo: /images/apple.png
