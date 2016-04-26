@@ -6,7 +6,7 @@ In order to initialize the detector, a valid license file must be provided. Each
 
 **classdoc:** LicenseException [[java]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/AffdexException.html)]
 
-Copy the license file to the ```app/main/src/assets/Affdex``` directory and pass the filename to the ```setLicensePath()``` method.
+Copy the license file to the ```app/src/main/assets/Affdex``` directory and pass the filename to the ```setLicensePath()``` method.
 
 ```java
 detector.setLicensePath("affdex.license");
