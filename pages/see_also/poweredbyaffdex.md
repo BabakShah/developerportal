@@ -1,14 +1,14 @@
 ---
 title: Powered by Affdex
 permalink: /poweredbyaffdex/
-metadata: false
 ---
+{% include linkrefs.html %}
 
 <!---
 Eventually we hope to have one page per game.  Please limit to one image OR video and keep the description to under 1000 characters.
 -->
 
-# <a href="http://nevermindgame.com/">Nevermind</a>
+## <a href="http://nevermindgame.com/">Nevermind</a>
 By Flying Mollusk
 <a href="https://www.facebook.com/NevermindGame/" target="_blank"><img src="{{ "/images/fb-logo.png" | prepend: site.baseurl }}" title="Facebook"></a> <a href="https://twitter.com/nevermindgame" target="_blank"><img src="{{ "/images/twitter-logo.png" | prepend: site.baseurl }}" title="Twitter"></a> <a href="https://www.instagram.com/nevermindgame/" target="_blank"><img src="{{ "/images/insta-logo.png" | prepend: site.baseurl }}" title="Instagram"></a>
 <center>
@@ -24,14 +24,14 @@ Nevermind explores themes of psychological trauma and PTSD and seeks to not only
 
 Get it on <a href="http://store.steampowered.com/app/342260/">Steam <img src="{{ "/images/steam-logo.png" | prepend: site.baseurl }}" title="Steam"></a>
 
-# SYNC
+## SYNC
 By Will Pheloung, Eric Walsh, Yihao Zhu, Luc Wong, Rob Bishop
 <center>
    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/7AH4rMRkki0" frameborder="0" allowfullscreen></iframe>
 </center>
 You have lost the love of your life. Overwhelmed by grief, you sit by her tomb, flipping through the pages of the journal that chronicles your life together. So begins SYNC, an interactive visual novel designed in Unity using emotion recognition software from Affectiva.  You assume the role of Alex, grieving the recent death of her lover, Ivy, in a car crash. Unable to move on, Alex can’t help but futilely imagine what she might done differently to prevent the fateful accident. Players advance the narrative by syncing their facial expressions with those of Alex. Eventually, Alex (and through her, the player) is faced with a choice: to accept her doomed relationship so she can begin to move on, or to reject her relationship and remain trapped in the past.
 
-# Bee Happy
+## Bee Happy
 By <a href="http://zbarryte.com">Zachary Barryte</a>
 <center>
 <img src="{{ "/images/beehappy.png" | prepend: site.baseurl }}" title="Bee Happy" style="height: 100%; width: 100%">
@@ -39,7 +39,7 @@ By <a href="http://zbarryte.com">Zachary Barryte</a>
 
 A demo made to showcase the Affdex SDK that smiles and laughs with the room. Animations, particle effects, and horrified bee screaming all become more delightful the higher the average happiness in the room is.
 
-# Doors
+## Doors
 By <a href="http://wildbluetech.com">Wild Blue Technology</a>
 <a href="https://www.facebook.com/wildbluetechnologies/" target="_blank"><img src="{{ "/images/fb-logo.png" | prepend: site.baseurl }}" title="Facebook"></a> <a href="https://twitter.com/wildbluetech" target="_blank"><img src="{{ "/images/twitter-logo.png" | prepend: site.baseurl }}" title="Twitter"></a> <a href="http://www.instagram.com/wildbluetech/" target="_blank"><img src="{{ "/images/insta-logo.png" | prepend: site.baseurl }}" title="Instagram"></a>
 <center>
