@@ -24,6 +24,13 @@ Nevermind explores themes of psychological trauma and PTSD and seeks to not only
 
 Get it on <a href="http://store.steampowered.com/app/342260/">Steam <img src="{{ "/images/steam-logo.png" | prepend: site.baseurl }}" title="Steam"></a>
 
+# SYNC
+By Will Pheloung, Eric Walsh, Yihao Zhu, Luc Wong, Rob Bishop
+<center>
+   <iframe width="100%" height="400px" src="https://www.youtube.com/embed/7AH4rMRkki0" frameborder="0" allowfullscreen></iframe>
+</center>
+You have lost the love of your life. Overwhelmed by grief, you sit by her tomb, flipping through the pages of the journal that chronicles your life together. So begins SYNC, an interactive visual novel designed in Unity using emotion recognition software from Affectiva.  You assume the role of Alex, grieving the recent death of her lover, Ivy, in a car crash. Unable to move on, Alex can’t help but futilely imagine what she might done differently to prevent the fateful accident. Players advance the narrative by syncing their facial expressions with those of Alex. Eventually, Alex (and through her, the player) is faced with a choice: to accept her doomed relationship so she can begin to move on, or to reject her relationship and remain trapped in the past.
+
 # Bee Happy
 By <a href="http://zbarryte.com">Zachary Barryte</a>
 <center>
