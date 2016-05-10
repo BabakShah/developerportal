@@ -53,7 +53,7 @@ entries:
           version: all
           print: true
 
-    - title: Platforms
+    - title: SDKs
       audience: developer, designer
       platform: all
       product: all
@@ -103,6 +103,38 @@ entries:
 
         - title: Windows (C++, C#)
           url: /v3/windows/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+    - title: Cloud APIs
+      audience: developer, designer
+      platform: all
+      product: all
+      version: all
+      print: true
+
+      items:
+        - title: Overview
+          url: /apioverview/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Emotion as a Service
+          url: /eaasapi/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: MR Access
+          url: /dataapi/
           audience: developer, designer
           platform: all
           product: all
