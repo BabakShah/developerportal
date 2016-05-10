@@ -146,6 +146,11 @@ platforms:
         size: 19.1 MB
 
 affdexme:
+  - name: OSX
+    img: /images/download/mac_app_store.png
+    style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
+    package: https://itunes.apple.com/us/app/id1096858360
+
   - name: iOS
     img: /images/download/app_store.png
     style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
