@@ -88,7 +88,7 @@ platforms:
     - status: stable
       architecture: x86_64
       version: "3.0.2"
-      url: http://affdex-sdk-dist.s3.amazonaws.com/osx/affdex-sdk_OSX_3_0_2_220.zip
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/osx/affdex-sdk_OSX_3_0_2_220.zip
       size: 26.4 MB
 
 
