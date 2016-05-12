@@ -1,7 +1,6 @@
 ---
 title: What's new in this release
 permalink: /whats_new/
-redirect_from: "/windows/"
 tags: [sdk]
 audience: writer, designer
 keywords:
@@ -10,7 +9,13 @@ summary:
 metadata: false
 ---
 
-### What's new in the Affdex SDK version 3.0.1
+This page contains the release notes for the different versions of the Affdex SDK(s).
+
+### Affdex SDK version 3.0.2
+* OSX SDK
+  - Performance optimizations, [SDK-521](https://affectiva.atlassian.net/browse/SDK-521) - remove dispatch_async() overhead from callback functions.
+
+### Affdex SDK version 3.0.1
 * New platforms [OS X](/osx) and [Linux](/linux).
 * Android
   - Switch the SDK packaging to the new android standard packaging (aar).
@@ -19,7 +24,7 @@ metadata: false
   - Fix bug [SDK-38](https://affectiva.atlassian.net/browse/SDK-38) - iOS device Framework contains i386 and x86_64 architectures.
   - Fix bug [SDK-404](https://affectiva.atlassian.net/browse/SDK-404) - didStopDetectingFace: can pass nil for the face parameter.
 
-### What's new in the Affdex SDK version 3.0
+### Affdex SDK version 3.0
 
 * New API to allow tracking of multiple faces simultaneously.
 * Added a Face to Emoji mapper to allow the developer to map facial expressions of emotion to [13 emojis](/metrics#emoji-expressions) different emojis
@@ -50,7 +55,7 @@ metadata: false
 
 ***
 
-### What's new in the Affdex SDK version 2.0
+### Affdex SDK version 2.0
 
 * Dramatically improved accuracy with new expression models trained over a broader set of facial images.
 
