@@ -1,9 +1,28 @@
+<script>
+    /**
+     * Function that tracks a click on an outbound link in Analytics.
+     * This function takes a valid URL string as an argument, and uses that URL string
+     * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+     * using 'navigator.sendBeacon' in browser that support it.
+     */
+var trackOutboundLink = function(url, platform, version, architecture) {
+    ga('send', 'event', 'outbound', 'click', platform+' '+version+' '+architecture, {
+       'transport': 'beacon',
+       'hitCallback': function(){document.location = url;}
+       });
+}
+</script>
+
+
 <style>
 #cell
 {
     vertical-align: middle;
 }
 </style>
+
+
+
 
 <table class="table table-bordered">
   <tr style="background-color:#c0c0c0;">
@@ -14,17 +33,22 @@
     </td>
     <td class="text-center">
       <div>
-        <strong>Architecture</strong>
+        <strong>CPU Architecture</strong>
        </div>
     </td>
     <td class="text-center">
       <div>
-        <strong>Version</strong>
+        <strong>Current Version</strong>
        </div>
     </td>
     <td class="text-center">
       <div>
         <strong>Size</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>&nbsp;</strong>
        </div>
     </td>
   </tr>
@@ -43,13 +67,24 @@
             {{ build.architecture }}
           </td>
           <td id="cell" class="text-center">
-            {% unless build.url contains '://' %}
-              {% assign build.url = build.url | prepend: site.url %}
-            {% endunless %}
-            <a href="{{ build.url }}" target="_blank">{{ build.version }}</a>
+            {{ build.version }}
           </td>
           <td id="cell" class="text-center">
             {{ build.size }}
+          </td>
+          <td id="cell" class="text-center">
+            {% if build.package %}
+            {% unless build.package contains '://' %}
+              {% assign build.package = build.package | prepend: site.url %}
+            {% endunless %}
+            <a href="{{ build.package }}" target="_blank" onclick="trackOutboundLink('{{ build.package }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Download</a>
+            {% endif %}
+            {% if build.install %}
+            {% unless build.install contains '://' %}
+              {% assign build.install = build.install | prepend: site.url %}
+            {% endunless %}
+            <a href="{{ build.install }}" target="_blank" onclick="trackOutboundLink('{{ build.install }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Install</a>
+            {% endif %}
           </td>
         </tr>
       {% endfor %}
