@@ -8,6 +8,60 @@ This API provides access to study-level data in the Affdex Market Research syste
 
 This document is an add-on to the Cloud API Overview and assumes that the reader has read that document.
 
+## The User Service
+
+This service provides information about Affdex MR user accounts.
+
+### Locating the User Service
+
+Clients should use the user service only via a URL provided by the index service.
+
+In the JSON-formatted index, the user service URL will be the value associated with the key "user".
+
+### Locating a User
+
+Before using a user object, a client must locate the URL of that user.  We use the username (which is typically an email address) as a key to a user, so that is passed to the user service as a URL parameter.
+
+To locate a user, make a GET request to the user service root URL, with one parameter named "username".  For example:
+
+```http
+GET UserServiceURL?username=john.doe@affdex.com HTTP/1.1
+Accept: application/json
+```
+
+The user's name must be specified exactly, partial matches don't work.
+
+The response will be an array of objects, each describing one user.  The response will contain only those users that match the name parameter and share a partner with the client.
+
+```json
+[
+  {
+    "username":"john.doe@affdex.com",
+    "firstname":"John",
+    "lastname":"Doe",
+    "self":"UserURL"
+    ...
+  }
+]
+```
+
+The UserURL can be used to retrieve that user's data.  For example:
+
+```http
+GET UserURL HTTP/1.1
+Accept: application/json
+```
+
+```json
+{
+  "username":"john.doe@affdex.com",
+  "firstname":"John",
+  "lastname":"Doe",
+  "self":"UserURL"
+  ...
+}
+```
+
 ## The Project Service
 
 The project service provides access to project-level data.
@@ -345,6 +399,10 @@ The partner that will own this project.  Use the partner's "prefix" field to ide
 <code>duration</code>
 
 This is an optional field.  If provided, the project will be provisioned with one media item with the provided duration.  If not provided, no media will be provisioned.
+
+<code>creator</code>
+
+This is an optional field, it must be a URL provided by the user service.  If provided, it will set the project's creator to the user whose URL was provided.  If not, the project's creator will be the user whose credentials were used to make the request.
 
 ## Creating Media Files
 
