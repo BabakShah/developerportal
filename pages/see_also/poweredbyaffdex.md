@@ -100,4 +100,3 @@ By [Wild Blue Technology](http://wildbluetech.com)
 <img src="{{ "/images/poweredbyaffdex/doors.jpg" | prepend: site.baseurl }}" title="Doors" style="height: 100%; width: 100%">
 </center>
 Doors is a demo with the intent of showing game developers how a player’s emotions could change a game accordingly, making the game more immersive. By using a webcam and Affectiva’s SDK, the demo allows players to open doors based strictly on their emotions. The implication is made that it is possible for a player to go even further, manipulating major aspects of the game using emotional input.
-
