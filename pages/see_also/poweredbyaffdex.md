@@ -50,6 +50,32 @@ Video deposition platform MediaRebel, offers facial expression and emotion analy
 
 MediaRebel’s automatization processes from upload to invitation from any device(s) allows for true collaboration and time savings to proven, unbiased and unfiltered emotional insight powered by Affectiva. No software is required to purchase or install and video content is shared privately through the MediaRebel Cloud.  
 
+Get it on [Steam](http://store.steampowered.com/app/342260/)!  
+
+
+## ZUT  
+By Shady Elyaski  
+
+<center>
+<img src="{{ "/images/poweredbyaffdex/zut.jpeg" | prepend: site.baseurl }}" title="ZUT" style="">
+
+</center>
+
+Zut is a social network that allows you to share selfies with feeling to your friends. Feelings are bound to the location where you snapped your Zut. You can check the feelings of nearby people, see how friends are feeling and keep up with the geo-flow.  
+
+Get it on [iTunes](https://itunes.apple.com/us/app/zut/id882983119?mt=8) !  
+
+## Smilophone  
+By agbooth.com  
+
+<center>
+<img src="{{ "/images/poweredbyaffdex/smilophone.png" | prepend: site.baseurl }}" title="Smilophone" style="">
+</center>
+
+Smilophone converts your expressions into music. Hold your iPhone or iPad up so it can see your face, and the music will play. Happy faces make happy sounds, sad faces make sad sounds. Raise or lower your eyebrows to raise or lower the tone. Have fun and make music as beautiful as you are!  
+
+Get it on [iTunes](https://itunes.apple.com/us/app/smilophone/id881184725?mt=8) !  
+
 
 ## SYNC
 By Will Pheloung, Eric Walsh, Yihao Zhu, Luc Wong, Rob Bishop
@@ -75,4 +101,3 @@ By [Wild Blue Technology](http://wildbluetech.com)
 <img src="{{ "/images/poweredbyaffdex/doors.jpg" | prepend: site.baseurl }}" title="Doors" style="height: 100%; width: 100%">
 </center>
 Doors is a demo with the intent of showing game developers how a player’s emotions could change a game accordingly, making the game more immersive. By using a webcam and Affectiva’s SDK, the demo allows players to open doors based strictly on their emotions. The implication is made that it is possible for a player to go even further, manipulating major aspects of the game using emotional input.
-
