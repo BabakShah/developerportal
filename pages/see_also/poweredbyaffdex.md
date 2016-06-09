@@ -50,7 +50,6 @@ Video deposition platform MediaRebel, offers facial expression and emotion analy
 
 MediaRebel’s automatization processes from upload to invitation from any device(s) allows for true collaboration and time savings to proven, unbiased and unfiltered emotional insight powered by Affectiva. No software is required to purchase or install and video content is shared privately through the MediaRebel Cloud.  
 
-<<<<<<< HEAD
 Get it on [Steam](http://store.steampowered.com/app/342260/)!  
 
 
@@ -76,8 +75,7 @@ By agbooth.com
 Smilophone converts your expressions into music. Hold your iPhone or iPad up so it can see your face, and the music will play. Happy faces make happy sounds, sad faces make sad sounds. Raise or lower your eyebrows to raise or lower the tone. Have fun and make music as beautiful as you are!  
 
 Get it on [iTunes](https://itunes.apple.com/us/app/smilophone/id881184725?mt=8) !  
-=======
->>>>>>> gh-pages
+
 
 ## SYNC
 By Will Pheloung, Eric Walsh, Yihao Zhu, Luc Wong, Rob Bishop
