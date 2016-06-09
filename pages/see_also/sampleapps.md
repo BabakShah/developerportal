@@ -30,3 +30,4 @@ EmoSurvival is an emotion-enabled version of the "Nightmares" game from Unity's 
 </center>
 
 Unity-Chan is a character that Unity freely licenses to people.  Unity-Chan Emotion Mimicry has the character mimic the expressions of the user.  When the camera cannot detect any faces Unity-Chan is surrounded by fog.  The fog clears when a face is found.
+
