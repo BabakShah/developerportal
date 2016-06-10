@@ -59,12 +59,27 @@ Our SDKs also provide the following metrics about the physical appearance:
 
 **Gender**
 
-The gender classifier attempts to identify the human perception of gender expression. In the case of video or live feeds, it tracks a face over a window of time to build confidence in its decision. If the classifier is unable to reach a decision, the gender is reported as "Unknown".
+The gender classifier attempts to identify the human perception of gender expression.
 
+**Age**
+
+The age classifier attempts to estimate the age range.
+Supported ranges: Under 18, from 18 to 24, 25 to 34, 35 to 44, 45 to 54, 55 to 64, and 65 Plus.
+
+
+**Ethnicity**
+
+The ethnicity classifier attempts to identify the person's ethnicity.
+Supported classes: Caucasian, Black African, South Asian, East Asian and Hispanic.
+
+
+In the case of video or live feeds, the Gender, Age and Ethnicity classifiers track a face for a window of time to build confidence in their decision. If the classifier is unable to reach a decision, the classifier value is reported as "Unknown".
 
 **Glasses**  
 
 A confidence level of whether the subject in the image is wearing eyeglasses or sunglasses.  
+
+
 
 <br />
 <br />

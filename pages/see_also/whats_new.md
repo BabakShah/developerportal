@@ -11,9 +11,19 @@ metadata: false
 
 This page contains the release notes for the different versions of the Affdex SDK(s).
 
+
+### Affdex SDK version 3.1
+* Win SDK
+  - Improved emotion metrics. The valence includes new expressions in its calculation.
+  - Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
+
+***
+
 ### Affdex SDK version 3.0.2
 * OSX SDK
   - Performance optimizations, [SDK-521](https://affectiva.atlassian.net/browse/SDK-521) - remove dispatch_async() overhead from callback functions.
+
+***
 
 ### Affdex SDK version 3.0.1
 * New platforms [OS X](/osx) and [Linux](/linux).
@@ -23,6 +33,8 @@ This page contains the release notes for the different versions of the Affdex SD
   - Fix bug [SDK-1](https://affectiva.atlassian.net/browse/SDK-1) - iOS Framework builds v3.0 are much bigger in size than v2.0.
   - Fix bug [SDK-38](https://affectiva.atlassian.net/browse/SDK-38) - iOS device Framework contains i386 and x86_64 architectures.
   - Fix bug [SDK-404](https://affectiva.atlassian.net/browse/SDK-404) - didStopDetectingFace: can pass nil for the face parameter.
+
+***
 
 ### Affdex SDK version 3.0
 
@@ -52,7 +64,6 @@ This page contains the release notes for the different versions of the Affdex SD
 * Android SDK
   - Fixed bug: the license token validation fails due to zero padding
 
-
 ***
 
 ### Affdex SDK version 2.0
@@ -71,5 +82,4 @@ nuanced expressions that are difficult even for the human eye to detect:
     Left/Right, Up/Down, Roll
 
 * Supports the development of 64-bit applications for Windows.
-* New Developer Portal with documentation and source code for sample
-apps, including the flagship AffdexMe demo app.
+* New Developer Portal with documentation and source code for sample apps, including the flagship AffdexMe demo app.
