@@ -102,7 +102,7 @@ entries:
           print: true
 
         - title: Windows (C++, C#)
-          url: /v3/windows/
+          url: /v3_1/windows/
           audience: developer, designer
           platform: all
           product: all
