@@ -13,7 +13,7 @@ metadata: false
 Using a webcam is a common way to obtain video for facial expression detection. The ```CameraDetector``` can access a webcam connected to the device to capture frames and feed them directly to the facial expression engine.
 
 ### Creating the detector
-The ```CameraDetector``` constructor expects five parameters { `context`, `cameraType`, `cameraPreviewView`, `maxNumFaces` and `faceDetectorMode` }
+The ```CameraDetector``` constructor must be called from the app's main thread (i.e., from within the main activity's `onCreate()` method).  There are two signatures - one that needs three parameters { `context`, `cameraType`, and `cameraPreviewView` } and a more complex one that needs five parameters { `context`, `cameraType`, `cameraPreviewView`, `maxNumFaces` and `faceDetectorMode` }.  The 3-argument constructor implements single-face detection and large face mode.
 
 ```java
 public CameraDetector(
@@ -48,6 +48,10 @@ public CameraDetector(
 ```
 
 Example,
+
+```java
+CameraDetector detector = new CameraDetector(this, CameraType.CAMERA_FRONT);
+```
 
 ```java
 CameraDetector detector = new CameraDetector(this, CameraType.CAMERA_FRONT,

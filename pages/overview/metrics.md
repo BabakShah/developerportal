@@ -22,6 +22,10 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 
 <strong>Valence</strong>: A measure of the positive or negative nature of the recorded person's experience. The range of values is from -100 to 100.
 
+#### How do we map facial expressions to emotions?
+
+The Emotion predictors use the observed facial expressions as input to calculate the likelihood of an emotion. [See more information](/emotion_mapping/)
+
 ***
 
 ## Facial Expressions
@@ -41,7 +45,7 @@ Emotion, Expression and Emoji metrics scores indicate when users show a specific
 
 In addition, we also expose a composite emotional metric called _valence_ which gives feedback on the overall experience. Valence values from 0 to 100 indicate a neutral to positive experience, while values from -100 to 0 indicate a negative to neutral experience.
 
-<img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}" />
+<img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%"/>
 
 <br />
 
@@ -55,12 +59,27 @@ Our SDKs also provide the following metrics about the physical appearance:
 
 **Gender**
 
-The gender classifier attempts to identify the human perception of gender expression. In the case of video or live feeds, it tracks a face over a window of time to build confidence in its decision. If the classifier is unable to reach a decision, the gender is reported as "Unknown".
+The gender classifier attempts to identify the human perception of gender expression.
 
+**Age**
+
+The age classifier attempts to estimate the age range.
+Supported ranges: Under 18, from 18 to 24, 25 to 34, 35 to 44, 45 to 54, 55 to 64, and 65 Plus.
+
+
+**Ethnicity**
+
+The ethnicity classifier attempts to identify the person's ethnicity.
+Supported classes: Caucasian, Black African, South Asian, East Asian and Hispanic.
+
+
+In the case of video or live feeds, the Gender, Age and Ethnicity classifiers track a face for a window of time to build confidence in their decision. If the classifier is unable to reach a decision, the classifier value is reported as "Unknown".
 
 **Glasses**  
 
 A confidence level of whether the subject in the image is wearing eyeglasses or sunglasses.  
+
+
 
 <br />
 <br />

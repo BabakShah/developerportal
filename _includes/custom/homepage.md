@@ -1,6 +1,6 @@
 ## Introducing the Affdex SDK
 
-![]({{ "/images/banner.png" | prepend: site.baseurl }})
+<img src="{{ "/images/banner.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%"/>
 
 We are surrounded by highly-connected smart devices, interactive digital experiences and artificial intelligence. Yet, technology is not able to sense, analyze and adapt to human emotions. At Affectiva, we have made it our mission to bring emotional intelligence to the digital world. To make this mission a reality, we have created the Affdex SDK so that others can bring emotion sensing and analytics to their own offerings, be it digital experiences, apps, games, devices, or other technologies.
 
@@ -17,9 +17,14 @@ Using our SDK, developers can now enrich digital experiences and apps by detecti
 
 All processing is done on device—no videos or images are sent to our cloud.  
 
-The SDK is available for [Android]({{ site.baseurl }}/android), [iOS]({{ site.baseurl }}/ios) and [Windows]({{ site.baseurl }}/windows) platforms.
+The Affdex SDK is available for the following platforms:
+{%include overview/platforms.html %}
 
 {% include overview/get_started.md %}
+
+## Try out AffdexMe
+
+AffdexMe is an <a href="https://github.com/Affectiva?utf8=%E2%9C%93&query=affdexme"> open source application</a> that demonstrates the use of the Affdex SDK. It uses the camera connected to your device to view, process and analyze live video of your face. Start the app and you will see your own face on the screen, and metrics describing your facial expression of emotion. Download it from [here]({{ site.baseurl }}/affdexme)
 
 ## About Affectiva’s Affdex Technology
 

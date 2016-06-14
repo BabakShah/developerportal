@@ -53,7 +53,7 @@ entries:
           version: all
           print: true
 
-    - title: Platforms
+    - title: SDKs
       audience: developer, designer
       platform: all
       product: all
@@ -77,6 +77,14 @@ entries:
           version: all
           print: true
 
+        - title: Linux (C++)
+          url: /v3/linux/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
         - title: OS X (Objective-C)
           url: /v3/osx/
           audience: developer, designer
@@ -84,7 +92,7 @@ entries:
           product: all
           version: all
           print: true
-          
+
         - title: Unity
           url: /v2/unity/
           audience: developer, designer
@@ -94,7 +102,39 @@ entries:
           print: true
 
         - title: Windows (C++, C#)
-          url: /v3/windows/
+          url: /v3_1/windows/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+    - title: Cloud APIs
+      audience: developer, designer
+      platform: all
+      product: all
+      version: all
+      print: true
+
+      items:
+        - title: Overview
+          url: /apioverview/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Emotion as a Service
+          url: /eaasapi/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: MR Access
+          url: /dataapi/
           audience: developer, designer
           platform: all
           product: all
@@ -120,6 +160,14 @@ entries:
         - title: Sample Apps
           url: /sampleapps/
           audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Powered by Affdex
+          url: /poweredbyaffdex/
+          audience: all
           platform: all
           product: all
           version: all

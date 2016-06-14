@@ -10,7 +10,7 @@ summary:
 ---
 {% include linkrefs.html %}
 
-<img src="{{ "/images/unity.png" | prepend: site.baseurl }}" align="right">
+<img src="{{ "/images/unity.png" | prepend: site.baseurl }}" align="right" style="max-width: 6em;">
 
 SDK Developer Guide Release 2.0
 
@@ -40,7 +40,7 @@ Downloading the Unity SDK requires sending a manually signed license agreement. 
 *   OS 10.9.5 and above
 
 ## Video Tutorial
-<iframe width="420" height="315" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
 
 ## Class Documentation
 The classes that come with this asset are viewable [here](http://developer.affectiva.com/pages/platforms/v2/unity/AffdexUnityHelp/index.html).  
@@ -56,21 +56,52 @@ For each of the different sources, the underlining emotion recognition engine de
 
 ### Add detector to scene
 First step is to add a detector to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Detector):  
-<img src="{{ "/images/unity/AddComponentDetector.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/unity/AddComponentDetector.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
 You can now set the emotions and expressions you are interested in (the more you select the worse performance will be, so only select the ones you need):  
-<img src="{{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
 ### Add CameraInput to scene
 You can either use Affectiva's CameraInput script or write your own.  To use ours, add a camera input component to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Camera Input):  
-<img src="{{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
 Set the camera rate, camera location, width and height:  
-<img src="{{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
 Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x600, 1024x768, etc).  
 
 To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see Affectiva's <code>CameraInput</code> script in the asset.  
+
+#### Changing the Camera
+If the player has multiple webcams you may want them to have the option of selecting the webcam.  The webcam name can be passed to CameraInput.SelectCamera as the second argument.  You can get a list of connected webcams using the [example code from Unity](http://docs.unity3d.com/ScriptReference/WebCamTexture-devices.html).  Once you have a specific webcam to use you can add code similar to the following to one of your scripts:
+
+```csharp
+using UnityEngine;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour {
+    Transform mainCamera;
+    CameraInput cameraInput;
+    string cameraName;
+    string currentCameraName = "";
+    
+    // Update is called once per frame
+    void Update () {
+    
+        if (currentCameraName != cameraName)
+        {
+            cameraInput.SelectCamera(true,cameraName);
+            currentCameraName = cameraName;
+        }
+    
+    }
+    
+    void Awake () {
+        mainCamera = GameObject.FindGameObjectWithTag ("MainCamera").transform;
+        cameraInput = mainCamera.GetComponent <CameraInput>();
+    }
+}
+```
 
 ### Configuring a Detector
 
@@ -343,9 +374,19 @@ struct FeaturePoint
 See the feature point indices [table]({{ site.baseurl }}/fpi/) for a full list of feature points.
 
 
-## Special Notes on Builds
+## Special Notes
+
+This section outlines issues you may encounter depending on how you use the plugin.
+
+### Builds
 
 <ul>
-  <li>If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.
-  <li>OS X builds only work as universal and x86_64 binaries.
+  <li>If you build for multiple platforms and want to no-op unsupported platforms you can run <code>AffdexUnityUtils.ValidPlatform()</code> to determining if the current platform is valid at run-time.</li>
+  <li>OS X builds only work as universal and x86_64 binaries.</li>
 </ul>
+
+### Apple App Store Submission
+
+The Apple app store has a rigorous set of automated tests it runs on submissions to validate that applications meet their guidelines.  They will specifically expect certain parts of your game to be signed using a certification authority.  All files that need to be signed must be signed using the same signature authority.  This means that you as an individual, or your company, will need a signing certificate for not only your files, but for the files that come from Affectiva.  If the Affectiva files are signed by Affectiva and your other game files are signed by you, your submission will be rejected by the app store.  
+
+The order in which files and bundles are signed is also critical.  You must sign the inner-most files first.  Here is a <a href="http://stackoverflow.com/questions/7697508/how-do-you-codesign-framework-bundles-for-the-mac-app-store/11284404#11284404">Stack Overflow answer</a> that includes a shell script that signs in the proper order.

@@ -10,7 +10,7 @@ Affdex SDKs uses the following open source libraries. Find below the links to th
 * [Dagger](http://square.github.io/dagger/#license)
 * [javax.inject](http://www.apache.org/licenses/LICENSE-2.0.txt)
 
-### Windows
+### Windows & Linux
 
 * [SHA-256 implementation](http://www.zedwood.com/article/cpp-sha256-function)
 * [FFmpeg](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)

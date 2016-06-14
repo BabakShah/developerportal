@@ -1,7 +1,6 @@
 ---
 title: Affdex SDK for Windows
 permalink: /v3/windows/
-redirect_from: "/windows/"
 tags: [windows, sdk]
 audience: writer, designer
 keywords:
@@ -33,7 +32,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 &nbsp;&nbsp;&nbsp;&nbsp;The .NET assembly depends on the affdex-native.dll and loads it in runtime.  Windows will search the current directory and directories listed in the PATH environment variable to locate the DLL.
 
-&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, ```opencv_ffmpeg.dll``` is required by VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)] in runtime for the video decoding.
+&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, ```opencv_ffmpeg.dll``` is required by VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)] in runtime for the video decoding.
 
 ##### 3. Capture and analyze faces
 
@@ -44,12 +43,12 @@ Facial images can be captured from different sources. For each of the different 
 * [How to analyze a video frame stream]({{ site.baseurl }}/v3/windows/analyze-frames/)
 * [How to analyze a photo]({{ site.baseurl }}/v3/windows/analyze-photo/)
 
-##### 3. Check out sample applications on GitHub
-Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/win-sdk-samples)
+##### 4. Check out sample applications on GitHub
+Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/cpp-sdk-samples)
 
 ## Class documentation
 * .NET (C#) Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/index.html)]
-* C++ Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/namespaceaffdex.html)]
+* C++ Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3/cpp/classdocs/affdex-native/namespaceaffdex.html)]
 
 ## Requirements & Dependencies
 

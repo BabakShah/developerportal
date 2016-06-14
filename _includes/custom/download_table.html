@@ -1,42 +1,94 @@
-<style>
-#downloadtable container-fluid {
-        width:700px;
+<script>
+    /**
+     * Function that tracks a click on an outbound link in Analytics.
+     * This function takes a valid URL string as an argument, and uses that URL string
+     * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+     * using 'navigator.sendBeacon' in browser that support it.
+     */
+var trackOutboundLink = function(url, platform, version, architecture) {
+    ga('send', 'event', 'outbound', 'click', platform+' '+version+' '+architecture, {
+       'transport': 'beacon',
+       'hitCallback': function(){document.location = url;}
+       });
 }
-#downloadtable .row{
-  border: 1px #ccc solid;
-  margin: 10px;
-  padding: 10px;
+</script>
+
+
+<style>
+#cell
+{
+    vertical-align: middle;
 }
 </style>
-<div id="downloadtable" class="container-fluid">
-  <div class="row" style="background-color:#c0c0c0;">
-    <div class="col-sm-3 text-center">
-      <strong>Platform</strong>
-    </div>
-    <div class="col-sm-3 text-center">
-      <strong>Architecture</strong>
-    </div>
-    <div class="col-sm-3 text-center">
-      <strong>Version</strong>
-    </div>
-    <div class="col-sm-3 text-center">
-      <strong>Size</strong>
-    </div>
-  </div>
-  {% for item in site.data.downloads %}
-  <div class="row" style="background-color:#F0F0F0;">
-    <div class="col-sm-3 text-center">
-      {{ item.platform }}
-    </div>
-    <div class="col-sm-3 text-center">
-      {{ item.architecture }}
-    </div>
-    <div class="col-sm-3 text-center">
-      <a href="{{ item.url }}" target="_blank">{{ item.version }}</a>
-    </div>
-    <div class="col-sm-3 text-center">
-      {{ item.size }}
-    </div>
-  </div>
-  {% endfor %}
-</div>
+
+
+
+
+<table class="table table-bordered">
+  <tr style="background-color:#c0c0c0;">
+    <td class="text-center">
+      <div>
+        <strong>Platform</strong>
+      </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>CPU Architecture</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Current Version</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Size</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>&nbsp;</strong>
+       </div>
+    </td>
+  </tr>
+    {% for platform in site.data.downloads.platforms %}
+    {% assign versions_array = platform.versions | where: "status", include.build_status %}
+    {% assign versions_array_size = versions_array | size %}
+    {% if versions_array_size > 0 %}
+      <tr>
+        <td id="cell" rowspan="{{ versions_array_size | plus: 1}}" class="text-center">
+          {{ platform.name }}
+        </td>
+      </tr>
+      {% for build in versions_array  %}
+        <tr>
+          <td id="cell" class="text-center">
+            {{ build.architecture }}
+          </td>
+          <td id="cell" class="text-center">
+            {{ build.version }}
+          </td>
+          <td id="cell" class="text-center">
+            {{ build.size }}
+          </td>
+          <td id="cell" class="text-center">
+            {% if build.package %}
+            {% unless build.package contains '://' %}
+              {% assign build.package = build.package | prepend: site.url %}
+            {% endunless %}
+            <a href="{{ build.package }}" target="_blank" onclick="trackOutboundLink('{{ build.package }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Download</a>
+            {% endif %}
+            {% if build.install %}
+            {% unless build.install contains '://' %}
+              {% assign build.install = build.install | prepend: site.url %}
+            {% endunless %}
+            <a href="{{ build.install }}" target="_blank" onclick="trackOutboundLink('{{ build.install }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Install</a>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </tr>
+</table>

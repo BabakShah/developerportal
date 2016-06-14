@@ -1,29 +1,195 @@
 ################################
 ########Current Versions########
 ################################
-- platform: Android
-  architecture: "ARM7"
-  version: "SDK 3.0.1"
-  url: http://maven.affectiva.com/com/affectiva/android/affdexsdk/3.0.1/affdexsdk-3.0.1.aar
-  size: 6.5 MB
+aliases:
+  download_url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com
 
-- platform: iOS
-  architecture: "Universal"
-  version: "SDK 3.0"
-  url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/ios/affdex-sdk_iOS_3_1_320.zip
-  size: 107.2 MB
+statuses:
+  - stable
+  - beta
+  - legacy
 
-- platform: Windows
-  architecture: x86
-  version: "SDK 3.0"
-  url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.0-961-win32.exe
-  size: 19.1 MB
+platforms:
+  - name: Android
+    logo: /images/android.png
+    versions:
+      - status: stable
+        architecture: "ARM7"
+        version: "3.0.1"
+        install: /android/
+        size: 6.5 MB
+      - status: legacy
+        architecture: "ARM7"
+        version: "3.0"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/android/affdex_sdk-3.0.0-161-android.zip
+        size: 7.5 MB
+      - status: legacy
+        architecture: "ARM7"
+        version: "2.0.1"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/android/affdex-sdk_v2.01-20-android.zip
+        size: 7.5 MB
+      - status: legacy
+        architecture: "ARM7"
+        version: "2.0"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/android/affdex-sdk_v2.0-87-android.zip
+        size: 7.5 MB
+      - status: legacy
+        architecture: "ARM7"
+        version: "1.2"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/android/affdex-sdk_v1.2-android.zip
+        size: 7.5 MB
+      - status: legacy
+        architecture: "ARM7"
+        version: "1.1"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/android/affdex-sdk_v1.1-android.zip
+        size: 7.5 MB
 
-- platform: Windows
-  architecture: x64
-  version: "SDK 3.0"
-  url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.0-275-win64.exe
-  size: 30.4 MB
+  - name: iOS
+    logo: /images/ios.png
+    versions:
+    - status: stable
+      architecture: "ARM64/ARM7"
+      version: "3.0.1"
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/ios/affdex-sdk_iOS_3_0_1_374.zip
+      size: 100.2 MB
+    - status: legacy
+      architecture: "ARM64/ARM7"
+      version: "3.0"
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/ios/affdex-sdk_iOS_3_1_320.zip
+      size: 107.2 MB
+    - status: legacy
+      architecture: "ARM64/ARM7"
+      version: "2.0"
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/ios/affdex-sdk_iOS_2_0.tar.gz
+      size: 35 MB
+    - status: legacy
+      architecture: "ARM64/ARM7"
+      version: "1.0.1"
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/ios/affdex-sdk_1.0.1-ios.zip
+      size: 51.3 MB
+
+  - name: Linux
+    logo: /images/linux.png
+    versions:
+    - status: beta
+      architecture: x86_64
+      version: "3.1"
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/linux/affdex-cpp-sdk-3.1-313-linux-64bit.tar.gz
+      size: 22.8 MB
+    - status: stable
+      architecture: x86_64
+      version: "3.0"
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/linux/affdex-cpp-sdk-3.0-298-linux-64bit.tar.gz
+      size: 22.8 MB
+
+  - name: OS X
+    logo: /images/apple.png
+    versions:
+    - status: legacy
+      architecture: x86_64
+      version: "3.0.1"
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/osx/affdex-sdk_OSX_3_0_1_213.zip
+      size: 26.4 MB
+    - status: stable
+      architecture: x86_64
+      version: "3.0.2"
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/osx/affdex-sdk_OSX_3_0_2_220.zip
+      size: 26.4 MB
+
+
+
+
+  - name: Unity
+    logo: /images/unity.png
+#    versions:
+#    - status: beta
+#      architecture: OSX x86_64
+#      version: "1.0"
+#      package: mailto:gaminginfo@affectiva.com
+#      size: 48 MB
+#    - status: beta
+#      architecture: Windows i386/x86_64
+#      version: "1.0"
+#      package: mailto:gaminginfo@affectiva.com
+#      size: 48 MB
+
+  - name: Windows
+    logo: /images/windows.png
+    versions:
+      - status: stable
+        architecture: i386
+        version: "3.1"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.1-1023-win32.exe
+        size: 19.1 MB
+
+      - status: stable
+        architecture: x86_64
+        version: "3.1"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.1-335-win64.exe
+        size: 30.4 MB
+
+      - status: legacy
+        architecture: i386
+        version: "3.0"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.0-961-win32.exe
+        size: 19.1 MB
+
+      - status: legacy
+        architecture: x86_64
+        version: "3.0"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.0-275-win64.exe
+        size: 30.4 MB
+
+      - status: legacy
+        architecture: i386
+        version: "2.1"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-2.1-build897-win32.exe
+        size: 19.1 MB
+
+      - status: legacy
+        architecture: x86_64
+        version: "2.1"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-2.1-build232-win64.exe
+        size: 30.4 MB
+
+      - status: legacy
+        architecture: i386
+        version: "2.0"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-2.0-build698-win32.exe
+        size: 19.1 MB
+
+      - status: legacy
+        architecture: x86_64
+        version: "2.0"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-2.0-build38-win64.exe
+        size: 30.4 MB
+
+      - status: legacy
+        architecture: i386
+        version: "1.0"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-build550-win32.exe
+        size: 19.1 MB
+
+affdexme:
+  - name: OSX
+    img: /images/download/mac_app_store.png
+    style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
+    package: https://itunes.apple.com/us/app/id1096858360
+
+  - name: iOS
+    img: /images/download/app_store.png
+    style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
+    package: https://itunes.apple.com/us/app/affdexme/id971529011?mt=8
+
+  - name: Android
+    img: /images/download/play_store.png
+    style: "width: 100%; max-width: 10.4em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
+    package: https://play.google.com/store/apps/details?id=com.affectiva.affdexme&hl=en
+
+  - name: Windows
+    img: /images/download/windows.png
+    style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
+    package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexMe-1023-win32.exe
 ################################
 ################################
 ################################

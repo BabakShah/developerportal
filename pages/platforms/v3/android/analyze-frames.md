@@ -42,6 +42,7 @@ Example,
 ```java
 FrameDetector detector = new FrameDetector(this);
 ```
+
 {% include android/v3/detector/configure.md %}
 
 {% include android/v3/detector/set-interface-classes.md %}
