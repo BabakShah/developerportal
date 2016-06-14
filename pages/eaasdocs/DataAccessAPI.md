@@ -85,6 +85,7 @@ Response:
 "project_code":"acme_anvils",
 "self":"project URL",
 "market":"market URL",
+"media": ProjectMediaRootURL,
 "norm_project_type_dimension": "online",
 "websessions":"websessions URL"
 "jobs":
@@ -155,6 +156,37 @@ The content type for the data quality report is "application/vnd.affectiva.data_
 #### Dashboard
 
 The content type for the dashboard json is "application/vnd.affectiva.dashboard+json".
+
+### Project Media
+
+The project json object will contain a "media" key whose value is the media root URL.  To get a list of the project's media, send a GET request to that URL.
+Example:
+
+```http
+GET ProjectMediaRootURL HTTP/1.1
+Accept: application/json
+```
+
+Response:
+
+```json
+[
+    {
+        "dashboard_label": "Acme Anvils 30s Spot A",
+        "duration": 30.05,
+        "id": "acme_anvils_30s_a.mp4",
+        "position": 0,
+        "self": MediaItemURL
+    },
+    {
+        "dashboard_label": "Acme Anvils 30s Spot B",
+        "duration": 30.05,
+        "id": "acme_anvils_30s_b.mp4",
+        "position": 1,
+        "self": MediaItemURL
+    }
+]
+```
 
 ### Project Operations
 
@@ -316,7 +348,8 @@ This is an optional field.  If provided, the project will be provisioned with on
 
 ## Creating Media Files
 
-Media files are created by sending a POST request to the project media root URL. ( found in the project details JSON in the “media” key ). You can create a media file with a specific duration without uploading a specific file. The body of the POST request should be a JSON object, and the request should include a “Content-Type: application/json” header. The response will be a redirect to the newly-created media file’s URL.
+Media files are created by sending a POST request to the project media root URL (found in the project details JSON in the “media” key). You can create a media file placeholder with a specific duration without uploading any media. The body of the POST request should be a JSON object, and the request should include a “Content-Type: application/json” header. The response will be a redirect to the newly-created media file’s URL.
+
 Example:
 
 ```http
