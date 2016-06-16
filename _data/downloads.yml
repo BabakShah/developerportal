@@ -73,8 +73,8 @@ platforms:
     versions:
     - status: beta
       architecture: x86_64
-      version: "3.1"
-      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/linux/affdex-cpp-sdk-3.1-313-linux-64bit.tar.gz
+      version: "3.1-315"
+      package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/linux/affdex-cpp-sdk-3.1-315-linux-64bit.tar.gz
       size: 22.8 MB
     - status: stable
       architecture: x86_64
