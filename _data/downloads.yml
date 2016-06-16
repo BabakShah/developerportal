@@ -118,14 +118,14 @@ platforms:
     versions:
       - status: stable
         architecture: i386
-        version: "3.1"
-        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.1-1023-win32.exe
+        version: "3.1.1025"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.1-1025-win32.exe
         size: 19.1 MB
 
       - status: stable
         architecture: x86_64
-        version: "3.1"
-        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.1-335-win64.exe
+        version: "3.1.339"
+        package: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/AffdexSDK-3.1-339-win64.exe
         size: 30.4 MB
 
       - status: legacy
