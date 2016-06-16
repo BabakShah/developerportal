@@ -72,6 +72,37 @@ Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x
 
 To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see Affectiva's <code>CameraInput</code> script in the asset.  
 
+#### Changing the Camera
+If the player has multiple webcams you may want them to have the option of selecting the webcam.  The webcam name can be passed to CameraInput.SelectCamera as the second argument.  You can get a list of connected webcams using the [example code from Unity](http://docs.unity3d.com/ScriptReference/WebCamTexture-devices.html).  Once you have a specific webcam to use you can add code similar to the following to one of your scripts:
+
+```csharp
+using UnityEngine;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour {
+    Transform mainCamera;
+    CameraInput cameraInput;
+    string cameraName;
+    string currentCameraName = "";
+    
+    // Update is called once per frame
+    void Update () {
+    
+        if (currentCameraName != cameraName)
+        {
+            cameraInput.SelectCamera(true,cameraName);
+            currentCameraName = cameraName;
+        }
+    
+    }
+    
+    void Awake () {
+        mainCamera = GameObject.FindGameObjectWithTag ("MainCamera").transform;
+        cameraInput = mainCamera.GetComponent <CameraInput>();
+    }
+}
+```
+
 ### Configuring a Detector
 
 The Affdex classifier data files are used in frame analysis processing. These files are supplied as part of the asset. The location of the data files on the physical storage must remain as:  

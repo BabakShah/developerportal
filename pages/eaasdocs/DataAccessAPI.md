@@ -85,6 +85,7 @@ Response:
 "project_code":"acme_anvils",
 "self":"project URL",
 "market":"market URL",
+"media": ProjectMediaRootURL,
 "norm_project_type_dimension": "online",
 "websessions":"websessions URL"
 "jobs":
@@ -155,6 +156,37 @@ The content type for the data quality report is "application/vnd.affectiva.data_
 #### Dashboard
 
 The content type for the dashboard json is "application/vnd.affectiva.dashboard+json".
+
+### Project Media
+
+The project json object will contain a "media" key whose value is the media root URL.  To get a list of the project's media, send a GET request to that URL.
+Example:
+
+```http
+GET ProjectMediaRootURL HTTP/1.1
+Accept: application/json
+```
+
+Response:
+
+```json
+[
+    {
+        "dashboard_label": "Acme Anvils 30s Spot A",
+        "duration": 30.05,
+        "id": "acme_anvils_30s_a.mp4",
+        "position": 0,
+        "self": MediaItemURL
+    },
+    {
+        "dashboard_label": "Acme Anvils 30s Spot B",
+        "duration": 30.05,
+        "id": "acme_anvils_30s_b.mp4",
+        "position": 1,
+        "self": MediaItemURL
+    }
+]
+```
 
 ### Project Operations
 
@@ -287,7 +319,7 @@ Response: (same response as show project)
 ```
 
 Response Codes:
-200 - OK - Project successfully created
+302 - New project URL will be in the location header
 422 - Unprocessable Entity - Error creating project - invalid data
 
 The following JSON object keys are recognized:
@@ -316,21 +348,26 @@ This is an optional field.  If provided, the project will be provisioned with on
 
 ## Creating Media Files
 
-Media files are created by sending a POST request to the project media root URL. ( found in the project details JSON in the “media” key ). The body of the POST request should be a JSON object, and the request should include a “Content-Type: application/json” header. The response will be a redirect to the newly-created media file’s URL.
+Media files are created by sending a POST request to the project media root URL (found in the project details JSON in the “media” key). You can create a media file placeholder with a specific duration without uploading any media. The body of the POST request should be a JSON object, and the request should include a “Content-Type: application/json” header. The response will be a redirect to the newly-created media file’s URL.
+
 Example:
 
 ```http
 POST project media URL HTTP/1.1
 Accept: application/json
 Content-Type: application/json
-{"dashboard_label":"Ad 1 - 30 seconds", "id":"unique_media_string", "duration":30.1}
+{"dashboard_label":"Ad 1 - 30 seconds", "id":"unique_media_string", "duration":30.1, "file": <uploaded file>}
 ```
 
 The following JSON object keys are recognized:
 
 <code>duration</code>
 
-This is a required field. This is the duration in seconds of the ad.
+This is a required field if no file is attached, otherwise it will be automatically calculated from the uploaded file. This is the duration in seconds of the ad.
+
+<code>file</code>
+
+This is the media file that is being tested. The duration of the video will be automatically calculated after upload, and will be reflected in the duration parameter once it has completed.
 
 <code>id</code>
 
