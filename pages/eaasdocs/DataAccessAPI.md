@@ -141,47 +141,47 @@ Response:
 "market":"market URL",
 "media": ProjectMediaRootURL,
 "norm_project_type_dimension": "online",
-"websessions":"websessions URL"
+"websessions":"websessions URL",
 "jobs":
 {
 "job 1 url":
 {
-"self": "job 1 url"
+"self": "job 1 url",
 "status": "open"
 }
 },
-"operations": { project operation metadata }
+"operations": { project operation metadata },
 "data":
 {
 "application/vnd.affectiva.affdex_score+json":
 {
 "content_type":"application/vnd.affectiva.affdex_score+json",
-"self": "affdex score URL"
+"self": "affdex score URL",
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 },
 "application/vnd.affectiva.dashboard+json":
 {
 "content_type":"application/vnd.affectiva.dashboard+json",
-"self": "dashboard JSON URL"
+"self": "dashboard JSON URL",
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 },
 "application/vnd.affectiva.summary_metrics+json":
 {
 "content_type":"application/vnd.affectiva.summary_metrics+json",
-"self": "summary metrics URL"
+"self": "summary metrics URL",
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 },
 "application/vnd.affectiva.data_quality+json":
 {
 "content_type":"application/vnd.affectiva.data_quality+json",
-"self": "data quality report URL"
+"self": "data quality report URL",
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 }
-}
+},
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 }
@@ -248,18 +248,17 @@ The value of the project "operations" key will be an object containing objects. 
 Example:
 
 ```json
-"operations":
 {
-"operation1_name":
-{
-"name": "operation1_name",
-"self": "operation1 initiation URL"
-},
-"operation2_name":
-{
-"name": "operation2_name",
-"self": "operation2 initiation URL"
-}
+   "operations": {
+      "operation1_name": {
+         "name": "operation1_name",
+         "self": "operation1 initiation URL"
+      },
+      "operation2_name": {
+         "name": "operation2_name",
+         "self": "operation2 initiation URL"
+      }
+   }
 }
 ```
 
