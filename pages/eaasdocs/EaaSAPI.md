@@ -48,48 +48,51 @@ In the JSON­formatted index, the Job Service URL will be the value associated w
 
 ### Creating Jobs
 
-A POST to the Job Service URL creates a new job. There is one required parameter and another optional parameter
+A multipart encoded form POST to the Job Service URL creates a new job. There is one required parameter and another optional parameter
 
 | parameter | description | optionality |
 |---|---|---|
 | entry_job[input] | a media file to be processed | required |
 | entry_job[name] | the job name o process the file. Valid names are no-op, pa-pack, ct-pack-linear, ct-pack-hybrid, and current-pack | optional: if no name defined, current-pack is assumed |
 
-The Accept request header should be Accept: application/json. If successful, the response body will contain a representation of the session in json format.  The HTTP Location response header and the JSON self key will contain the newly created session's URL.
+The Accept request header should be Accept: application/json. By default the server will try to guess the media's content type based on its filename.
 
 Example:
 
 ```http
 POST JobServiceURL HTTP/1.1
 Accept: application/json
+```
+
 Response:
-Location: JobURL
+
+The "Location" header will contain the URL of the newly-created job, and a JSON representation of the job will be returned in the body of the response.
+
+```
 { "updated":"2013­06­26T21:28:39Z",
 "published":"2013­06­26T21:28:39Z",
 "self": "Job URL",
 ...
+"status": "queued",
 "input": []
 }
 ```
+
+Using curl, a media file can be uploaded from the command line using:
+
+```shell
+curl ­­form "entry_job[input]=@{media file}" JobServiceURL
+```
+
+### Job Status
+
+Each job object has a "status" key.  When the job is created its status is "queued" then it changes to "working" when the job is picked up by a worker process.  When the job finishes the status will be either "done" or "error".
 
 ### Retrieving Jobs
 
 A GET to a job's URL (i.e., the URL returned in the Location header when the job was created) will return input and result entries of the job, including an array of entries’ representations, each of which includes a link to that representation’s media.
 
 The "Accept" request header should be Accept: application/json.
-
-### Creating Jobs (i.e., Uploading Media)
-
-POST a multipart encoded form to the job's url. The media parameter name is "entry_job[input]". By default the server will try to guess the media's content type based on its filename.
-
-There is one optional parameter:
-entry_job[name] - the job name to process the file.  Valid names are current-pack, no-op, pa-pack, ct-pack-linear, and ct-pack-hybrid.
-
-For example, using curl, a media file can be uploaded from the command line using:
-
-```shell
-curl ­­form "entry_job[input]=@{media file}" JobsURL
-```
 
 ### Retrieving Results from Jobs
 
@@ -98,13 +101,20 @@ Each media entry (inputs and results) in the output of the Job’s content list 
 Example CSV-encoded result representation data:
 
 ```json
-{
-  "content_type": "application/csv",
-  "media": "media URL",
-  "media_filename": "1f351848-c142-4c95-985c-184524b03e7e_poses.mp4-metrics.csv",
-  "self": "entry URL",
-  "updated": "2014-09-09T13:16:32Z"
-}
+"representations": [
+    {
+        "content_type": "application/vnd.affectiva.metrics.v0+json",
+        "file_name": "face-video.mp4-metrics.json",
+        "media": "URL to download this representation's media",
+        "self": "URL of this representation"
+    },
+    {
+        "content_type": "application/csv",
+        "file_name": "face-video.mp4-metrics.csv",
+        "media": "URL to download this representation's media",
+        "self": "URL of this representation"
+    }
+]
 ```
 
 ### Media Content Types
@@ -113,3 +123,90 @@ Each result entry is a container for one item of media, which contains one or mo
 
 <strong>application/vnd.affectiva.metrics.v0+json</strong> ­ metrics computed for a job in JSON
 <strong>application/csv</strong> - metrics computed for a job in CSV
+
+### Media Annotations
+
+Annotations are key-value pairs that are attached to media entries.  Within an entry object, the "annotation" key's value will be a URL that returns that entry's annotations.  For example:
+
+```http
+GET EntryURL HTTP/1.1
+Accept: application/json
+```
+
+Response:
+
+```json
+{
+    "annotations": "EntryAnnotationURL",
+    "author": "author@affdex.com",
+    "source": "Affectiva/Documentation",
+    "media_seconds": 29.0,
+    "published": "2016-06-28T11:50:48-04:00",
+    "representations": [
+        ...
+    ],
+    "self": "EntryURL",
+    "updated": "2016-06-28T11:50:48-04:00"
+}
+```
+
+A GET to the EntryAnnotationURL returns the annotations:
+
+```http
+GET EntryAnnotationURL HTTP/1.1
+Accept: application/json
+```
+
+Response:
+
+```json
+[
+    {
+        "author": "author@affdex.com",
+        "source": "Affectiva/Documentation",
+        "entry": "EntryURL",
+        "key": "foo",
+        "self": "Annotation1URL",
+        "value": "bar"
+    },
+    {
+        "author": "other@affdex.com",
+        "source": "Affectiva/Documentation",
+        "entry": "EntryURL",
+        "key": "key2",
+        "self": "Annotation2URL",
+        "value": "value2"
+    }
+]
+```
+
+A POST to the EntryAnnotationURL creates a new annotation.  Two parameters are required: annotation[key] and annotation[value]. The maximum length of each key and each value is 255 characters.
+
+A third parameter is optional: annotation[source].  The source parameter is stored with the annotation and can be used to track the source of the annotation.  By convention, the source value should start with the API client's company name, so annotations created by Affectiva code will start with "Affectiva".
+
+```http
+POST EntryAnnotationURL HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "annotation": {
+        "source": "Affectiva/Documentation",
+        "key": "foo2",
+        "value": "bar2"
+    }
+}
+```
+
+Response:
+
+```json
+{
+    "author": "author@affdex.com",
+    "source": "Affectiva/Documentation",
+    "entry": "EntryURL",
+    "key": "foo2",
+    "self": "AnnotationURL",
+    "value": "bar2"
+}
+```
