@@ -1,57 +1,72 @@
-- name: Joy
-  positive_expression:
-    - name: Smile
-  negative_expression:
-    - name: Brow raise
-    - name: Brow furrow
-- name: Anger
-  positive_expression:
-    - name: Brow furrow
-    - name: Chin raise
-    - name: Lip press
-    - name: Mouth open
-    - name: Lip suck
-  negative_expression:
-    - name: Brow raise
-    - name: Inner brow raise
-    - name: Nose wrinkle
-    - name: Smile
-- name: Disgust
-  positive_expression:
-    - name: Nose wrinkle
-    - name: Upper lip raise
-  negative_expression:
-    - name: Lip suck
-- name: Surprise
-  positive_expression:
-    - name: Inner brow raise
-    - name: Brow raise
-    - name: Mouth open
-  negative_expression:
-    - name: Brow furrow
-- name: Fear
-  positive_expression:
-    - name: Inner brow raise
-    - name: Brow raise
-    - name: Brow furrow
-    - name: Mouth open
-  negative_expression:
-    - name: Lip corner depressor
-    - name: Smile
-- name: Sadness
-  positive_expression:
-    - name: Inner brow raise
-    - name: Brow furrow
-    - name: Lip corner depressor
-  negative_expression:
-    - name: Brow raise
-    - name: Mouth open
-    - name: Lip suck
-    - name: Lip press
-    - name: Smile
-- name: Contempt
-  positive_expression:
-    - name: Brow furrow
-    - name: Smirk
-  negative_expression:
-    - name: Smile
+emotions:
+  - name: Joy
+    positive_expression:
+      - name: Smile
+    negative_expression:
+      - name: Brow raise
+      - name: Brow furrow
+  - name: Anger
+    positive_expression:
+      - name: Brow furrow
+      - name: Chin raise
+      - name: Lip press
+      - name: Mouth open
+      - name: Lip suck
+    negative_expression:
+      - name: Brow raise
+      - name: Inner brow raise
+      - name: Nose wrinkle
+      - name: Smile
+  - name: Disgust
+    positive_expression:
+      - name: Nose wrinkle
+      - name: Upper lip raise
+    negative_expression:
+      - name: Lip suck
+  - name: Surprise
+    positive_expression:
+      - name: Inner brow raise
+      - name: Brow raise
+      - name: Mouth open
+    negative_expression:
+      - name: Brow furrow
+  - name: Fear
+    positive_expression:
+      - name: Inner brow raise
+      - name: Brow raise
+      - name: Brow furrow
+      - name: Mouth open
+    negative_expression:
+      - name: Lip corner depressor
+      - name: Smile
+  - name: Sadness
+    positive_expression:
+      - name: Inner brow raise
+      - name: Brow furrow
+      - name: Lip corner depressor
+    negative_expression:
+      - name: Brow raise
+      - name: Mouth open
+      - name: Lip suck
+      - name: Lip press
+      - name: Smile
+  - name: Contempt
+    positive_expression:
+      - name: Brow furrow
+      - name: Smirk
+    negative_expression:
+      - name: Smile
+complex:
+  - name: Valence
+    positive_expression:
+      - name: Smile
+      - name: Cheek raise
+    negative_expression:
+      - name: Inner brow raise
+      - name: Brow furrow
+      - name: Nose wrinkle
+      - name: Upper lip raise
+      - name: Lip corner depressor
+      - name: Chin raise
+      - name: Lip press
+      - name: Lip suck

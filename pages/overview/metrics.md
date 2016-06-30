@@ -16,13 +16,14 @@ The face provides a rich canvas of emotion. Humans are innately programmed to ex
 
 {%include overview/emotions_table.html %}
 
-Furthermore, the SDK allows for measuring valence and engagement, as alternative metrics for measuring the emotional experience.
+Furthermore, the SDK allows for measuring valence and expressiveness, as alternative metrics for measuring the emotional experience.
 
-<strong>Engagement</strong>: A measure of facial muscle activation that illustrates the subject’s expressivness. The range of values is from 0 to 100.
+<strong>Engagement</strong>: A measure of facial muscle activation that illustrates the subject’s expressiveness. The range of values is from 0 to 100.
 
 <strong>Valence</strong>: A measure of the positive or negative nature of the recorded person's experience. The range of values is from -100 to 100.
 
-#### How do we map facial expressions to emotions?
+
+#### How do we map facial expressions to emotions, engagement and valence?
 
 The Emotion predictors use the observed facial expressions as input to calculate the likelihood of an emotion. [See more information](/emotion_mapping/)
 

@@ -8,21 +8,21 @@
   <tr>
     <td class="text-center">
       <div>
-        <strong>Emotion</strong>
+        <strong></strong>
       </div>
     </td>
     <td class="text-center">
       <div>
-        <strong>Increase Likelihood</strong>
+        <strong>Increase Positive Likelihood</strong>
        </div>
     </td>
     <td class="text-center">
       <div>
-        <strong>Decrease Likelihood</strong>
+        <strong>Increase Negative Likelihood</strong>
        </div>
     </td>
   </tr>
-  {% for emotion in site.data.emotion_expression_mapping.emotions %}
+  {% for emotion in site.data.emotion_expression_mapping.complex %}
   <tr>
     <td id="emotion_id" class="text-center">
       {{ emotion.name }}
