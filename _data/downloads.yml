@@ -14,31 +14,37 @@ platforms:
     logo: /images/android.png
     versions:
       - status: stable
+        release_notes: affdex-sdk-version-301
         architecture: "ARM7"
         version: "3.0.1"
         install: /android/
         size: 6.5 MB
       - status: legacy
+        release_notes: affdex-sdk-version-30
         architecture: "ARM7"
         version: "3.0"
         package: https://download.affectiva.com/android/affdex_sdk-3.0.0-161-android.zip
         size: 7.5 MB
       - status: legacy
+        release_notes:
         architecture: "ARM7"
         version: "2.0.1"
         package: https://download.affectiva.com/android/affdex-sdk_v2.01-20-android.zip
         size: 7.5 MB
       - status: legacy
+        release_notes: affdex-sdk-version-20
         architecture: "ARM7"
         version: "2.0"
         package: https://download.affectiva.com/android/affdex-sdk_v2.0-87-android.zip
         size: 7.5 MB
       - status: legacy
+        release_notes:
         architecture: "ARM7"
         version: "1.2"
         package: https://download.affectiva.com/android/affdex-sdk_v1.2-android.zip
         size: 7.5 MB
       - status: legacy
+        release_notes:
         architecture: "ARM7"
         version: "1.1"
         package: https://download.affectiva.com/android/affdex-sdk_v1.1-android.zip
@@ -48,21 +54,25 @@ platforms:
     logo: /images/ios.png
     versions:
     - status: stable
+      release_notes: affdex-sdk-version-301
       architecture: "ARM64/ARM7"
       version: "3.0.1"
       package: https://download.affectiva.com/ios/affdex-sdk_iOS_3_0_1_374.zip
       size: 100.2 MB
     - status: legacy
+      release_notes: affdex-sdk-version-30
       architecture: "ARM64/ARM7"
       version: "3.0"
       package: https://download.affectiva.com/ios/affdex-sdk_iOS_3_1_320.zip
       size: 107.2 MB
     - status: legacy
+      release_notes:
       architecture: "ARM64/ARM7"
       version: "2.0"
       package: https://download.affectiva.com/ios/affdex-sdk_iOS_2_0.tar.gz
       size: 35 MB
     - status: legacy
+      release_notes:
       architecture: "ARM64/ARM7"
       version: "1.0.1"
       package: https://download.affectiva.com/ios/affdex-sdk_1.0.1-ios.zip
@@ -72,11 +82,13 @@ platforms:
     logo: /images/linux.png
     versions:
     - status: beta
+      release_notes: affdex-sdk-version-31
       architecture: x86_64
       version: "3.1-315"
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.1-315-linux-64bit.tar.gz
       size: 22.8 MB
     - status: stable
+      release_notes: affdex-sdk-version-30
       architecture: x86_64
       version: "3.0"
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.0-298-linux-64bit.tar.gz
@@ -86,11 +98,13 @@ platforms:
     logo: /images/apple.png
     versions:
     - status: legacy
+      release_notes: affdex-sdk-version-301
       architecture: x86_64
       version: "3.0.1"
       package: https://download.affectiva.com/osx/affdex-sdk_OSX_3_0_1_213.zip
       size: 26.4 MB
     - status: stable
+      release_notes: affdex-sdk-version-302
       architecture: x86_64
       version: "3.0.2"
       package: https://download.affectiva.com/osx/affdex-sdk_OSX_3_0_2_220.zip
@@ -117,54 +131,63 @@ platforms:
     logo: /images/windows.png
     versions:
       - status: stable
+        release_notes: affdex-sdk-version-31
         architecture: i386
         version: "3.1.1025"
         package: https://download.affectiva.com/windows/AffdexSDK-3.1-1025-win32.exe
         size: 19.1 MB
 
       - status: stable
+        release_notes: affdex-sdk-version-31
         architecture: x86_64
         version: "3.1.339"
         package: https://download.affectiva.com/windows/AffdexSDK-3.1-339-win64.exe
         size: 30.4 MB
 
       - status: legacy
+        release_notes: affdex-sdk-version-30
         architecture: i386
         version: "3.0"
         package: https://download.affectiva.com/windows/AffdexSDK-3.0-961-win32.exe
         size: 19.1 MB
 
       - status: legacy
+        release_notes: affdex-sdk-version-30
         architecture: x86_64
         version: "3.0"
         package: https://download.affectiva.com/windows/AffdexSDK-3.0-275-win64.exe
         size: 30.4 MB
 
       - status: legacy
+        release_notes:
         architecture: i386
         version: "2.1"
         package: https://download.affectiva.com/windows/AffdexSDK-2.1-build897-win32.exe
         size: 19.1 MB
 
       - status: legacy
+        release_notes:
         architecture: x86_64
         version: "2.1"
         package: https://download.affectiva.com/windows/AffdexSDK-2.1-build232-win64.exe
         size: 30.4 MB
 
       - status: legacy
+        release_notes: affdex-sdk-version-20
         architecture: i386
         version: "2.0"
         package: https://download.affectiva.com/windows/AffdexSDK-2.0-build698-win32.exe
         size: 19.1 MB
 
       - status: legacy
+        release_notes: affdex-sdk-version-20
         architecture: x86_64
         version: "2.0"
         package: https://download.affectiva.com/windows/AffdexSDK-2.0-build38-win64.exe
         size: 30.4 MB
 
       - status: legacy
+        release_notes:
         architecture: i386
         version: "1.0"
         package: https://download.affectiva.com/windows/AffdexSDK-build550-win32.exe
