@@ -12,6 +12,7 @@ emotions:
       - name: Lip press
       - name: Mouth open
       - name: Lip suck
+      - name: Eye widen
     negative_expression:
       - name: Brow raise
       - name: Inner brow raise
@@ -23,6 +24,7 @@ emotions:
       - name: Upper lip raise
     negative_expression:
       - name: Lip suck
+      - name: Smile
   - name: Surprise
     positive_expression:
       - name: Inner brow raise
