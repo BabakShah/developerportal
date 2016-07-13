@@ -81,17 +81,11 @@ platforms:
   - name: Linux
     logo: /images/linux.png
     versions:
-    - status: beta
+    - status: stable
       release_notes: affdex-sdk-version-31
       architecture: x86_64
       version: "3.1-393"
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.1-393-linux-64bit.tar.gz
-      size: 22.8 MB
-    - status: stable
-      release_notes: affdex-sdk-version-31
-      architecture: x86_64
-      version: "3.1-385"
-      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.0-385-linux-64bit.tar.gz
       size: 22.8 MB
     - status: legacy
       release_notes: affdex-sdk-version-31
