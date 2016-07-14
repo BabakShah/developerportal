@@ -84,9 +84,9 @@ platforms:
     - status: stable
       release_notes: affdex-sdk-version-31
       architecture: x86_64
-      version: "3.1-393"
-      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.1-393-linux-64bit.tar.gz
-      size: 22.8 MB
+      version: "3.1-396"
+      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.1-396-linux-64bit.tar.gz
+      size: 27.7 MB
     - status: legacy
       release_notes: affdex-sdk-version-31
       architecture: x86_64
@@ -232,7 +232,7 @@ affdexme:
   - name: Windows
     img: /images/download/windows.png
     style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
-    package: https://download.affectiva.com/windows/AffdexMe-1023-win32.exe
+    package: https://download.affectiva.com/windows/AffdexMe-1049-win32.exe
 ################################
 ################################
 ################################
