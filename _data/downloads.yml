@@ -78,6 +78,17 @@ platforms:
       package: https://download.affectiva.com/ios/affdex-sdk_1.0.1-ios.zip
       size: 51.3 MB
 
+  - name: JavaScript
+    logo: /images/html5.png
+    versions:
+      - status: stable
+        release_notes: affdex-sdk-version-31
+        architecture: "JS VM"
+        version: "3.1"
+        install: /javascript/
+        size: 12.6 MB
+
+
   - name: Linux
     logo: /images/linux.png
     versions:

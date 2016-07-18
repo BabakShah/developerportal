@@ -13,10 +13,13 @@ This page contains the release notes for the different versions of the Affdex SD
 
 
 ### Affdex SDK version 3.1
-* Win SDK
   - Improved emotion metrics. The valence includes new expressions in its calculation.
   - Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
-
+  - Added models for new [expressions](/metrics#facial-expressions): cheek raise, dimpler, eye widen, lid tighten, lip stretch and jaw drop.
+  - Fix bug [SCI-86](https://affectiva.atlassian.net/browse/SCI-86) - Disgust false positives due to the occurance of the smile expression.  
+  - New platform supported, [js](/javascript).
+* iOS / OSX SDK
+  - API allow developer to choose face detector, face size configuration (SMALL / LARGE)
 ***
 
 ### Affdex SDK version 3.0.2

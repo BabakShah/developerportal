@@ -77,6 +77,14 @@ entries:
           version: all
           print: true
 
+        - title: JavaScript
+          url: /v3_1/javascript/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
         - title: Linux (C++)
           url: /v3/linux/
           audience: developer, designer
