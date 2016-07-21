@@ -60,7 +60,7 @@
                     {% else %}
                     <li><a href="{{item.url | prepend: site.baseurl | append: site.suffix}}">{{item.title}}</a></li>
                     {% endif %}
-                    
+
 
                     {% for thirdlevel in item.thirdlevel %}
                     {% if thirdlevel.web != false %}
@@ -75,7 +75,7 @@
                             {% else %}
                             <li><a href="{{deeplevel.url | replace: "/",""}}">{{deeplevel.title}}</a></li>
                             {% endif %}
-                            
+
                             {% endif %}
                             {% endfor %}
                         </ul>

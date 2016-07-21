@@ -13,22 +13,32 @@ This page contains the release notes for the different versions of the Affdex SD
 
 
 ### Affdex SDK version 3.1
+
+*Date, Jul 2016*
+
   - Improved emotion metrics. The valence includes new expressions in its calculation.
   - Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
   - Added models for new [expressions](/metrics#facial-expressions): cheek raise, dimpler, eye widen, lid tighten, lip stretch and jaw drop.
-  - Fix bug [SCI-86](https://affectiva.atlassian.net/browse/SCI-86) - Disgust false positives due to the occurance of the smile expression.  
-  - New platform supported, [js](/javascript).
+  - Fix bug [SCI-86](https://affectiva.atlassian.net/browse/SCI-86) - Disgust false positives due to the occurrence of the smile expression.  
+  - New platform supported, [JavaScript](/javascript).
 * iOS / OSX SDK
-  - API allow developer to choose face detector, face size configuration (SMALL / LARGE)
+  - API allows developer to choose face detector's face size configuration (SMALL / LARGE)
+
 ***
 
 ### Affdex SDK version 3.0.2
+
+*Date, May 2016*
+
 * OSX SDK
   - Performance optimizations, [SDK-521](https://affectiva.atlassian.net/browse/SDK-521) - remove dispatch_async() overhead from callback functions.
 
 ***
 
 ### Affdex SDK version 3.0.1
+
+*Date, Mar 2016*
+
 * New platforms [OS X](/osx) and [Linux](/linux).
 * Android
   - Switch the SDK packaging to the new android standard packaging (aar).
@@ -40,6 +50,8 @@ This page contains the release notes for the different versions of the Affdex SD
 ***
 
 ### Affdex SDK version 3.0
+
+*Date, Jan 2016*
 
 * New API to allow tracking of multiple faces simultaneously.
 * Added a Face to Emoji mapper to allow the developer to map facial expressions of emotion to [13 emojis](/metrics#emoji-expressions) different emojis
@@ -70,6 +82,8 @@ This page contains the release notes for the different versions of the Affdex SD
 ***
 
 ### Affdex SDK version 2.0
+
+*Date, Sept 2015*
 
 * Dramatically improved accuracy with new expression models trained over a broader set of facial images.
 

@@ -514,10 +514,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -526,10 +526,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -3906,8 +3906,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 /* orange #f6a707, #fcc769 */
 /* blue #036f7b, #0290a0 */
 .navbar-inverse {
-  background-color: #f6a707;
-  border-color: #fcc769;
+  background-color: #007a91;
+  border-color: #007a91;
 }
 
 .navbar-inverse .navbar-brand {

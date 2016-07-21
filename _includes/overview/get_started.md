@@ -1,9 +1,7 @@
-## How to Get Started  
-1. __Sign up for a license__  
-    Choose the programming language and the platform, and sign up to download the SDK license file.
-    A free 45-day evaluation license can be obtained [by submitting this form](http://www.affectiva.com/45-day-free-trial/).  
+## Getting Started  
+
 1. __Download the SDK__  
-    [Download the SDK build]({{ site.baseurl }}/downloads) for the chosen platform.
+    Choose the programming language and the platform, and [download the SDK binaries or add them to your project.]({{ site.baseurl }}/downloads)
 
 1. __Study the documentation__  
     Check out the [platforms section and the class docs]({{ site.baseurl }}/platforms).  

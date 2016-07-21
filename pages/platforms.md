@@ -9,7 +9,7 @@ summary:
 metadata: false
 ---
 
-### Choose A platform
+### Choose a Platform
 
 The Affdex SDK is available for the following platforms:
 
