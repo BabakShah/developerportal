@@ -38,7 +38,7 @@ var trackOutboundLink = function(url, platform, version, architecture) {
     </td>
     <td class="text-center">
       <div>
-        <strong>Current Version</strong>
+        <strong>Version</strong>
        </div>
     </td>
     <td class="text-center">
@@ -70,6 +70,11 @@ var trackOutboundLink = function(url, platform, version, architecture) {
             {{build.version}}
             {% if build.release_notes %}
               <a href="{{ site.baseurl }}/whats_new/#{{ build.release_notes }}">(release notes)</a>
+            {% endif %}
+            {% if include.build_status != "stable" %}
+              {% if build.doc %}
+                <a href="{{ site.baseurl }}{{ build.doc }}">(reference)</a>
+              {% endif %}
             {% endif %}
           </td>
           <td id="cell" class="text-center">
