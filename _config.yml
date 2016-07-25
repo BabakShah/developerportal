@@ -89,7 +89,7 @@ collections:
     output: true
 
 jekyll_ga:
-  service_account_email: 464803498504-m8ppb27dqp3dfodutnrlp628ls7mmuc3@developer.gserviceaccount.com  # service account email address
+  service_account_email: developerportal@affdex-developer-portal.iam.gserviceaccount.com  # service account email address
   key_file: privatekey.p12  # service account private key file
   key_secret: notasecret    # service account private key's password
   profileID: ga:108954658   # profile ID
