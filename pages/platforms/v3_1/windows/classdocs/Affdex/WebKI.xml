@@ -70,7 +70,7 @@
   <HelpKINode Title="Appearance.Glasses property" Url="html/d5aefe0f-89e7-5689-0926-846a6ac5f1c0.htm" />
   <HelpKINode Title="Attention property" Url="html/ff466ca0-7e3c-3ba8-76af-6433774f7e91.htm" />
   <HelpKINode Title="BGR enumeration member" Url="html/a1445d0f-454e-dbd5-fa6c-ce461c2f81fb.htm" />
-  <HelpKINode Title="BlackAfrican enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
+  <HelpKINode Title="BLACK_AFRICAN enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
   <HelpKINode Title="BrowFurrow property" Url="html/028ca3c8-ed6c-d99f-2fa6-6edeb451f83d.htm" />
   <HelpKINode Title="BrowRaise property" Url="html/f13a7936-25e7-a0b0-a853-47aeeb7fc18a.htm" />
   <HelpKINode Title="CameraDetector class">
@@ -82,7 +82,7 @@
   <HelpKINode Title="CameraDetector.CameraDetector constructor" Url="html/02795d43-120e-0e43-2c2c-42e39cfcd8eb.htm" />
   <HelpKINode Title="CameraDetector.setCameraFPS method" Url="html/c0196851-105c-cf2d-537e-41dbce20f456.htm" />
   <HelpKINode Title="CameraDetector.setCameraId method" Url="html/1ab65470-14ba-13fa-291d-63793c45018f.htm" />
-  <HelpKINode Title="Caucasian enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
+  <HelpKINode Title="CAUCASIAN enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
   <HelpKINode Title="ChinRaise property" Url="html/99d82a31-cccd-eee9-94b5-130425b94b2b.htm" />
   <HelpKINode Title="Contempt property" Url="html/b69f1f29-587a-c5fa-0b52-95ad600d8135.htm" />
   <HelpKINode Title="Detector class">
@@ -174,7 +174,7 @@
     <HelpKINode Title="Frame.Dispose Method " Url="html/c1612247-8a6d-5e0f-11a1-6b66b4cc3655.htm" />
   </HelpKINode>
   <HelpKINode Title="dominantEmoji property" Url="html/95613d8b-30f2-292f-b577-a229cee67eb3.htm" />
-  <HelpKINode Title="EastAsian enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
+  <HelpKINode Title="EAST_ASIAN enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
   <HelpKINode Title="Emoji enumeration" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
   <HelpKINode Title="Emojis class">
     <HelpKINode Title="Emojis Class" Url="html/3104e9db-bc67-b620-0e20-a251d1c06b47.htm" />
@@ -349,7 +349,7 @@
   <HelpKINode Title="getWidth method" Url="html/8685cb84-57eb-2e94-1e5e-9bcfa4bf8695.htm" />
   <HelpKINode Title="Glasses enumeration" Url="html/5f8c117c-6c47-ebd0-e315-713b92699003.htm" />
   <HelpKINode Title="Glasses property" Url="html/d5aefe0f-89e7-5689-0926-846a6ac5f1c0.htm" />
-  <HelpKINode Title="Hispanic enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
+  <HelpKINode Title="HISPANIC enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
   <HelpKINode Title="Id property">
     <HelpKINode Title="Face.Id Property " Url="html/ddbab497-75c4-0bfb-7dfb-2a174ccac98a.htm" />
     <HelpKINode Title="FeaturePoint.Id Property " Url="html/7b7ebf2b-1e8e-7ed5-669b-4f16e0d95b46.htm" />
@@ -485,9 +485,9 @@
   <HelpKINode Title="Smiley enumeration member" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
   <HelpKINode Title="smiley property" Url="html/b2779249-7b41-f071-3c9e-05e3f3952afe.htm" />
   <HelpKINode Title="Smirk enumeration member" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
-  <HelpKINode Title="smirk property" Url="html/f324909d-3113-64cd-b93c-178859d59919.htm" />
   <HelpKINode Title="Smirk property" Url="html/827f441b-2e0f-8771-15dd-e84c422c5d9c.htm" />
-  <HelpKINode Title="SouthAsian enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
+  <HelpKINode Title="smirk property" Url="html/f324909d-3113-64cd-b93c-178859d59919.htm" />
+  <HelpKINode Title="SOUTH_ASIAN enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
   <HelpKINode Title="start method" Url="html/e11235bc-0825-cbd2-415c-efe099431a0d.htm" />
   <HelpKINode Title="stop method" Url="html/f7ed410e-b250-3fcf-7b38-bdade28e014f.htm" />
   <HelpKINode Title="StuckOutTongue enumeration member" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
@@ -496,10 +496,10 @@
   <HelpKINode Title="stuckOutTongueWinkingEye property" Url="html/6bcea29a-30c5-e0a0-491e-fc760bb3381d.htm" />
   <HelpKINode Title="Surprise property" Url="html/141ed717-cd59-2f83-2ad5-25d775dbd4d1.htm" />
   <HelpKINode Title="Unknown enumeration member">
-    <HelpKINode Title="Emoji Enumeration" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
-    <HelpKINode Title="Ethnicity Enumeration" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
     <HelpKINode Title="Gender Enumeration" Url="html/7cc24380-2383-0ee2-8d82-118d35ff664f.htm" />
+    <HelpKINode Title="Emoji Enumeration" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
   </HelpKINode>
+  <HelpKINode Title="UNKNOWN enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
   <HelpKINode Title="UpperLipRaise property" Url="html/fd67678a-8226-a4bc-2d5d-94d8027fe7c1.htm" />
   <HelpKINode Title="Valence property" Url="html/88d0d907-085b-7e92-aa02-f1afcf33e2d7.htm" />
   <HelpKINode Title="VideoDetector class">

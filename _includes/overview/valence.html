@@ -1,0 +1,46 @@
+<style>
+#emotion_id, #negative_emotion, #postive_emotion
+{
+    vertical-align: middle;
+}
+</style>
+<table class="table table-bordered">
+  <tr>
+    <td class="text-center">
+      <div>
+        <strong></strong>
+      </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Increase Positive Likelihood</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Increase Negative Likelihood</strong>
+       </div>
+    </td>
+  </tr>
+  {% for emotion in site.data.emotion_expression_mapping.complex %}
+  <tr>
+    <td id="emotion_id" class="text-center">
+      {{ emotion.name }}
+    </td>
+    <td id="postive_emotion" class="text-center">
+      {% for expression in emotion.positive_expression %}
+      <div class="content">
+        {{ expression.name }}
+      </div>
+      {% endfor %}
+    </td>
+    <td id="negative_emotion" class="text-center">
+      {% for expression in emotion.negative_expression %}
+      <div class="content">
+        {{ expression.name }}
+      </div>
+      {% endfor %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>

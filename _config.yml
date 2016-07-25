@@ -8,13 +8,13 @@ platform: all
 
 version: all
 
-topnav_title: Affdex Developer Portal
+topnav_title: Affectiva Developer Portal
 
 topnav_version: ""
 
-homepage_title: Affdex Developer Portal
+homepage_title: Affectiva Developer Portal
 
-site_title: Affdex Developer Portal
+site_title: Affectiva Developer Portal
 
 tagline: " "
 
@@ -99,6 +99,6 @@ jekyll_ga:
   segment:                  # optional
   filters:                  # optional
   sort: true                # Sort posts by this metric
-  
+
 gems:
   - jekyll-redirect-from

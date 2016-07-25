@@ -3,6 +3,7 @@
     <li role="presentation"><a href="#ruby" data-toggle="tab">Ruby</a></li>
     <li role="presentation"><a href="#java" data-toggle="tab">Java</a></li>
     <li role="presentation"><a href="#csharp" data-toggle="tab">C#</a></li>
+    <li role="presentation"><a href="#python" data-toggle="tab">Python</a></li>
 </ul>
 <div class="tab-content">
 <div class="tab-pane active" id="curl" markdown="1">
@@ -16,5 +17,8 @@
 </div>
 <div class="tab-pane" id="csharp" markdown="1">
 {% include apidocs/csharp.md %}
+</div>
+<div class="tab-pane" id="python" markdown="1">
+{% include apidocs/python.md %}
 </div>
 </div>

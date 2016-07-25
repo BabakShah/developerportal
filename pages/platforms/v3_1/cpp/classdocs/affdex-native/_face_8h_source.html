@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Affdex SDK: C:/Jenkins/workspace/affdex-sdk-win32/src/affdex-sdk/include/public/Face.h Source File</title>
+<title>Affdex SDK: C:/Jenkins/workspace/affdex-sdk-win32-devbranch-v3.1/src/affdex-sdk/include/public/Face.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -127,12 +127,12 @@
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
 <div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="namespaceaffdex.html#aae6654e9cc55cbab3ab9f48d9d08bc41">  189</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="namespaceaffdex.html#aae6654e9cc55cbab3ab9f48d9d08bc41">Ethnicity</a></div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        Unknown = 0,</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        Caucasian = 1,</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        BlackAfrican = 2,</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        SouthAsian = 3,</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        EastAsian = 4,</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        Hispanic = 5</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        UNKNOWN = 0,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        CAUCASIAN = 1,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        BLACK_AFRICAN = 2,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        SOUTH_ASIAN = 3,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        EAST_ASIAN = 4,</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        HISPANIC = 5</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    };</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
 <div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="structaffdex_1_1_appearance.html">  199</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structaffdex_1_1_appearance.html">Appearance</a></div>
@@ -392,7 +392,7 @@
 <div class="ttc" id="structaffdex_1_1_emotions_html_a4b2b8fe5c45af33ddb35e7a6ff33637a"><div class="ttname"><a href="structaffdex_1_1_emotions.html#a4b2b8fe5c45af33ddb35e7a6ff33637a">affdex::Emotions::anger</a></div><div class="ttdeci">float anger</div><div class="ttdoc">Anger score range of the value is [0, 100] </div><div class="ttdef"><b>Definition:</b> Face.h:127</div></div>
 <div class="ttc" id="structaffdex_1_1_emotions_html"><div class="ttname"><a href="structaffdex_1_1_emotions.html">affdex::Emotions</a></div><div class="ttdoc">Structure containing emotions scores </div><div class="ttdef"><b>Definition:</b> Face.h:101</div></div>
 <div class="ttc" id="namespaceaffdex_html_a2a2fa3268ceddec270b0bbe0b1ff3f56"><div class="ttname"><a href="namespaceaffdex.html#a2a2fa3268ceddec270b0bbe0b1ff3f56">affdex::MetricsMap</a></div><div class="ttdeci">std::unordered_map&lt; std::string, float &gt; MetricsMap</div><div class="ttdoc">Container for storing </div><div class="ttdef"><b>Definition:</b> typedefs.h:79</div></div>
-<div class="ttc" id="structaffdex_1_1_appearance_html_ab83e938ac8c1dd79443b586daeb2c310"><div class="ttname"><a href="structaffdex_1_1_appearance.html#ab83e938ac8c1dd79443b586daeb2c310">affdex::Appearance::ethnicity</a></div><div class="ttdeci">Ethnicity ethnicity</div><div class="ttdoc">Ethnicity Values {Unknown, Caucasian, BlackAfrican, SouthAsian, EastAsian, Hispanic} ...</div><div class="ttdef"><b>Definition:</b> Face.h:224</div></div>
+<div class="ttc" id="structaffdex_1_1_appearance_html_ab83e938ac8c1dd79443b586daeb2c310"><div class="ttname"><a href="structaffdex_1_1_appearance.html#ab83e938ac8c1dd79443b586daeb2c310">affdex::Appearance::ethnicity</a></div><div class="ttdeci">Ethnicity ethnicity</div><div class="ttdoc">Ethnicity Values {UNKNOWN, CAUCASIAN, BLACK_AFRICAN, SOUTH_ASIAN, EAST_ASIAN, HISPANIC} ...</div><div class="ttdef"><b>Definition:</b> Face.h:224</div></div>
 <div class="ttc" id="classaffdex_1_1_face_html_add22d4da25002644556586a3aee4f7e2"><div class="ttname"><a href="classaffdex_1_1_face.html#add22d4da25002644556586a3aee4f7e2">affdex::Face::Face</a></div><div class="ttdeci">AFFDEXSDK Face()</div><div class="ttdoc">Initializes a new instance of the Face class. </div></div>
 <div class="ttc" id="structaffdex_1_1_emojis_html_a300d1eea9e16be0c41d67bb06a458329"><div class="ttname"><a href="structaffdex_1_1_emojis.html#a300d1eea9e16be0c41d67bb06a458329">affdex::Emojis::laughing</a></div><div class="ttdeci">float laughing</div><div class="ttdoc">laughing score range of the value is [0, 100] </div><div class="ttdef"><b>Definition:</b> Face.h:379</div></div>
 <div class="ttc" id="structaffdex_1_1_emotions_html_a39ef8a503651f76f1229035305fa2d5f"><div class="ttname"><a href="structaffdex_1_1_emotions.html#a39ef8a503651f76f1229035305fa2d5f">affdex::Emotions::engagement</a></div><div class="ttdeci">float engagement</div><div class="ttdoc">Engagment score range of the value is [0, 100] </div><div class="ttdef"><b>Definition:</b> Face.h:147</div></div>
@@ -413,7 +413,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 8 2016 15:40:05 for Affdex SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 15 2016 12:14:19 for Affdex SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

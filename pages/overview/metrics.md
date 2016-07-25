@@ -10,21 +10,22 @@ metadata: false
 ---
 {% include linkrefs.html %}
 
-The face provides a rich canvas of emotion. Humans are innately programmed to express and communicate emotion through facial expressions. Affdex scientifically measures and reports the emotions and facial expressions using sophisticated computer vision and machine learning techniques. When you use the Affdex Mobile SDK in your applications, you will receive facial expression output from Affdex in the form of Affdex metrics: seven emotion metrics, two composite metrics measuring the emotional experience, 15 facial expression metrics, and 13 emojis.
+The face provides a rich canvas of emotion. Humans are innately programmed to express and communicate emotion through facial expressions. Affdex scientifically measures and reports the emotions and facial expressions using sophisticated computer vision and machine learning techniques. When you use the Affdex SDK in your applications, you will receive facial expression output in the form of Affdex metrics: seven emotion metrics, 20 facial expression metrics, 13 emojis, and four appearance metrics.
 
 ## Emotions
 
 {%include overview/emotions_table.html %}
 
-Furthermore, the SDK allows for measuring valence and engagement, as alternative metrics for measuring the emotional experience.
+Furthermore, the SDK allows for measuring valence and expressiveness, as alternative metrics for measuring the emotional experience.
 
-<strong>Engagement</strong>: A measure of facial muscle activation that illustrates the subject’s expressivness. The range of values is from 0 to 100.
+<strong>Engagement</strong>: A measure of facial muscle activation that illustrates the subject’s expressiveness. The range of values is from 0 to 100.
 
 <strong>Valence</strong>: A measure of the positive or negative nature of the recorded person's experience. The range of values is from -100 to 100.
 
-#### How do we map facial expressions to emotions?
 
-The Emotion predictors use the observed facial expressions as input to calculate the likelihood of an emotion. [See more information](/emotion_mapping/)
+#### How do we map facial expressions to emotions, engagement and valence?
+
+The Emotion predictors use the observed facial expressions as input to calculate the likelihood of an emotion. [See more information.](/emotion_mapping/)
 
 ***
 

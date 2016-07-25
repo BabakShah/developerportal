@@ -33,12 +33,12 @@ var trackOutboundLink = function(url, platform, version, architecture) {
     </td>
     <td class="text-center">
       <div>
-        <strong>CPU Architecture</strong>
+        <strong>Architecture</strong>
        </div>
     </td>
     <td class="text-center">
       <div>
-        <strong>Current Version</strong>
+        <strong>Version</strong>
        </div>
     </td>
     <td class="text-center">
@@ -67,7 +67,15 @@ var trackOutboundLink = function(url, platform, version, architecture) {
             {{ build.architecture }}
           </td>
           <td id="cell" class="text-center">
-            {{ build.version }}
+            {{build.version}}
+            {% if build.release_notes %}
+              <a href="{{ site.baseurl }}/whats_new/#{{ build.release_notes }}">(release notes)</a>
+            {% endif %}
+            {% if include.build_status != "stable" %}
+              {% if build.doc %}
+                <a href="{{ site.baseurl }}{{ build.doc }}">(reference)</a>
+              {% endif %}
+            {% endif %}
           </td>
           <td id="cell" class="text-center">
             {{ build.size }}
@@ -83,12 +91,12 @@ var trackOutboundLink = function(url, platform, version, architecture) {
             {% unless build.install contains '://' %}
               {% assign build.install = build.install | prepend: site.url %}
             {% endunless %}
-            <a href="{{ build.install }}" target="_blank" onclick="trackOutboundLink('{{ build.install }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Install</a>
+            <a href="{{ build.install }}" target="_blank" onclick="trackOutboundLink('{{ build.install }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Add to your project</a>
             {% endif %}
           </td>
         </tr>
       {% endfor %}
     {% endif %}
     {% endfor %}
-  </tr>
+
 </table>

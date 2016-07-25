@@ -13,6 +13,14 @@ entries:
       print: true
 
       items:
+        - title: What's New
+          url: /whats_new/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+          
         - title: Getting Started
           url: /getting_started/
           audience: developer, designer
@@ -77,8 +85,16 @@ entries:
           version: all
           print: true
 
+        - title: JavaScript
+          url: /v3_1/javascript/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
         - title: Linux (C++)
-          url: /v3/linux/
+          url: /v3_1/linux/
           audience: developer, designer
           platform: all
           product: all
@@ -149,14 +165,6 @@ entries:
       print: true
 
       items:
-        - title: What's New
-          url: /whats_new/
-          audience: writer, designer
-          platform: all
-          product: all
-          version: all
-          print: true
-
         - title: Sample Apps
           url: /sampleapps/
           audience: developer, designer

@@ -11,7 +11,7 @@ metadata: false
 ---
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.0
+SDK Developer Guide Release 3.1
 
 ## Using the SDK
 
@@ -25,7 +25,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 ##### 1. [Download]({{ site.baseurl }}/downloads/) and extract the SDK archive
 ```bash
 mkdir $HOME/affdex-sdk
-tar -xzvf affdex-cpp-sdk-3.0-linux-64bit.tar.gz -C $HOME/affdex-sdk
+tar -xzvf affdex-cpp-sdk-3.1-linux-64bit.tar.gz -C $HOME/affdex-sdk
 ```
 
 ##### 2. Import an affdex API into your application
@@ -52,7 +52,7 @@ g++ main.cpp -o main -std=c++11 -I$HOME/affdex-sdk/include -L$HOME/affdex-sdk/li
 
 ```
 
-For more complex applications, you might want to use CMake to generate the makefiles for compiling your application. An example of how to configure CMake can be found [here](https://github.com/Affectiva/win-sdk-samples/blob/linux-3.0/CMakeLists.txt#L99).
+For more complex applications, you might want to use CMake to generate the makefiles for compiling your application. An example of how to configure CMake can be found [here](https://github.com/Affectiva/win-sdk-samples/blob/master/CMakeLists.txt#L99).
 
 In addition to libaffdex-native.so, the SDK lib folder contains [FFmpeg libraries](https://www.ffmpeg.org/) which are required by the VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)] in runtime for the video decoding. FFmpeg is an open source library for video decoding [licensed under LGPL]({{ site.baseurl }}/licenses/).
 

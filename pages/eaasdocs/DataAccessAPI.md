@@ -8,6 +8,60 @@ This API provides access to study-level data in the Affdex Market Research syste
 
 This document is an add-on to the Cloud API Overview and assumes that the reader has read that document.
 
+## The User Service
+
+This service provides information about Affdex MR user accounts.
+
+### Locating the User Service
+
+Clients should use the user service only via a URL provided by the index service.
+
+In the JSON-formatted index, the user service URL will be the value associated with the key "user".
+
+### Locating a User
+
+Before using a user object, a client must locate the URL of that user.  We use the username (which is typically an email address) as a key to a user, so that is passed to the user service as a URL parameter.
+
+To locate a user, make a GET request to the user service root URL, with one parameter named "username".  For example:
+
+```http
+GET UserServiceURL?username=john.doe@affdex.com HTTP/1.1
+Accept: application/json
+```
+
+The user's name must be specified exactly, partial matches don't work.
+
+The response will be an array of objects, each describing one user.  The response will contain only those users that match the name parameter and share a partner with the client.
+
+```json
+[
+  {
+    "username":"john.doe@affdex.com",
+    "firstname":"John",
+    "lastname":"Doe",
+    "self":"UserURL"
+    ...
+  }
+]
+```
+
+The UserURL can be used to retrieve that user's data.  For example:
+
+```http
+GET UserURL HTTP/1.1
+Accept: application/json
+```
+
+```json
+{
+  "username":"john.doe@affdex.com",
+  "firstname":"John",
+  "lastname":"Doe",
+  "self":"UserURL"
+  ...
+}
+```
+
 ## The Project Service
 
 The project service provides access to project-level data.
@@ -85,48 +139,49 @@ Response:
 "project_code":"acme_anvils",
 "self":"project URL",
 "market":"market URL",
+"media": ProjectMediaRootURL,
 "norm_project_type_dimension": "online",
-"websessions":"websessions URL"
+"websessions":"websessions URL",
 "jobs":
 {
 "job 1 url":
 {
-"self": "job 1 url"
+"self": "job 1 url",
 "status": "open"
 }
 },
-"operations": { project operation metadata }
+"operations": { project operation metadata },
 "data":
 {
 "application/vnd.affectiva.affdex_score+json":
 {
 "content_type":"application/vnd.affectiva.affdex_score+json",
-"self": "affdex score URL"
+"self": "affdex score URL",
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 },
 "application/vnd.affectiva.dashboard+json":
 {
 "content_type":"application/vnd.affectiva.dashboard+json",
-"self": "dashboard JSON URL"
+"self": "dashboard JSON URL",
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 },
 "application/vnd.affectiva.summary_metrics+json":
 {
 "content_type":"application/vnd.affectiva.summary_metrics+json",
-"self": "summary metrics URL"
+"self": "summary metrics URL",
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 },
 "application/vnd.affectiva.data_quality+json":
 {
 "content_type":"application/vnd.affectiva.data_quality+json",
-"self": "data quality report URL"
+"self": "data quality report URL",
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 }
-}
+},
 "updated":"2013-06-27T16:21:35Z",
 "published":"2013-06-27T16:21:35Z"
 }
@@ -156,24 +211,54 @@ The content type for the data quality report is "application/vnd.affectiva.data_
 
 The content type for the dashboard json is "application/vnd.affectiva.dashboard+json".
 
+### Project Media
+
+The project json object will contain a "media" key whose value is the media root URL.  To get a list of the project's media, send a GET request to that URL.
+Example:
+
+```http
+GET ProjectMediaRootURL HTTP/1.1
+Accept: application/json
+```
+
+Response:
+
+```json
+[
+    {
+        "dashboard_label": "Acme Anvils 30s Spot A",
+        "duration": 30.05,
+        "id": "acme_anvils_30s_a.mp4",
+        "position": 0,
+        "self": MediaItemURL
+    },
+    {
+        "dashboard_label": "Acme Anvils 30s Spot B",
+        "duration": 30.05,
+        "id": "acme_anvils_30s_b.mp4",
+        "position": 1,
+        "self": MediaItemURL
+    }
+]
+```
+
 ### Project Operations
 
 The value of the project "operations" key will be an object containing objects.  The keys are the operation names, and the values are objects with metadata about each operation.
 Example:
 
 ```json
-"operations":
 {
-"operation1_name":
-{
-"name": "operation1_name",
-"self": "operation1 initiation URL"
-},
-"operation2_name":
-{
-"name": "operation2_name",
-"self": "operation2 initiation URL"
-}
+   "operations": {
+      "operation1_name": {
+         "name": "operation1_name",
+         "self": "operation1 initiation URL"
+      },
+      "operation2_name": {
+         "name": "operation2_name",
+         "self": "operation2 initiation URL"
+      }
+   }
 }
 ```
 
@@ -287,7 +372,7 @@ Response: (same response as show project)
 ```
 
 Response Codes:
-200 - OK - Project successfully created
+302 - New project URL will be in the location header
 422 - Unprocessable Entity - Error creating project - invalid data
 
 The following JSON object keys are recognized:
@@ -314,23 +399,32 @@ The partner that will own this project.  Use the partner's "prefix" field to ide
 
 This is an optional field.  If provided, the project will be provisioned with one media item with the provided duration.  If not provided, no media will be provisioned.
 
+<code>creator</code>
+
+This is an optional field, it must be a URL provided by the user service.  If provided, it will set the project's creator to the user whose URL was provided.  If not, the project's creator will be the user whose credentials were used to make the request.
+
 ## Creating Media Files
 
-Media files are created by sending a POST request to the project media root URL. ( found in the project details JSON in the “media” key ). The body of the POST request should be a JSON object, and the request should include a “Content-Type: application/json” header. The response will be a redirect to the newly-created media file’s URL.
+Media files are created by sending a POST request to the project media root URL (found in the project details JSON in the “media” key). You can create a media file placeholder with a specific duration without uploading any media. The body of the POST request should be a JSON object, and the request should include a “Content-Type: application/json” header. The response will be a redirect to the newly-created media file’s URL.
+
 Example:
 
 ```http
 POST project media URL HTTP/1.1
 Accept: application/json
 Content-Type: application/json
-{"dashboard_label":"Ad 1 - 30 seconds", "id":"unique_media_string", "duration":30.1}
+{"dashboard_label":"Ad 1 - 30 seconds", "id":"unique_media_string", "duration":30.1, "file": <uploaded file>}
 ```
 
 The following JSON object keys are recognized:
 
 <code>duration</code>
 
-This is a required field. This is the duration in seconds of the ad.
+This is a required field if no file is attached, otherwise it will be automatically calculated from the uploaded file. This is the duration in seconds of the ad.
+
+<code>file</code>
+
+This is the media file that is being tested. The duration of the video will be automatically calculated after upload, and will be reflected in the duration parameter once it has completed.
 
 <code>id</code>
 
