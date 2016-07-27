@@ -1,6 +1,6 @@
 ---
 title: Affdex SDK for Android
-permalink: /v3/android/
+permalink: /v3_1/android/
 redirect_from: "/android/"
 tags: [android, sdk]
 audience: writer, designer
@@ -12,7 +12,7 @@ metadata: false
 
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.0
+SDK Developer Guide Release 3.1
 
 ## Using the SDK
 
@@ -35,16 +35,25 @@ For an example please see the [AffdexMe sample app's top-level build.gradle file
 ```groovy
 dependencies {
     ...
-    compile 'com.affectiva.android:affdexsdk:3.0.1'
+    compile 'com.affectiva.android:affdexsdk:3.1'
     ...
 }
 ```
 For an example please see the [AffdexMe sample app's app-level build.gradle file](https://github.com/Affectiva/affdexme-android/blob/master/app/build.gradle#L40).
 
-##### 3. Add a few necessary declarations to your app's manifest.  First, the SDK requires access to external storage on the Android device. Therefore, the ```AndroidManifest.xml``` needs to include permission for that:
+##### 3. Add a few necessary declarations to your app's manifest. Therefore, the ```AndroidManifest.xml``` needs to include the following permissions:
+
+First, the SDK requires access to external storage on the Android device.
 
 ```xml
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
+Also, the SDK uses access to the internet to [communicate anonymized usage data]({{ site.baseurl }}/datacollection).
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
 Additionally, if you use the `CameraDetector`, then you will need to add permission to access the camera:

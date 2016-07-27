@@ -6,12 +6,13 @@ detector.setDetectSmile(true);
 detector.setDetectJoy(true);
 ```
 
-To turn on or off the detection of all expressions, emotions or emojis:
+To turn on or off the detection of all expressions, emotions, emojis, or appearances:
 
 ```java
 detector.setDetectAllExpressions(true);
 detector.setDetectAllEmotions(true);
 detector.setDetectAllEmojis(true);
+detector.setDetectAllAppearances(true);
 ```
 
 To check the status of a classifier at any time, for example smile:

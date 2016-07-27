@@ -70,7 +70,7 @@ entries:
 
       items:
         - title: Android (Java)
-          url: /v3/android/
+          url: /v3_1/android/
           audience: developer, designer
           platform: all
           product: all
