@@ -19,7 +19,7 @@ Using our SDK, developers can now enrich digital experiences and apps by detecti
 
 <br />
 
-**Build apps for the web and mobile:**
+**Build apps for the web, desktop and mobile:**
 {%include overview/platforms.html %}
 
 ***
@@ -34,9 +34,7 @@ Using our SDK, developers can now enrich digital experiences and apps by detecti
 Currently we offer a 45 day evaluation to help developers get started using the SDK. Beyond the end of the evaluation period:
 
 * **Basic Free License**
-The SDKs are free for use:
--- In personal and open source projects.
--- For companies generating less than $1,000,000 in yearly revenue.
+The SDKs are free for use in personal and open source projects and for companies generating less than $1,000,000 in yearly revenue.
 
 * **Enterprise License**
 For companies generating $1,000,000 or more in yearly revenue.

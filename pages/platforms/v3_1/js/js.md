@@ -1,7 +1,7 @@
 ---
-title: Affdex SDK for JS
+title: Affdex SDK for the Web
 permalink: /v3_1/javascript/
-redirect_from: "/javascript/"
+redirect_from: "/web/"
 tags: [js, sdk]
 audience: writer, designer
 keywords:
