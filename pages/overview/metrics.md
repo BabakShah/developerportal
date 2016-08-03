@@ -58,21 +58,21 @@ In addition, we also expose a composite emotional metric called _valence_ which 
 
 Our SDKs also provide the following metrics about the physical appearance:
 
-**Gender**
-
-The gender classifier attempts to identify the human perception of gender expression.
-
 **Age**
 
 The age classifier attempts to estimate the age range.
 Supported ranges: Under 18, from 18 to 24, 25 to 34, 35 to 44, 45 to 54, 55 to 64, and 65 Plus.
-
 
 **Ethnicity**
 
 The ethnicity classifier attempts to identify the person's ethnicity.
 Supported classes: Caucasian, Black African, South Asian, East Asian and Hispanic.
 
+At the current level of accuracy, the ethnicity and age classifiers are more useful as a quantitative measure of demographics than to correctly identify the age and ethnicity on an individual basis. We are always looking to diversify the data sources included in training those metrics to improve their accuracy levels.
+
+**Gender**
+
+The gender classifier attempts to identify the human perception of gender expression.
 
 In the case of video or live feeds, the Gender, Age and Ethnicity classifiers track a face for a window of time to build confidence in their decision. If the classifier is unable to reach a decision, the classifier value is reported as "Unknown".
 
