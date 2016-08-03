@@ -25,7 +25,9 @@ Some,  more nuanced, facial expressions, which are much harder for even humans t
 
 The classifiers for emotions have ROC scores greater than or equal to 0.8, with expressions of joy, disgust, contempt and surprise the most accurately detected. Expressions of anger, sadness and fear tend to be more nuanced and subtle and are therefore harder to detect resulting in scores at the lower end of the range.
 
-The gender classifier uses the face bounding box tracked over a window of time, if available, to build confidence in its decision. If the confidence level does not meet the threshold within a window of 10 seconds, the gender is reported as _unknown_. The ROC score of the classifier is 0.95 and the average length of time taken to reach a decision is 3.4 seconds.  The ROC score of the glasses classifier is 0.9.  
+The gender classifier uses the face bounding box tracked over a window of time, if available, to build confidence in its decision. If the confidence level does not meet the threshold within a window of 10 seconds, the gender is reported as _unknown_. The ROC score of the classifier is 0.95 and the average length of time taken to reach a decision is 3.4 seconds.  The ROC score of the glasses classifier is 0.9.
+
+At the current level of accuracy, the ethnicity and age classifiers are more useful as a quantitative measure of demographics than to correctly identify the age and ethnicity on an individual basis. We are always looking to diversify the data sources included in training those metrics to improve their accuracy levels.
 
 The emojis are driven by the expression classifiers. Classifiers for Tongue Out, Wink and Eye Widen expressions were introduced to increase the range of emojis supported. These have an ROC score of over 0.8.  
 
