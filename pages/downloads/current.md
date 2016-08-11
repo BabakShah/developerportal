@@ -15,6 +15,8 @@ Contact our [gaming team](mailto:gaminginfo@affectiva.com?subject=Get Affdex SDK
 
 #### Get the SDK
 
+By downloading the SDK, you agree to the terms of use governed by the our [license agreement](http://www.affectiva.com/sdk-trial-license-agreement/).  
+
 {% include custom/download_table.html build_status="stable" %}
 
 
