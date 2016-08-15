@@ -36,7 +36,7 @@ var detector = new affdex.FrameDetector(faceMode);
 {% include js/v3_1/detector/start.md %}
 
 ### Processing a frame
-After successfully initializing the detector using the start method. The frames can be passed to the detector by calling the process method. The process method expects an [imageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData) object and a timestamp in seconds.  
+After successfully initializing the detector using the start method. The frames can be passed to the detector by calling the process method. The process method expects an [imageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData) object and the delta time in seconds. The delta time is calculated by subtracting the current time from the time of the initial frame processed.  
 
 ```javascript
 
@@ -44,14 +44,20 @@ After successfully initializing the detector using the start method. The frames 
 var aCanvas = document.getElementById("canvas");
 var context = aCanvas.getContext('2d');
 
+//Cache the timestamp of the first frame processed
+var startTimestamp = (new Date()).getTime() / 1000;
+
 //Get imageData object.
 var imageData = context.getImageData(0, 0, 640, 480);
 
 //Get current time in seconds
-var timestamp = (new Date()).getTime() / 1000;
+var now = (new Date()).getTime() / 1000;
+
+//Get delta time between the first frame and the current frame.
+var deltaTime = now - startTimestamp;
 
 //Process the frame
-detector.process(imageData, timestamp);
+detector.process(imageData, deltaTime);
 ```
 
 {% include js/v3_1/detector/stop.md %}
