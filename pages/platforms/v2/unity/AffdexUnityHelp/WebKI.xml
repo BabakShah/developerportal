@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
-  <HelpKINode Title="AbstractAffdexListener class">
-    <HelpKINode Title="AbstractAffdexListener Class" Url="html/ea929df2-5ee6-98f4-4f55-53be098b6a2d.htm" />
-    <HelpKINode Title="about AbstractAffdexListener class" Url="html/ea929df2-5ee6-98f4-4f55-53be098b6a2d.htm" />
-    <HelpKINode Title="constructor" Url="html/e9863e0e-dbcf-4cc2-9159-3b3b6ae5880b.htm" />
-    <HelpKINode Title="methods" Url="html/451a70de-85ec-a65a-1bd4-6e47aa0e902b.htm" />
-    <HelpKINode Title="properties" Url="html/9a3b9fcd-5d88-4fa3-fbd9-d03145e39fcb.htm" />
-  </HelpKINode>
-  <HelpKINode Title="AbstractAffdexListener.AbstractAffdexListener constructor" Url="html/e9863e0e-dbcf-4cc2-9159-3b3b6ae5880b.htm" />
-  <HelpKINode Title="AbstractAffdexListener.onFaceFound method" Url="html/c6c6f4a3-9a45-36a3-aabb-97aaa452e895.htm" />
-  <HelpKINode Title="AbstractAffdexListener.onFaceLost method" Url="html/1f2d0010-ebe0-c00b-ed08-954595c2e6e1.htm" />
-  <HelpKINode Title="AbstractAffdexListener.onImageResults method" Url="html/a5287db1-c3ef-69d4-d73d-d351465fd9a6.htm" />
   <HelpKINode Title="Affdex namespace" Url="html/b8038333-b12e-8ea1-a2ce-74c8d611fa89.htm" />
-  <HelpKINode Title="Affdex.AbstractAffdexListener class" Url="html/ea929df2-5ee6-98f4-4f55-53be098b6a2d.htm" />
   <HelpKINode Title="Affdex.AffdexUnityUtils class" Url="html/1bd7c696-853a-7294-d8da-e4ffd91178ab.htm" />
   <HelpKINode Title="Affdex.CameraInput class" Url="html/5a5279cd-f2cc-c73f-8243-a6319229c662.htm" />
   <HelpKINode Title="Affdex.DebugFeatureViewer class" Url="html/e94caec4-2b0e-69de-28e2-47a2cc22837e.htm" />
@@ -28,8 +16,11 @@
   <HelpKINode Title="Affdex.FaceData structure" Url="html/ec064767-94a7-a8f8-9179-858f199e325f.htm" />
   <HelpKINode Title="Affdex.FeaturePoint structure" Url="html/0b0c5d5a-9928-8aee-4a34-4ec9527b75b6.htm" />
   <HelpKINode Title="Affdex.Frame structure" Url="html/cd246c18-3a71-0684-a69f-c70e8124b5e6.htm" />
+  <HelpKINode Title="Affdex.Frame.Orientation enumeration" Url="html/97c07c7a-04c0-cb8a-6c86-eabd88df8ddb.htm" />
   <HelpKINode Title="Affdex.IDetectorInput interface" Url="html/dc5a992e-cf1f-717c-8319-489111257c05.htm" />
+  <HelpKINode Title="Affdex.ImageResultsListener class" Url="html/efffb7b9-0be3-95e7-b53d-a6c721d7e532.htm" />
   <HelpKINode Title="Affdex.Measurements structure" Url="html/250758ee-f31b-3c62-f84a-0b5504debb9b.htm" />
+  <HelpKINode Title="Affdex.NativePlatform class" Url="html/7f9876d1-904f-4a4e-5b0b-9a47ea1a7bb0.htm" />
   <HelpKINode Title="Affdex.VideoFileInput class" Url="html/49693f4c-7334-0564-d154-185cf0fe6c56.htm" />
   <HelpKINode Title="AffdexUnityUtils class">
     <HelpKINode Title="AffdexUnityUtils Class" Url="html/1bd7c696-853a-7294-d8da-e4ffd91178ab.htm" />
@@ -56,11 +47,16 @@
   <HelpKINode Title="CameraInput.isFrontFacing field" Url="html/8ed597cf-995f-902e-046b-95113850eb1c.htm" />
   <HelpKINode Title="CameraInput.ProcessFrame method" Url="html/f9bd7fd1-7ad8-5b04-84e3-a2e0fd2be7fc.htm" />
   <HelpKINode Title="CameraInput.sampleRate field" Url="html/d7872032-63f9-a740-e015-47329fb8f6f5.htm" />
+  <HelpKINode Title="CameraInput.SelectCamera method" Url="html/dff8981e-af94-c010-ed7f-574383c48d80.htm" />
   <HelpKINode Title="CameraInput.targetHeight field" Url="html/2635c307-a330-8ce3-a0bd-d671ae8a5b1c.htm" />
   <HelpKINode Title="CameraInput.targetWidth field" Url="html/1faf1c84-5928-37b0-7207-225b93966998.htm" />
   <HelpKINode Title="CameraInput.Texture property" Url="html/eab8884b-26e1-8108-1cdf-7c81eaf8a50c.htm" />
+  <HelpKINode Title="CameraInput.videoRotationAngle property" Url="html/742852ad-4bf7-414c-7bcd-efe19a9bc38c.htm" />
   <HelpKINode Title="ChinRaise enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
   <HelpKINode Title="Contempt enumeration member" Url="html/9a91bf5d-8e50-6614-c638-00b4d1b60255.htm" />
+  <HelpKINode Title="CW_180 enumeration member" Url="html/97c07c7a-04c0-cb8a-6c86-eabd88df8ddb.htm" />
+  <HelpKINode Title="CW_270 enumeration member" Url="html/97c07c7a-04c0-cb8a-6c86-eabd88df8ddb.htm" />
+  <HelpKINode Title="CW_90 enumeration member" Url="html/97c07c7a-04c0-cb8a-6c86-eabd88df8ddb.htm" />
   <HelpKINode Title="DebugFeatureViewer class">
     <HelpKINode Title="DebugFeatureViewer Class" Url="html/e94caec4-2b0e-69de-28e2-47a2cc22837e.htm" />
     <HelpKINode Title="about DebugFeatureViewer class" Url="html/e94caec4-2b0e-69de-28e2-47a2cc22837e.htm" />
@@ -84,6 +80,7 @@
     <HelpKINode Title="methods" Url="html/3bfd71ee-9c7e-bcf3-fa87-220d05ab7ed8.htm" />
     <HelpKINode Title="properties" Url="html/afa7a601-dcf4-63cd-95fb-e89de3ddca23.htm" />
   </HelpKINode>
+  <HelpKINode Title="detector field" Url="html/3c5bead8-8618-bb99-0ce1-b1cc1d11948d.htm" />
   <HelpKINode Title="detector property">
     <HelpKINode Title="CameraInput.detector Property " Url="html/3fc3f512-5af1-4a71-a495-5eb0cec8663a.htm" />
     <HelpKINode Title="VideoFileInput.detector Property " Url="html/9bdb73d5-2a94-7b20-0f9b-373d8cc58dc1.htm" />
@@ -92,18 +89,18 @@
   <HelpKINode Title="Detector.discrete field" Url="html/92339b16-9cd9-fb3c-8826-557cb5c06ace.htm" />
   <HelpKINode Title="Detector.emotions field" Url="html/3184a73e-7440-8eec-0a75-a6737e96d2ce.htm" />
   <HelpKINode Title="Detector.expressions field" Url="html/0fc4960b-edd7-c71a-6041-65eba224dcf4.htm" />
-  <HelpKINode Title="Detector.Initialize method" Url="html/a5ae75c7-b85c-1622-9f03-316bf790ed6a.htm" />
   <HelpKINode Title="Detector.IsRunning property" Url="html/608049d3-26a8-91fe-f40a-dc9d07a85735.htm" />
-  <HelpKINode Title="Detector.license field" Url="html/bee61fb2-acd9-f8ba-8135-da88525299d1.htm" />
   <HelpKINode Title="Detector.Listener property" Url="html/8bdec089-8570-a55e-9f1d-13425bc37755.htm" />
   <HelpKINode Title="Detector.OnDestroy method" Url="html/4677a855-2498-9c05-8713-abc472f360ae.htm" />
   <HelpKINode Title="Detector.OnEnable method" Url="html/97cfc5be-786d-27fd-dfe8-da8ceb19179d.htm" />
   <HelpKINode Title="Detector.ProcessFrame method" Url="html/50563260-38b3-ed4f-4505-b115da0883f7.htm" />
   <HelpKINode Title="Detector.SetEmotionState method" Url="html/45144305-d549-3427-a6fb-82e150d7bb89.htm" />
   <HelpKINode Title="Detector.SetExpressionState method" Url="html/ef1be5ec-6747-3da8-1089-c684e95c2c42.htm" />
+  <HelpKINode Title="Detector.Start method" Url="html/3c5a249f-e321-6a22-53aa-78406c2add5a.htm" />
   <HelpKINode Title="Detector.StartDetector method" Url="html/5889da63-6e45-d7f7-88ef-bbca477a568f.htm" />
   <HelpKINode Title="Detector.startOnWake field" Url="html/5e24f81b-289e-38e3-1467-7a65df3bd37a.htm" />
   <HelpKINode Title="Detector.Stop method" Url="html/966865e3-880b-0691-cf07-d6b990a817e4.htm" />
+  <HelpKINode Title="Detector.StopDetector method" Url="html/bce07a95-7f10-b93a-5a52-aea7c7161b47.htm" />
   <HelpKINode Title="DetectorEditor class">
     <HelpKINode Title="DetectorEditor Class" Url="html/2c3ccaf5-84d5-5127-4249-2e340854794d.htm" />
     <HelpKINode Title="about DetectorEditor class" Url="html/2c3ccaf5-84d5-5127-4249-2e340854794d.htm" />
@@ -191,16 +188,22 @@
   <HelpKINode Title="Frame structure">
     <HelpKINode Title="Frame Structure" Url="html/cd246c18-3a71-0684-a69f-c70e8124b5e6.htm" />
     <HelpKINode Title="about Frame structure" Url="html/cd246c18-3a71-0684-a69f-c70e8124b5e6.htm" />
-    <HelpKINode Title="constructor" Url="html/d76e504c-1239-24ed-1b79-d8bcd0899691.htm" />
+    <HelpKINode Title="constructor" Url="html/735a2002-c0f7-fd06-3cee-025388b4589d.htm" />
     <HelpKINode Title="fields" Url="html/be04f752-a392-4122-7d50-556320d61cc7.htm" />
     <HelpKINode Title="methods" Url="html/c2f05c89-5e53-adc9-fa69-cbe281d75c04.htm" />
   </HelpKINode>
-  <HelpKINode Title="Frame.Frame constructor" Url="html/d76e504c-1239-24ed-1b79-d8bcd0899691.htm" />
+  <HelpKINode Title="Frame.Frame constructor" Url="html/735a2002-c0f7-fd06-3cee-025388b4589d.htm" />
   <HelpKINode Title="Frame.h field" Url="html/ffe6d14c-1d81-2a17-c8d4-cb27754b7c7a.htm" />
+  <HelpKINode Title="Frame.mirrored field" Url="html/3f68af1e-9a8f-a393-eecc-0f83a629cf2a.htm" />
+  <HelpKINode Title="Frame.Orientation enumeration" Url="html/97c07c7a-04c0-cb8a-6c86-eabd88df8ddb.htm" />
+  <HelpKINode Title="Frame.orientation field" Url="html/e7b1d3c9-b018-0e52-559d-d6921420e62e.htm" />
   <HelpKINode Title="Frame.rgba field" Url="html/476ecaf4-d7c9-d24a-cbd0-38695086a7ce.htm" />
   <HelpKINode Title="Frame.timestamp field" Url="html/3d7394f7-2931-e7bd-aa40-41d657a9224a.htm" />
   <HelpKINode Title="Frame.w field" Url="html/ef59798a-1fdd-86fa-e2ab-718e876d7cef.htm" />
   <HelpKINode Title="h field" Url="html/ffe6d14c-1d81-2a17-c8d4-cb27754b7c7a.htm" />
+  <HelpKINode Title="h1 field" Url="html/04e8ab52-6c7e-3690-d470-2eeadf502e94.htm" />
+  <HelpKINode Title="h2 field" Url="html/190b67e4-94a2-2f93-9a8b-057f0b493937.htm" />
+  <HelpKINode Title="h3 field" Url="html/a69c5341-a9aa-214d-44f5-394130f7de8d.htm" />
   <HelpKINode Title="id field" Url="html/249e15d1-0ed7-d569-d61b-ca81ccb79f1e.htm" />
   <HelpKINode Title="IDetectorInput interface">
     <HelpKINode Title="IDetectorInput Interface" Url="html/dc5a992e-cf1f-717c-8319-489111257c05.htm" />
@@ -208,13 +211,23 @@
     <HelpKINode Title="properties" Url="html/675b2875-d751-a12e-9770-beca8ed4053d.htm" />
   </HelpKINode>
   <HelpKINode Title="IDetectorInput.Texture property" Url="html/f719dea7-d6fa-9c8b-bf65-b3a696b080d9.htm" />
-  <HelpKINode Title="Initialize method" Url="html/a5ae75c7-b85c-1622-9f03-316bf790ed6a.htm" />
+  <HelpKINode Title="ImageResultsListener class">
+    <HelpKINode Title="ImageResultsListener Class" Url="html/efffb7b9-0be3-95e7-b53d-a6c721d7e532.htm" />
+    <HelpKINode Title="about ImageResultsListener class" Url="html/efffb7b9-0be3-95e7-b53d-a6c721d7e532.htm" />
+    <HelpKINode Title="constructor" Url="html/650ea5d3-5cf8-d1d6-ba2b-70fbb7408f04.htm" />
+    <HelpKINode Title="methods" Url="html/411b82a4-90cd-1e53-f472-917edaa918d3.htm" />
+    <HelpKINode Title="properties" Url="html/009791e1-f939-03a2-14ab-d78cca6c3416.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageResultsListener.ImageResultsListener constructor" Url="html/650ea5d3-5cf8-d1d6-ba2b-70fbb7408f04.htm" />
+  <HelpKINode Title="ImageResultsListener.onFaceFound method" Url="html/d630ef30-0ac9-0956-73ab-4a9e904d6b10.htm" />
+  <HelpKINode Title="ImageResultsListener.onFaceLost method" Url="html/54ddad48-6e79-8386-cd42-42b4ed07fce3.htm" />
+  <HelpKINode Title="ImageResultsListener.onImageResults method" Url="html/4d5c7470-446e-76ac-5cdd-d969ecfbef9d.htm" />
+  <HelpKINode Title="Initialize method" Url="html/d22581bb-dff5-d9a0-64c4-d1e9d584cfed.htm" />
   <HelpKINode Title="InnerBrowRaise enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
   <HelpKINode Title="interOcularDistance field" Url="html/c4a3548b-0f21-558b-8a01-49f5abc4aecc.htm" />
   <HelpKINode Title="isFrontFacing field" Url="html/8ed597cf-995f-902e-046b-95113850eb1c.htm" />
   <HelpKINode Title="IsRunning property" Url="html/608049d3-26a8-91fe-f40a-dc9d07a85735.htm" />
   <HelpKINode Title="Joy enumeration member" Url="html/9a91bf5d-8e50-6614-c638-00b4d1b60255.htm" />
-  <HelpKINode Title="license field" Url="html/bee61fb2-acd9-f8ba-8135-da88525299d1.htm" />
   <HelpKINode Title="LipCornerDepressor enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
   <HelpKINode Title="LipPress enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
   <HelpKINode Title="LipPucker enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
@@ -231,36 +244,87 @@
   </HelpKINode>
   <HelpKINode Title="Measurements.interOcularDistance field" Url="html/c4a3548b-0f21-558b-8a01-49f5abc4aecc.htm" />
   <HelpKINode Title="Measurements.Orientation property" Url="html/1ccf6251-462a-6dd0-4cac-91a955c6bc57.htm" />
+  <HelpKINode Title="mirrored field" Url="html/3f68af1e-9a8f-a393-eecc-0f83a629cf2a.htm" />
   <HelpKINode Title="MouthOpen enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
   <HelpKINode Title="movie field" Url="html/7fd55fd0-4aa1-93d4-29ec-bf22e1c794d8.htm" />
+  <HelpKINode Title="NativePlatform class">
+    <HelpKINode Title="NativePlatform Class" Url="html/7f9876d1-904f-4a4e-5b0b-9a47ea1a7bb0.htm" />
+    <HelpKINode Title="about NativePlatform class" Url="html/7f9876d1-904f-4a4e-5b0b-9a47ea1a7bb0.htm" />
+    <HelpKINode Title="constructor" Url="html/186a5618-4fc8-3ee1-c74d-2f2d5accdd2f.htm" />
+    <HelpKINode Title="fields" Url="html/4a00eddc-6788-af9b-59f9-fd6666f4b3f6.htm" />
+    <HelpKINode Title="methods" Url="html/64712638-2ab7-7859-9dfc-66e7069adb7f.htm" />
+    <HelpKINode Title="properties" Url="html/0dbb38d3-f322-b0d1-6002-08281a0d991b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NativePlatform.detector field" Url="html/3c5bead8-8618-bb99-0ce1-b1cc1d11948d.htm" />
+  <HelpKINode Title="NativePlatform.h1 field" Url="html/04e8ab52-6c7e-3690-d470-2eeadf502e94.htm" />
+  <HelpKINode Title="NativePlatform.h2 field" Url="html/190b67e4-94a2-2f93-9a8b-057f0b493937.htm" />
+  <HelpKINode Title="NativePlatform.h3 field" Url="html/a69c5341-a9aa-214d-44f5-394130f7de8d.htm" />
+  <HelpKINode Title="NativePlatform.Initialize method" Url="html/d22581bb-dff5-d9a0-64c4-d1e9d584cfed.htm" />
+  <HelpKINode Title="NativePlatform.NativePlatform constructor" Url="html/186a5618-4fc8-3ee1-c74d-2f2d5accdd2f.htm" />
+  <HelpKINode Title="NativePlatform.onFaceFound method" Url="html/b70eeb7c-e18d-02a8-427f-e2f6d0b3d095.htm" />
+  <HelpKINode Title="NativePlatform.onFaceLost method" Url="html/818ff804-8cb3-de96-4d63-44a7b5d48a09.htm" />
+  <HelpKINode Title="NativePlatform.onImageResults method" Url="html/9e6ffbfe-4149-e934-691e-069afa4f6155.htm" />
+  <HelpKINode Title="NativePlatform.ProcessFrame method" Url="html/5aa612ff-cca7-6e94-e423-ec219b04ef95.htm" />
+  <HelpKINode Title="NativePlatform.Release method" Url="html/1c7880cd-b519-2f28-83fd-f663e37d8e2c.htm" />
+  <HelpKINode Title="NativePlatform.SetEmotionState method" Url="html/f26b6da9-d784-142c-6074-99feed63882d.htm" />
+  <HelpKINode Title="NativePlatform.SetExpressionState method" Url="html/15ab6732-7b3b-4af1-3817-561a44da52eb.htm" />
+  <HelpKINode Title="NativePlatform.StartDetector method" Url="html/931e7b43-0568-29e5-a3c1-3fa94ef7fcc3.htm" />
+  <HelpKINode Title="NativePlatform.StopDetector method" Url="html/eb0e7185-9fe5-dc81-1047-50a789f45276.htm" />
   <HelpKINode Title="NoseWrinkle enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
   <HelpKINode Title="On method" Url="html/3d248a38-4369-625a-4f02-b767b6b17fa2.htm" />
   <HelpKINode Title="OnDestroy method" Url="html/4677a855-2498-9c05-8713-abc472f360ae.htm" />
   <HelpKINode Title="OnDrawGizmos method" Url="html/cf068dba-5fce-2396-3fe9-d6688c5ccf02.htm" />
   <HelpKINode Title="OnEnable method" Url="html/97cfc5be-786d-27fd-dfe8-da8ceb19179d.htm" />
-  <HelpKINode Title="onFaceFound method" Url="html/c6c6f4a3-9a45-36a3-aabb-97aaa452e895.htm" />
-  <HelpKINode Title="onFaceLost method" Url="html/1f2d0010-ebe0-c00b-ed08-954595c2e6e1.htm" />
-  <HelpKINode Title="onImageResults method" Url="html/a5287db1-c3ef-69d4-d73d-d351465fd9a6.htm" />
+  <HelpKINode Title="onFaceFound method">
+    <HelpKINode Title="ImageResultsListener.onFaceFound Method " Url="html/d630ef30-0ac9-0956-73ab-4a9e904d6b10.htm" />
+    <HelpKINode Title="NativePlatform.onFaceFound Method " Url="html/b70eeb7c-e18d-02a8-427f-e2f6d0b3d095.htm" />
+  </HelpKINode>
+  <HelpKINode Title="onFaceLost method">
+    <HelpKINode Title="ImageResultsListener.onFaceLost Method " Url="html/54ddad48-6e79-8386-cd42-42b4ed07fce3.htm" />
+    <HelpKINode Title="NativePlatform.onFaceLost Method " Url="html/818ff804-8cb3-de96-4d63-44a7b5d48a09.htm" />
+  </HelpKINode>
+  <HelpKINode Title="onImageResults method">
+    <HelpKINode Title="ImageResultsListener.onImageResults Method " Url="html/4d5c7470-446e-76ac-5cdd-d969ecfbef9d.htm" />
+    <HelpKINode Title="NativePlatform.onImageResults Method " Url="html/9e6ffbfe-4149-e934-691e-069afa4f6155.htm" />
+  </HelpKINode>
   <HelpKINode Title="OnInspectorGUI method" Url="html/af01535a-e5bf-f24c-4e7e-fc75a3901173.htm" />
+  <HelpKINode Title="orientation field" Url="html/e7b1d3c9-b018-0e52-559d-d6921420e62e.htm" />
   <HelpKINode Title="Orientation property" Url="html/1ccf6251-462a-6dd0-4cac-91a955c6bc57.htm" />
   <HelpKINode Title="ProcessFrame method">
     <HelpKINode Title="CameraInput.ProcessFrame Method " Url="html/f9bd7fd1-7ad8-5b04-84e3-a2e0fd2be7fc.htm" />
     <HelpKINode Title="Detector.ProcessFrame Method " Url="html/50563260-38b3-ed4f-4505-b115da0883f7.htm" />
+    <HelpKINode Title="NativePlatform.ProcessFrame Method " Url="html/5aa612ff-cca7-6e94-e423-ec219b04ef95.htm" />
   </HelpKINode>
+  <HelpKINode Title="Release method" Url="html/1c7880cd-b519-2f28-83fd-f663e37d8e2c.htm" />
   <HelpKINode Title="rgba field" Url="html/476ecaf4-d7c9-d24a-cbd0-38695086a7ce.htm" />
   <HelpKINode Title="Sadness enumeration member" Url="html/9a91bf5d-8e50-6614-c638-00b4d1b60255.htm" />
   <HelpKINode Title="sampleRate field">
     <HelpKINode Title="CameraInput.sampleRate Field" Url="html/d7872032-63f9-a740-e015-47329fb8f6f5.htm" />
     <HelpKINode Title="VideoFileInput.sampleRate Field" Url="html/9369c1ab-68da-2779-b0ff-e407ccf1d3ce.htm" />
   </HelpKINode>
-  <HelpKINode Title="SetEmotionState method" Url="html/45144305-d549-3427-a6fb-82e150d7bb89.htm" />
-  <HelpKINode Title="SetExpressionState method" Url="html/ef1be5ec-6747-3da8-1089-c684e95c2c42.htm" />
+  <HelpKINode Title="SelectCamera method" Url="html/dff8981e-af94-c010-ed7f-574383c48d80.htm" />
+  <HelpKINode Title="SetEmotionState method">
+    <HelpKINode Title="Detector.SetEmotionState Method " Url="html/45144305-d549-3427-a6fb-82e150d7bb89.htm" />
+    <HelpKINode Title="NativePlatform.SetEmotionState Method " Url="html/f26b6da9-d784-142c-6074-99feed63882d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetExpressionState method">
+    <HelpKINode Title="Detector.SetExpressionState Method " Url="html/ef1be5ec-6747-3da8-1089-c684e95c2c42.htm" />
+    <HelpKINode Title="NativePlatform.SetExpressionState Method " Url="html/15ab6732-7b3b-4af1-3817-561a44da52eb.htm" />
+  </HelpKINode>
   <HelpKINode Title="ShowFace method" Url="html/0f8cc0ea-449b-4d43-54fc-3e74e2335a97.htm" />
   <HelpKINode Title="Smile enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
   <HelpKINode Title="Smirk enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
-  <HelpKINode Title="StartDetector method" Url="html/5889da63-6e45-d7f7-88ef-bbca477a568f.htm" />
+  <HelpKINode Title="Start method" Url="html/3c5a249f-e321-6a22-53aa-78406c2add5a.htm" />
+  <HelpKINode Title="StartDetector method">
+    <HelpKINode Title="Detector.StartDetector Method " Url="html/5889da63-6e45-d7f7-88ef-bbca477a568f.htm" />
+    <HelpKINode Title="NativePlatform.StartDetector Method " Url="html/931e7b43-0568-29e5-a3c1-3fa94ef7fcc3.htm" />
+  </HelpKINode>
   <HelpKINode Title="startOnWake field" Url="html/5e24f81b-289e-38e3-1467-7a65df3bd37a.htm" />
   <HelpKINode Title="Stop method" Url="html/966865e3-880b-0691-cf07-d6b990a817e4.htm" />
+  <HelpKINode Title="StopDetector method">
+    <HelpKINode Title="Detector.StopDetector Method " Url="html/bce07a95-7f10-b93a-5a52-aea7c7161b47.htm" />
+    <HelpKINode Title="NativePlatform.StopDetector Method " Url="html/eb0e7185-9fe5-dc81-1047-50a789f45276.htm" />
+  </HelpKINode>
   <HelpKINode Title="Surprise enumeration member" Url="html/9a91bf5d-8e50-6614-c638-00b4d1b60255.htm" />
   <HelpKINode Title="targetHeight field" Url="html/2635c307-a330-8ce3-a0bd-d671ae8a5b1c.htm" />
   <HelpKINode Title="targetWidth field" Url="html/1faf1c84-5928-37b0-7207-225b93966998.htm" />
@@ -272,6 +336,7 @@
   <HelpKINode Title="timestamp field" Url="html/3d7394f7-2931-e7bd-aa40-41d657a9224a.htm" />
   <HelpKINode Title="ToString method" Url="html/6e759471-d5cb-4554-796a-62b3469d672f.htm" />
   <HelpKINode Title="UpperLipRaise enumeration member" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
+  <HelpKINode Title="Upright enumeration member" Url="html/97c07c7a-04c0-cb8a-6c86-eabd88df8ddb.htm" />
   <HelpKINode Title="Valence enumeration member" Url="html/9a91bf5d-8e50-6614-c638-00b4d1b60255.htm" />
   <HelpKINode Title="ValidPlatform method" Url="html/7a289552-d150-20fe-4216-34a72b5acd4f.htm" />
   <HelpKINode Title="value field">
@@ -291,6 +356,7 @@
   <HelpKINode Title="VideoFileInput.sampleRate field" Url="html/9369c1ab-68da-2779-b0ff-e407ccf1d3ce.htm" />
   <HelpKINode Title="VideoFileInput.Texture property" Url="html/b52bdf5e-433e-53e2-7fe1-48019304f077.htm" />
   <HelpKINode Title="VideoFileInput.VideoFileInput constructor" Url="html/e0597ed8-16f6-aff3-104a-4761301291ad.htm" />
+  <HelpKINode Title="videoRotationAngle property" Url="html/742852ad-4bf7-414c-7bcd-efe19a9bc38c.htm" />
   <HelpKINode Title="w field" Url="html/ef59798a-1fdd-86fa-e2ab-718e876d7cef.htm" />
   <HelpKINode Title="x field" Url="html/4a4d1b99-6cbc-1c50-41e7-eda371cac954.htm" />
   <HelpKINode Title="y field" Url="html/9c099dd5-90ee-f658-29e1-191c462fe89d.htm" />
