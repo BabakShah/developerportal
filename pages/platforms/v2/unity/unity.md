@@ -44,7 +44,7 @@ Downloading the Unity SDK requires sending a manually signed license agreement. 
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
 
 ## Class Documentation
-The classes that come with this asset are viewable [here](http://developer.affectiva.com/pages/platforms/v2/unity/AffdexUnityHelp/index.html).  
+The classes that come with this asset are viewable [here](/pages/platforms/v2/unity/AffdexUnityHelp/index.html).  
 
 ## Using the Asset
 
@@ -109,7 +109,7 @@ public class ExampleClass : MonoBehaviour {
 
 
 #### Using VideoInput
-Affectiva's <code>VideoInput</code> script is meant more as an example or for testing than for use in an actual game.  Android doesn't support the MovieTexture that this script relies on and thus cannot be used in Android.  After adding it to a scene you can set a default video and a sample rate.  The sample rate defines how many times per second to pass the current video frame to Affectiva for processing metrics.  As an example, if the video is 60 frames per second (YouTube's currently supported frame rate) and you have the sample rate set to 20 than 20 of the 60 frames per second will be processed.  If the video has no camera cuts, and one consistent face, than a sample rate as low as 5 should be sufficient. 
+Affectiva's <code>VideoInput</code> script is meant more as an example or for testing than for use in an actual game.  Android doesn't support the MovieTexture that this script relies on and thus it cannot be used in Android.  After adding it to a scene you can set a default video and a sample rate.  The sample rate defines how many times per second to pass the video frames to Affectiva for processing metrics.  As an example, if the video is 60 frames per second (YouTube's currently supported frame rate) and you have the sample rate set to 20, then 20 of the 60 frames per second will be processed.  If the video has no camera cuts, and one consistent face, than a sample rate as low as 5 should be sufficient. 
 
 Another common use of the asset is to process previously captured video files. The <code>VideoFileInput</code> helps streamline this effort by decoding and processing frames from a video file. During processing, the <code>VideoFileInput</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list](http://docs.unity3d.com/Manual/class-MovieTexture.html) of accepted file types and recommended video codecs that are compatible with the detector.  
 
@@ -205,70 +205,27 @@ For each of the possible sources of facial frames, the asset has a script to con
 
 ### Detector
 
-In the underlining emotion recognition engine, this uses the <code>Detector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>Detector</code> will detect a face in a frame and deliver information on it to you.  
+In the underlying emotion recognition engine, this uses the <code>Detector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>Detector</code> will detect a face in a frame and deliver information on it to you.  
 
 ## Data Structures
 
 ### Frame
 
-The <code>Frame</code> is used for passing images to and from the detectors. If you use the <code>CameraInput</code> script or <code>VideoInput</code> script described above you don't need to do this as the script takes care of it for you.  To initialize a new instance of a frame, you must call the frame constructor. The frame constructor requires the width and height of the frame and a pointer to the pixel array representing the image. Additionally, the color format of the incoming image must be supplied. (See below for supported color formats.)  For Unity, the timestamp is always required.
+The <code>Frame</code> is used for passing images to and from the detectors. If you use the <code>CameraInput</code> script or <code>VideoInput</code> script described above you don't need to do this as the script takes care of it for you.  To initialize a new instance of a frame, you must call the frame constructor. The frame constructor requires the width and height of the frame. Additionally, the color format of the incoming image must be supplied. For Unity, the timestamp is always required and most of the time you will want to pass it Time.realtimeSinceStartup .    
+
+There are two versions of the frame constuctor.  The first expects an upright image:
 
 ```csharp
-Frame(int frameWidth, int frameHeight, ref byte[] pixels, COLOR_FORMAT, frameColorFormat, float timestamp);
+Frame(Color32[] rgba, int width, int height, float timestamp);
 ```
 
-Only the following color formats are currently supported by the Frame class:  
+The second requires the orientation of the frame:
 
 ```csharp
-enum class COLOR_FORMAT
-{
-    RGB,
-    BGR
-};
+Frame(Color32[] rgba, int width, int height, Orientation orientation, float timestamp);
 ```
 
-<!-- commented out until future release
-```
-enum class COLOR_FORMAT
-{
-  RGB,      // 24-bit pixels with Red, Green, Blue pixel ordering
-  BGR,      // 24-bit pixels with Blue, Green, Red pixel ordering
-  RGBA,     // 32-bit pixels with Red, Green, Blue, Alpha  pixel ordering
-  BGRA,     // 24-bit pixels with Blue, Green, Red, Alpha pixel ordering
-  YUV_NV21, // 12-bit pixels with YUV information (NV21 encoding)
-  YUV_I420  // 12-bit pixels with YUV information (I420 encoding)
-};
-```
-end comment -->
-
-To retrieve the color format used to create the frame, call:  
-
-```csharp
-COLOR_FORMAT getColorFormat();
-```
-
-To get the Frame image's underlying byte array of pixels, call this method:  
-
-```csharp
-byte[] getBGRByteArray();
-```
-
-To retrieve the length of the frame's byte array in addition to the image's width and height in pixels, call the following methods:  
-
-```csharp
-int getBGRByteArrayLength();
-int getWidth() const;
-int getHeight() const;
-```
-
-Client applications have the ability to get and set the Frame's timestamp through the following:  
-
-```csharp
-float getTimestamp() const;
-void setTimestamp(float value);
-```
-
-To see an example of how to send frames to the detector review [this GitHub Gist](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).  
+To see an example of how to send frames to the detector review [this GitHub Gist](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).  For more details of the frame structure, see the [class docs](/pages/platforms/v2/unity/AffdexUnityHelp/index.html).
 
 ### Face
 
