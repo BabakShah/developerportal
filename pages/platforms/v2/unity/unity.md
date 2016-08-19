@@ -12,7 +12,7 @@ summary:
 
 <img src="{{ "/images/unity.png" | prepend: site.baseurl }}" align="right" style="max-width: 6em;">
 
-SDK Developer Guide Release 2.0
+SDK Developer Guide Release 2.0.x
 
 ## Getting started
 
@@ -28,8 +28,8 @@ Downloading the Unity SDK requires sending a manually signed license agreement. 
 
 <em><strong>Runtime Requirements</strong></em>
 
-* [Unity 5](http://unity3d.com/get-unity)
-* [Visual Studio 14+](https://www.visualstudio.com/) or Xamarin Studio
+* [Unity 5.2.1](http://unity3d.com/get-unity)
+* [Visual Studio 14](https://www.visualstudio.com/) or Xamarin Studio
 * [QuickTime Movie Player](http://www.apple.com/quicktime/download/)
 * Visual C++ Redistributable runtime for VS 2013
 
@@ -38,19 +38,17 @@ Downloading the Unity SDK requires sending a manually signed license agreement. 
 
 *   Windows 7 and above
 *   OS 10.9.5 and above
-*   Android 4.4 and above
 
 ## Video Tutorial
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
 
 ## Class Documentation
-The classes that come with this asset are viewable [here](/pages/platforms/v2/unity/AffdexUnityHelp/index.html).  
+The classes that come with this asset are viewable [here](http://developer.affectiva.com/pages/platforms/v2/unity/AffdexUnityHelp/index.html).  
 
 ## Using the Asset
 
-We package our plugin as an asset, like those you can buy on Unity's Asset Store.  It is currently only available directly from us (contact gaminginfo@affectiva.com for a copy).  The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:  
+We package our plugin as an asset that we intend to sell on Unity's Asset Store.  It is currently only available directly from us (contact SDK@affectiva.com for a copy).  The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:  
 
-*   Camera: images from the webcam (or selfie cam for mobile devices)
 *   Frames: a sequence of timed images.
 *   Video: a video file on a device's local storage.
 
@@ -63,20 +61,18 @@ First step is to add a detector to your scene's Main Camera (Add Component -> Sc
 You can now set the emotions and expressions you are interested in (the more you select the worse performance will be, so only select the ones you need):  
 <img src="{{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
-### Add input script to scene
-
-#### Using CameraInput
-You can either use Affectiva's <code>CameraInput</code> script or write your own.  To use ours, add the camera input component to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Camera Input):  
+### Add CameraInput to scene
+You can either use Affectiva's CameraInput script or write your own.  To use ours, add a camera input component to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Camera Input):  
 <img src="{{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
 Set the camera rate, camera location, width and height:  
 <img src="{{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
-Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x600, 1024x768, etc) and a sample rate from 5 to 20.  You can reduce CPU usage by lowering the resolution and sample rate.
+Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x600, 1024x768, etc).  
 
 To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see Affectiva's <code>CameraInput</code> script in the asset.  
 
-##### Changing the Camera
+#### Changing the Camera
 If the player has multiple webcams you may want them to have the option of selecting the webcam.  The webcam name can be passed to CameraInput.SelectCamera as the second argument.  You can get a list of connected webcams using the [example code from Unity](http://docs.unity3d.com/ScriptReference/WebCamTexture-devices.html).  Once you have a specific webcam to use you can add code similar to the following to one of your scripts:
 
 ```csharp
@@ -107,18 +103,12 @@ public class ExampleClass : MonoBehaviour {
 }
 ```
 
-
-#### Using VideoInput
-Affectiva's <code>VideoInput</code> script is meant more as an example or for testing than for use in an actual game.  Android doesn't support the MovieTexture that this script relies on and thus it cannot be used in Android.  After adding it to a scene you can set a default video and a sample rate.  The sample rate defines how many times per second to pass the video frames to Affectiva for processing metrics.  As an example, if the video is 60 frames per second (YouTube's currently supported frame rate) and you have the sample rate set to 20, then 20 of the 60 frames per second will be processed.  If the video has no camera cuts, and one consistent face, than a sample rate as low as 5 should be sufficient. 
-
-Another common use of the asset is to process previously captured video files. The <code>VideoFileInput</code> helps streamline this effort by decoding and processing frames from a video file. During processing, the <code>VideoFileInput</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list](http://docs.unity3d.com/Manual/class-MovieTexture.html) of accepted file types and recommended video codecs that are compatible with the detector.  
-
 ### Configuring a Detector
 
 The Affdex classifier data files are used in frame analysis processing. These files are supplied as part of the asset. The location of the data files on the physical storage must remain as:  
 
 ```csharp
-Assets/StreamingAssets/affdex-data*
+Assets/StreamingAssets/affdex-data
 ```
 
 When you switch scenes you need to destroy and respawn the <code>Detector</code> and <code>CameraInput</code>.  If you do not respawn these components, Unity's camera interface will get a frozen image at reload thus causing the metrics to continually come from the image taken at the scene transition.
@@ -126,7 +116,7 @@ When you switch scenes you need to destroy and respawn the <code>Detector</code>
 ## ImageResultsListener
 
 The Detectors use callback classes to communicate events and results:
-The <code>ImageResultsListener</code> is a client callback which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example:  
+The <code>ImageResultsListener</code> is a client callback which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example of how they look:  
 
 ```csharp
 using Affdex;
@@ -183,7 +173,7 @@ public class PlayerEmotions : ImageResultsListener
 }
 ```
 
-OnImageResults is the most popular method.  The Faces class allows you to get the current values of all expressions, and all emotions.  It also allows you to get the interocular distance, facial feature point locations, and the orientation of the face.
+OnImageResults is probably the most valuable method here.  The Faces class allows you to get the current values of all expressions, and all emotions.  It also allows you to get the interocular distance, facial feature point locations, and the orientation of the face.
 
 For a fully implemented sample, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).  You can use onFaceLost to pause a game.  If you use Time.timeScale to pause, the camera script will also pause, as it uses the same time values.  
 
@@ -193,7 +183,7 @@ While you can use the detector UI to set the emotion and expression classifiers 
 
 By default, all classifiers are turned off (set to false).  Every classifier you turn on will take a bit more system resources.  
 
-Here is an example of how to set the detection of the smile classifier to on, by calling the Detector class's SetExpressionState method:  
+To set the detection of the smile classifier to on, call the Detector class's SetExpressionState method:  
 
 ```csharp
 void SetExpressionState(Expressions.Smile, true);
@@ -205,31 +195,86 @@ For each of the possible sources of facial frames, the asset has a script to con
 
 ### Detector
 
-In the underlying emotion recognition engine, this uses the <code>Detector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>Detector</code> will detect a face in a frame and deliver information on it to you.  
+This is automatically attached to a scene with the Affdex\Detector script.  In the underlining emotion recognition engine, this uses the <code>Detector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>Detector</code> will detect a face in an frame and deliver information on it to you.  
+
+### Video File Input
+
+Another common use of the asset is to process previously captured video files. The <code>VideoFileInput</code> helps streamline this effort by decoding and processing frames from a video file. During processing, the <code>VideoFileInput</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list](http://docs.unity3d.com/Manual/class-MovieTexture.html) of accepted file types and recommended video codecs that are compatible with the detector.  
 
 ## Data Structures
 
-### Frame
+###Frame
 
-The <code>Frame</code> is used for passing images to and from the detectors. If you use the <code>CameraInput</code> script or <code>VideoInput</code> script described above you don't need to do this as the script takes care of it for you.  To initialize a new instance of a frame, you must call the frame constructor. The frame constructor requires the width and height of the frame. Additionally, the color format of the incoming image must be supplied. For Unity, the timestamp is always required and most of the time you will want to pass it Time.realtimeSinceStartup .    
-
-There are two versions of the frame constuctor.  The first expects an upright image:
+The <code>Frame</code> is used for passing images to and from the detectors. If you use the <code>CameraInput</code> script described above you don't need to do this as that script takes care of it for you.  To initialize a new instance of a frame, you must call the frame constructor. The frame constructor requires the width and height of the frame and a pointer to the pixel array representing the image. Additionally, the color format of the incoming image must be supplied. (See below for supported color formats.)  
 
 ```csharp
-Frame(Color32[] rgba, int width, int height, float timestamp);
+Frame(int frameWidth, int frameHeight, ref byte[] pixels, COLOR_FORMAT
+frameColorFormat);
 ```
 
-The second requires the orientation of the frame:
+A timestamp can be optionally set. It is required when passing the frame to the FrameDetector, and is not when using the PhotoDetector. The timestamp is automatically generated by querying the system time when using the CameraDetector, and is decoded from the video file in the case of the VideoDetector.  
 
 ```csharp
-Frame(Color32[] rgba, int width, int height, Orientation orientation, float timestamp);
+Frame(int frameWidth, int frameHeight, ref byte[] pixels, COLOR_FORMAT
+frameColorFormat, float timestamp);
 ```
 
-To see an example of how to send frames to the detector review [this GitHub Gist](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).  For more details of the frame structure, see the [class docs](/pages/platforms/v2/unity/AffdexUnityHelp/index.html).
+The following color formats are supported by the Frame class:  
+
+```csharp
+enum class COLOR_FORMAT
+{
+    RGB,
+    BGR
+};
+```
+
+<!-- commented out until future release
+```
+enum class COLOR_FORMAT
+{
+  RGB,      // 24-bit pixels with Red, Green, Blue pixel ordering
+  BGR,      // 24-bit pixels with Blue, Green, Red pixel ordering
+  RGBA,     // 32-bit pixels with Red, Green, Blue, Alpha  pixel ordering
+  BGRA,     // 24-bit pixels with Blue, Green, Red, Alpha pixel ordering
+  YUV_NV21, // 12-bit pixels with YUV information (NV21 encoding)
+  YUV_I420  // 12-bit pixels with YUV information (I420 encoding)
+};
+```
+end comment -->
+
+To retrieve the color format used to create the frame, call:  
+
+```csharp
+COLOR_FORMAT getColorFormat();
+```
+
+To get the Frame image's underlying byte array of pixels, call this method:  
+
+```csharp
+byte[] getBGRByteArray();
+```
+
+To retrieve the length of the frame's byte array in addition to the image's width and height in pixels, call the following methods:  
+
+```csharp
+int getBGRByteArrayLength();
+int getWidth() const;
+int getHeight() const;
+```
+
+Client applications have the ability to get and set the Frame's timestamp through the following:  
+
+```csharp
+float getTimestamp() const;
+void setTimestamp(float value);
+```
+
+To see an example of how to send frames to the detector review [this GitHub Gist](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).  
 
 ### Face
 
-The Face class represents a face found within a processed frame. It contains results for detected expressions, emotions, and head measurements.  
+The Face class represents a face found with a processed frame. It contains results for detected expressions and emotions and the face and head measurements.  
 
 ```csharp
 Face.Expressions
@@ -289,7 +334,7 @@ struct Emotions
 
 <strong>Measurements</strong>
 
-<code>Measurements</code> is a representation of the head and face measurements. The Interocular distance is defined as the distance between the two outer eye corners in pixels:  
+<code>Measurements</code> is a representation of the head and face measurements. The Interocular distance is the defined as the distance between the two outer eye corners in pixels:  
 
 ```csharp
 struct Expressions
