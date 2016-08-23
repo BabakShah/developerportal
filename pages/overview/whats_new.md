@@ -16,7 +16,7 @@ This page contains the release notes for the different versions of the Affdex SD
 *Date, Aug 2016*
 
 * Added Android support
-  - Android needs to copy data from StreamingAssets to the app's private data folder on launch.  fileList.txt us used to determine what files are stale and need to be copied.
+  - Android needs to copy data from StreamingAssets to the app's private data folder on launch.  fileList.txt is used to determine what files are stale and need to be copied.
 * Frame constructor can now accept a rotation angle of 0, 90, 180, and 270.
 * Detector.Initialize is now private because it is called automatically by Detector.Start
 * Detector.Stop has been deprecated in favor of Detector.StopDetector
