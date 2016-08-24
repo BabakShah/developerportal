@@ -11,7 +11,7 @@ Use [this form](http://www.affectiva.com/45-day-free-trial/) to sign up for a fr
 
 [Contact us](mailto:sales@affectiva.com?subject=Affdex SDK Licensing Inquiry) for more information about licensing for use in commercial applications.
 
-Contact our [gaming team](mailto:gaminginfo@affectiva.com?subject=Get Affdex SDK Unity Plugin) if you would access to the Unity SDK beta.  
+Contact our [gaming team](mailto:gaminginfo@affectiva.com?subject=Get Affdex SDK Unity Plugin) if you would access to the Unity asset.  
 
 #### Get the SDK
 

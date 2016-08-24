@@ -12,7 +12,7 @@ summary:
 
 <img src="{{ "/images/unity.png" | prepend: site.baseurl }}" align="right" style="max-width: 6em;">
 
-SDK Developer Guide Release 2.0
+SDK Developer Guide Release 2.0.x
 
 ## Getting started
 

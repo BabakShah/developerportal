@@ -154,17 +154,35 @@ platforms:
 
   - name: Unity
     logo: /images/unity.png
-#    versions:
-#    - status: beta
-#      architecture: OSX x86_64
-#      version: "1.0"
-#      package: mailto:gaminginfo@affectiva.com
-#      size: 48 MB
-#    - status: beta
-#      architecture: Windows i386/x86_64
-#      version: "1.0"
-#      package: mailto:gaminginfo@affectiva.com
-#      size: 48 MB
+    versions:
+    - status: stable
+      architecture: OSX i386/x86_64
+      version: "2.1"
+      package: mailto:gaminginfo@affectiva.com
+      size: 40 MB
+    - status: stable
+      architecture: Windows x86/x86_64
+      version: "2.1"
+      package: mailto:gaminginfo@affectiva.com
+      size: 40 MB
+    - status: stable
+      architecture: Android ARM7/x86
+      version: "2.1"
+      package: mailto:gaminginfo@affectiva.com
+      size: 40 MB
+      
+    - status: legacy
+      doc: /v2/unity/
+      architecture: OSX i386/x86_64
+      version: "2.0"
+      package: mailto:gaminginfo@affectiva.com
+      size: 48 MB
+    - status: legacy
+      doc: /v2/unity/
+      architecture: Windows x86/x86_64
+      version: "2.0"
+      package: mailto:gaminginfo@affectiva.com
+      size: 48 MB
 
   - name: Windows
     logo: /images/windows.png

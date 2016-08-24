@@ -3,3 +3,6 @@ _site
 
 # Mac specific files
 .DS_Store
+
+# Class Doc Log Files
+*LastBuild.log
