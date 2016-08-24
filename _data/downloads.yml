@@ -157,17 +157,17 @@ platforms:
     versions:
     - status: stable
       architecture: OSX i386/x86_64
-      version: "2.1"
+      version: "2.2"
       package: mailto:gaminginfo@affectiva.com
       size: 40 MB
     - status: stable
       architecture: Windows x86/x86_64
-      version: "2.1"
+      version: "2.2"
       package: mailto:gaminginfo@affectiva.com
       size: 40 MB
     - status: stable
       architecture: Android ARM7/x86
-      version: "2.1"
+      version: "2.2"
       package: mailto:gaminginfo@affectiva.com
       size: 40 MB
       

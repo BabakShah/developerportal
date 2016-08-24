@@ -1,6 +1,6 @@
 ---
-title: Analyze a video frame stream
-permalink: /v2_1/unity/analyze-frames/
+title: Analyze a video file
+permalink: /v2_2/unity/analyze-video/
 tags: [unity, sdk]
 audience: writer, designer
 keywords:
@@ -8,7 +8,6 @@ last_updated:
 summary:
 metadata: false
 ---
-Using a webcam is a common way to obtain video for facial expression detection. The ```CameraDetector``` can access a webcam connected to the device to capture frames and feed them directly to the facial expression engine. 
 
 ### Add detector to scene
 First step is to add a detector to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Detector):  
@@ -17,6 +16,13 @@ First step is to add a detector to your scene's Main Camera (Add Component -> Sc
 You can now set the emotions and expressions you are interested in (the more you select the worse performance will be, so only select the ones you need):  
 <img src="{{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
+### Add input script to scene
+
+#### Using VideoInput
+Affectiva's <code>VideoInput</code> script is meant more as an example or for testing than for use in an actual game.  Android doesn't support the MovieTexture that this script relies on and thus it cannot be used in Android.  After adding it to a scene you can set a default video and a sample rate.  The sample rate defines how many times per second to pass the video frames to Affectiva for processing metrics.  As an example, if the video is 60 frames per second (YouTube's currently supported frame rate) and you have the sample rate set to 20, then 20 of the 60 frames per second will be processed.  If the video has no camera cuts, and one consistent face, than a sample rate as low as 5 should be sufficient. 
+
+Another common use of the asset is to process previously captured video files. The <code>VideoFileInput</code> helps streamline this effort by decoding and processing frames from a video file. During processing, the <code>VideoFileInput</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list](http://docs.unity3d.com/Manual/class-MovieTexture.html) of accepted file types and recommended video codecs that are compatible with the detector.  
+
 ### Configuring a Detector
 
 The Affdex classifier data files are used in frame analysis processing. These files are supplied as part of the asset. The location of the data files on the physical storage must remain as:  
@@ -24,8 +30,6 @@ The Affdex classifier data files are used in frame analysis processing. These fi
 ```csharp
 Assets/StreamingAssets/affdex-data*
 ```
-
-When you switch scenes you need to destroy and respawn the <code>Detector</code> and <code>CameraInput</code>.  If you do not respawn these components, Unity's camera interface will get a frozen image at reload thus causing the metrics to continually come from the image taken at the scene transition.
 
 ## ImageResultsListener
 
@@ -89,7 +93,7 @@ public class PlayerEmotions : ImageResultsListener
 
 OnImageResults is the most popular method.  The Faces class allows you to get the current values of all expressions, and all emotions.  It also allows you to get the interocular distance, facial feature point locations, and the orientation of the face.
 
-For a fully implemented sample, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).  You can use onFaceLost to pause a game.  If you use Time.timeScale to pause, the camera script will also pause, as it uses the same time values.  
+For a fully implemented sample, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).  You can use onFaceLost to pause a game.  
 
 ### Setting the Classifiers
 
@@ -112,24 +116,6 @@ For each of the possible sources of facial frames, the asset has a script to con
 In the underlying emotion recognition engine, this uses the <code>Detector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>Detector</code> will detect a face in a frame and deliver information on it to you.  
 
 ## Data Structures
-
-### Frame
-
-The <code>Frame</code> is used for passing images to and from the detectors. To initialize a new instance of a frame, you must call the frame constructor. The frame constructor requires the width and height of the frame. Additionally, the color format of the incoming image must be supplied. For Unity, the timestamp is always required and most of the time you will want to pass it Time.realtimeSinceStartup .    
-
-There are two versions of the frame constuctor.  The first expects an upright image:
-
-```csharp
-Frame(Color32[] rgba, int width, int height, float timestamp);
-```
-
-The second requires the orientation of the frame:
-
-```csharp
-Frame(Color32[] rgba, int width, int height, Orientation orientation, float timestamp);
-```
-
-To see an example of how to send frames to the detector review [this GitHub Gist](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).  For more details of the frame structure, see the [class docs](/pages/platforms/v2/unity/AffdexUnityHelp/index.html).
 
 ### Face
 

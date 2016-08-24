@@ -1,6 +1,6 @@
 ---
-title: Analyze a video file
-permalink: /v2_1/unity/analyze-video/
+title: Analyze a camera feed
+permalink: /v2_2/unity/analyze-camera/
 tags: [unity, sdk]
 audience: writer, designer
 keywords:
@@ -8,6 +8,7 @@ last_updated:
 summary:
 metadata: false
 ---
+Using a webcam is a common way to obtain video for facial expression detection. The ```CameraDetector``` can access a webcam connected to the device to capture frames and feed them directly to the facial expression engine. 
 
 ### Add detector to scene
 First step is to add a detector to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Detector):  
@@ -18,10 +19,48 @@ You can now set the emotions and expressions you are interested in (the more you
 
 ### Add input script to scene
 
-#### Using VideoInput
-Affectiva's <code>VideoInput</code> script is meant more as an example or for testing than for use in an actual game.  Android doesn't support the MovieTexture that this script relies on and thus it cannot be used in Android.  After adding it to a scene you can set a default video and a sample rate.  The sample rate defines how many times per second to pass the video frames to Affectiva for processing metrics.  As an example, if the video is 60 frames per second (YouTube's currently supported frame rate) and you have the sample rate set to 20, then 20 of the 60 frames per second will be processed.  If the video has no camera cuts, and one consistent face, than a sample rate as low as 5 should be sufficient. 
+#### Using CameraInput
+You can either use Affectiva's <code>CameraInput</code> script or write your own.  To use ours, add the camera input component to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Camera Input):  
+<img src="{{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
 
-Another common use of the asset is to process previously captured video files. The <code>VideoFileInput</code> helps streamline this effort by decoding and processing frames from a video file. During processing, the <code>VideoFileInput</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list](http://docs.unity3d.com/Manual/class-MovieTexture.html) of accepted file types and recommended video codecs that are compatible with the detector.  
+Set the camera rate, camera location, width and height:  
+<img src="{{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
+
+Affdex performs best using a resolution ratio of 4:3 (e.g.: 320x240, 640x480, 800x600, 1024x768, etc.) and a sample rate from 5 to 20.  You can reduce CPU usage by lowering the resolution and sample rate.
+
+To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see Affectiva's <code>CameraInput</code> script in the asset.  
+
+##### Changing the Camera
+If the player has multiple webcams you may want them to have the option of selecting the webcam.  The webcam name can be passed to CameraInput.SelectCamera as the second argument.  You can get a list of connected webcams using the [example code from Unity](http://docs.unity3d.com/ScriptReference/WebCamTexture-devices.html).  Once you have a specific webcam to use you can add code similar to the following to one of your scripts:
+
+```csharp
+using UnityEngine;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour {
+    Transform mainCamera;
+    CameraInput cameraInput;
+    string cameraName;
+    string currentCameraName = "";
+    
+    // Update is called once per frame
+    void Update () {
+    
+        if (currentCameraName != cameraName)
+        {
+            cameraInput.SelectCamera(true,cameraName);
+            currentCameraName = cameraName;
+        }
+    
+    }
+    
+    void Awake () {
+        mainCamera = GameObject.FindGameObjectWithTag ("MainCamera").transform;
+        cameraInput = mainCamera.GetComponent <CameraInput>();
+    }
+}
+```
+
 
 ### Configuring a Detector
 
@@ -30,6 +69,8 @@ The Affdex classifier data files are used in frame analysis processing. These fi
 ```csharp
 Assets/StreamingAssets/affdex-data*
 ```
+
+When you switch scenes you need to destroy and respawn the <code>Detector</code> and <code>CameraInput</code>.  If you do not respawn these components, Unity's camera interface will get a frozen image at reload thus causing the metrics to continually come from the image taken at the scene transition.
 
 ## ImageResultsListener
 
@@ -93,7 +134,7 @@ public class PlayerEmotions : ImageResultsListener
 
 OnImageResults is the most popular method.  The Faces class allows you to get the current values of all expressions, and all emotions.  It also allows you to get the interocular distance, facial feature point locations, and the orientation of the face.
 
-For a fully implemented sample, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).  You can use onFaceLost to pause a game.  
+For a fully implemented sample, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).  You can use onFaceLost to pause a game.  If you use Time.timeScale to pause, the camera script will also pause, as it uses the same time values.  
 
 ### Setting the Classifiers
 

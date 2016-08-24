@@ -1,7 +1,7 @@
 ---
 title: Powered by Affdex
 permalink: /poweredbyaffdex/
-metadata: false
+metadata: true
 ---
 {% include linkrefs.html %}
 

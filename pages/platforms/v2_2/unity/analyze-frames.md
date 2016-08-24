@@ -1,6 +1,6 @@
 ---
-title: Analyze a camera feed
-permalink: /v2_1/unity/analyze-camera/
+title: Analyze a video frame stream
+permalink: /v2_2/unity/analyze-frames/
 tags: [unity, sdk]
 audience: writer, designer
 keywords:
@@ -16,51 +16,6 @@ First step is to add a detector to your scene's Main Camera (Add Component -> Sc
 
 You can now set the emotions and expressions you are interested in (the more you select the worse performance will be, so only select the ones you need):  
 <img src="{{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
-
-### Add input script to scene
-
-#### Using CameraInput
-You can either use Affectiva's <code>CameraInput</code> script or write your own.  To use ours, add the camera input component to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Camera Input):  
-<img src="{{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
-
-Set the camera rate, camera location, width and height:  
-<img src="{{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%">
-
-Affdex performs best using a resolution ratio of 4:3 (e.g.: 320x240, 640x480, 800x600, 1024x768, etc.) and a sample rate from 5 to 20.  You can reduce CPU usage by lowering the resolution and sample rate.
-
-To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see Affectiva's <code>CameraInput</code> script in the asset.  
-
-##### Changing the Camera
-If the player has multiple webcams you may want them to have the option of selecting the webcam.  The webcam name can be passed to CameraInput.SelectCamera as the second argument.  You can get a list of connected webcams using the [example code from Unity](http://docs.unity3d.com/ScriptReference/WebCamTexture-devices.html).  Once you have a specific webcam to use you can add code similar to the following to one of your scripts:
-
-```csharp
-using UnityEngine;
-using System.Collections;
-
-public class ExampleClass : MonoBehaviour {
-    Transform mainCamera;
-    CameraInput cameraInput;
-    string cameraName;
-    string currentCameraName = "";
-    
-    // Update is called once per frame
-    void Update () {
-    
-        if (currentCameraName != cameraName)
-        {
-            cameraInput.SelectCamera(true,cameraName);
-            currentCameraName = cameraName;
-        }
-    
-    }
-    
-    void Awake () {
-        mainCamera = GameObject.FindGameObjectWithTag ("MainCamera").transform;
-        cameraInput = mainCamera.GetComponent <CameraInput>();
-    }
-}
-```
-
 
 ### Configuring a Detector
 
@@ -157,6 +112,24 @@ For each of the possible sources of facial frames, the asset has a script to con
 In the underlying emotion recognition engine, this uses the <code>Detector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>Detector</code> will detect a face in a frame and deliver information on it to you.  
 
 ## Data Structures
+
+### Frame
+
+The <code>Frame</code> is used for passing images to and from the detectors. To initialize a new instance of a frame, you must call the frame constructor. The frame constructor requires the width and height of the frame. Additionally, the color format of the incoming image must be supplied. For Unity, the timestamp is always required and most of the time you will want to pass it Time.realtimeSinceStartup .    
+
+There are two versions of the frame constuctor.  The first expects an upright image:
+
+```csharp
+Frame(Color32[] rgba, int width, int height, float timestamp);
+```
+
+The second requires the orientation of the frame:
+
+```csharp
+Frame(Color32[] rgba, int width, int height, Orientation orientation, float timestamp);
+```
+
+To see an example of how to send frames to the detector review [this GitHub Gist](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).  For more details of the frame structure, see the [class docs](/pages/platforms/v2/unity/AffdexUnityHelp/index.html).
 
 ### Face
 

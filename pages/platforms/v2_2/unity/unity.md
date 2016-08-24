@@ -1,6 +1,6 @@
 ---
 title: Affdex SDK for Unity
-permalink: /v2_1/unity/
+permalink: /v2_2/unity/
 redirect_from: "/unity/"
 tags: [unity, sdk, asset]
 audience: writer, designer
@@ -12,7 +12,7 @@ summary:
 
 <img src="{{ "/images/unity.png" | prepend: site.baseurl }}" align="right" style="max-width: 6em;">
 
-SDK Developer Guide Release 2.1.x
+SDK Developer Guide Release 2.2.x
 
 ## Using the SDK
 
@@ -41,9 +41,9 @@ Downloading the Unity SDK currently requires emailing a manually signed license 
 
 Facial images can be captured from different sources. For each of the different sources, the plugin defines a detector class that can handle processing images acquired from that source:
 
-* [How to analyze a camera feed]({{ site.baseurl }}/v2_1/unity/analyze-camera/)
-* [How to analyze a recorded video file]({{ site.baseurl }}/v2_1/unity/analyze-video/)
-* [How to analyze a video frame stream]({{ site.baseurl }}/v2_1/unity/analyze-frames/)
+* [How to analyze a camera feed]({{ site.baseurl }}/v2_2/unity/analyze-camera/)
+* [How to analyze a recorded video file]({{ site.baseurl }}/v2_2/unity/analyze-video/)
+* [How to analyze a video frame stream]({{ site.baseurl }}/v2_2/unity/analyze-frames/)
 
 ##### 3. Check out sample applications on GitHub
 
@@ -54,7 +54,7 @@ Here are GitHub repositories you can use as examples:
 * [The Labryinth of Emotions - A game made at the Emotion Lab 16 Hackathon](https://github.com/Art-Wolf/emotionlabs16)
 
 ## Class Documentation
-The classes that come with this asset are viewable [here](/pages/platforms/v2_1/unity/AffdexUnityHelp/index.html).  
+The classes that come with this asset are viewable [here](/pages/platforms/v2_2/unity/AffdexUnityHelp/index.html).  
 
 ## Requirements & Dependencies
 

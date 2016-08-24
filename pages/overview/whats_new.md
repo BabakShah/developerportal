@@ -6,7 +6,7 @@ audience: writer, designer
 keywords:
 last_updated:
 summary:
-metadata: false
+metadata: true
 ---
 
 This page contains the release notes for the different versions of the Affdex SDK(s).
@@ -20,6 +20,8 @@ This page contains the release notes for the different versions of the Affdex SD
 * Frame constructor can now accept a rotation angle of 0, 90, 180, and 270.
 * Detector.Initialize is now private because it is called automatically by Detector.Start
 * Detector.Stop has been deprecated in favor of Detector.StopDetector
+
+***
 
 ### Affdex SDK version 3.1
 
