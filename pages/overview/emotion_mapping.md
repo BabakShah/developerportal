@@ -33,3 +33,4 @@ Engagement or expressiveness is a weighted sum of the following facial expressio
 * Lip press
 * Lips part
 * Lip suck
+* Smile
