@@ -26,7 +26,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 ## Getting started
 
-We package our plugin as an asset, like those you can buy on Unity's Asset Store.  It is currently only available directly from us (contact gaminginfo@affectiva.com for a copy).  The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:  
+We package our plugin as an asset, like those you can buy on Unity's Asset Store.  You can [Download it here]({{ site.baseurl }}/downloads/).  The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:  
 
 *   Camera: images from the webcam (or front camera for mobile devices)
 *   Frames: a sequence of timed images.
@@ -34,8 +34,7 @@ We package our plugin as an asset, like those you can buy on Unity's Asset Store
 
 For each of the different sources, the underlining emotion recognition engine defines a detector class that can handle processing images acquired from that source. There are a set of common steps needed to start using a detector.  
 
-##### 1. Import the Asset
-Downloading the Unity SDK currently requires emailing a manually signed license agreement. Contact gaminginfo@affectiva.com to get a copy of the license agreement.  We will send you a copy of the Unity asset once we have received the signed license agreement.  You can import the asset into any of your Unity projects.
+##### 1. [Download]({{ site.baseurl }}/downloads/)  the Asset
 
 ##### 2. Capture and analyze faces
 

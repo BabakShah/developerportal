@@ -16,7 +16,7 @@ SDK Developer Guide Release 2.0.x
 
 ## Getting started
 
-Downloading the Unity SDK requires sending a manually signed license agreement. Contact gaminginfo@affectiva.com to start the process.
+[Download]({{ site.baseurl }}/downloads/) the Unity package.
 
 ## Requirements & Dependencies
 

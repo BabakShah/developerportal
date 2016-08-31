@@ -9,9 +9,7 @@ metadata: false
 
 Use [this form](http://www.affectiva.com/45-day-free-trial/) to sign up for a free 45-day license to evaluate the SDK. Once the form is submitted, you'll receive an email containing the license file to use with the SDK. The SDKs are free for personal use, in open source projects and for companies generating less than $1,000,000 in yearly revenue.
 
-[Contact us](mailto:sales@affectiva.com?subject=Affdex SDK Licensing Inquiry) for more information about licensing for use in commercial applications.
-
-Contact our [gaming team](mailto:gaminginfo@affectiva.com?subject=Get Affdex SDK Unity Plugin) if you would access to the Unity asset.  
+[Contact us](mailto:sales@affectiva.com?subject=Affdex SDK Licensing Inquiry) for more information about licensing for use in commercial games or applications.
 
 #### Get the SDK
 
