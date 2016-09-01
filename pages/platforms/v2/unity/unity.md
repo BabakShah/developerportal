@@ -47,7 +47,7 @@ The classes that come with this asset are viewable [here](http://developer.affec
 
 ## Using the Asset
 
-We package our plugin as an asset that we intend to sell on Unity's Asset Store.  It is currently only available directly from us (contact SDK@affectiva.com for a copy).  The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:  
+We package our plugin as an asset that we intend to sell on Unity's Asset Store.  The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:  
 
 *   Frames: a sequence of timed images.
 *   Video: a video file on a device's local storage.
