@@ -1,0 +1,87 @@
+<script>
+    /**
+     * Function that tracks a click on an outbound link in Analytics.
+     * This function takes a valid URL string as an argument, and uses that URL string
+     * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+     * using 'navigator.sendBeacon' in browser that support it.
+     */
+
+{% if site.google_analytics and site.use_google_analytics %}
+ var trackOutboundLink = function(url, platform, version, architecture) {
+    ga('send', 'event', 'outbound', 'click', platform+' '+version+' '+architecture, {
+       'transport': 'beacon',
+       'hitCallback': function(){document.location = url;}
+       });
+}
+{% else %}
+  var trackOutboundLink = function(url, platform, version, architecture) {
+    window.location.href = url;
+  };
+{% endif %}
+
+</script>
+
+
+<style>
+img.img-responsive { display: table-cell; max-width: 3em; margin-left: auto; margin-right: auto;}
+
+#cell
+{
+    vertical-align: middle;
+}
+</style>
+
+<table class="table table-bordered">
+  <tr style="background-color:#c0c0c0;">
+    <td class="text-center">
+      <div>
+        <strong>Architecture</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Version</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>Size</strong>
+       </div>
+    </td>
+    <td class="text-center">
+      <div>
+        <strong>&nbsp;</strong>
+       </div>
+    </td>
+  </tr>
+    {% for platform in site.data.downloads.platforms %}
+    {% if platform.name == include.platform %}
+    <!-- {% assign versions_array = platform.versions | where: "status", include.build_status %} -->
+    {% assign versions_array = platform.versions %}
+    {% assign versions_array_size = versions_array | size %}
+    {% if versions_array_size > 0 %}
+      {% for build in versions_array  %}
+        {% if build.version contains include.build_version %}
+        <tr>
+          <td id="cell" class="text-center">
+            {{ build.architecture }}
+          </td>
+          <td id="cell" class="text-center">
+            {{build.version}}
+            {% if build.release_notes %}
+              <a href="{{ site.baseurl }}/whats_new/#{{ build.release_notes }}">(release notes)</a>
+            {% endif %}
+          </td>
+          <td id="cell" class="text-center">
+            {{ build.size }}
+          </td>
+          <td id="cell" class="text-center">
+            <a href="{{ build.package }}" target="_blank" onclick="trackOutboundLink('{{ build.package }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Download</a>
+          </td>
+        </tr>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+</table>

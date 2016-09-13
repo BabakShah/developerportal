@@ -23,7 +23,6 @@ As you explore the abstract world within the minds of trauma victims and solve t
 Nevermind strives to create a haunting gameplay experience that also teaches you how to be more aware of your internal responses to stressful situations. If you can learn to control your anxiety within the intense realm of Nevermind, imagine what you will be able to do when faced with stressful moments in the real world…  
 
 Nevermind explores themes of psychological trauma and PTSD and seeks to not only engage, but to also educate players about trauma and potentially become a tool that may be used within a therapeutic context.  
-
 Get it on [Steam](http://store.steampowered.com/app/342260/)!  
 
 
@@ -76,7 +75,6 @@ By agbooth.com
 Smilophone converts your expressions into music. Hold your iPhone or iPad up so it can see your face, and the music will play. Happy faces make happy sounds, sad faces make sad sounds. Raise or lower your eyebrows to raise or lower the tone. Have fun and make music as beautiful as you are!  
 
 Get it on [iTunes](https://itunes.apple.com/us/app/smilophone/id881184725?mt=8) !  
-
 
 ## SYNC
 By Will Pheloung, Eric Walsh, Yihao Zhu, Luc Wong, Rob Bishop

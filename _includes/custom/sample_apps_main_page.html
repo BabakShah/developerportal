@@ -1,0 +1,67 @@
+<div class="container">
+ <div class="sampleAppRow row">
+   <style>
+   img.img-responsive { display: table-cell; max-width: 100%; margin-left: auto; margin-right: auto;}
+   .boxButton {
+     padding: 20px 20px 20px 20px;
+     margin-bottom: 20px;
+     border: 1px dotted grey;
+     margin-right:20px;
+     margin-top: 20px;
+   }
+
+   .sampleAppRow {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .sampleAppRow > [class*='col-'] {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .boxButton:hover {
+     background-color: #e9f5fb;
+   }
+
+   .boxButton a {
+     color: black;
+     text-decoration: none;
+   }
+   .boxButtonTitle {
+     margin: 0 auto;
+     vertical-align: middle;
+     display: table;
+     font-size: 1.2vmax;
+     font-weight: bold;
+   }
+
+   .boxButtonContent {
+     text-align: justify;
+   }
+
+   </style>
+   <div class="boxButton col-xs-4 text-center">
+     <a href="{{ site.baseurl }}/affdexme">
+       <div class="boxButtonTitle">AffdexMe</div>
+       <img class="img-responsive" src="/images/affdexme_screenshot.png" title="AffdexMe" />
+       <div class="boxButtonContent">
+         Use the camera connected to your device to analyze your face. Start the app and you will see your own face on the screen, and metrics describing your emotion.
+       </div>
+       <div style="margin-top: 10px; font-weight: bold;">Install from the app store.</div>
+     </a>
+   </div>
+   <div class="boxButton col-xs-4 text-center">
+     <a href="https://affectiva.github.io/youtube-demo">
+       <div class="boxButtonTitle">Emotion-enabled YouTube </div>
+       <img class="img-responsive" src="/images/youtube_demo_screenshot.png" title="Emotion-enabled YouTube" />
+       <div class="boxButtonContent">
+         This web app tracks the user's emotions while viewing YouTube videos.
+       </div>
+       <div style="margin-top: 25px; font-weight: bold;" >Try it in your browser.</div>
+     </a>
+   </div>
+ </div>
+</div>

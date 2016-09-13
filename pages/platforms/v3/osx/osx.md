@@ -1,7 +1,6 @@
 ---
 title: Affdex SDK for OS X  
 permalink: /v3/osx/  
-redirect_from: "/osx/"
 tags: [osx, sdk]  
 audience: writer, designer  
 keywords:  
@@ -18,7 +17,7 @@ SDK Developer Guide Release 3.0
 
 The purpose of the SDK is to detect facial expressions and their underlying emotions (along with appearance and emojis) from facial images. The SDK is distributed as a framework:
 
-* **Affdex.framework** Framework for OS X  Application. 
+* **Affdex.framework** Framework for OS X  Application.
 
 ## Getting started
 

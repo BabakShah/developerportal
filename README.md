@@ -18,13 +18,13 @@ $ bundle install
 
 Build the website, and start a local server for live preview.
 ```shell
-$ jekyll serve
+$ jekyll serve --config _config-development.yml
 ```
 
 or
 
 ```shell
-$ bundle exec jekyll serve
+$ bundle exec jekyll serve --config _config-development.yml
 ```
 
 Output should look something like this, at which point you can point your browser to `http://127.0.0.1:4006/` to see the website.
@@ -64,7 +64,7 @@ $ s3_website cfg apply
 Generates the website pages
 
 ```shell
-$ jekyll build
+$ jekyll build --config _config-development.yml
 ```
 
 Publish the generated website to s3.

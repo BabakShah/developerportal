@@ -23,7 +23,11 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 ## Getting started
 
-##### 1. [Download]({{ site.baseurl }}/downloads/) and run the SDK installer
+##### 1. Download and run the SDK installer
+
+Click on the download link from the table for the desired architecture:
+
+{% include custom/download_link.html build_version="3.1-" platform="Windows" %}
 
 ##### 2. Import an affdex API into your application
 

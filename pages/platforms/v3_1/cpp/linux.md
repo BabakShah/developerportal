@@ -22,7 +22,14 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 ## Getting started
 
-##### 1. [Download]({{ site.baseurl }}/downloads/) and extract the SDK archive
+##### 1. Download and extract the SDK archive
+
+Click on the download link from the table for the desired architecture:
+
+{% include custom/download_link.html platform="Linux" build_version="3.1-" %}
+
+Extract the archive:
+
 ```bash
 mkdir $HOME/affdex-sdk
 tar -xzvf affdex-cpp-sdk-3.1-linux-64bit.tar.gz -C $HOME/affdex-sdk

@@ -1,5 +1,5 @@
-s3_id: <%= ENV['SANDBOX_S3_KEY'] %>
-s3_secret: <%= ENV['SANDBOX_S3_SECRET_KEY'] %>
+s3_id: <%= ENV['SANDBOX_AWS_ACCESS_KEY_ID'] %>
+s3_secret: <%= ENV['SANDBOX_AWS_SECRET_ACCESS_KEY'] %>
 s3_bucket: <%= ENV['DEV_WEB_BUCKET_NAME'] %>
 # Below are examples of all the available configurations.
 # See README for more detailed info on each of them.

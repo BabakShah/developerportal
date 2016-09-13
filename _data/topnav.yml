@@ -18,6 +18,13 @@ topnav:
       product: all
       version: all
 
+    - title: Pricing
+      url: /#pricing
+      audience: developer, designer
+      platform: all
+      product: all
+      version: all
+
     - title: Get the SDK
       url: /downloads/
       audience: developer, designer

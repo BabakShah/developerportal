@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Affdex SDK: C:/Jenkins/workspace/affdex-sdk-win32-devbranch-v3.1/src/affdex-sdk/include/public/AffdexException.h Source File</title>
+<title>Affdex SDK: C:/Jenkins/workspace/affdex-sdk-win32/src/affdex-sdk/include/public/AffdexException.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,7 +60,7 @@
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespaceaffdex.html">    7</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceaffdex.html">affdex</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">        * Copyright (c) 2015 Affectiva, Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">        * Copyright (c) 2016 Affectiva, Inc. All rights reserved.</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    */</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classaffdex_1_1_affdex_exception.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classaffdex_1_1_affdex_exception.html">AffdexException</a> : <span class="keyword">public</span> std::runtime_error</div>
@@ -72,24 +72,15 @@
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        AFFDEXSDK <a class="code" href="classaffdex_1_1_affdex_exception.html#a585c5f78013915277dd96066fc81b620">AffdexException</a>(<span class="keyword">const</span> std::string &amp;msg);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classaffdex_1_1_affdex_license_exception.html">   38</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classaffdex_1_1_affdex_license_exception.html">AffdexLicenseException</a> : <span class="keyword">public</span> <a class="code" href="classaffdex_1_1_affdex_exception.html">AffdexException</a></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        AFFDEXSDK <a class="code" href="classaffdex_1_1_affdex_license_exception.html#a4e1705d1d66fdc61e67a9054d1f20e86">AffdexLicenseException</a>(<span class="keyword">const</span> std::string &amp;msg);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="ttc" id="classaffdex_1_1_affdex_exception_html_aa96afde3a5521143e1c3b573e1bc54de"><div class="ttname"><a href="classaffdex_1_1_affdex_exception.html#aa96afde3a5521143e1c3b573e1bc54de">affdex::AffdexException::getExceptionMessage</a></div><div class="ttdeci">AFFDEXSDK std::string getExceptionMessage() const </div><div class="ttdoc">Retrieve the exception description. </div></div>
 <div class="ttc" id="classaffdex_1_1_affdex_exception_html"><div class="ttname"><a href="classaffdex_1_1_affdex_exception.html">affdex::AffdexException</a></div><div class="ttdoc">AffdexException. Base exception type for exceptions thrown by the Affectiva SDK. </div><div class="ttdef"><b>Definition:</b> AffdexException.h:17</div></div>
-<div class="ttc" id="classaffdex_1_1_affdex_license_exception_html"><div class="ttname"><a href="classaffdex_1_1_affdex_license_exception.html">affdex::AffdexLicenseException</a></div><div class="ttdoc">AffdexLicenseException. Exceptions related to the SDK license. </div><div class="ttdef"><b>Definition:</b> AffdexException.h:38</div></div>
 <div class="ttc" id="namespaceaffdex_html"><div class="ttname"><a href="namespaceaffdex.html">affdex</a></div><div class="ttdoc">Affdex SDK unmanaged C++ namespace </div><div class="ttdef"><b>Definition:</b> AffdexException.h:7</div></div>
-<div class="ttc" id="classaffdex_1_1_affdex_license_exception_html_a4e1705d1d66fdc61e67a9054d1f20e86"><div class="ttname"><a href="classaffdex_1_1_affdex_license_exception.html#a4e1705d1d66fdc61e67a9054d1f20e86">affdex::AffdexLicenseException::AffdexLicenseException</a></div><div class="ttdeci">AFFDEXSDK AffdexLicenseException(const std::string &amp;msg)</div><div class="ttdoc">Initializes a new instance of the AffdexLicenseException class. </div></div>
 <div class="ttc" id="classaffdex_1_1_affdex_exception_html_a585c5f78013915277dd96066fc81b620"><div class="ttname"><a href="classaffdex_1_1_affdex_exception.html#a585c5f78013915277dd96066fc81b620">affdex::AffdexException::AffdexException</a></div><div class="ttdeci">AFFDEXSDK AffdexException(const std::string &amp;msg)</div><div class="ttdoc">Initializes a new instance of the AffdexException class. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 15 2016 12:14:19 for Affdex SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 16 2016 08:04:16 for Affdex SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

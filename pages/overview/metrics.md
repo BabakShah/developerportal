@@ -16,14 +16,15 @@ The face provides a rich canvas of emotion. Humans are innately programmed to ex
 
 {%include overview/emotions_table.html %}
 
-Furthermore, the SDK allows for measuring valence and expressiveness, as alternative metrics for measuring the emotional experience.
+Furthermore, the SDK allows for measuring valence and engagement, as alternative metrics for measuring the emotional experience.
+
 
 <strong>Engagement</strong>: A measure of facial muscle activation that illustrates the subject’s expressiveness. The range of values is from 0 to 100.
 
 <strong>Valence</strong>: A measure of the positive or negative nature of the recorded person's experience. The range of values is from -100 to 100.
 
+#### How do we map facial expressions to emotions?
 
-#### How do we map facial expressions to emotions, engagement and valence?
 
 The Emotion predictors use the observed facial expressions as input to calculate the likelihood of an emotion. [See more information.](/emotion_mapping/)
 
@@ -46,6 +47,7 @@ Emotion, Expression and Emoji metrics scores indicate when users show a specific
 
 In addition, we also expose a composite emotional metric called _valence_ which gives feedback on the overall experience. Valence values from 0 to 100 indicate a neutral to positive experience, while values from -100 to 0 indicate a negative to neutral experience.
 
+
 <img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}" style="height: 100%; width: 100%"/>
 
 <br />
@@ -61,7 +63,7 @@ Our SDKs also provide the following metrics about the physical appearance:
 **Age**
 
 The age classifier attempts to estimate the age range.
-Supported ranges: Under 18, from 18 to 24, 25 to 34, 35 to 44, 45 to 54, 55 to 64, and 65 Plus.
+Supported ranges: Under 18, from 18 to 24, 25 to 34, 35 to 44, 45 to 54, 55 to 64, and 65 Plus.  
 
 **Ethnicity**
 

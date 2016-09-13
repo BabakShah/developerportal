@@ -1,0 +1,110 @@
+<style>
+   .modal-dialog {
+     left: auto;
+     right: auto;
+     width: 600px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+   }
+   #modal-text-body {
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 30px;
+   }
+   .footer-btns {
+     text-align: right;
+     padding-top: 1%;
+   }
+   .footer-btns a {
+     display: block;
+   }
+   #dismiss_lnk {
+     padding-top: 2%;
+     padding-right: 2.6%;
+   }
+   #signup_lnk {
+     display: inline-block;
+     width: 110px;
+     height: 50px;
+     font-size: 25px;
+   }
+   #signup_form .form-group {
+     display: flex;
+     align-items: center;
+     vertical-align: middle;
+   }
+   #signup_form div label {
+     padding-right: 0%;
+   }
+
+   .form-group input {
+     color: #248ec2;
+   }
+
+   .form-group.required .control-label:after {
+      content:"*";
+      color:red;
+    }
+
+</style>
+<div class="modal" id="signup_modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+     <div class="modal-content">
+        <div class="modal-body">
+           <h4 class="modal-title">Thanks for trying out the SDK!</h4>
+           <p id="modal-text-body">
+              If you wish to receive regular updates about our releases, please fill in the following information:
+           </p>
+{% if site.use_salesforce_prod %}
+           <form id="signup_form" role="form" action="https://na29.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+              <input type="hidden" name="oid" value="00D80000000dDcr">
+              <input type="hidden" name="00N80000005ZFCn" value="1" />
+              <input type="hidden"  id="00N34000005cqmD" name="00N34000005cqmD" value="SDK" />
+{% else %}
+           <form id="signup_form" role="form" action="https://cs1.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+              <input type="hidden" name="oid" value="00DS0000003J4kC">
+              <input type="hidden" name="00NS0000001S0k4" value="1" />
+{% endif %}
+              <input type="hidden" id="retURL" name="retURL" value="http://developer.affectiva.com">
+              <div class="form-group required row">
+                 <label for="first_name" class="col-md-2 control-label">First name</label>
+                 <div class="col-md-9">
+                    <input class="form-control" type="text" value="" maxlength="40" size="20" name="first_name" id="first_name" required>
+                 </div>
+              </div>
+              <div class="form-group required row">
+                 <label for="last_name" class="col-md-2 control-label">Last name</label>
+                 <div class="col-md-9">
+                    <input class="form-control" type="text" value="" maxlength="80" size="20" name="last_name" id="last_name" required>
+                 </div>
+              </div>
+              <div class="form-group required row">
+                 <label for="email" class="col-md-2 control-label">Email</label>
+                 <div class="col-md-9">
+                    <input class="form-control" type="email" value="" maxlength="80" size="20" name="email" id="email"
+                           pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$" required>
+                 </div>
+              </div>
+              <div class="form-group row">
+                 <label for="phone" class="col-md-2 control-label">Telephone</label>
+                 <div class="col-md-9">
+                    <input class="form-control" type="tel" value="" maxlength="40" size="20" name="phone" id="phone">
+                 </div>
+              </div>
+              <div class="form-group row">
+                 <label for="company" class="col-md-2 control-label">Company</label>
+                 <div class="col-md-9">
+                    <input class="form-control" id="company" type="text" value="" maxlength="40" size="20" name="company" type="text">
+                 </div>
+             </div>
+              <div class="footer-btns">
+                 <input type="submit" id="signup_lnk" class="btn-primary" class="btn btn-primary" value="Sign up"/>
+                 <a id="dismiss_lnk" href="#">Skip for now</a>
+              </div>
+           </form>
+        </div>
+     </div>
+  </div>
+</div>
+<!-- qa 00DS0000003J4kC -->
+<!-- prod 00D80000000dDcr -->

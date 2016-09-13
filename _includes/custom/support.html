@@ -1,0 +1,84 @@
+<div class="container">
+ <div class="sampleAppRow row">
+   <style>
+   img.img-responsive {
+     display: table-cell;
+     max-width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     padding-bottom: 20px;
+   }
+   .supportBoxButton {
+     padding: 20px 20px 20px 20px;
+     margin-bottom: 20px;
+     border: 1px dotted grey;
+     margin-right:20px;
+     margin-top: 20px;
+   }
+
+   .sampleAppRow {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .sampleAppRow > [class*='col-'] {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .supportBoxButton:hover {
+     background-color: #e9f5fb;
+   }
+
+   .supportBoxButton a {
+     color: black;
+     text-decoration: none;
+   }
+   .supportBoxButtonTitle {
+     margin: 0 auto;
+     vertical-align: middle;
+     display: table;
+     font-size: 1.2vmax;
+     font-weight: bold;
+   }
+
+   .supportBoxButtonContent {
+     text-align: center;
+   }
+
+   </style>
+   <script>
+   $( document ).ready(function() {
+     $( '.supportBoxButton' ).hover( function() {
+       var img_selector = $(this).find('img');
+       img_selector.attr("src", '/images/'+img_selector.attr('id')+'_color.png');
+     }, function() {
+       var img_selector = $(this).find('img');
+       img_selector.attr("src", '/images/'+img_selector.attr('id')+'.png');
+     } );
+   });
+   </script>
+   <div class="supportBoxButton col-xs-4 text-center" onmouseover="hover_support_button();" onmouseout="unhover_support_button();">
+     <a href="https://stackoverflow.com/tags/affdex-sdk">
+       <div class="supportBoxButtonTitle">Ask on Stack Overflow</div>
+       <img id="stackoverflow" class="img-responsive" src="/images/stackoverflow.png"
+            title="stack overflow" />
+       <div class="supportBoxButtonContent">
+         Check our channel on stack overflow, use it to ask questions. Remember to tag the question with the tag <strong>affdex-sdk</strong>
+       </div>
+     </a>
+   </div>
+   <div class="supportBoxButton col-xs-4 text-center">
+     <a href="mailto:sdk@affectiva.com?subject=Affdex SDK Support Inquiry">
+       <div class="supportBoxButtonTitle">Email Us</div>
+       <img id="email" class="img-responsive" src="/images/email.png"
+            title="email link" onmouseover="hover(this);" onmouseout="unhover(this);"/>
+       <div class="supportBoxButtonContent">
+         Send us an email with your question
+       </div>
+     </a>
+   </div>
+ </div>
+</div>

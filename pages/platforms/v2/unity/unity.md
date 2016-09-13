@@ -1,7 +1,6 @@
 ---
 title: Affdex SDK for Unity
 permalink: /v2/unity/
-redirect_from: "/unity/"
 tags: [unity, sdk, asset]
 audience: writer, designer
 keywords:
@@ -84,18 +83,18 @@ public class ExampleClass : MonoBehaviour {
     CameraInput cameraInput;
     string cameraName;
     string currentCameraName = "";
-    
+
     // Update is called once per frame
     void Update () {
-    
+
         if (currentCameraName != cameraName)
         {
             cameraInput.SelectCamera(true,cameraName);
             currentCameraName = cameraName;
         }
-    
+
     }
-    
+
     void Awake () {
         mainCamera = GameObject.FindGameObjectWithTag ("MainCamera").transform;
         cameraInput = mainCamera.GetComponent <CameraInput>();

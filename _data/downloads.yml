@@ -10,10 +10,16 @@ statuses:
   - legacy
 
 platforms:
-  - name: Android
+  - name: android
     logo: /images/android.png
     versions:
       - status: stable
+        release_notes: affdex-sdk-version-31
+        architecture: "ARM7"
+        version: "3.1.1"
+        install: /v3_1/android/
+        size: 6.5 MB
+      - status: legacy
         release_notes: affdex-sdk-version-31
         architecture: "ARM7"
         version: "3.1"
@@ -62,10 +68,16 @@ platforms:
         package: https://download.affectiva.com/android/affdex-sdk_v1.1-android.zip
         size: 7.5 MB
 
-  - name: iOS
+  - name: ios
     logo: /images/ios.png
     versions:
     - status: stable
+      release_notes: affdex-sdk-version-31
+      architecture: "ARM7"
+      version: "3.1.1"
+      install: /v3_1_1/ios/
+      size: 100.2 MB
+    - status: legacy
       release_notes: affdex-sdk-version-301
       doc: /v3/ios/
       architecture: "ARM64/ARM7"
@@ -95,7 +107,7 @@ platforms:
       size: 51.3 MB
 
   - name: web
-    logo: /images/html5.png
+    logo: /images/web.png
     versions:
       - status: stable
         release_notes: affdex-sdk-version-31
@@ -106,10 +118,17 @@ platforms:
         size: 12.6 MB
 
 
-  - name: Linux
+  - name: linux
     logo: /images/linux.png
     versions:
     - status: stable
+      release_notes: affdex-sdk-version-31
+      doc: /v3_1_1/linux/
+      architecture: x86_64
+      version: "3.1.1-2169"
+      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.1.1-2169-linux-64bit.tar.gz
+      size: 27.7 MB
+    - status: legacy
       release_notes: affdex-sdk-version-31
       doc: /v3_1/linux/
       architecture: x86_64
@@ -131,9 +150,22 @@ platforms:
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.0-298-linux-64bit.tar.gz
       size: 22.8 MB
 
-  - name: OS X
-    logo: /images/apple.png
+  - name: macOS
+    logo: /images/macOS.png
     versions:
+    - status: stable
+      release_notes: affdex-sdk-version-31
+      architecture: "ARM7"
+      version: "3.1.1"
+      install: /v3_1_1/osx/
+      size: 26.4 MB
+    - status: legacy
+      release_notes: affdex-sdk-version-302
+      doc: /v3/osx/
+      architecture: x86_64
+      version: "3.0.2"
+      package: https://download.affectiva.com/osx/affdex-sdk_OSX_3_0_2_220.zip
+      size: 26.4 MB
     - status: legacy
       release_notes: affdex-sdk-version-301
       doc: /v3/osx/
@@ -141,26 +173,17 @@ platforms:
       version: "3.0.1"
       package: https://download.affectiva.com/osx/affdex-sdk_OSX_3_0_1_213.zip
       size: 26.4 MB
-    - status: stable
-      release_notes: affdex-sdk-version-302
-      doc: /v3/osx/
-      architecture: x86_64
-      version: "3.0.2"
-      package: https://download.affectiva.com/osx/affdex-sdk_OSX_3_0_2_220.zip
-      size: 26.4 MB
 
-
-
-
-  - name: Unity
+  - name: unity
     logo: /images/unity.png
     versions:
     - status: stable
+      doc: /v2_2/unity/
       architecture: OSX i386/x86_64, Windows x86/x86_64, Android ARM7/x86
       version: "2.2"
       package: https://download.affectiva.com/unity/AffdexDelivery_2_2_0.unitypackage
       size: 40 MB
-      
+
     - status: legacy
       doc: /v2/unity/
       architecture: OSX i386/x86_64, Windows x86/x86_64
@@ -168,10 +191,26 @@ platforms:
       package: https://download.affectiva.com/unity/AffdexDelivery_2_0.unitypackage
       size: 48 MB
 
-  - name: Windows
+  - name: windows
     logo: /images/windows.png
     versions:
       - status: stable
+        release_notes: affdex-sdk-version-31
+        doc: /v3_1_1/windows/
+        architecture: i386
+        version: "3.1.1-1106"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.1.1-1106-win32.exe
+        size: 19.1 MB
+
+      - status: stable
+        release_notes: affdex-sdk-version-31
+        doc: /v3_1_1/windows/
+        architecture: x86_64
+        version: "3.1.1-409"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.1.1-409-win64.exe
+        size: 30.4 MB
+
+      - status: legacy
         release_notes: affdex-sdk-version-31
         doc: /v3_1/windows/
         architecture: i386
@@ -179,7 +218,7 @@ platforms:
         package: https://download.affectiva.com/windows/AffdexSDK-3.1-1049-win32.exe
         size: 19.1 MB
 
-      - status: stable
+      - status: legacy
         release_notes: affdex-sdk-version-31
         doc: /v3_1/windows/
         architecture: x86_64
@@ -278,7 +317,7 @@ affdexme:
   - name: Windows
     img: /images/download/windows.png
     style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
-    package: https://download.affectiva.com/windows/AffdexMe-1049-win32.exe
+    package: https://download.affectiva.com/windows/AffdexMe-1106-win32.exe
 ################################
 ################################
 ################################

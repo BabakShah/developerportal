@@ -1,0 +1,107 @@
+project: developerportal
+
+audience: designer
+
+product: all
+
+platform: all
+
+version: all
+
+topnav_title: Affectiva Developer Portal
+
+topnav_version: ""
+
+homepage_title: Affectiva Developer Portal
+
+site_title: Affectiva Developer Portal
+
+tagline: " "
+
+baseurl: ""
+
+port: 4006
+
+host: 127.0.0.1
+
+url: "http://developer.affectiva.com/"
+
+feedback_email: sdk@affectiva.com
+
+sidebar_accordion: true
+
+disqus_shortname: ""
+
+google_analytics: "UA-68020802-1"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+print: false
+
+floating_nav: true
+
+use_google_analytics: false
+use_salesforce_prod: false
+
+# suffix: index.html
+
+exclude:
+  - _drafts
+  - bower_components
+  - .idea
+  - _site
+  - vendor
+
+permalink: :title
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      search: true
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      tooltip: true
+      search: true
+
+sass:
+    sass_dir: _sass
+
+collections:
+  tooltips:
+    output: true
+
+jekyll_ga:
+  service_account_email: developerportal@affdex-developer-portal.iam.gserviceaccount.com  # service account email address
+  key_file: privatekey.p12  # service account private key file
+  key_secret: notasecret    # service account private key's password
+  profileID: ga:108954658   # profile ID
+  start: last month         # Beginning of report
+  end: now                  # End of report
+  metric: ga:pageviews      # Metric code
+  segment:                  # optional
+  filters:                  # optional
+  sort: true                # Sort posts by this metric
+
+gems:
+  - jekyll-redirect-from

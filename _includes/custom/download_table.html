@@ -5,16 +5,24 @@
      * as the event label. Setting the transport method to 'beacon' lets the hit be sent
      * using 'navigator.sendBeacon' in browser that support it.
      */
-var trackOutboundLink = function(url, platform, version, architecture) {
-    ga('send', 'event', 'outbound', 'click', platform+' '+version+' '+architecture, {
-       'transport': 'beacon',
-       'hitCallback': function(){document.location = url;}
-       });
-}
+     {% if site.google_analytics and site.use_google_analytics %}
+      var trackOutboundLink = function(url, platform, version, architecture) {
+         ga('send', 'event', 'outbound', 'click', platform+' '+version+' '+architecture, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+            });
+     }
+     {% else %}
+       var trackOutboundLink = function(url, platform, version, architecture) {
+         window.location.href = url;
+       };
+     {% endif %}
 </script>
 
 
 <style>
+img.img-responsive { display: table-cell; max-width: 3em; margin-left: auto; margin-right: auto;}
+
 #cell
 {
     vertical-align: middle;
@@ -58,7 +66,11 @@ var trackOutboundLink = function(url, platform, version, architecture) {
     {% if versions_array_size > 0 %}
       <tr>
         <td id="cell" rowspan="{{ versions_array_size | plus: 1}}" class="text-center">
-          {{ platform.name }}
+
+            <img class="img-responsive" src="{{ platform.logo | prepend: site.baseurl }}" title="{{ platform.name }}" />
+            <strong>{{ platform.name }}</strong>
+
+
         </td>
       </tr>
       {% for build in versions_array  %}

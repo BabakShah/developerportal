@@ -1,16 +1,85 @@
 <style>
-    img.img-responsive { display: table-cell; max-width: 3em; margin-left: auto; margin-right: auto;}
+    img.img-responsive { display: table-cell; max-width: 100%; margin-left: auto; margin-right: auto;}
+    .platformbox {margin-right:20px; border:1px dotted grey; padding-bottom: 10px; margin-top: 20px;}
+    .platformbox:hover { background-color: #e9f5fb; }
+    .platformbox a { color: black; text-decoration: none; }
 </style>
 
-<div class="container">
+<script>
+$( document ).ready(function() {
+
+{% if site.google_analytics and site.use_google_analytics %}
+
+  var trackOutboundLink = function(status, versionString, url) {
+    ga('send', 'event', 'outbound', 'click', versionString, {
+        'transport': 'beacon' });
+  };
+
+{% else %}
+  var trackOutboundLink = function(status, versionString, url) {};
+{% endif %}
+
+
+  $( '.platformbox' ).hover( function() {
+    var img_selector = $(this).find('img');
+    img_selector.attr("src", '/images/'+img_selector.attr('id')+'_color.png');
+  }, function() {
+    var img_selector = $(this).find('img');
+    img_selector.attr("src", '/images/'+img_selector.attr('id')+'.png');
+  } );
+
+  $('.modal_link').click(function(){
+    var host = location.protocol + '//' + location.host;
+    var platform = $(this).data('platform');
+    var download_link = $(this).data('url');
+    var versionString = platform+' '+status;
+
+      if ($.cookie('modal_shown') == null) {
+         $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
+         $(".modal-body #dismiss_lnk").attr("href", host+download_link);
+         $(".modal-body #retURL").attr("value", host+download_link);
+
+         $('#dismiss_lnk').click(function(){
+           trackOutboundLink('skipped', versionString);
+           $('#signup_modal').modal('hide');
+         });
+
+         /*$('#signup_modal').validator().on('submit', function (e) {
+          if (!e.isDefaultPrevented()) {
+            trackOutboundLink('submitted', versionString);
+          }
+        });*/
+
+         $('#signup_modal').modal('show');
+    }
+    else {
+      window.location.href = host+download_link;
+    }
+    return false;
+  });
+});
+</script>
+
+<div class="container-fluid">
   <div class="row">
-    {% for platform in site.data.downloads.platforms %}
-    <div class="col-md-1 text-center">
-      <a href="/{{ platform.name | downcase | remove: ' '}}">
-        <img class="img-responsive" src="{{ platform.logo | prepend: site.baseurl }}" title="{{ platform.name }}" />
-      </a>
-      <strong>{{platform.name}}</strong>
-    </div>
-    {% endfor %}
+  {% assign counter = 0 %}
+  {% for platform in site.data.downloads.platforms %}
+  {% assign counter = counter |plus: 1 %}
+  {% assign modValue = counter | modulo: 4 %}
+      <div class="col-xs-2 text-center platformbox">
+          <a href="#" class="modal_link" data-redir="{{ site.baseurl }}/{{ platform.name | downcase | remove: ' '}}"
+             data-url="{{ site.baseurl }}/{{ platform.name | downcase | remove: ' '}}" data-platform="{{ platform.name }}"
+            data-disable="false" title="{{ platform.name }}" data-toggle="modal">
+            <img id="{{ platform.name }}" class="img-responsive" src="{{ platform.logo | prepend: site.baseurl }}"
+                 title="{{ platform.name }}" />
+            <strong style="font-size: 1.2vmax;" >{{platform.name}}</strong>
+          </a>
+      </div>
+   {% if modValue == 0 %}
   </div>
+  <div class="row">
+  {% endif %}
+  {% endfor %}
+  </div>
+  {% include custom/form.html %}
 </div>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Affdex SDK: C:/Jenkins/workspace/affdex-sdk-win32-devbranch-v3.1/src/affdex-sdk/include/public/CameraDetector.h Source File</title>
+<title>Affdex SDK: C:/Jenkins/workspace/affdex-sdk-win32/src/affdex-sdk/include/public/CameraDetector.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -73,24 +73,24 @@
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        AFFDEXSDK <span class="keyword">virtual</span> <a class="code" href="classaffdex_1_1_camera_detector.html#a0ced80dd7b2d8e9e3d02ec118c2a9219">~CameraDetector</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        AFFDEXSDK <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classaffdex_1_1_camera_detector.html#a353f9822dd80bb40fc39bc1b6316dbe9">start</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        AFFDEXSDK <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classaffdex_1_1_camera_detector.html#aa279530577577261273bca13a2e255a6">stop</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        AFFDEXSDK <span class="keywordtype">void</span> <a class="code" href="classaffdex_1_1_camera_detector.html#ada82952ec0d9e5f4f72d4dae3da79e09">setCameraFPS</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> cameraFPS);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        AFFDEXSDK <span class="keywordtype">void</span> <a class="code" href="classaffdex_1_1_camera_detector.html#ab6eef72ea5436024a33eb4a7a55b2d73">setCameraId</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> cameraId);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">using</span> <a class="code" href="classaffdex_1_1_frame_detector.html#a269c5b7f20aadd7454e5ea28ed69ebd2">FrameDetector::process</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> onException(<a class="code" href="classaffdex_1_1_affdex_exception.html">AffdexException</a>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::shared_ptr&lt;Camera&gt; mCam;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        AFFDEXSDK <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classaffdex_1_1_camera_detector.html#a353f9822dd80bb40fc39bc1b6316dbe9">start</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        AFFDEXSDK <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classaffdex_1_1_camera_detector.html#aa279530577577261273bca13a2e255a6">stop</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        AFFDEXSDK <span class="keywordtype">void</span> <a class="code" href="classaffdex_1_1_camera_detector.html#ada82952ec0d9e5f4f72d4dae3da79e09">setCameraFPS</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> cameraFPS);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        AFFDEXSDK <span class="keywordtype">void</span> <a class="code" href="classaffdex_1_1_camera_detector.html#ab6eef72ea5436024a33eb4a7a55b2d73">setCameraId</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> cameraId);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">using</span> <a class="code" href="classaffdex_1_1_frame_detector.html#a269c5b7f20aadd7454e5ea28ed69ebd2">FrameDetector::process</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> onException(<a class="code" href="classaffdex_1_1_affdex_exception.html">AffdexException</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::shared_ptr&lt;Camera&gt; mCam;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="ttc" id="classaffdex_1_1_camera_detector_html_a353f9822dd80bb40fc39bc1b6316dbe9"><div class="ttname"><a href="classaffdex_1_1_camera_detector.html#a353f9822dd80bb40fc39bc1b6316dbe9">affdex::CameraDetector::start</a></div><div class="ttdeci">virtual AFFDEXSDK void start() override</div><div class="ttdoc">Initializes the CameraDetector and starts producing frames and results immediately. </div></div>
-<div class="ttc" id="namespaceaffdex_html_a17bd9e863675d42ed62dbd7163fc4e70"><div class="ttname"><a href="namespaceaffdex.html#a17bd9e863675d42ed62dbd7163fc4e70">affdex::FaceDetectorMode</a></div><div class="ttdeci">FaceDetectorMode</div><div class="ttdoc">Face detector configuration </div><div class="ttdef"><b>Definition:</b> typedefs.h:46</div></div>
+<div class="ttc" id="namespaceaffdex_html_a17bd9e863675d42ed62dbd7163fc4e70"><div class="ttname"><a href="namespaceaffdex.html#a17bd9e863675d42ed62dbd7163fc4e70">affdex::FaceDetectorMode</a></div><div class="ttdeci">FaceDetectorMode</div><div class="ttdoc">Face detector configuration </div><div class="ttdef"><b>Definition:</b> typedefs.h:55</div></div>
 <div class="ttc" id="classaffdex_1_1_affdex_exception_html"><div class="ttname"><a href="classaffdex_1_1_affdex_exception.html">affdex::AffdexException</a></div><div class="ttdoc">AffdexException. Base exception type for exceptions thrown by the Affectiva SDK. </div><div class="ttdef"><b>Definition:</b> AffdexException.h:17</div></div>
 <div class="ttc" id="namespaceaffdex_html_a17bd9e863675d42ed62dbd7163fc4e70a6992b24f8d62cff734fd78c918bc666f"><div class="ttname"><a href="namespaceaffdex.html#a17bd9e863675d42ed62dbd7163fc4e70a6992b24f8d62cff734fd78c918bc666f">affdex::FaceDetectorMode::LARGE_FACES</a></div><div class="ttdoc">To target faces occupying a large area. </div></div>
 <div class="ttc" id="classaffdex_1_1_frame_detector_html_a269c5b7f20aadd7454e5ea28ed69ebd2"><div class="ttname"><a href="classaffdex_1_1_frame_detector.html#a269c5b7f20aadd7454e5ea28ed69ebd2">affdex::FrameDetector::process</a></div><div class="ttdeci">virtual AFFDEXSDK void process(Frame frame)</div><div class="ttdoc">Provide a frame for the detector to process. Callers may pass frames to this method at any rate that ...</div></div>
@@ -105,7 +105,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 15 2016 12:14:19 for Affdex SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 16 2016 08:04:16 for Affdex SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

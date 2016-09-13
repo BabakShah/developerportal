@@ -13,7 +13,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ### Unity Plugin 2.2
 
-*Date, Aug 2016*
+*Aug 2016*
 
 * Added Android support
   - Android needs to copy data from StreamingAssets to the app's private data folder on launch.  fileList.txt is used to determine what files are stale and need to be copied.
@@ -23,9 +23,17 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***
 
+### Affdex SDK version 3.1.1
+
+*Sep 2016*
+
+  - Removed license-related methods. A license file is no longer required to use the SDK.
+
+***
+
 ### Affdex SDK version 3.1
 
-*Date, Jul 2016*
+*Jul 2016*
 
   - Improved emotion metrics. The valence includes new expressions in its calculation.
   - Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
@@ -39,7 +47,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ### Affdex SDK version 3.0.2
 
-*Date, May 2016*
+*May 2016*
 
 * OSX SDK
   - Performance optimizations, [SDK-521](https://affectiva.atlassian.net/browse/SDK-521) - remove dispatch_async() overhead from callback functions.
@@ -48,9 +56,9 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ### Affdex SDK version 3.0.1
 
-*Date, Mar 2016*
+*Mar 2016*
 
-* New platforms [OS X](/osx) and [Linux](/linux).
+* New platforms [OS X](/macos) and [Linux](/linux).
 * Android
   - Switch the SDK packaging to the new android standard packaging (aar).
 * iOS SDK
@@ -62,7 +70,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ### Affdex SDK version 3.0
 
-*Date, Jan 2016*
+*Jan 2016*
 
 * New API to allow tracking of multiple faces simultaneously.
 * Added a Face to Emoji mapper to allow the developer to map facial expressions of emotion to [13 emojis](/metrics#emoji-expressions) different emojis
@@ -94,7 +102,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ### Affdex SDK version 2.0
 
-*Date, Sept 2015*
+*Sep 2015*
 
 * Dramatically improved accuracy with new expression models trained over a broader set of facial images.
 

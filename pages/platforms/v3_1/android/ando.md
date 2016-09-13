@@ -1,7 +1,6 @@
 ---
 title: Affdex SDK for Android
 permalink: /v3_1/android/
-redirect_from: "/android/"
 tags: [android, sdk]
 audience: writer, designer
 keywords:
