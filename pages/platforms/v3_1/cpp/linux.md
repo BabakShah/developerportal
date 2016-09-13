@@ -1,7 +1,6 @@
 ---
 title: Affdex SDK for Linux
 permalink: /v3_1/linux/
-redirect_from: "/linux/"
 tags: [cpp, linux, sdk]
 audience: writer, designer
 keywords:

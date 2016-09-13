@@ -14,16 +14,16 @@ platforms:
     logo: /images/android.png
     versions:
       - status: stable
-        release_notes: affdex-sdk-version-31
+        release_notes: affdex-sdk-version-311
         architecture: "ARM7"
         version: "3.1.1"
-        install: /v3_1/android/
+        install: /v3_1_1/android/
         size: 6.5 MB
       - status: legacy
         release_notes: affdex-sdk-version-31
         architecture: "ARM7"
         version: "3.1"
-        install: /v3_1/android/
+        install: /v3_1_1/android/
         size: 6.5 MB
       - status: legacy
         release_notes: affdex-sdk-version-301
@@ -72,7 +72,7 @@ platforms:
     logo: /images/ios.png
     versions:
     - status: stable
-      release_notes: affdex-sdk-version-31
+      release_notes: affdex-sdk-version-311
       architecture: "ARM7"
       version: "3.1.1"
       install: /v3_1_1/ios/
@@ -122,7 +122,7 @@ platforms:
     logo: /images/linux.png
     versions:
     - status: stable
-      release_notes: affdex-sdk-version-31
+      release_notes: affdex-sdk-version-311
       doc: /v3_1_1/linux/
       architecture: x86_64
       version: "3.1.1-2169"
@@ -130,7 +130,7 @@ platforms:
       size: 27.7 MB
     - status: legacy
       release_notes: affdex-sdk-version-31
-      doc: /v3_1/linux/
+      doc: /v3_1_1/linux/
       architecture: x86_64
       version: "3.1-396"
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.1-396-linux-64bit.tar.gz
@@ -154,14 +154,14 @@ platforms:
     logo: /images/macOS.png
     versions:
     - status: stable
-      release_notes: affdex-sdk-version-31
+      release_notes: affdex-sdk-version-311
       architecture: "ARM7"
       version: "3.1.1"
       install: /v3_1_1/osx/
       size: 26.4 MB
     - status: legacy
       release_notes: affdex-sdk-version-302
-      doc: /v3/osx/
+      doc: /v3_1_1/osx/
       architecture: x86_64
       version: "3.0.2"
       package: https://download.affectiva.com/osx/affdex-sdk_OSX_3_0_2_220.zip
@@ -195,7 +195,7 @@ platforms:
     logo: /images/windows.png
     versions:
       - status: stable
-        release_notes: affdex-sdk-version-31
+        release_notes: affdex-sdk-version-311
         doc: /v3_1_1/windows/
         architecture: i386
         version: "3.1.1-1106"
