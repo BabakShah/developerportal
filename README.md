@@ -50,8 +50,8 @@ $ bundle exec rake test
 ```s3_website.yml``` uses env variables to read S3 creds and the bucket to publish to.
 
 ```shell
-$ export SANDBOX_S3_KEY=YOUR SANDBOX AWS KEY
-$ export SANDBOX_S3_SECRET_KEY=YOUR SANDBOX AWS SECRET KEY
+$ export SANDBOX_AWS_ACCESS_KEY_ID=YOUR SANDBOX AWS KEY
+$ export SANDBOX_AWS_SECRET_ACCESS_KEY=YOUR SANDBOX AWS SECRET KEY
 $ export DEV_WEB_BUCKET_NAME=A BUCKET NAME
 ```
 
