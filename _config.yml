@@ -45,8 +45,11 @@ print: false
 floating_nav: true
 
 use_google_analytics: true
-use_salesforce_prod: true
 
+#production salesforce
+salesforce:
+  url: "https://na29.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+  oid: "00D80000000dDcr"
 # suffix: index.html
 
 exclude:

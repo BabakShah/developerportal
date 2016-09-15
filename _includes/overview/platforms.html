@@ -32,12 +32,14 @@ $( document ).ready(function() {
     var host = location.protocol + '//' + location.host;
     var platform = $(this).data('platform');
     var download_link = $(this).data('url');
+    var sf_PoI_platform = $(this).data('salesforce');
     var versionString = platform+' '+status;
 
       if ($.cookie('modal_shown') == null) {
          $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
          $(".modal-body #dismiss_lnk").attr("href", host+download_link);
          $(".modal-body #retURL").attr("value", host+download_link);
+         $(".modal-body #PoI_platform").attr("value", sf_PoI_platform);
 
          $('#dismiss_lnk').click(function(){
            trackOutboundLink('skipped', versionString);
@@ -69,7 +71,7 @@ $( document ).ready(function() {
       <div class="col-xs-2 text-center platformbox">
           <a href="#" class="modal_link" data-redir="{{ site.baseurl }}/{{ platform.name | downcase | remove: ' '}}"
              data-url="{{ site.baseurl }}/{{ platform.name | downcase | remove: ' '}}" data-platform="{{ platform.name }}"
-            data-disable="false" title="{{ platform.name }}" data-toggle="modal">
+            data-disable="false" title="{{ platform.name }}" data-salesforce="{{ platform.salesForcePoIPlatform }}" data-toggle="modal">
             <img id="{{ platform.name }}" class="img-responsive" src="{{ platform.logo | prepend: site.baseurl }}"
                  title="{{ platform.name }}" />
             <strong style="font-size: 1.2vmax;" >{{platform.name}}</strong>

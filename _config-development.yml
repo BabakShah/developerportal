@@ -45,7 +45,10 @@ print: false
 floating_nav: true
 
 use_google_analytics: false
-use_salesforce_prod: false
+
+salesforce:
+  url: "https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+  oid: "00D5400000092jt"
 
 # suffix: index.html
 

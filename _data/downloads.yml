@@ -12,6 +12,7 @@ statuses:
 platforms:
   - name: android
     logo: /images/android.png
+    salesForcePoIPlatform: Android
     versions:
       - status: stable
         release_notes: affdex-sdk-version-311
@@ -70,6 +71,7 @@ platforms:
 
   - name: ios
     logo: /images/ios.png
+    salesForcePoIPlatform: IOS
     versions:
     - status: stable
       release_notes: affdex-sdk-version-311
@@ -108,6 +110,7 @@ platforms:
 
   - name: web
     logo: /images/web.png
+    salesForcePoIPlatform: JavaScript
     versions:
       - status: stable
         release_notes: affdex-sdk-version-31
@@ -120,6 +123,7 @@ platforms:
 
   - name: linux
     logo: /images/linux.png
+    salesForcePoIPlatform: Linux
     versions:
     - status: stable
       release_notes: affdex-sdk-version-311
@@ -152,6 +156,7 @@ platforms:
 
   - name: macOS
     logo: /images/macOS.png
+    salesForcePoIPlatform: Mac
     versions:
     - status: stable
       release_notes: affdex-sdk-version-311
@@ -176,6 +181,7 @@ platforms:
 
   - name: unity
     logo: /images/unity.png
+    salesForcePoIPlatform: Unity
     versions:
     - status: stable
       doc: /v2_2/unity/
@@ -193,6 +199,7 @@ platforms:
 
   - name: windows
     logo: /images/windows.png
+    salesForcePoIPlatform: Windows
     versions:
       - status: stable
         release_notes: affdex-sdk-version-311

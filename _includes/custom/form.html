@@ -55,16 +55,11 @@
            <p id="modal-text-body">
               If you wish to receive regular updates about our releases, please fill in the following information:
            </p>
-{% if site.use_salesforce_prod %}
-           <form id="signup_form" role="form" action="https://na29.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-              <input type="hidden" name="oid" value="00D80000000dDcr">
+           <form id="signup_form" role="form" action="{{ site.salesforce.url }}" method="POST">
+              <input type="hidden" name="oid" value="{{ site.salesforce.oid }}">
               <input type="hidden" name="00N80000005ZFCn" value="1" />
-              <input type="hidden"  id="00N34000005cqmD" name="00N34000005cqmD" value="SDK" />
-{% else %}
-           <form id="signup_form" role="form" action="https://cs1.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-              <input type="hidden" name="oid" value="00DS0000003J4kC">
-              <input type="hidden" name="00NS0000001S0k4" value="1" />
-{% endif %}
+              <input type="hidden" id="PoI" name="00N34000005cqmD" value="SDK" />
+              <input type="hidden" id="PoI_platform" name="00N34000005d4UI" value="#" />
               <input type="hidden" id="retURL" name="retURL" value="http://developer.affectiva.com">
               <div class="form-group required row">
                  <label for="first_name" class="col-md-2 control-label">First name</label>
