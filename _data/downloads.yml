@@ -15,17 +15,23 @@ platforms:
     salesForcePoIPlatform: Android
     versions:
       - status: stable
+        release_notes: affdex-sdk-version-312
+        architecture: "ARM7"
+        version: "3.1.2"
+        install: /v3_1_2/android/
+        size: 7.0 MB
+      - status: legacy
         release_notes: affdex-sdk-version-311
         architecture: "ARM7"
         version: "3.1.1"
         install: /v3_1_1/android/
-        size: 6.5 MB
+        size: 7.0 MB
       - status: legacy
         release_notes: affdex-sdk-version-31
         architecture: "ARM7"
         version: "3.1"
-        install: /v3_1_1/android/
-        size: 6.5 MB
+        install: /v3_1/android/
+        size: 7.0 MB
       - status: legacy
         release_notes: affdex-sdk-version-301
         doc: /v3/android/
@@ -184,6 +190,13 @@ platforms:
     salesForcePoIPlatform: Unity
     versions:
     - status: stable
+      doc: /v2_2/unity/
+      architecture: OSX i386/x86_64, Windows x86/x86_64, Android ARM7/x86
+      version: "2.2.1"
+      package: https://download.affectiva.com/unity/AffdexDelivery_2_2_1.unitypackage
+      size: 37 MB
+
+    - status: legacy
       doc: /v2_2/unity/
       architecture: OSX i386/x86_64, Windows x86/x86_64, Android ARM7/x86
       version: "2.2"

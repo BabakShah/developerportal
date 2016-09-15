@@ -1,6 +1,7 @@
 ---
 title: Affdex SDK for Android
-permalink: /v3_1_1/android/
+permalink: /v3_1_2/android/
+redirect_from: "/android/"
 tags: [android, sdk]
 audience: writer, designer
 keywords:
@@ -11,7 +12,7 @@ metadata: false
 
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.1.1
+SDK Developer Guide Release 3.1.2
 
 ## Using the SDK
 
@@ -34,7 +35,7 @@ For an example please see the [AffdexMe sample app's top-level build.gradle file
 ```groovy
 dependencies {
     ...
-    compile 'com.affectiva.android:affdexsdk:3.1.1'
+    compile 'com.affectiva.android:affdexsdk:3.1.2'
     ...
 }
 ```
@@ -90,7 +91,7 @@ You can then add your own "allowBackup" and "label" attributes:
 ##### 4. Capture and analyze faces
 
 Facial images can be captured from different sources. For each of the different sources, the SDK defines a detector class that can handle processing images acquired from that source:
-
+<!--- note: same as 3.1.1, so reuse that content -->
 * [How to analyze a camera feed]({{ site.baseurl }}/v3_1_1/android/analyze-camera/)
 * [How to analyze a recorded video file]({{ site.baseurl }}/v3_1_1/android/analyze-video/)
 * [How to analyze a video frame stream]({{ site.baseurl }}/v3_1_1/android/analyze-frames/)
@@ -100,6 +101,7 @@ Facial images can be captured from different sources. For each of the different 
 Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/android-sdk-samples)
 
 ## Class documentation
+<!--- note: same as 3.1.1, so reuse that javadoc -->
 * class docs: [[HTML]({{ site.baseurl }}/pages/platforms/v3_1_1/android/javadoc/index.html)]
 
 ## Requirements & Dependencies
