@@ -12,38 +12,38 @@ metadata: false
 
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.1
+SDK Developer Guide Release 3.1.1
 
 ## Getting started
 
-__The Affdex SDK for iOS is integrated into your application through [CocoaPods](https://cocoapods.org/pods/AffdexSDK-iOS). If you do not have CocoaPods installed on your Mac, please install it using the instructions on the CocoaPods site.__
-
+__The Affdex SDK for iOS is distributed as a [CocoaPod](https://cocoapods.org/pods/AffdexSDK-iOS). If you do not have CocoaPods installed on your Mac, please install it using the instructions in the [CocoaPods Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html).__
 
 #### 1. Create a Podfile.
 
-After you have installed CocoaPods on your Mac, create a file named "Podfile" in your project directory.  This is the directory which contains the .xcodeproj and/or .xcworkspace files for your project.  The Podfile is a plain-text file which describes the framework and library dependencies that your project contains.  Installing the pod file will load and configure the Affdex SDK framework, along with its supporting dependencies such as the AWS Kinesis framework, for use with your project.<br/>
-Place the following text into your Podfile:
+After you have installed CocoaPods on your Mac, create a file named "Podfile" in your project directory.  This is the directory which contains the .xcodeproj and/or .xcworkspace files for your project.  The Podfile is a plain-text file which describes the framework and library dependencies that your project contains.  Installing the pod file will load and configure the Affdex SDK framework for use with your project.
+
+Place the following text into your Podfile, substituting your app name for the 'MyApp' target:
 
 ```
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'AffdexMe' do
+target 'MyApp' do
     pod 'AffdexSDK-iOS'
-    pod 'AWSKinesis'
 end
 
 post_install do |installer|
-  installer.pods_project.targets.each do |target|
-      if (target.name == "AWSCore") || (target.name == 'AWSKinesis')
-            puts target.name
+    installer.pods_project.targets.each do |target|
+        if (target.name == "AWSCore") || (target.name == 'AWSKinesis')
             target.build_configurations.each do |config|
                 config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
             end
-      end
-  end
+        end
+    end
 end
 ```
+
+{{ note }} The post_install step is required in order to configure the AWS subdependencies of the Affdex SDK (the 'AWSCore' and 'AWSKinesis' targets) if your app supports bitcode.  If you do not require bitcode support in your app, this section can be omitted from the Podfile. {{ end }}
 
 #### 2. Run the `pod install` command.
 
@@ -54,6 +54,8 @@ pod install
 ```
 
 This command will install the SDK and support pods into the Pods folder, and will create or update the Xcode workspace file to support building from the pods.  Make sure to open the .xcworkspace file in Xcode instead of the .xcodeproj file from this point onwards.  You can now build and run the project to a device or simulator from Xcode.
+
+After you run `pod install` your app will be linked to the most recent release of the Affdex SDK, although you can also configure your Podfile to install a specific version of the SDK if you choose.  Your project will continue to use this version even if newer versions of the SDK are released.  Use the `pod update` command to update to newer SDK releases as they become available.
 
 #### 3. Capture and analyze faces
 

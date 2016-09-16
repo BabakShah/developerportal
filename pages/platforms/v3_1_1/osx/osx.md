@@ -12,26 +12,26 @@ metadata: false
 
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.1
+SDK Developer Guide Release 3.1.1
 
 ## Getting started
 
-__The Affdex SDK for macOS is integrated into your application through [CocoaPods](https://cocoapods.org/pods/AffdexSDK-OSX). If you do not have CocoaPods installed on your Mac, please install it using the instructions on the CocoaPods site.__
+__The Affdex SDK for macOS is distributed as a [CocoaPod](https://cocoapods.org/pods/AffdexSDK-OSX). If you do not have CocoaPods installed on your Mac, please install it using the instructions in the [CocoaPods Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html).__
 
 #### 1. Create a Podfile.
 
-After you have installed CocoaPods on your Mac, create a file named "Podfile" in your project directory.  This is the directory which contains the .xcodeproj and/or .xcworkspace files for your project.  The Podfile is a plain-text file which describes the framework and library dependencies that your project contains.  Installing the pod file will load and configure the Affdex SDK framework for use with your project.<br/>
-Place the following text into your Podfile:
+After you have installed CocoaPods on your Mac, create a file named "Podfile" in your project directory.  This is the directory which contains the .xcodeproj and/or .xcworkspace files for your project.  The Podfile is a plain-text file which describes the framework and library dependencies that your project contains.  Installing the pod file will load and configure the Affdex SDK framework for use with your project.
+
+Place the following text into your Podfile, substituting your app name for the 'MyApp' target:
 
 ```
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'AffdexMe' do
+target 'MyApp' do
     pod 'AffdexSDK-OSX'
 end
 ```
-
 
 #### 2. Run the `pod install` command.
 
@@ -42,6 +42,8 @@ pod install
 ```
 
 This command will install the SDK and support pods into the Pods folder, and will create or update the Xcode workspace file to support building from the pods.  Make sure to open the .xcworkspace file in Xcode instead of the .xcodeproj file from this point onwards.  You can now build and run the project on your Mac from Xcode.
+
+After you run `pod install` your app will be linked to the most recent release of the Affdex SDK, although you can also configure your Podfile to install a specific version of the SDK if you choose.  Your project will continue to use this version even if newer versions of the SDK are released.  Use the `pod update` command to update to newer SDK releases as they become available.
 
 #### 3. Capture and analyze faces
 
@@ -62,7 +64,7 @@ __There are additional sample applications for processing videos and connecting 
 
 #### Hardware requirements (recommended)
 
-*	Any Mac capable of running OS 10.10 or newer.
+*	Any Mac capable of running OSX 10.10 or newer.
 
 #### Tracking multiple faces
 As of v3.0, the SDK exposes a parameter `max_faces` in the detector constructors to specify the maximum number of faces to look for in an image. For the real-time use cases, to achieve a high accuracy and processing throughput (20+ processed frames per second), the SDK uses a separate CPU thread for each face, which increases the total processing load on the system based on how many faces are being tracked.
@@ -73,5 +75,5 @@ Although you can run more than one processing thread per CPU core, throughput wi
 
 #### Supported operating systems
 
-*	macOS 10.10 (Yosemite)
-*	macOS 10.11 (El Capitan)
+*	OSX El Capitan (10.11)
+*	OSX Yosemite (10.10)
