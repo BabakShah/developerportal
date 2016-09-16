@@ -11,6 +11,13 @@ metadata: true
 
 This page contains the release notes for the different versions of the Affdex SDK(s).
 
+### Unity Plugin 2.2.1
+
+*Sep 2016*
+
+* Android
+  * Updated the libpng version used in the native library to address a security vulnerability
+
 ### Unity Plugin 2.2
 
 *Aug 2016*
@@ -20,6 +27,15 @@ This page contains the release notes for the different versions of the Affdex SD
 * Frame constructor can now accept a rotation angle of 0, 90, 180, and 270.
 * Detector.Initialize is now private because it is called automatically by Detector.Start
 * Detector.Stop has been deprecated in favor of Detector.StopDetector
+
+***
+
+### Affdex SDK version 3.1.2
+
+*Sep 2016*
+
+* Android
+  * Updated libpng version used in native library to address security vulnerability
 
 ***
 
