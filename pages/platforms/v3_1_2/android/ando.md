@@ -92,6 +92,7 @@ You can then add your own "allowBackup" and "label" attributes:
 
 Facial images can be captured from different sources. For each of the different sources, the SDK defines a detector class that can handle processing images acquired from that source:
 <!--- note: same as 3.1.1, so reuse that content -->
+
 * [How to analyze a camera feed]({{ site.baseurl }}/v3_1_1/android/analyze-camera/)
 * [How to analyze a recorded video file]({{ site.baseurl }}/v3_1_1/android/analyze-video/)
 * [How to analyze a video frame stream]({{ site.baseurl }}/v3_1_1/android/analyze-frames/)

@@ -89,7 +89,7 @@ You can then add your own "allowBackup" and "label" attributes:
 
 ##### 4. Capture and analyze faces
 
-Facial images can be captured from different sources. For each of the different sources, the SDK defines a detector class that can handle processing images acquired from that source:  
+Facial images can be captured from different sources. For each of the different sources, the SDK defines a detector class that can handle processing images acquired from that source:
 
 * [How to analyze a camera feed]({{ site.baseurl }}/v3/android/analyze-camera/)
 * [How to analyze a recorded video file]({{ site.baseurl }}/v3/android/analyze-video/)
