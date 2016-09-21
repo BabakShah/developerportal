@@ -18,7 +18,7 @@ SDK Developer Guide Release 3.1.1
 
 __The Affdex SDK for macOS is distributed as a [CocoaPod](https://cocoapods.org/pods/AffdexSDK-OSX). If you do not have CocoaPods installed on your Mac, please install it using the instructions in the [CocoaPods Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html).__
 
-#### 1. Create a Podfile.
+#### 1. Create a Podfile
 
 After you have installed CocoaPods on your Mac, create a file named "Podfile" in your project directory.  This is the directory which contains the .xcodeproj and/or .xcworkspace files for your project.  The Podfile is a plain-text file which describes the framework and library dependencies that your project contains.  Installing the pod file will load and configure the Affdex SDK framework for use with your project.
 
@@ -33,15 +33,16 @@ target 'MyApp' do
 end
 ```
 
-#### 2. Run the `pod install` command.
+#### 2. Install the Affdex SDK CocoaPod
 
-With the Podfile created, run the following command from the Terminal application:
+With the Podfile created, run the following commands from the Terminal application:
 
 ```
+pod repo update
 pod install
 ```
 
-This command will install the SDK and support pods into the Pods folder, and will create or update the Xcode workspace file to support building from the pods.  Make sure to open the .xcworkspace file in Xcode instead of the .xcodeproj file from this point onwards.  You can now build and run the project on your Mac from Xcode.
+This will install the SDK and support pods into the Pods folder, and will create or update the Xcode workspace file to support building from the pods.  Make sure to open the .xcworkspace file in Xcode instead of the .xcodeproj file from this point onwards.  You can now build and run the project on your Mac from Xcode.
 
 After you run `pod install` your app will be linked to the most recent release of the Affdex SDK, although you can also configure your Podfile to install a specific version of the SDK if you choose.  Your project will continue to use this version even if newer versions of the SDK are released.  Use the `pod update` command to update to newer SDK releases as they become available.
 
@@ -64,10 +65,10 @@ __There are additional sample applications for processing videos and connecting 
 
 #### Hardware requirements (recommended)
 
-*	Any Mac capable of running OSX 10.10 or newer.
+*	Any Mac capable of running OS X Yosemite (10.10) or newer.
 
 #### Tracking multiple faces
-As of v3.0, the SDK exposes a parameter `max_faces` in the detector constructors to specify the maximum number of faces to look for in an image. For the real-time use cases, to achieve a high accuracy and processing throughput (20+ processed frames per second), the SDK uses a separate CPU thread for each face, which increases the total processing load on the system based on how many faces are being tracked.
+As of v3.0.0, the SDK exposes a parameter `max_faces` in the detector constructors to specify the maximum number of faces to look for in an image. For the real-time use cases, to achieve a high accuracy and processing throughput (20+ processed frames per second), the SDK uses a separate CPU thread for each face, which increases the total processing load on the system based on how many faces are being tracked.
 
 If the number of faces exceeds the number of available processing units on the machine, all faces will be tracked, but at a cost of a potential reduction in processing frame rate. Therefore, please make sure to plan for enough hardware power to support the maximum number of faces you are expecting to track with each camera.
 
@@ -75,5 +76,5 @@ Although you can run more than one processing thread per CPU core, throughput wi
 
 #### Supported operating systems
 
-*	OSX El Capitan (10.11)
-*	OSX Yosemite (10.10)
+*	OS X El Capitan (10.11)
+*	OS X Yosemite (10.10)
