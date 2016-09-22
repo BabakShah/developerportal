@@ -180,4 +180,8 @@ DEPENDENCIES
   html-proofer
   jekyll-redirect-from
   rake
+  rb-inotify
   s3_website
+
+BUNDLED WITH
+   1.10.6
