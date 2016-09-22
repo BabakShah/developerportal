@@ -124,6 +124,50 @@ Each result entry is a container for one item of media, which contains one or mo
 <strong>application/vnd.affectiva.metrics.v0+json</strong> ­ metrics computed for a job in JSON
 <strong>application/csv</strong> - metrics computed for a job in CSV
 
+#### application/vnd.affectiva.metrics.v0+json JSON Format
+
+This is our recommended format for retrieving metrics because it contains more metadata than the CSV format allows.  The metrics v0 format is a JSON object that contains the following keys:
+
+```json
+{
+  "content_type": "application/vnd.affectiva.metrics.v0+json",
+  "metric_map": {
+  ...
+  },
+  "metrics": {
+  ...
+  },
+  "pack": pack name
+}
+```
+
+The value of the content_type key will be "application/vnd.affectiva.metrics.v0+json".
+
+The "metric_map" is a map between the "friendly" metrics names and the underlying classifiers.  The friendly names are easier to understand and will likely be more forward-compatible when new packs are released.  The friendly name "smile", for example, corresponds to "smilect_nonlinear_causal" in the current CT pack.  When we release a new pack the friendly name will continue to be "smile" but the classifier name will likely be different.
+
+The "metrics" object contains the values of each metric for each frame in the video.  The keys are the friendly metrics names, such as "smile" and "joy".  The value of each key is an array of entries, one per frame in the input video.  Each entry in the array can be either the string "TF" (indicating that the face tracker did not find a face in that frame) or a number indicating that classifier's output for that frame.
+
+```json
+{
+  ...
+  "metrics": {
+  ...
+    "smile":[1.10693264,1.54680443,2.11125374,"TF","TF", ... ],
+    "joy":[1.10693264,1.54680443,2.11125374,"TF","TF", ... ],
+  }
+}
+```
+
+Per-frame time stamps are stored in the metrics object with the key "time stamp (msec)".
+
+The value of the "pack" key indicates the classifier pack used to process the media, for example "ct-hybrid".
+
+#### application/csv Comma-Separated-Value Format
+
+This is a lowest-common-denominator CSV format.  We recommend using the application/vnd.affectiva.metrics.v0+json format instead.
+
+The header row contains the detailed classifier names, e.g., "smilect_nonlinear_causal".  Each value in each non-header row contains either the string "TF" (indicating that the face tracker did not find a face in that frame) or a number indicating that classifier's output for that frame.
+
 ### Media Annotations
 
 Annotations are key-value pairs that are attached to media entries.  Within an entry object, the "annotation" key's value will be a URL that returns that entry's annotations.  For example:
