@@ -7,6 +7,7 @@ gem 'google-api-client', '0.8'
 gem 'chronic'
 gem 's3_website'
 gem 'jekyll-redirect-from'
+gem 'rb-fsevent'
 
 # http://stackoverflow.com/a/16475580/5967960
 def linux_only(require_as)

@@ -47,7 +47,7 @@ floating_nav: true
 use_google_analytics: false
 
 salesforce:
-  url: "https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+  url: "https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
   oid: "00D5400000092jt"
 
 # suffix: index.html

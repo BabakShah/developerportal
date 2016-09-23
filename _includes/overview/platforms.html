@@ -19,6 +19,8 @@ $( document ).ready(function() {
   var trackOutboundLink = function(status, versionString, url) {};
 {% endif %}
 
+var queryDict = {};
+location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
 
   $( '.platformbox' ).hover( function() {
     var img_selector = $(this).find('img');
@@ -33,6 +35,16 @@ $( document ).ready(function() {
     var platform = $(this).data('platform');
     var download_link = $(this).data('url');
     var sf_PoI_platform = $(this).data('salesforce');
+    
+    var utm_source = queryDict["utm_source"];
+    var utm_campaign = queryDict["utm_campaign"];
+    var leadsource = queryDict["source"];
+    var campaign = queryDict["campaign"];  
+      
+    console.log(host);
+    console.log(download_link);
+    
+      
     var versionString = platform+' '+status;
 
       if ($.cookie('modal_shown') == null) {
@@ -40,6 +52,14 @@ $( document ).ready(function() {
          $(".modal-body #dismiss_lnk").attr("href", host+download_link);
          $(".modal-body #retURL").attr("value", host+download_link);
          $(".modal-body #PoI_platform").attr("value", sf_PoI_platform);
+          $(".modal-body #00N800000057dCV").attr("value", utm_campaign);
+          $(".modal-body #00N800000057dCY").attr("value", utm_source);
+          $(".modal-body #00N34000005WjjD").attr("value", campaign);
+          $(".modal-body #lead_source").attr("value", leadsource);
+          
+          
+          
+          
 
          $('#dismiss_lnk').click(function(){
            trackOutboundLink('skipped', versionString);
@@ -71,7 +91,7 @@ $( document ).ready(function() {
       <div class="col-xs-2 text-center platformbox">
           <a href="#" class="modal_link" data-redir="{{ site.baseurl }}/{{ platform.name | downcase | remove: ' '}}"
              data-url="{{ site.baseurl }}/{{ platform.name | downcase | remove: ' '}}" data-platform="{{ platform.name }}"
-            data-disable="false" title="{{ platform.name }}" data-salesforce="{{ platform.salesForcePoIPlatform }}" data-toggle="modal">
+            data-disable="false" title="{{ platform.name }}" data-salesforce="{{ platform.salesForcePoIPlatform }}" data-utmcampaign="#" data-utmsource="#" data-toggle="modal">
             <img id="{{ platform.name }}" class="img-responsive" src="{{ platform.logo | prepend: site.baseurl }}"
                  title="{{ platform.name }}" />
             <strong style="font-size: 1.2vmax;" >{{platform.name}}</strong>

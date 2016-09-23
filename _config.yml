@@ -18,6 +18,8 @@ site_title: Affectiva Developer Portal
 
 tagline: " "
 
+utmcampaign: "AdWords"
+
 baseurl: ""
 
 port: 4006

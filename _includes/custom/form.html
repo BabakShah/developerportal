@@ -2,7 +2,7 @@
    .modal-dialog {
      left: auto;
      right: auto;
-     width: 600px;
+     width: auto;
      padding-top: 30px;
      padding-bottom: 30px;
    }
@@ -60,35 +60,44 @@
               <input type="hidden" name="00N80000005ZFCn" value="1" />
               <input type="hidden" id="PoI" name="00N34000005cqmD" value="SDK" />
               <input type="hidden" id="PoI_platform" name="00N34000005d4UI" value="#" />
+               <!-- UTM Source --> <input type="hidden"   id="00N800000057dCY" name="00N800000057dCY" value="#" />
+              <!--UTM Campaign--> <input type="hidden" id="00N800000057dCV" name="00N800000057dCV" value="#" />
+               
+               <!--Campaign--> <input type="hidden" id="00N34000005WjjD"  name="00N34000005WjjD" value="#" /><br>
+               
+               <input type="hidden" id="lead_source" name="lead_source" value="AdWords" />
+                   
+                   
               <input type="hidden" id="retURL" name="retURL" value="http://developer.affectiva.com">
+               
               <div class="form-group required row">
-                 <label for="first_name" class="col-md-2 control-label">First name</label>
-                 <div class="col-md-9">
+                 <label for="first_name" class="col-xs-2 control-label">First name</label>
+                 <div class="col-xs-9">
                     <input class="form-control" type="text" value="" maxlength="40" size="20" name="first_name" id="first_name" required>
                  </div>
               </div>
               <div class="form-group required row">
-                 <label for="last_name" class="col-md-2 control-label">Last name</label>
-                 <div class="col-md-9">
+                 <label for="last_name" class="col-xs-2 control-label">Last name</label>
+                 <div class="col-xs-9">
                     <input class="form-control" type="text" value="" maxlength="80" size="20" name="last_name" id="last_name" required>
                  </div>
               </div>
               <div class="form-group required row">
-                 <label for="email" class="col-md-2 control-label">Email</label>
-                 <div class="col-md-9">
+                 <label for="email" class="col-xs-2 control-label">Email</label>
+                 <div class="col-xs-9">
                     <input class="form-control" type="email" value="" maxlength="80" size="20" name="email" id="email"
                            pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$" required>
                  </div>
               </div>
               <div class="form-group row">
-                 <label for="phone" class="col-md-2 control-label">Telephone</label>
-                 <div class="col-md-9">
+                 <label for="phone" class="col-xs-2 control-label">Telephone</label>
+                 <div class="col-xs-9">
                     <input class="form-control" type="tel" value="" maxlength="40" size="20" name="phone" id="phone">
                  </div>
               </div>
               <div class="form-group row">
-                 <label for="company" class="col-md-2 control-label">Company</label>
-                 <div class="col-md-9">
+                 <label for="company" class="col-xs-2 control-label">Company</label>
+                 <div class="col-xs-9">
                     <input class="form-control" id="company" type="text" value="" maxlength="40" size="20" name="company" type="text">
                  </div>
              </div>
