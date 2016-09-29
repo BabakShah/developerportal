@@ -13,3 +13,6 @@ def linux_only(require_as)
   RbConfig::CONFIG['host_os'] =~ /linux/ ? require_as : false
 end
 gem 'rb-inotify', :require => linux_only('rb-inotify')
+
+# needed because we use system libs in the travis build
+gem 'pkg-config'
