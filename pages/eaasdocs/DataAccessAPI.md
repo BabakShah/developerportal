@@ -268,7 +268,7 @@ This operation is initiated when the client wants Affdex to calculate the variou
 Example:
 
 ```http
-POST URL provided in "Project Operations" above HTTP/1.1
+POST URL_provided_in_"Project_Operations"_above HTTP/1.1
 Accept: application/json
 ```
 
@@ -287,9 +287,10 @@ This operation is initiated when the client is ready to transition new face reco
 Example:
 
 ```http
-POST URL provided in “Project Operations” above HTTP/1.1
+POST URL_provided_in_"Project_Operations"_above HTTP/1.1
 Accept: application/json
 Content-Type: application/json
+
 {"key":"default_session_type", "value":"live"}
 ```
 
@@ -340,8 +341,8 @@ To retrieve the prometrics, a client can issue a GET request to the prometrics U
   "data" : {
     "classifier_name_1" : [ frame-by-frame metrics ],
     "classifier_name_2" : [ frame-by-frame metrics ],
-    "classifier_name_3" : [ frame-by-frame metrics ],
     ...
+    "classifier_name_N" : [ frame-by-frame metrics ]
   }
 }
 ```
@@ -355,9 +356,10 @@ Projects are created by sending a POST request to the project service root URL. 
 Example:
 
 ```http
-POST project service URL HTTP/1.1
+POST project_service_URL HTTP/1.1
 Accept: application/json
 Content-Type: application/json
+
 {"portal_project":{"name":"ACME Roadrunner Trap"},"market":"USA - English","duration":30.1}
 ```
 
@@ -410,10 +412,11 @@ Media files are created by sending a POST request to the project media root URL 
 Example:
 
 ```http
-POST project media URL HTTP/1.1
+POST project_media_URL HTTP/1.1
 Accept: application/json
 Content-Type: application/json
-{"dashboard_label":"Ad 1 - 30 seconds", "id":"unique_media_string", "duration":30.1, "file": <uploaded file>}
+
+{"dashboard_label": "Ad 1 - 30 seconds", "id": "unique_media_string", "duration": 30.1, "file": <uploaded file>}
 ```
 
 The following JSON object keys are recognized:
