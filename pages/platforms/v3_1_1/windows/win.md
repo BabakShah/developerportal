@@ -75,7 +75,7 @@ If the number of faces tracked is greater than the number of available CPU threa
 
 ##### Runtime Requirements
 
-*	Visual C++ Redistributable runtime for VS 2013
+*	[Visual C++ Redistributable runtime for VS 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 *	Microsoft .NET framework v 4.0 (.NET SDK only)
 
 The software runtime requirements are installed automatically by the SDK installer.
