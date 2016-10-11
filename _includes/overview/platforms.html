@@ -60,7 +60,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
     var sf_PoI_platform = $(this).data('salesforce');
 
     var adwords_vars = {"utm_source": "SDK Free Trial Portal",
-                        "utm_campaign": "", "source": "", "campaign": ""};
+                        "utm_campaign": "", "source": "SDK Free Trial Portal", "campaign": ""};
     for (var adword in adwords_vars) {
       var avar = getUrlParameter(adword);
       if (avar) {
