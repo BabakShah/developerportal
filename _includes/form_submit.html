@@ -1,0 +1,44 @@
+<script>
+ $(document).ready(function() {
+
+   var getUrlParameter = function(sParam) {
+       var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+           sURLVariables = sPageURL.split('&'),
+           sParameterName,
+           i;
+
+       for (i = 0; i < sURLVariables.length; i++) {
+           sParameterName = sURLVariables[i].split('=');
+
+           if (sParameterName[0] === sParam) {
+               return sParameterName[1] === undefined ? false : sParameterName[1];
+           }
+       }
+   };
+
+   var redirectSuccess = function() {
+     var redirect_url = getUrlParameter('redirect');
+     if (redirect_url) {
+       window.location.href = redirect_url;
+     }
+   };
+   if (getUrlParameter('source') === 'AdWords'
+       && location.host === 'developer.affectiva.com') {
+     /* <![CDATA[ */
+     var google_conversion_id = 938919213;
+     var google_conversion_language = "en";
+     var google_conversion_format = "3";
+     var google_conversion_color = "ffffff";
+     var google_conversion_label = "7qo0CP6SomUQrYrbvwM";
+     var google_remarketing_only = false;
+     /* ]]> */
+
+     $.getScript( "http://www.googleadservices.com/pagead/conversion.js", redirectSuccess);
+   }
+   else {
+     redirectSuccess();
+   }
+
+
+ });
+</script>

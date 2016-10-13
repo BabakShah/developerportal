@@ -26,7 +26,6 @@ $( document ).ready(function() {
     ga('send', 'event', 'outbound', 'click', versionString, {
         'transport': 'beacon' });
   };
-
 {% else %}
   var trackOutboundLink = function(status, versionString, url) {};
 {% endif %}
@@ -61,7 +60,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
     var sf_PoI_platform = $(this).data('salesforce');
 
     var adwords_vars = {"utm_source": "SDK Free Trial Portal",
-                        "utm_campaign": "", "source": "SDK Free Trial Portal", "campaign": ""};
+                        "utm_campaign": "", "source": "", "campaign": ""};
     for (var adword in adwords_vars) {
       var avar = getUrlParameter(adword);
       if (avar) {
@@ -70,20 +69,18 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 
     var versionString = platform+' '+status;
+    var formCompletePage = "/formcomplete"
+    var paramsString = "?source="+adwords_vars["source"]+"&redirect="+download_link;
 
       if ($.cookie('modal_shown') == null) {
          $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
-         $(".modal-body #dismiss_lnk").attr("href", host+download_link);
-         $(".modal-body #retURL").attr("value", host+download_link);
+         $(".modal-body #dismiss_lnk").attr("href", host+formCompletePage+paramsString);
+         $(".modal-body #retURL").attr("value", host+formCompletePage+paramsString);
          $(".modal-body #PoI_platform").attr("value", sf_PoI_platform);
           $(".modal-body #00N800000057dCV").attr("value", adwords_vars["utm_campaign"]);
           $(".modal-body #00N800000057dCY").attr("value", adwords_vars["utm_source"]);
           $(".modal-body #00N34000005WjjD").attr("value", adwords_vars["campaign"]);
           $(".modal-body #lead_source").attr("value", adwords_vars["source"]);
-
-
-
-
 
          $('#dismiss_lnk').click(function(){
            trackOutboundLink('skipped', versionString);
