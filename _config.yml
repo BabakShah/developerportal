@@ -22,9 +22,9 @@ utmcampaign: "AdWords"
 
 baseurl: ""
 
-port: 4006
+port: 80
 
-host: 127.0.0.1
+host: developer.affectiva.com
 
 url: "http://developer.affectiva.com/"
 
