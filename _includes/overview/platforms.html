@@ -80,11 +80,12 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
     var formCompletePage = "/formcomplete"
     var paramsString = "?source="+adwords_vars["source"]+"&redirect="+download_link;
+    var dimissParamsString = "?source=&redirect="+download_link;
 
     //Show the form only once every 7 days
       if ($.cookie('modal_shown') == null) {
          $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
-         $(".modal-body #dismiss_lnk").attr("href", host+formCompletePage+paramsString);
+         $(".modal-body #dismiss_lnk").attr("href", host+formCompletePage+dimissParamsString);
          $(".modal-body #retURL").attr("value", host+formCompletePage+paramsString);
          $(".modal-body #PoI_platform").attr("value", sf_PoI_platform);
           $(".modal-body #00N800000057dCV").attr("value", adwords_vars["utm_campaign"]);
