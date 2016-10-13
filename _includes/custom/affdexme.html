@@ -8,15 +8,15 @@
 
 {% if site.google_analytics and site.use_google_analytics %}
 
-var trackOutboundLink = function(url, platform) {
-    ga('send', 'event', 'outbound', 'click', platform, {
+var trackAffdexMeDownload = function(url, platform) {
+    ga('send', 'event', 'download', 'affdexme', platform, {
        'transport': 'beacon',
        'hitCallback': function(){document.location = url;}
        });
 };
 
 {% else %}
-  var trackOutboundLink = function(url, platform) {
+  var trackAffdexMeDownload = function(url, platform) {
     window.location.href = url;
   };
 {% endif %}
@@ -30,7 +30,7 @@ var trackOutboundLink = function(url, platform) {
     </div>
     <div class="col-md-2">
       {% for platform in site.data.downloads.affdexme %}
-        <a href="{{ platform.package }}" target="_blank" onclick="trackOutboundLink('{{ platform.package }}'); return false;">
+        <a href="{{ platform.package }}" target="_blank" onclick="trackAffdexMeDownload('{{ platform.package }}', '{{ platform.name }}'); return false;">
           <img src="{{ platform.img | prepend: site.baseurl }}" style="{{ platform.style }}">
         </a>
       {% endfor %}

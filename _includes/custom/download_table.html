@@ -6,14 +6,14 @@
      * using 'navigator.sendBeacon' in browser that support it.
      */
      {% if site.google_analytics and site.use_google_analytics %}
-      var trackOutboundLink = function(url, platform, version, architecture) {
-         ga('send', 'event', 'outbound', 'click', platform+' '+version+' '+architecture, {
+      var trackSDKLegacyDownload = function(url, platform, version, architecture) {
+         ga('send', 'event', 'download', 'legacy', platform+' '+version+' '+architecture, {
             'transport': 'beacon',
             'hitCallback': function(){document.location = url;}
             });
      }
      {% else %}
-       var trackOutboundLink = function(url, platform, version, architecture) {
+       var trackSDKLegacyDownload = function(url, platform, version, architecture) {
          window.location.href = url;
        };
      {% endif %}
@@ -97,13 +97,13 @@ img.img-responsive { display: table-cell; max-width: 3em; margin-left: auto; mar
             {% unless build.package contains '://' %}
               {% assign build.package = build.package | prepend: site.url %}
             {% endunless %}
-            <a href="{{ build.package }}" target="_blank" onclick="trackOutboundLink('{{ build.package }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Download</a>
+            <a href="{{ build.package }}" target="_blank" onclick="trackSDKLegacyDownload('{{ build.package }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Download</a>
             {% endif %}
             {% if build.install %}
             {% unless build.install contains '://' %}
               {% assign build.install = build.install | prepend: site.url %}
             {% endunless %}
-            <a href="{{ build.install }}" target="_blank" onclick="trackOutboundLink('{{ build.install }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Add to your project</a>
+            <a href="{{ build.install }}" target="_blank" onclick="trackSDKLegacyDownload('{{ build.install }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Add to your project</a>
             {% endif %}
           </td>
         </tr>

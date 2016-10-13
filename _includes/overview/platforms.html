@@ -22,12 +22,18 @@ $( document ).ready(function() {
 
 {% if site.google_analytics and site.use_google_analytics %}
 
-  var trackOutboundLink = function(status, versionString, url) {
+  var trackPlatformClick = function(versionString, url) {
     ga('send', 'event', 'outbound', 'click', versionString, {
         'transport': 'beacon' });
   };
+
+  var trackFormDismiss = function(versionString, url) {
+    ga('send', 'event', 'form', 'dismiss', versionString, {
+        'transport': 'beacon' });
+  };
 {% else %}
-  var trackOutboundLink = function(status, versionString, url) {};
+  var trackPlatformClick = function(versionString, url) {};
+  var trackFormDismiss = function(versionString, url) {};
 {% endif %}
 
 var getUrlParameter = function getUrlParameter(sParam) {
@@ -59,6 +65,10 @@ var getUrlParameter = function getUrlParameter(sParam) {
     var download_link = $(this).data('url');
     var sf_PoI_platform = $(this).data('salesforce');
 
+    //Submit tracking to google analytics
+    trackPlatformClick(platform);
+
+    //Setup to submit lead to adwords and salesforce
     var adwords_vars = {"utm_source": "SDK Free Trial Portal",
                         "utm_campaign": "", "source": "SDK Free Trial Portal", "campaign": ""};
     for (var adword in adwords_vars) {
@@ -68,10 +78,10 @@ var getUrlParameter = function getUrlParameter(sParam) {
       }
     }
 
-    var versionString = platform+' '+status;
     var formCompletePage = "/formcomplete"
     var paramsString = "?source="+adwords_vars["source"]+"&redirect="+download_link;
 
+    //Show the form only once every 7 days
       if ($.cookie('modal_shown') == null) {
          $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
          $(".modal-body #dismiss_lnk").attr("href", host+formCompletePage+paramsString);
@@ -83,15 +93,9 @@ var getUrlParameter = function getUrlParameter(sParam) {
           $(".modal-body #lead_source").attr("value", adwords_vars["source"]);
 
          $('#dismiss_lnk').click(function(){
-           trackOutboundLink('skipped', versionString);
+           trackFormDismiss(platform);
            $('#signup_modal').modal('hide');
          });
-
-         /*$('#signup_modal').validator().on('submit', function (e) {
-          if (!e.isDefaultPrevented()) {
-            trackOutboundLink('submitted', versionString);
-          }
-        });*/
 
          $('#signup_modal').modal('show');
     }

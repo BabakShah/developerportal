@@ -7,14 +7,14 @@
      */
 
 {% if site.google_analytics and site.use_google_analytics %}
- var trackOutboundLink = function(url, platform, version, architecture) {
-    ga('send', 'event', 'outbound', 'click', platform+' '+version+' '+architecture, {
+ var trackSDKBinaryDownload = function(url, platform, version, architecture) {
+    ga('send', 'event', 'download', platform, version+' '+architecture, {
        'transport': 'beacon',
        'hitCallback': function(){document.location = url;}
        });
 }
 {% else %}
-  var trackOutboundLink = function(url, platform, version, architecture) {
+  var trackSDKBinaryDownload = function(url, platform, version, architecture) {
     window.location.href = url;
   };
 {% endif %}
@@ -76,7 +76,7 @@ img.img-responsive { display: table-cell; max-width: 3em; margin-left: auto; mar
             {{ build.size }}
           </td>
           <td id="cell" class="text-center">
-            <a href="{{ build.package }}" target="_blank" onclick="trackOutboundLink('{{ build.package }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Download</a>
+            <a href="{{ build.package }}" target="_blank" onclick="trackSDKBinaryDownload('{{ build.package }}', '{{ platform.name }}', '{{ build.version }}', '{{ build.architecture }}'); return false;">Download</a>
           </td>
         </tr>
         {% endif %}
