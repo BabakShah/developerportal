@@ -11,6 +11,12 @@ metadata: true
 
 This page contains the release notes for the different versions of the Affdex SDK(s).
 
+### Unity Plugin 2.3
+
+*Oct 2016*
+
+* Added iOS support
+
 ### Unity Plugin 2.2.1
 
 *Sep 2016*

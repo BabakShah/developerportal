@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="49538c9b-80e7-49dc-a6d5-3c2b06bfef6c" Title="Affdex" Url="html/b8038333-b12e-8ea1-a2ce-74c8d611fa89.htm">
+    <HelpTOCNode Id="f6cc7d35-7051-4642-87c1-fa4d804ae1e0" Title="AffdexUnityUtils Class" Url="html/1bd7c696-853a-7294-d8da-e4ffd91178ab.htm">
+      <HelpTOCNode Id="f5085193-872c-435b-9095-74d7b23122b1" Title="AffdexUnityUtils Methods" Url="html/50928cb8-cd07-ac20-f371-ead69d3dc9e3.htm">
+        <HelpTOCNode Title="ValidPlatform Method " Url="html/7a289552-d150-20fe-4216-34a72b5acd4f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6116db07-4cf6-4b97-8119-7615c1532500" Title="CameraInput Class" Url="html/5a5279cd-f2cc-c73f-8243-a6319229c662.htm">
+      <HelpTOCNode Title="CameraInput Constructor " Url="html/4834cfa4-fd5a-8e2c-fe4f-6d452c3953ed.htm" />
+      <HelpTOCNode Id="b9208c54-da53-4091-a2e0-a710f71856ad" Title="CameraInput Properties" Url="html/22e47301-8654-4a2a-95b9-948e9b726530.htm">
+        <HelpTOCNode Title="detector Property " Url="html/3fc3f512-5af1-4a71-a495-5eb0cec8663a.htm" />
+        <HelpTOCNode Title="Texture Property " Url="html/eab8884b-26e1-8108-1cdf-7c81eaf8a50c.htm" />
+        <HelpTOCNode Title="videoRotationAngle Property " Url="html/742852ad-4bf7-414c-7bcd-efe19a9bc38c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b30ae374-ec9c-4e0b-a9cf-905316242f40" Title="CameraInput Methods" Url="html/85b5e045-5ea9-35e8-950d-1c9122ee2b73.htm">
+        <HelpTOCNode Title="ProcessFrame Method " Url="html/f9bd7fd1-7ad8-5b04-84e3-a2e0fd2be7fc.htm" />
+        <HelpTOCNode Title="SelectCamera Method " Url="html/dff8981e-af94-c010-ed7f-574383c48d80.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a5812d06-af2c-4f32-9c83-be49d07460b2" Title="CameraInput Fields" Url="html/9ea5ece5-42e2-ac46-f4e5-32657aaf94ef.htm">
+        <HelpTOCNode Title="device Field" Url="html/a850063e-64dc-d396-042b-b3fb897cd016.htm" />
+        <HelpTOCNode Title="devices Field" Url="html/3b65a748-48c6-63bd-26c9-837faef192f1.htm" />
+        <HelpTOCNode Title="isFrontFacing Field" Url="html/8ed597cf-995f-902e-046b-95113850eb1c.htm" />
+        <HelpTOCNode Title="sampleRate Field" Url="html/d7872032-63f9-a740-e015-47329fb8f6f5.htm" />
+        <HelpTOCNode Title="targetHeight Field" Url="html/2635c307-a330-8ce3-a0bd-d671ae8a5b1c.htm" />
+        <HelpTOCNode Title="targetWidth Field" Url="html/1faf1c84-5928-37b0-7207-225b93966998.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="608f5c58-d3c0-499c-814f-493812e7855b" Title="DebugFeatureViewer Class" Url="html/e94caec4-2b0e-69de-28e2-47a2cc22837e.htm">
+      <HelpTOCNode Title="DebugFeatureViewer Constructor " Url="html/34853c62-09f3-2a27-57f5-2c8a8464e7e9.htm" />
+      <HelpTOCNode Id="f731e283-eb44-41a7-b0df-519811456ee6" Title="DebugFeatureViewer Properties" Url="html/6fb535b6-8cbc-e7ac-0aa8-aece7bd09e4c.htm">
+        <HelpTOCNode Title="DebugTexture Property " Url="html/87b224ef-8364-08a4-b325-bdd7c100f59a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="55d9849f-189c-47bd-8932-70479cf622b8" Title="DebugFeatureViewer Methods" Url="html/cd5e8d98-2d3c-a02c-1039-0d82b3ea808f.htm">
+        <HelpTOCNode Title="OnDrawGizmos Method " Url="html/cf068dba-5fce-2396-3fe9-d6688c5ccf02.htm" />
+        <HelpTOCNode Title="ShowFace Method " Url="html/0f8cc0ea-449b-4d43-54fc-3e74e2335a97.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="70f51e77-4c99-4c0e-b5b7-4c0f985f1591" Title="DebugFeatureViewer Fields" Url="html/406088e4-4fea-85d1-3d1f-f2380c7d9e5c.htm">
+        <HelpTOCNode Title="debugTexture Field" Url="html/ea197e0b-4f58-f519-6f1f-6eb52e96e023.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="faaff582-057d-49ca-920b-46cef07e93f9" Title="Detector Class" Url="html/e77adb8c-90bf-d7f1-5c6c-2f3c419b5c61.htm">
+      <HelpTOCNode Title="Detector Constructor " Url="html/bafa86a0-0d4f-3122-d8b4-9eed123c94ad.htm" />
+      <HelpTOCNode Id="fa94067b-1832-4ceb-b8c9-b2ce149f2569" Title="Detector Properties" Url="html/afa7a601-dcf4-63cd-95fb-e89de3ddca23.htm">
+        <HelpTOCNode Title="IsRunning Property " Url="html/608049d3-26a8-91fe-f40a-dc9d07a85735.htm" />
+        <HelpTOCNode Title="Listener Property " Url="html/8bdec089-8570-a55e-9f1d-13425bc37755.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0a4f1b44-c28e-403e-9fca-8c2cf295f2ec" Title="Detector Methods" Url="html/3bfd71ee-9c7e-bcf3-fa87-220d05ab7ed8.htm">
+        <HelpTOCNode Title="OnDestroy Method " Url="html/4677a855-2498-9c05-8713-abc472f360ae.htm" />
+        <HelpTOCNode Title="OnEnable Method " Url="html/97cfc5be-786d-27fd-dfe8-da8ceb19179d.htm" />
+        <HelpTOCNode Title="ProcessFrame Method " Url="html/50563260-38b3-ed4f-4505-b115da0883f7.htm" />
+        <HelpTOCNode Title="SetEmotionState Method " Url="html/45144305-d549-3427-a6fb-82e150d7bb89.htm" />
+        <HelpTOCNode Title="SetExpressionState Method " Url="html/ef1be5ec-6747-3da8-1089-c684e95c2c42.htm" />
+        <HelpTOCNode Title="Start Method " Url="html/3c5a249f-e321-6a22-53aa-78406c2add5a.htm" />
+        <HelpTOCNode Title="StartDetector Method " Url="html/5889da63-6e45-d7f7-88ef-bbca477a568f.htm" />
+        <HelpTOCNode Title="Stop Method " Url="html/966865e3-880b-0691-cf07-d6b990a817e4.htm" />
+        <HelpTOCNode Title="StopDetector Method " Url="html/bce07a95-7f10-b93a-5a52-aea7c7161b47.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="85e0cc66-1447-49ba-8d84-3c3ef4ffa0a0" Title="Detector Fields" Url="html/3d501607-2fc9-859d-2787-817e11e3cbdf.htm">
+        <HelpTOCNode Title="discrete Field" Url="html/92339b16-9cd9-fb3c-8826-557cb5c06ace.htm" />
+        <HelpTOCNode Title="emotions Field" Url="html/3184a73e-7440-8eec-0a75-a6737e96d2ce.htm" />
+        <HelpTOCNode Title="expressions Field" Url="html/0fc4960b-edd7-c71a-6041-65eba224dcf4.htm" />
+        <HelpTOCNode Title="startOnWake Field" Url="html/5e24f81b-289e-38e3-1467-7a65df3bd37a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b39c2096-b233-4557-afd5-fcec4d209fb6" Title="EmotionPoint Structure" Url="html/62a023b6-0075-1023-4498-fb9c407853ea.htm">
+      <HelpTOCNode Title="EmotionPoint Methods" Url="html/cabf17fa-2ccd-75b6-f280-0289c784d32d.htm" />
+      <HelpTOCNode Id="3bfdc0a0-b4fb-49bd-b4aa-10fdb3107c8c" Title="EmotionPoint Fields" Url="html/c964c97b-90d1-960b-85d9-e2c4c30d77ca.htm">
+        <HelpTOCNode Title="emotion Field" Url="html/4d62dfbd-3f02-e16c-5a5a-34db343b3b83.htm" />
+        <HelpTOCNode Title="value Field" Url="html/1c2e8efa-a0e7-8c56-6a95-e7bbe99ff4cc.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Emotions Enumeration" Url="html/9a91bf5d-8e50-6614-c638-00b4d1b60255.htm" />
+    <HelpTOCNode Id="e67f76a9-4e03-4a83-8e05-911e26374df3" Title="ExpressionPoint Structure" Url="html/9a6439bf-911b-c0ca-fc8a-4cf3fe066b3b.htm">
+      <HelpTOCNode Title="ExpressionPoint Methods" Url="html/8bec1370-6e61-ae68-7d2b-1d9a99a98225.htm" />
+      <HelpTOCNode Id="aba3c1e6-9694-4792-9911-2a5e5930d827" Title="ExpressionPoint Fields" Url="html/aa2d54d5-8d54-7fad-0c86-6b355c1bc625.htm">
+        <HelpTOCNode Title="expression Field" Url="html/4c126e35-4764-9cec-2eca-75d7dfedd470.htm" />
+        <HelpTOCNode Title="value Field" Url="html/c773d70c-14ce-c99a-3065-14b9ac9862a4.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Expressions Enumeration" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm" />
+    <HelpTOCNode Id="59fef6b4-6b67-4a69-a683-506603db5e93" Title="Extensions Class" Url="html/b99f6b5a-650a-9c6b-3b5d-7af8cd63d8cc.htm">
+      <HelpTOCNode Id="cdf5d5e0-36a9-4967-b5f3-08f0319f6aad" Title="Extensions Methods" Url="html/d05bb49a-e6db-47e2-db2e-01e9f94c29a0.htm">
+        <HelpTOCNode Id="e921638a-755c-49cd-920f-1ba866fe23c4" Title="On Method " Url="html/3d248a38-4369-625a-4f02-b767b6b17fa2.htm">
+          <HelpTOCNode Title="On Method (Emotions, Emotions)" Url="html/67e0b8ac-d7ca-e8c0-54ec-474589530eb5.htm" />
+          <HelpTOCNode Title="On Method (Expressions, Expressions)" Url="html/451c2e57-76d5-aa87-1cd9-0549ab0151d5.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8531628a-fbf5-404b-a3bc-5fd606757c92" Title="Face Class" Url="html/6ba06b80-e3de-63ab-3985-5555663602f7.htm">
+      <HelpTOCNode Id="8f8d23ed-f97f-4ca1-b165-9bd096fbc3c7" Title="Face Properties" Url="html/cf730829-6ee7-025d-449e-1c1cc0d553dd.htm">
+        <HelpTOCNode Title="Emotions Property " Url="html/12edc6a7-cd35-0bf2-252c-12e5bf02d4de.htm" />
+        <HelpTOCNode Title="Expressions Property " Url="html/ea4f1d71-5c5e-fd10-d3f1-a3f338b73ac1.htm" />
+        <HelpTOCNode Title="FeaturePoints Property " Url="html/ab67567a-7676-e647-6a04-d2fad5f03a96.htm" />
+        <HelpTOCNode Title="Measurements Property " Url="html/ce2f5ff7-6d34-c992-20b7-e6973f68a317.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="aaa83942-bf4c-4cde-a87d-c851fce62032" Title="Face Methods" Url="html/a1a22e16-0ca8-5857-a6ae-7cf5971a2ee2.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/6e759471-d5cb-4554-796a-62b3469d672f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="79eee707-ea7d-4d8a-a53b-6c419761752f" Title="FaceData Structure" Url="html/ec064767-94a7-a8f8-9179-858f199e325f.htm">
+      <HelpTOCNode Title="FaceData Methods" Url="html/531df5fd-7249-ea3b-37eb-675e501f329e.htm" />
+      <HelpTOCNode Id="7948af15-3097-4ade-8049-1595c5ca6d52" Title="FaceData Fields" Url="html/9b093044-5f1a-46c5-1e21-ec827f28290c.htm">
+        <HelpTOCNode Title="emotions Field" Url="html/2c52b1cf-e30f-bd1d-4bdf-1299c99bef21.htm" />
+        <HelpTOCNode Title="expressions Field" Url="html/3e3fb475-99bf-5e39-4989-e62798c01e97.htm" />
+        <HelpTOCNode Title="featurePoints Field" Url="html/1abc9f4e-d848-f48d-fadb-7367b1a8a09c.htm" />
+        <HelpTOCNode Title="measurements Field" Url="html/17c0b5e8-0d14-b274-2e94-ca1191ea83ce.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ebd69ae8-ddbf-4659-874b-7f05bd6ca76e" Title="FeaturePoint Structure" Url="html/0b0c5d5a-9928-8aee-4a34-4ec9527b75b6.htm">
+      <HelpTOCNode Title="FeaturePoint Methods" Url="html/15d4c46f-88ba-af3a-d92f-5e06280d5939.htm" />
+      <HelpTOCNode Id="e28105bc-a182-4290-a0bb-f9fd3fdf4c67" Title="FeaturePoint Fields" Url="html/938cd1b2-e7b4-4c8f-0275-62429f60d060.htm">
+        <HelpTOCNode Title="id Field" Url="html/249e15d1-0ed7-d569-d61b-ca81ccb79f1e.htm" />
+        <HelpTOCNode Title="x Field" Url="html/4a4d1b99-6cbc-1c50-41e7-eda371cac954.htm" />
+        <HelpTOCNode Title="y Field" Url="html/9c099dd5-90ee-f658-29e1-191c462fe89d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8555263c-2ad4-4625-bb0d-0b8106c5361e" Title="Frame Structure" Url="html/cd246c18-3a71-0684-a69f-c70e8124b5e6.htm">
+      <HelpTOCNode Id="5df6b1de-b1e3-4172-9078-83fbcf774a46" Title="Frame Constructor " Url="html/735a2002-c0f7-fd06-3cee-025388b4589d.htm">
+        <HelpTOCNode Title="Frame Constructor (Color32[], Int32, Int32, Single)" Url="html/d76e504c-1239-24ed-1b79-d8bcd0899691.htm" />
+        <HelpTOCNode Title="Frame Constructor (Color32[], Int32, Int32, Frame.Orientation, Single)" Url="html/bc7307eb-5a5d-3835-a4dd-d56fccf62455.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Frame Methods" Url="html/c2f05c89-5e53-adc9-fa69-cbe281d75c04.htm" />
+      <HelpTOCNode Id="3a78c401-8ec6-4390-95ba-94d607355a5c" Title="Frame Fields" Url="html/be04f752-a392-4122-7d50-556320d61cc7.htm">
+        <HelpTOCNode Title="h Field" Url="html/ffe6d14c-1d81-2a17-c8d4-cb27754b7c7a.htm" />
+        <HelpTOCNode Title="orientation Field" Url="html/e7b1d3c9-b018-0e52-559d-d6921420e62e.htm" />
+        <HelpTOCNode Title="rgba Field" Url="html/476ecaf4-d7c9-d24a-cbd0-38695086a7ce.htm" />
+        <HelpTOCNode Title="timestamp Field" Url="html/3d7394f7-2931-e7bd-aa40-41d657a9224a.htm" />
+        <HelpTOCNode Title="w Field" Url="html/ef59798a-1fdd-86fa-e2ab-718e876d7cef.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Frame.Orientation Enumeration" Url="html/97c07c7a-04c0-cb8a-6c86-eabd88df8ddb.htm" />
+    <HelpTOCNode Id="4d443660-37f7-4ab1-b347-1bae162b2495" Title="IDetectorInput Interface" Url="html/dc5a992e-cf1f-717c-8319-489111257c05.htm">
+      <HelpTOCNode Id="5924fe87-050b-4411-9f72-3fd33ecb5840" Title="IDetectorInput Properties" Url="html/675b2875-d751-a12e-9770-beca8ed4053d.htm">
+        <HelpTOCNode Title="Texture Property " Url="html/f719dea7-d6fa-9c8b-bf65-b3a696b080d9.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2419956f-4cee-41eb-b10f-1f92165bded3" Title="ImageResultsListener Class" Url="html/efffb7b9-0be3-95e7-b53d-a6c721d7e532.htm">
+      <HelpTOCNode Title="ImageResultsListener Constructor " Url="html/650ea5d3-5cf8-d1d6-ba2b-70fbb7408f04.htm" />
+      <HelpTOCNode Title="ImageResultsListener Properties" Url="html/009791e1-f939-03a2-14ab-d78cca6c3416.htm" />
+      <HelpTOCNode Id="98304d71-2bfa-49fd-93e8-2292b4180a8f" Title="ImageResultsListener Methods" Url="html/411b82a4-90cd-1e53-f472-917edaa918d3.htm">
+        <HelpTOCNode Title="onFaceFound Method " Url="html/d630ef30-0ac9-0956-73ab-4a9e904d6b10.htm" />
+        <HelpTOCNode Title="onFaceLost Method " Url="html/54ddad48-6e79-8386-cd42-42b4ed07fce3.htm" />
+        <HelpTOCNode Title="onImageResults Method " Url="html/4d5c7470-446e-76ac-5cdd-d969ecfbef9d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5feaccf7-b836-48d4-a72c-93157561fc73" Title="Measurements Structure" Url="html/250758ee-f31b-3c62-f84a-0b5504debb9b.htm">
+      <HelpTOCNode Id="c3dbbcd7-f076-4c82-a0e0-3b61f5dac919" Title="Measurements Properties" Url="html/0c96d963-271e-7670-f233-99dbcde43107.htm">
+        <HelpTOCNode Title="Orientation Property " Url="html/1ccf6251-462a-6dd0-4cac-91a955c6bc57.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Measurements Methods" Url="html/a9670b71-74b6-3754-db8b-a79cb3e42fa1.htm" />
+      <HelpTOCNode Id="cf68f7ab-dea5-4d35-b556-3a3071d1cfb0" Title="Measurements Fields" Url="html/4c6e3a01-4ba2-6f21-6357-ea127852a23b.htm">
+        <HelpTOCNode Title="interOcularDistance Field" Url="html/c4a3548b-0f21-558b-8a01-49f5abc4aecc.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6c78fe56-9bcf-4a81-b56e-d013b197dacf" Title="MonoPInvokeCallbackAttribute Class" Url="html/f76ad7ca-e718-1741-2f9c-f823177282e3.htm">
+      <HelpTOCNode Title="MonoPInvokeCallbackAttribute Constructor " Url="html/c05587a2-15a4-e1d7-9ca1-59334172e36b.htm" />
+      <HelpTOCNode Title="MonoPInvokeCallbackAttribute Properties" Url="html/c4dc234a-2006-0e0d-5f74-eb9e3fc6a9c9.htm" />
+      <HelpTOCNode Title="MonoPInvokeCallbackAttribute Methods" Url="html/43b89e45-8ad9-ef14-13eb-33dd00ac3d2a.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="4dca6c6f-f487-476d-8f2d-5525940bcb60" Title="NativePlatform Class" Url="html/7f9876d1-904f-4a4e-5b0b-9a47ea1a7bb0.htm">
+      <HelpTOCNode Title="NativePlatform Constructor " Url="html/186a5618-4fc8-3ee1-c74d-2f2d5accdd2f.htm" />
+      <HelpTOCNode Title="NativePlatform Properties" Url="html/0dbb38d3-f322-b0d1-6002-08281a0d991b.htm" />
+      <HelpTOCNode Id="3d28a067-eee5-4e77-b7bc-97c94789319c" Title="NativePlatform Methods" Url="html/64712638-2ab7-7859-9dfc-66e7069adb7f.htm">
+        <HelpTOCNode Title="Initialize Method " Url="html/d22581bb-dff5-d9a0-64c4-d1e9d584cfed.htm" />
+        <HelpTOCNode Title="onFaceFound Method " Url="html/b70eeb7c-e18d-02a8-427f-e2f6d0b3d095.htm" />
+        <HelpTOCNode Title="onFaceLost Method " Url="html/818ff804-8cb3-de96-4d63-44a7b5d48a09.htm" />
+        <HelpTOCNode Title="onImageResults Method " Url="html/9e6ffbfe-4149-e934-691e-069afa4f6155.htm" />
+        <HelpTOCNode Title="ProcessFrame Method " Url="html/5dc5f707-ddd8-f5af-62b5-43c6d6b019fc.htm" />
+        <HelpTOCNode Title="Release Method " Url="html/1c7880cd-b519-2f28-83fd-f663e37d8e2c.htm" />
+        <HelpTOCNode Title="SetEmotionState Method " Url="html/f26b6da9-d784-142c-6074-99feed63882d.htm" />
+        <HelpTOCNode Title="SetExpressionState Method " Url="html/15ab6732-7b3b-4af1-3817-561a44da52eb.htm" />
+        <HelpTOCNode Title="StartDetector Method " Url="html/931e7b43-0568-29e5-a3c1-3fa94ef7fcc3.htm" />
+        <HelpTOCNode Title="StopDetector Method " Url="html/eb0e7185-9fe5-dc81-1047-50a789f45276.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2bb2c5f2-3cd0-4d2c-ba5d-ddd82a962c6b" Title="NativePlatform Fields" Url="html/4a00eddc-6788-af9b-59f9-fd6666f4b3f6.htm">
+        <HelpTOCNode Title="detector Field" Url="html/3c5bead8-8618-bb99-0ce1-b1cc1d11948d.htm" />
+        <HelpTOCNode Title="h1 Field" Url="html/04e8ab52-6c7e-3690-d470-2eeadf502e94.htm" />
+        <HelpTOCNode Title="h2 Field" Url="html/190b67e4-94a2-2f93-9a8b-057f0b493937.htm" />
+        <HelpTOCNode Title="h3 Field" Url="html/a69c5341-a9aa-214d-44f5-394130f7de8d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="43800f0c-5bf6-4370-80f6-9968a6c6a6cf" Title="VideoFileInput Class" Url="html/49693f4c-7334-0564-d154-185cf0fe6c56.htm">
+      <HelpTOCNode Title="VideoFileInput Constructor " Url="html/e0597ed8-16f6-aff3-104a-4761301291ad.htm" />
+      <HelpTOCNode Id="ea168464-45e8-4908-8744-286e12eefdaa" Title="VideoFileInput Properties" Url="html/f5557877-f918-5016-488a-5432c85b12ae.htm">
+        <HelpTOCNode Title="detector Property " Url="html/9bdb73d5-2a94-7b20-0f9b-373d8cc58dc1.htm" />
+        <HelpTOCNode Title="Texture Property " Url="html/b52bdf5e-433e-53e2-7fe1-48019304f077.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="VideoFileInput Methods" Url="html/165bddc0-0625-e6b2-5756-945b042d93cc.htm" />
+      <HelpTOCNode Id="66b0d2dc-22a1-4392-8a1e-ffc8388159d1" Title="VideoFileInput Fields" Url="html/18e386eb-ceea-c31c-402c-aae7ce268a4c.htm">
+        <HelpTOCNode Title="movie Field" Url="html/7fd55fd0-4aa1-93d4-29ec-bf22e1c794d8.htm" />
+        <HelpTOCNode Title="sampleRate Field" Url="html/9369c1ab-68da-2779-b0ff-e407ccf1d3ce.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="c6eb3c77-d22f-4251-839f-faa6072f6d05" Title="Affdex.Editor" Url="html/19ee517b-73dd-922e-48c7-3c952db37c5f.htm">
+    <HelpTOCNode Id="b4ff9d9c-b140-4dee-befc-8986a9c5ec82" Title="DetectorEditor Class" Url="html/2c3ccaf5-84d5-5127-4249-2e340854794d.htm">
+      <HelpTOCNode Title="DetectorEditor Constructor " Url="html/cf033560-c364-1b45-33c4-ea9132eb513a.htm" />
+      <HelpTOCNode Title="DetectorEditor Properties" Url="html/6fc4cee3-63e8-7ded-1aa9-1b9eb97766c9.htm" />
+      <HelpTOCNode Id="c886150f-221d-40ec-9157-4ff739d3691d" Title="DetectorEditor Methods" Url="html/aa877812-6d0d-1c67-e70a-0cf29308901a.htm">
+        <HelpTOCNode Title="OnInspectorGUI Method " Url="html/af01535a-e5bf-f24c-4e7e-fc75a3901173.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

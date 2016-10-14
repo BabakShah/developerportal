@@ -190,6 +190,13 @@ platforms:
     salesForcePoIPlatform: Unity
     versions:
     - status: stable
+      doc: /v2_3/unity/
+      architecture: OSX i386/x86_64, Windows x86/x86_64, Android ARM7/x86, iOS ARM64/ARM7
+      version: "2.3"
+      package: https://download.affectiva.com/unity/AffdexDelivery_2_3_0.unitypackage
+      size: 207 MB
+
+    - status: legacy
       doc: /v2_2/unity/
       architecture: OSX i386/x86_64, Windows x86/x86_64, Android ARM7/x86
       version: "2.2.1"
