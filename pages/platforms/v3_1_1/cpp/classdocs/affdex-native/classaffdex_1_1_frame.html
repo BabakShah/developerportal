@@ -79,6 +79,12 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ab12e7b30eb2c85f794da2d62557d6591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum specifying the pixel ordering.  <a href="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591">More...</a><br /></td></tr>
 <tr class="separator:ab12e7b30eb2c85f794da2d62557d6591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3349a25ff943c9f728597c6532e4f462"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462">ROTATION</a> { <a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a80f19215877b3d6ad57075cc4e1aa8fc">UPRIGHT</a> = 1, 
+<a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a3593998b688c4a02bfc7d5b775fdd918">CW_90</a> = 8, 
+<a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a594c7b3a3e330eb50d2c2eda67b9b83a">CW_180</a> = 3, 
+<a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a8fa2fdd25b4c66beecadbd05659ffb87">CW_270</a> = 6
+ }</td></tr>
+<tr class="separator:a3349a25ff943c9f728597c6532e4f462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -86,14 +92,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:affd5659336858b82d42145faf909d802"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor.  <a href="#affd5659336858b82d42145faf909d802">More...</a><br /></td></tr>
 <tr class="separator:affd5659336858b82d42145faf909d802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7499244de152fbb54e0a846d49ee252c"><td class="memItemLeft" align="right" valign="top">AFFDEXSDK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaffdex_1_1_frame.html#a7499244de152fbb54e0a846d49ee252c">Frame</a> (int frameWidth, int frameHeight, void *pixels, <a class="el" href="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591">COLOR_FORMAT</a> frameColorFormat, float timestamp=0.0f)</td></tr>
-<tr class="memdesc:a7499244de152fbb54e0a846d49ee252c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="classaffdex_1_1_frame.html" title="A wrapper class for images and their associated timestamps. ">Frame</a> class  <a href="#a7499244de152fbb54e0a846d49ee252c">More...</a><br /></td></tr>
+<tr class="memdesc:a7499244de152fbb54e0a846d49ee252c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new instance of the <a class="el" href="classaffdex_1_1_frame.html" title="A wrapper class for images and their associated timestamps. ">Frame</a> class  <a href="#a7499244de152fbb54e0a846d49ee252c">More...</a><br /></td></tr>
 <tr class="separator:a7499244de152fbb54e0a846d49ee252c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf57fa21be6f1cddd2b53ba9bfc25a37"><td class="memItemLeft" align="right" valign="top">AFFDEXSDK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaffdex_1_1_frame.html#aaf57fa21be6f1cddd2b53ba9bfc25a37">Frame</a> (int frameWidth, int frameHeight, void *pixels, <a class="el" href="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591">COLOR_FORMAT</a> frameColorFormat, <a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462">ROTATION</a> rotation, float timestamp=0.0f)</td></tr>
+<tr class="memdesc:aaf57fa21be6f1cddd2b53ba9bfc25a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new instance of the <a class="el" href="classaffdex_1_1_frame.html" title="A wrapper class for images and their associated timestamps. ">Frame</a> class  <a href="#aaf57fa21be6f1cddd2b53ba9bfc25a37">More...</a><br /></td></tr>
+<tr class="separator:aaf57fa21be6f1cddd2b53ba9bfc25a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee75ed18d3446bf37057b0c09855757"><td class="memItemLeft" align="right" valign="top">AFFDEXSDK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaffdex_1_1_frame.html#a1ee75ed18d3446bf37057b0c09855757">Frame</a> (const <a class="el" href="classaffdex_1_1_frame.html">Frame</a> &amp;frame)</td></tr>
 <tr class="memdesc:a1ee75ed18d3446bf37057b0c09855757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a1ee75ed18d3446bf37057b0c09855757">More...</a><br /></td></tr>
 <tr class="separator:a1ee75ed18d3446bf37057b0c09855757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f1d907db095224557ab4b40d57d0cbe"><td class="memItemLeft" align="right" valign="top">AFFDEXSDK void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaffdex_1_1_frame.html#a2f1d907db095224557ab4b40d57d0cbe">init</a> (int frameWidth, int frameHeight, void *pixels, <a class="el" href="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591">COLOR_FORMAT</a> frameColorFormat, float timestamp)</td></tr>
-<tr class="memdesc:a2f1d907db095224557ab4b40d57d0cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classaffdex_1_1_frame.html" title="A wrapper class for images and their associated timestamps. ">Frame</a> class  <a href="#a2f1d907db095224557ab4b40d57d0cbe">More...</a><br /></td></tr>
-<tr class="separator:a2f1d907db095224557ab4b40d57d0cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7355a2f535a35067823e16d009d1db"><td class="memItemLeft" align="right" valign="top">AFFDEXSDK void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaffdex_1_1_frame.html#a1e7355a2f535a35067823e16d009d1db">init</a> (int frameWidth, int frameHeight, void *pixels, <a class="el" href="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591">COLOR_FORMAT</a> frameColorFormat, <a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462">ROTATION</a> rotation, float timestamp)</td></tr>
+<tr class="memdesc:a1e7355a2f535a35067823e16d009d1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classaffdex_1_1_frame.html" title="A wrapper class for images and their associated timestamps. ">Frame</a> class  <a href="#a1e7355a2f535a35067823e16d009d1db">More...</a><br /></td></tr>
+<tr class="separator:a1e7355a2f535a35067823e16d009d1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a179d31e93e9ccbaf70298ce5f37c40f0"><td class="memItemLeft" align="right" valign="top">AFFDEXSDK <a class="el" href="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591">COLOR_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaffdex_1_1_frame.html#a179d31e93e9ccbaf70298ce5f37c40f0">getColorFormat</a> () const </td></tr>
 <tr class="memdesc:a179d31e93e9ccbaf70298ce5f37c40f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classaffdex_1_1_frame.html" title="A wrapper class for images and their associated timestamps. ">Frame</a>'s color format.  <a href="#a179d31e93e9ccbaf70298ce5f37c40f0">More...</a><br /></td></tr>
 <tr class="separator:a179d31e93e9ccbaf70298ce5f37c40f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +176,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3349a25ff943c9f728597c6532e4f462"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462">affdex::Frame::ROTATION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a3349a25ff943c9f728597c6532e4f462a80f19215877b3d6ad57075cc4e1aa8fc"></a>UPRIGHT&#160;</td><td class="fielddoc">
+<p>frame is upright </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3349a25ff943c9f728597c6532e4f462a3593998b688c4a02bfc7d5b775fdd918"></a>CW_90&#160;</td><td class="fielddoc">
+<p>frame is rotated 90 degrees clockwise </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3349a25ff943c9f728597c6532e4f462a594c7b3a3e330eb50d2c2eda67b9b83a"></a>CW_180&#160;</td><td class="fielddoc">
+<p>frame is rotated 180 degrees clockwise </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3349a25ff943c9f728597c6532e4f462a8fa2fdd25b4c66beecadbd05659ffb87"></a>CW_270&#160;</td><td class="fielddoc">
+<p>frame is rotated 270 degrees clockwise </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="affd5659336858b82d42145faf909d802"></a>
 <div class="memitem">
@@ -235,13 +270,76 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes a new instance of the <a class="el" href="classaffdex_1_1_frame.html" title="A wrapper class for images and their associated timestamps. ">Frame</a> class </p>
+<p>Constructs a new instance of the <a class="el" href="classaffdex_1_1_frame.html" title="A wrapper class for images and their associated timestamps. ">Frame</a> class </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">frameWidth</td><td>Width of the frame. Value has to be greater than zero</td></tr>
     <tr><td class="paramname">frameHeight</td><td>Height of the frame. Value has to be greater than zero</td></tr>
     <tr><td class="paramname">pixels</td><td>Pointer to an array of pixels</td></tr>
     <tr><td class="paramname">frameColorFormat</td><td>The frame color format.</td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp of the frame (in seconds). Can be used as an identifier of the frame</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf57fa21be6f1cddd2b53ba9bfc25a37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AFFDEXSDK affdex::Frame::Frame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591">COLOR_FORMAT</a>&#160;</td>
+          <td class="paramname"><em>frameColorFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462">ROTATION</a>&#160;</td>
+          <td class="paramname"><em>rotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timestamp</em> = <code>0.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new instance of the <a class="el" href="classaffdex_1_1_frame.html" title="A wrapper class for images and their associated timestamps. ">Frame</a> class </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frameWidth</td><td>Width of the frame. Value has to be greater than zero</td></tr>
+    <tr><td class="paramname">frameHeight</td><td>Height of the frame. Value has to be greater than zero</td></tr>
+    <tr><td class="paramname">pixels</td><td>Pointer to an array of pixels</td></tr>
+    <tr><td class="paramname">frameColorFormat</td><td>The frame color format.</td></tr>
+    <tr><td class="paramname">rotation</td><td>The rotation of the frame</td></tr>
     <tr><td class="paramname">timestamp</td><td>The timestamp of the frame (in seconds). Can be used as an identifier of the frame</td></tr>
   </table>
   </dd>
@@ -397,7 +495,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2f1d907db095224557ab4b40d57d0cbe"></a>
+<a class="anchor" id="a1e7355a2f535a35067823e16d009d1db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -428,6 +526,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462">ROTATION</a>&#160;</td>
+          <td class="paramname"><em>rotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>timestamp</em>&#160;</td>
         </tr>
@@ -446,6 +550,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">frameHeight</td><td>Height of the frame. Value has to be greater than zero</td></tr>
     <tr><td class="paramname">pixels</td><td>Pointer to an array of pixels</td></tr>
     <tr><td class="paramname">frameColorFormat</td><td>The frame color format.</td></tr>
+    <tr><td class="paramname">rotation</td><td>The rotation of the frame</td></tr>
     <tr><td class="paramname">timestamp</td><td>The timestamp of the frame (in seconds). Can be used as an identifier of the frame</td></tr>
   </table>
   </dd>
@@ -477,7 +582,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 29 2016 15:29:37 for Affdex SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 21 2016 14:48:24 for Affdex SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

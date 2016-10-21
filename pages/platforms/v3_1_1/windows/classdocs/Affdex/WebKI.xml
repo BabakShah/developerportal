@@ -61,6 +61,7 @@
   <HelpKINode Title="Appearance.Glasses property" Url="html/d5aefe0f-89e7-5689-0926-846a6ac5f1c0.htm" />
   <HelpKINode Title="Attention property" Url="html/ff466ca0-7e3c-3ba8-76af-6433774f7e91.htm" />
   <HelpKINode Title="BGR enumeration member" Url="html/a1445d0f-454e-dbd5-fa6c-ce461c2f81fb.htm" />
+  <HelpKINode Title="BGRA enumeration member" Url="html/a1445d0f-454e-dbd5-fa6c-ce461c2f81fb.htm" />
   <HelpKINode Title="BLACK_AFRICAN enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
   <HelpKINode Title="BrowFurrow property" Url="html/028ca3c8-ed6c-d99f-2fa6-6edeb451f83d.htm" />
   <HelpKINode Title="BrowRaise property" Url="html/f13a7936-25e7-a0b0-a853-47aeeb7fc18a.htm" />
@@ -456,6 +457,7 @@
   <HelpKINode Title="relaxed property" Url="html/e1ebd184-8aea-0472-c043-da0497698a70.htm" />
   <HelpKINode Title="reset method" Url="html/d9df9151-4ffd-2292-2dcf-de97a179c818.htm" />
   <HelpKINode Title="RGB enumeration member" Url="html/a1445d0f-454e-dbd5-fa6c-ce461c2f81fb.htm" />
+  <HelpKINode Title="RGBA enumeration member" Url="html/a1445d0f-454e-dbd5-fa6c-ce461c2f81fb.htm" />
   <HelpKINode Title="Roll property" Url="html/e39500f8-404a-6c2e-3372-b2856c24a914.htm" />
   <HelpKINode Title="Sadness property" Url="html/9974fc3c-3fda-df95-2a58-3b28ddc9ca4d.htm" />
   <HelpKINode Title="Scream enumeration member" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
@@ -522,11 +524,11 @@
   <HelpKINode Title="StuckOutTongueWinkingEye enumeration member" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
   <HelpKINode Title="stuckOutTongueWinkingEye property" Url="html/6bcea29a-30c5-e0a0-491e-fc760bb3381d.htm" />
   <HelpKINode Title="Surprise property" Url="html/141ed717-cd59-2f83-2ad5-25d775dbd4d1.htm" />
+  <HelpKINode Title="UNKNOWN enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
   <HelpKINode Title="Unknown enumeration member">
     <HelpKINode Title="Emoji Enumeration" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
     <HelpKINode Title="Gender Enumeration" Url="html/7cc24380-2383-0ee2-8d82-118d35ff664f.htm" />
   </HelpKINode>
-  <HelpKINode Title="UNKNOWN enumeration member" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
   <HelpKINode Title="UpperLipRaise property" Url="html/fd67678a-8226-a4bc-2d5d-94d8027fe7c1.htm" />
   <HelpKINode Title="Valence property" Url="html/88d0d907-085b-7e92-aa02-f1afcf33e2d7.htm" />
   <HelpKINode Title="VideoDetector class">
@@ -543,4 +545,7 @@
   <HelpKINode Title="Y property" Url="html/4e29319e-01ef-1017-9178-abb51aab8f4d.htm" />
   <HelpKINode Title="Yaw property" Url="html/e0fc8cbd-c563-eeda-3cbb-b7ba3dd8637e.htm" />
   <HelpKINode Title="Yes enumeration member" Url="html/5f8c117c-6c47-ebd0-e315-713b92699003.htm" />
+  <HelpKINode Title="YUV_I420 enumeration member" Url="html/a1445d0f-454e-dbd5-fa6c-ce461c2f81fb.htm" />
+  <HelpKINode Title="YUV_NV21 enumeration member" Url="html/a1445d0f-454e-dbd5-fa6c-ce461c2f81fb.htm" />
+  <HelpKINode Title="YUV_YUV2 enumeration member" Url="html/a1445d0f-454e-dbd5-fa6c-ce461c2f81fb.htm" />
 </HelpKI>
