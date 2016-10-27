@@ -49,6 +49,21 @@ PhotoDetector detector = new PhotoDetector(this);
 
 {% include android/v3/detector/start.md %}
 
-{% include android/v3/detector/process-frame.md %}
+### Processing a photo
+After successfully starting the detector, photos can be processed by calling the ```process()``` method. ```process()``` expects an ```Affdex.Frame``` (Bitmap, RGBA, and YUV420sp/NV21 formats are supported).
+
+**classdoc:** Frame [java]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/Frame.html)
+
+For example to process an YUV420sp/NV21 frame:
+
+```java
+byte [] frameData;
+int width = 640;
+int height = 480;
+
+Frame.ByteArrayFrame frame = new Frame.ByteArrayFrame(frameData, width, height,
+                                                      Frame.COLOR_FORMAT.YUV_NV21);
+detector.process(frame);
+```
 
 {% include android/v3/detector/stop.md %}
