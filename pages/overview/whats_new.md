@@ -6,90 +6,105 @@ audience: writer, designer
 keywords:
 last_updated:
 summary:
-metadata: true
+metadata: false
 ---
 
 This page contains the release notes for the different versions of the Affdex SDK(s).
 
-## Oct 2016 ##
-***
 
-### Affdex SDK for Unity 2.3
+---
+
+***Oct 2016*** 
+
+##### Unity 2.3
+
 * Added iOS support
 
+---
 
-## Sep 2016 ##
-***
+***Sep 2016***
 
-### Affdex SDK for Unity 2.2.1
-* Android
-  * Updated the libpng version used in the native library to address a security vulnerability
+##### Unity 2.2.1
 
-### Affdex SDK for Android 3.1.2
-Updated the libpng version used in the native library to address a security vulnerability
+* Android: Updated the libpng version used in the native library to address a security vulnerability
 
-### Affdex SDKs for Windows/Linux/Android 3.1.1
-Removed license-related methods. A license file is no longer required to use the SDK.
+##### Android 3.1.2
 
-### Affdex SDKs for iOS/macOS 3.1.1
+* Updated the libpng version used in the native library to address a security vulnerability
+
+##### Windows/Linux/Android 3.1.1
+
+* Removed license-related methods. A license file is no longer required to use the SDK.
+
+##### iOS/macOS 3.1.1
+
 * Removed license-related methods. A license file is no longer required to use the SDK.
 * API allows developer to choose face detector's face size configuration (SMALL / LARGE)
 
+---
 
-## Aug 2016 ##
-***
+***Aug 2016***
 
-### Affdex SDK for Unity 2.2
+##### Unity 2.2
+
 * Added Android support
- * Android needs to copy data from StreamingAssets to the app's private data folder on launch.  fileList.txt is used to determine what files are stale and need to be copied.
+  * Android needs to copy data from StreamingAssets to the app's private data folder on launch.  fileList.txt is used to determine what files are stale and need to be copied.
 * Frame constructor can now accept a rotation angle of 0, 90, 180, and 270.
 * Detector.Initialize is now private because it is called automatically by Detector.Start
 * Detector.Stop has been deprecated in favor of Detector.StopDetector
 
+---
 
-## Jul 2016 ##
-***
+***Jul 2016***
 
-### Affdex SDKs for Windows/Linux/Android 3.1
+
+##### Windows/Linux/Android 3.1
+
 * Improved emotion metrics. The valence includes new expressions in its calculation.
 * Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
 * Added models for new [expressions](/metrics#facial-expressions): cheek raise, dimpler, eye widen, lid tighten, lip stretch and jaw drop.
 * Fix bug [SCI-86](https://affectiva.atlassian.net/browse/SCI-86) - Disgust false positives due to the occurrence of the smile expression.  
  
-### Affdex SDK for the Web 3.1
-First release of our JavaScript-based SDK to emotion-enable [Web](/web) apps.
+##### Web 3.1
+
+* First release of our JavaScript-based SDK to emotion-enable [Web](/web) apps.
+
+---
+
+***May 2016***
+
+##### macOS 3.0.2
+
+* Performance optimizations, [SDK-521](https://affectiva.atlassian.net/browse/SDK-521) - remove dispatch_async() overhead from callback functions.
+
+---
+
+***Mar 2016***
 
 
-## May 2016 ##
-***
+##### macOS 3.0.1
 
-### Affdex SDK for macOS 3.0.2
+* First release of our Affdex SDK for the [OS X](/macos) platform.
 
-Performance optimizations, [SDK-521](https://affectiva.atlassian.net/browse/SDK-521) - remove dispatch_async() overhead from callback functions.
+##### Android 3.0.1
 
+* Switch the SDK packaging to the new Android standard packaging (aar).
 
-## Mar 2016 ##
-***
+##### iOS 3.0.1
 
-### Affdex SDK for macOS 3.0.1
-First release of our Affdex SDK for the [OS X](/macos) platform.
-
-### Affdex SDK for Android 3.0.1
-Switch the SDK packaging to the new Android standard packaging (aar).
-
-### Affdex SDK for iOS 3.0.1
 * Fix bug [SDK-1](https://affectiva.atlassian.net/browse/SDK-1) - iOS Framework builds v3.0 are much bigger in size than v2.0.
 * Fix bug [SDK-38](https://affectiva.atlassian.net/browse/SDK-38) - iOS device Framework contains i386 and x86_64 architectures.
 * Fix bug [SDK-404](https://affectiva.atlassian.net/browse/SDK-404) - didStopDetectingFace: can pass nil for the face parameter.
 
-### Affdex SDK for Linux 3.0
-First release of our Affdex SDK for the [Linux](/linux) platform.
+##### Linux 3.0
 
+*First release of our Affdex SDK for the [Linux](/linux) platform.
 
-## Jan 2016 ##
-***
+---
 
-### Affdex SDKs for Windows/iOS/Android 3.0
+***Jan 2016***
+
+##### Windows/iOS/Android 3.0
 
 * New API to allow tracking of multiple faces simultaneously.
 * Added a Face to Emoji mapper to allow the developer to map facial expressions of emotion to [13 emojis](/metrics#emoji-expressions) different emojis
@@ -99,28 +114,29 @@ First release of our Affdex SDK for the [Linux](/linux) platform.
 * Added dynamic core detection to allow SDKs to make use of multiple CPU cores if available
 * New Getting Started tutorials on the Developer Portal
 * New version of the AffdexMe apps ([iOS](https://github.com/Affectiva/ios-sdk-samples/tree/master/apps/AffdexMe), [Android](https://github.com/Affectiva/affdexme-android) and [Windows](https://github.com/Affectiva/win-sdk-samples/tree/master/AffdexMe)):
-  - Track multiple faces in realtime
+  * Track multiple faces in realtime
     On Windows this feature is enabled by default, but on iOS/Android it can be toggled from the settings menu.  
-  - Display the metrics for Facial Expression, Emotion, Appearance and Dominant Emoji
-  - Allow users to take screenshots of the camera feed with the metrics overlay
-  - Allow users to use the back camera to track the metrics
-  - Optimize AffdexMe (Windows) metric and camera visualization class
+  * Display the metrics for Facial Expression, Emotion, Appearance and Dominant Emoji
+  * Allow users to take screenshots of the camera feed with the metrics overlay
+  * Allow users to use the back camera to track the metrics
+  * Optimize AffdexMe (Windows) metric and camera visualization class
 * iOS SDK
-  - `AFDXFace` class re-organized into categories expressions, emotions, emoji and appearance
-  - `Expressiveness` renamed into `Engagement`
-  - Head angles renamed `HeadUpDown`, `HeadLeftRight`, `HeadRoll` to `Pitch`, `Yaw`, `Roll`
-  - Added API to allow embedding the license string as a variable in the app code
+  * `AFDXFace` class re-organized into categories expressions, emotions, emoji and appearance
+  * `Expressiveness` renamed into `Engagement`
+  * Head angles renamed `HeadUpDown`, `HeadLeftRight`, `HeadRoll` to `Pitch`, `Yaw`, `Roll`
+  * Added API to allow embedding the license string as a variable in the app code
 * Win SDK
-  - Performance improvements
-  - Fixed bug: The assembly version doesn't match the file metadata
-  - Fixed bug: Calling reset() doesn't reset the internal cached timestamps.
+  * Performance improvements
+  * Fixed bug: The assembly version doesn't match the file metadata
+  * Fixed bug: Calling reset() doesn't reset the internal cached timestamps.
 * Android SDK
-  - Fixed bug: the license token validation fails due to zero padding
+  * Fixed bug: the license token validation fails due to zero padding
 
-## Sep 2015 ##
-***
+---
 
-### Affdex SDKs for Windows/iOS/Android 2.0
+***Sep 2015***
+
+##### Windows/iOS/Android 2.0
 
 * Dramatically improved accuracy with new expression models trained over a broader set of facial images.
 * Better ease of use and accessibility by standardizing models for seven
