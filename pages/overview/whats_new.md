@@ -16,7 +16,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Oct 2016*** 
 
-##### Unity 2.3
+##### Unity SDK 2.3
 
 * Added iOS support
 
@@ -24,19 +24,19 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Sep 2016***
 
-##### Unity 2.2.1
+##### Unity SDK 2.2.1
 
 * Android: Updated the libpng version used in the native library to address a security vulnerability
 
-##### Android 3.1.2
+##### Android SDK 3.1.2
 
 * Updated the libpng version used in the native library to address a security vulnerability
 
-##### Windows/Linux/Android 3.1.1
+##### Windows/Linux/Android SDK 3.1.1
 
 * Removed license-related methods. A license file is no longer required to use the SDK.
 
-##### iOS/macOS 3.1.1
+##### iOS/macOS SDK 3.1.1
 
 * Removed license-related methods. A license file is no longer required to use the SDK.
 * API allows developer to choose face detector's face size configuration (SMALL / LARGE)
@@ -45,10 +45,9 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Aug 2016***
 
-##### Unity 2.2
+##### Unity SDK 2.2
 
-* Added Android support
-  * Android needs to copy data from StreamingAssets to the app's private data folder on launch.  fileList.txt is used to determine what files are stale and need to be copied.
+* Added Android support. 
 * Frame constructor can now accept a rotation angle of 0, 90, 180, and 270.
 * Detector.Initialize is now private because it is called automatically by Detector.Start
 * Detector.Stop has been deprecated in favor of Detector.StopDetector
@@ -57,14 +56,14 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Jul 2016***
 
-##### Windows/Linux/Android 3.1
+##### Windows/Linux/Android SDK 3.1
 
 * Improved emotion metrics. The valence includes new expressions in its calculation.
 * Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
 * Added models for new [expressions](/metrics#facial-expressions): cheek raise, dimpler, eye widen, lid tighten, lip stretch and jaw drop.
 * Fix bug [SCI-86](https://affectiva.atlassian.net/browse/SCI-86) - Disgust false positives due to the occurrence of the smile expression.  
  
-##### Web 3.1
+##### Web SDK 3.1
 
 * First release of our JavaScript-based SDK to emotion-enable [Web](/web) apps.
 
@@ -72,7 +71,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***May 2016***
 
-##### macOS 3.0.2
+##### macOS SDK 3.0.2
 
 * Performance optimizations, [SDK-521](https://affectiva.atlassian.net/browse/SDK-521) - remove dispatch_async() overhead from callback functions.
 
@@ -80,21 +79,21 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Mar 2016***
 
-##### macOS 3.0.1
+##### macOS SDK 3.0.1
 
 * First release of our Affdex SDK for the [OS X](/macos) platform.
 
-##### Android 3.0.1
+##### Android SDK 3.0.1
 
 * Switch the SDK packaging to the new Android standard packaging (aar).
 
-##### iOS 3.0.1
+##### iOS SDK 3.0.1
 
 * Fix bug [SDK-1](https://affectiva.atlassian.net/browse/SDK-1) - iOS Framework builds v3.0 are much bigger in size than v2.0.
 * Fix bug [SDK-38](https://affectiva.atlassian.net/browse/SDK-38) - iOS device Framework contains i386 and x86_64 architectures.
 * Fix bug [SDK-404](https://affectiva.atlassian.net/browse/SDK-404) - didStopDetectingFace: can pass nil for the face parameter.
 
-##### Linux 3.0
+##### Linux SDK 3.0
 
 *First release of our Affdex SDK for the [Linux](/linux) platform.
 
@@ -102,7 +101,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Jan 2016***
 
-##### Windows/iOS/Android 3.0
+##### Windows/iOS/Android SDK 3.0
 
 * New API to allow tracking of multiple faces simultaneously.
 * Added a Face to Emoji mapper to allow the developer to map facial expressions of emotion to [13 emojis](/metrics#emoji-expressions) different emojis
@@ -134,7 +133,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Sep 2015***
 
-##### Windows/iOS/Android 2.0
+##### Windows/iOS/Android SDK 2.0
 
 * Dramatically improved accuracy with new expression models trained over a broader set of facial images.
 * Better ease of use and accessibility by standardizing models for seven
