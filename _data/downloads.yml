@@ -15,32 +15,32 @@ platforms:
     salesForcePoIPlatform: Android
     versions:
       - status: stable
-        release_notes: affdex-sdk-version-312
+        release_notes: android-sdk-312
         architecture: "ARM7"
         version: "3.1.2"
         install: /v3_1_2/android/
         size: 7.0 MB
       - status: legacy
-        release_notes: affdex-sdk-version-311
+        release_notes: windowslinuxandroid-sdk-311
         architecture: "ARM7"
         version: "3.1.1"
         install: /v3_1_1/android/
         size: 7.0 MB
       - status: legacy
-        release_notes: affdex-sdk-version-31
+        release_notes: windowslinuxandroid-sdk-31
         architecture: "ARM7"
         version: "3.1"
         install: /v3_1/android/
         size: 7.0 MB
       - status: legacy
-        release_notes: affdex-sdk-version-301
+        release_notes: android-sdk-301
         doc: /v3/android/
         architecture: "ARM7"
         version: "3.0.1"
         install: /v3/android/
         size: 6.5 MB
       - status: legacy
-        release_notes: affdex-sdk-version-30
+        release_notes: windowsiosandroid-sdk-30
         doc: /v3/android/
         architecture: "ARM7"
         version: "3.0-161"
@@ -54,7 +54,7 @@ platforms:
         package: https://download.affectiva.com/android/affdex-sdk_v2.01-20-android.zip
         size: 7.5 MB
       - status: legacy
-        release_notes: affdex-sdk-version-20
+        release_notes: windowsiosandroid-sdk-20
         doc:
         architecture: "ARM7"
         version: "2.0"
@@ -80,27 +80,27 @@ platforms:
     salesForcePoIPlatform: IOS
     versions:
     - status: stable
-      release_notes: affdex-sdk-version-311
+      release_notes: iosmacos-sdk-311
       architecture: "ARM7"
       version: "3.1.1"
       install: /v3_1_1/ios/
       size: 100.2 MB
     - status: legacy
-      release_notes: affdex-sdk-version-301
+      release_notes: ios-sdk-301
       doc: /v3/ios/
       architecture: "ARM64/ARM7"
       version: "3.0.1-374"
       package: https://download.affectiva.com/ios/affdex-sdk_iOS_3_0_1_374.zip
       size: 100.2 MB
     - status: legacy
-      release_notes: affdex-sdk-version-30
+      release_notes: windowsiosandroid-sdk-30
       doc: /v3/ios/
       architecture: "ARM64/ARM7"
       version: "3.0-320"
       package: https://download.affectiva.com/ios/affdex-sdk_iOS_3_1_320.zip
       size: 107.2 MB
     - status: legacy
-      release_notes:
+      release_notes: windowsiosandroid-sdk-20
       doc:
       architecture: "ARM64/ARM7"
       version: "2.0"
@@ -119,7 +119,7 @@ platforms:
     salesForcePoIPlatform: JavaScript
     versions:
       - status: stable
-        release_notes: affdex-sdk-version-31
+        release_notes: web-sdk-31
         doc: /v3_1/javascript/
         architecture: "JS VM"
         version: "3.1-201"
@@ -132,28 +132,28 @@ platforms:
     salesForcePoIPlatform: Linux
     versions:
     - status: stable
-      release_notes: affdex-sdk-version-311
+      release_notes: windowslinuxandroid-sdk-311
       doc: /v3_1_1/linux/
       architecture: x86_64
       version: "3.1.1-2802"
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.1.1-2802-linux-64bit.tar.gz
       size: 27.7 MB
     - status: legacy
-      release_notes: affdex-sdk-version-31
+      release_notes: windowslinuxandroid-sdk-31
       doc: /v3_1_1/linux/
       architecture: x86_64
       version: "3.1-396"
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.1-396-linux-64bit.tar.gz
       size: 27.7 MB
     - status: legacy
-      release_notes: affdex-sdk-version-31
+      release_notes: windowslinuxandroid-sdk-31
       doc: /v3_1/linux/
       architecture: x86_64
       version: "3.1-315"
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.1-315-linux-64bit.tar.gz
       size: 22.8 MB
     - status: legacy
-      release_notes: affdex-sdk-version-30
+      release_notes: linux-sdk-30
       doc: /v3/linux/
       architecture: x86_64
       version: "3.0-298"
@@ -165,20 +165,20 @@ platforms:
     salesForcePoIPlatform: Mac
     versions:
     - status: stable
-      release_notes: affdex-sdk-version-311
+      release_notes: iosmacos-sdk-311
       architecture: "ARM7"
       version: "3.1.1"
       install: /v3_1_1/osx/
       size: 26.4 MB
     - status: legacy
-      release_notes: affdex-sdk-version-302
+      release_notes: macos-sdk-302
       doc: /v3_1_1/osx/
       architecture: x86_64
       version: "3.0.2"
       package: https://download.affectiva.com/osx/affdex-sdk_OSX_3_0_2_220.zip
       size: 26.4 MB
     - status: legacy
-      release_notes: affdex-sdk-version-301
+      release_notes: macos-sdk-301
       doc: /v3/osx/
       architecture: x86_64
       version: "3.0.1"
@@ -190,6 +190,7 @@ platforms:
     salesForcePoIPlatform: Unity
     versions:
     - status: stable
+      release_notes: unity-sdk-23
       doc: /v2_3/unity/
       architecture: OSX i386/x86_64, Windows x86/x86_64, Android ARM7/x86, iOS ARM64/ARM7
       version: "2.3"
@@ -197,6 +198,7 @@ platforms:
       size: 207 MB
 
     - status: legacy
+      release_notes: unity-sdk-221
       doc: /v2_2/unity/
       architecture: OSX i386/x86_64, Windows x86/x86_64, Android ARM7/x86
       version: "2.2.1"
@@ -204,6 +206,7 @@ platforms:
       size: 37 MB
 
     - status: legacy
+      release_notes: unity-sdk-22
       doc: /v2_2/unity/
       architecture: OSX i386/x86_64, Windows x86/x86_64, Android ARM7/x86
       version: "2.2"
@@ -222,7 +225,7 @@ platforms:
     salesForcePoIPlatform: Windows
     versions:
       - status: stable
-        release_notes: affdex-sdk-version-311
+        release_notes: windowslinuxandroid-sdk-311
         doc: /v3_1_1/windows/
         architecture: i386
         version: "3.1.1-1125"
@@ -230,7 +233,7 @@ platforms:
         size: 19.1 MB
 
       - status: stable
-        release_notes: affdex-sdk-version-31
+        release_notes: windowslinuxandroid-sdk-31
         doc: /v3_1_1/windows/
         architecture: x86_64
         version: "3.1.1-419"
@@ -238,7 +241,7 @@ platforms:
         size: 30.4 MB
 
       - status: legacy
-        release_notes: affdex-sdk-version-31
+        release_notes: windowslinuxandroid-sdk-31
         doc: /v3_1/windows/
         architecture: i386
         version: "3.1-1049"
@@ -246,7 +249,7 @@ platforms:
         size: 19.1 MB
 
       - status: legacy
-        release_notes: affdex-sdk-version-31
+        release_notes: windowslinuxandroid-sdk-31
         doc: /v3_1/windows/
         architecture: x86_64
         version: "3.1-368"
@@ -254,7 +257,7 @@ platforms:
         size: 30.4 MB
 
       - status: legacy
-        release_notes: affdex-sdk-version-31
+        release_notes: windowslinuxandroid-sdk-31
         doc: /v3_1/windows/
         architecture: i386
         version: "3.1-1025"
@@ -262,7 +265,7 @@ platforms:
         size: 19.1 MB
 
       - status: legacy
-        release_notes: affdex-sdk-version-31
+        release_notes: windowslinuxandroid-sdk-31
         doc: /v3_1/windows/
         architecture: x86_64
         version: "3.1-339"
@@ -270,7 +273,7 @@ platforms:
         size: 30.4 MB
 
       - status: legacy
-        release_notes: affdex-sdk-version-30
+        release_notes: windowsiosandroid-sdk-30
         doc: /v3/windows/
         architecture: i386
         version: "3.0-961"
@@ -278,7 +281,7 @@ platforms:
         size: 19.1 MB
 
       - status: legacy
-        release_notes: affdex-sdk-version-30
+        release_notes: windowsiosandroid-sdk-30
         doc: /v3/windows/
         architecture: x86_64
         version: "3.0-275"
@@ -302,7 +305,7 @@ platforms:
         size: 30.4 MB
 
       - status: legacy
-        release_notes: affdex-sdk-version-20
+        release_notes: windowsiosandroid-sdk-20
         doc:
         architecture: i386
         version: "2.0-698"
@@ -310,7 +313,7 @@ platforms:
         size: 19.1 MB
 
       - status: legacy
-        release_notes: affdex-sdk-version-20
+        release_notes: windowsiosandroid-sdk-20
         doc:
         architecture: x86_64
         version: "2.0-38"
