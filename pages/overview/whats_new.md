@@ -95,7 +95,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ##### Linux SDK 3.0
 
-*First release of our Affdex SDK for the [Linux](/linux) platform.
+* First release of our Affdex SDK for the [Linux](/linux) platform.
 
 ---
 
