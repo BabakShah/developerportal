@@ -26,28 +26,24 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 ## Getting started
 
-We package our plugin as an asset, like those you can buy on Unity's Asset Store.  You can download it from below.  The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:  
+We package our plugin as an asset, like those you can buy on Unity's Asset Store.  You can download it from below.  
+
+{% include custom/download_link.html build_version="2.3" platform="unity" %}
+
+The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:  
 
 *   Camera: images from the webcam (or front camera for mobile devices)
 *   Frames: a sequence of timed images.
 *   Video: a video file on a device's local storage.
 
-For each of the different sources, the underlining emotion recognition engine defines a detector class that can handle processing images acquired from that source. There are a set of common steps needed to start using a detector.  
-
-##### 1. Download the Asset:
-{% include custom/download_link.html build_version="2.3" platform="unity" %}
-
-##### 2. Capture and analyze faces
-
-Facial images can be captured from different sources. For each of the different sources, the plugin defines a detector class that can handle processing images acquired from that source:
+The SDK's Detector class implements the core detection functionality, and can be used in any of these three scenarios, although the steps are a bit different in each case.
 
 * [How to analyze a camera feed]({{ site.baseurl }}/v2_3/unity/analyze-camera/)
 * [How to analyze a recorded video file]({{ site.baseurl }}/v2_3/unity/analyze-video/)
 * [How to analyze a video frame stream]({{ site.baseurl }}/v2_3/unity/analyze-frames/)
 
-##### 3. Check out sample applications on GitHub
-
-Here are GitHub repositories you can use as examples:
+## Samples
+There are several example Unity apps available on GitHub which you can examine to see the SDK in action:
 
 * [EmoSurvival - An emotion adaptive demo built onto Unity's survival shooter training day](https://github.com/Affectiva/UnityChan)
 * [Unity-chan - An emotion mimicry demo](https://github.com/Affectiva/UnityChan)
