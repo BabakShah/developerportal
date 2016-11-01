@@ -57,7 +57,6 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Jul 2016***
 
-
 ##### Windows/Linux/Android 3.1
 
 * Improved emotion metrics. The valence includes new expressions in its calculation.
@@ -80,7 +79,6 @@ This page contains the release notes for the different versions of the Affdex SD
 ---
 
 ***Mar 2016***
-
 
 ##### macOS 3.0.1
 
