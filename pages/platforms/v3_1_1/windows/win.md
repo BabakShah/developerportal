@@ -11,7 +11,7 @@ metadata: false
 ---
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.1
+SDK Developer Guide Release 3.1.1
 
 ## Using the SDK
 
