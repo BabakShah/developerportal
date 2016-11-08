@@ -1,3 +1,5 @@
+<a target="blank_" href="https://emodev16.eventbrite.com/?aff=devportal"><img src="http://cdn2.hubspot.net/hubfs/2372627/Screen%20Shot%202016-11-08%20at%204.22.32%20PM.png"/></a>
+
 ## Affectiva Emotion SDK (Affdex)
 
 Highly-connected devices, interactive technologies and advanced AI systems surround us daily, but as smart as these are, they lack the ability to sense and adapt to human emotions.  At Affectiva, our mission is to bring emotional intelligence to the digital world; we are humanizing technology.
