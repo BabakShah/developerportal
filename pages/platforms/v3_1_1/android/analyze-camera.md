@@ -121,10 +121,10 @@ Some applications may not wish to display the camera preview on screen. Since An
 
 **Processing**
 
-The number of video frames processed per second can be controlled by calling ```setMaxProcessRate```. The min recommended for the quality emotion detection is 5 frames per second. The higher the process rate, the more CPU intensive the processing is.
+The process rate (i.e., number of video frames processed per second) can be controlled by calling ```setMaxProcessRate```.  The greater the rate, the more CPU intensive the processing is, but the minimum recommended for quality emotion detection is 5 frames per second.
 
 ```java
-int rate = 5;
+int rate = 10;
 detector.setMaxProcessRate(rate);
 ```
 
