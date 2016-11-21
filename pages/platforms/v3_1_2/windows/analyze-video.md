@@ -8,12 +8,12 @@ last_updated:
 summary:
 metadata: false
 ---
-**classdoc:** VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_2/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)]
+**classdoc:** VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_1/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)]
 
-A common use of the SDK is to process previously captured video files. The VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_2/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)] helps streamline this effort by decoding and processing frames from a video file. Like the `FrameDetector`, the constructor accepts a parameter for processing frames per second. This parameter regulates how many frames from the video stream get processed. During processing, the <code>VideoDetector</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list]({{ site.baseurl }}/supportedvideoformats/) of accepted file types and recommended video codecs that are compatible with the detector.
+A common use of the SDK is to process previously captured video files. The VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_1/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)] helps streamline this effort by decoding and processing frames from a video file. Like the `FrameDetector`, the constructor accepts a parameter for processing frames per second. This parameter regulates how many frames from the video stream get processed. During processing, the <code>VideoDetector</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list]({{ site.baseurl }}/supportedvideoformats/) of accepted file types and recommended video codecs that are compatible with the detector.
 
 ### Creating the detector
-The VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_2/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)] constructor expects two parameters { `processFrameRate`, `maxNumFaces` and `faceConfig` }
+The VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_1/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)] constructor expects two parameters { `processFrameRate`, `maxNumFaces` and `faceConfig` }
 
 ```csharp
 VideoDetector(
@@ -61,6 +61,6 @@ Once the detector is started, the processing begins by calling the process funct
 void process(String path);
 ```
 
-On completion of the video processing, the `onProcessingFinished` function is called from the ProcessStatusListener [[c++]({{ site.baseurl }}/pages/platforms/v3_1_2/cpp/classdocs/affdex-native/classaffdex_1_1_process_status_listener.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/d9d08bc0-b022-4114-64d1-4ef3ed7e1bab.htm)]. `process()` is a non-blocking call.
+On completion of the video processing, the `onProcessingFinished` function is called from the ProcessStatusListener [[c++]({{ site.baseurl }}/pages/platforms/v3_1_1/cpp/classdocs/affdex-native/classaffdex_1_1_process_status_listener.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/d9d08bc0-b022-4114-64d1-4ef3ed7e1bab.htm)]. `process()` is a non-blocking call.
 
 {% include windows/v3_1_2/detector/stop.md %}

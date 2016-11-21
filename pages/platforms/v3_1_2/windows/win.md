@@ -37,7 +37,7 @@ Click on the download link from the table for the desired architecture:
 
 &nbsp;&nbsp;&nbsp;&nbsp;The .NET assembly depends on the affdex-native.dll and loads it in runtime.
 
-&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, ```opencv_ffmpeg.dll``` is required by VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_2/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)] in runtime for the video decoding.
+&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, ```opencv_ffmpeg.dll``` is required by VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_1/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)] in runtime for the video decoding.
 
 ##### 3. Capture and analyze faces
 
@@ -56,7 +56,7 @@ AffdexMe is an open source application that demonstrates the use of the Affdex S
 
 ## Class documentation
 * .NET (C#) Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/index.html)]
-* C++ Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3_1_2/cpp/classdocs/affdex-native/namespaceaffdex.html)]
+* C++ Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3_1_1/cpp/classdocs/affdex-native/namespaceaffdex.html)]
 
 ## Requirements & Dependencies
 

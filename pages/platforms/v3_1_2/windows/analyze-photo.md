@@ -8,7 +8,7 @@ last_updated:
 summary:
 metadata: false
 ---
-**classdoc:** PhotoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_2/cpp/classdocs/affdex-native/classaffdex_1_1_photo_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/1bdd6e83-b415-70d3-5b67-2697a768b717.htm)]
+**classdoc:** PhotoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_1_1/cpp/classdocs/affdex-native/classaffdex_1_1_photo_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3_1_2/windows/classdocs/Affdex/html/1bdd6e83-b415-70d3-5b67-2697a768b717.htm)]
 
 The ```PhotoDetector```class is used for streamlining the processing of still images. Since photos lack any continuity over time, the expression and emotion detection is performed independently on each frame and the timestamp is ignored. Due to this fact, the underlying emotion detection may return different results than the video based detectors.
 
