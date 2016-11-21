@@ -14,7 +14,15 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ---
 
-***Oct 2016*** 
+***Nov 2016***
+
+##### Windows SDK 3.1.2
+
+* Fixed [SDK-763](https://affectiva.atlassian.net/browse/SDK-763) - Adding the RGBA, BGRA, YUV_NV21, YUV_I420, YUV_YUY2 Color Formats for the enum in Frame class
+
+---
+
+***Oct 2016***
 
 ##### Unity SDK 2.3
 
@@ -47,7 +55,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ##### Unity SDK 2.2
 
-* Added Android support. 
+* Added Android support.
 * Frame constructor can now accept a rotation angle of 0, 90, 180, and 270.
 * Detector.Initialize is now private because it is called automatically by Detector.Start
 * Detector.Stop has been deprecated in favor of Detector.StopDetector
@@ -62,7 +70,7 @@ This page contains the release notes for the different versions of the Affdex SD
 * Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
 * Added models for new [expressions](/metrics#facial-expressions): cheek raise, dimpler, eye widen, lid tighten, lip stretch and jaw drop.
 * Fix bug [SCI-86](https://affectiva.atlassian.net/browse/SCI-86) - Disgust false positives due to the occurrence of the smile expression.  
- 
+
 ##### Web SDK 3.1
 
 * First release of our JavaScript-based SDK to emotion-enable [Web](/web) apps.

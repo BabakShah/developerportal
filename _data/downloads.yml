@@ -225,6 +225,22 @@ platforms:
     salesForcePoIPlatform: Windows
     versions:
       - status: stable
+        release_notes: windows-sdk-312
+        doc: /v3_1_2/windows/
+        architecture: i386
+        version: "3.1.1-1162"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.1.2-1162-win32.exe
+        size: 19.1 MB
+
+      - status: stable
+        release_notes: windows-sdk-312
+        doc: /v3_1_2/windows/
+        architecture: x86_64
+        version: "3.1.2-478"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.1.2-478-win64.exe
+        size: 30.4 MB
+
+      - status: legacy
         release_notes: windowslinuxandroid-sdk-311
         doc: /v3_1_1/windows/
         architecture: i386
@@ -232,8 +248,8 @@ platforms:
         package: https://download.affectiva.com/windows/AffdexSDK-3.1.1-1125-win32.exe
         size: 19.1 MB
 
-      - status: stable
-        release_notes: windowslinuxandroid-sdk-31
+      - status: legacy
+        release_notes: windowslinuxandroid-sdk-311
         doc: /v3_1_1/windows/
         architecture: x86_64
         version: "3.1.1-419"
@@ -347,7 +363,7 @@ affdexme:
   - name: Windows
     img: /images/download/windows.png
     style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
-    package: https://download.affectiva.com/windows/AffdexMe-1125-win32.exe
+    package: https://download.affectiva.com/windows/AffdexMe-1162-win32.exe
 ################################
 ################################
 ################################
