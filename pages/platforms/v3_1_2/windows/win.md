@@ -11,7 +11,7 @@ metadata: false
 ---
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.1.1
+SDK Developer Guide Release 3.1.2
 
 ## Using the SDK
 
@@ -27,7 +27,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 Click on the download link from the table for the desired architecture:
 
-{% include custom/download_link.html build_version="3.1.1-" platform="windows" %}
+{% include custom/download_link.html build_version="3.1.2-" platform="windows" %}
 
 ##### 2. Import an affdex API into your application
 
