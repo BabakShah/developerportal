@@ -18,7 +18,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ##### Windows SDK 3.1.2
 
-* Fix bug  [SDK-763](https://affectiva.atlassian.net/browse/SDK-763) - Adding the RGBA, BGRA, YUV_NV21, YUV_I420, YUV_YUY2 color formats for the enum in Frame class
+* Fix bug [SDK-763](https://affectiva.atlassian.net/browse/SDK-763) - Added the RGBA, BGRA, YUV_NV21, YUV_I420, YUV_YUY2 color formats for the enum in Frame class
 
 ---
 
