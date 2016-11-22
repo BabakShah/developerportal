@@ -1,7 +1,6 @@
 ---
 title: Affdex SDK for Windows
 permalink: /v3_1_1/windows/
-redirect_from: "/windows/"
 tags: [windows, sdk]
 audience: writer, designer
 keywords:

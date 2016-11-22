@@ -11,6 +11,11 @@ or host on s3 using s3_website.
 
 Assuming, you have Ruby and bundle installed. If you don't, a good place to start [would be here.](https://www.codecademy.com/learn/ruby)
 
+Install bundler
+```shell
+$ gem install bundler -v 1.10.6
+```
+
 Install all required gems
 ```shell
 $ bundle install

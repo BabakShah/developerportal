@@ -209,6 +209,9 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591a2ad5640ebdec72fc79531d1778c6c2dc"><param name="Name" value="BGR"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591a5a1fe3c61c9e2fd6dbbc823589f6e697"><param name="Name" value="BGRA"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a594c7b3a3e330eb50d2c2eda67b9b83a"><param name="Name" value="CW_180"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a8fa2fdd25b4c66beecadbd05659ffb87"><param name="Name" value="CW_270"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a3593998b688c4a02bfc7d5b775fdd918"><param name="Name" value="CW_90"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#affd5659336858b82d42145faf909d802"><param name="Name" value="Frame"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#acf46a5b3f3c6a0b11db6517c8be995c5"><param name="Name" value="getBGRByteArray"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a2cbb1492e20848999db9e1eefeba08b4"><param name="Name" value="getBGRByteArrayLength"></OBJECT>
@@ -217,10 +220,11 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a369d54690619cef604211b202ff8313f"><param name="Name" value="getImage"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a982a7c51ce80e641c6724440ff3dde8c"><param name="Name" value="getTimestamp"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a5f8eaed2f3dd15941ecbb537266e2562"><param name="Name" value="getWidth"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a2f1d907db095224557ab4b40d57d0cbe"><param name="Name" value="init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a1e7355a2f535a35067823e16d009d1db"><param name="Name" value="init"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591a889574aebacda6bfd3e534e2b49b8028"><param name="Name" value="RGB"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591aea3495a278957dc58165e48a8945469f"><param name="Name" value="RGBA"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#aee224df3414605f1b7d77c4e341c70a7"><param name="Name" value="setTimestamp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a80f19215877b3d6ad57075cc4e1aa8fc"><param name="Name" value="UPRIGHT"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591afc5fa2f845a7a4eff1a22725766cdc05"><param name="Name" value="YUV_I420"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591a9e17f0483957d31968ff2326246fa833"><param name="Name" value="YUV_NV21"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#ab12e7b30eb2c85f794da2d62557d6591abf902bdada89220e940d2f773a0967f1"><param name="Name" value="YUV_YUY2"></OBJECT>
@@ -301,6 +305,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_expressions.html#a56bd5c7d65298ddadfd63c901ab08523"><param name="Name" value="cheekRaise"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_expressions.html#a3425cbc112e2ef11c84b70be4942f43a"><param name="Name" value="chinRaise"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_emotions.html#a7a62bcee535977cacf46aef3e4a52e2d"><param name="Name" value="contempt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a594c7b3a3e330eb50d2c2eda67b9b83a"><param name="Name" value="CW_180"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a8fa2fdd25b4c66beecadbd05659ffb87"><param name="Name" value="CW_270"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a3593998b688c4a02bfc7d5b775fdd918"><param name="Name" value="CW_90"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceaffdex.html#adf422d070059c5892f2d54cdae476458"><param name="Name" value="DEFAULT_MAX_NUM_FACES"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceaffdex.html#af0ee9ff0e8872c0a863b7576d82b87ac"><param name="Name" value="DEFAULT_PROCESSING_FRAMERATE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_detector.html#ae22fc893446356a3c9fb7718c85fe43f"><param name="Name" value="Detector"></OBJECT>
@@ -381,7 +388,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_face.html#adb215779dfb33da07327cc2bada34351"><param name="Name" value="affdex::Face"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_feature_point.html#a36bf8d0c6d7f2e43cdc604fabafb4dec"><param name="Name" value="affdex::FeaturePoint"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a2f1d907db095224557ab4b40d57d0cbe"><param name="Name" value="init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a1e7355a2f535a35067823e16d009d1db"><param name="Name" value="init"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_expressions.html#ad1492c07153d5741be5c7c11856e2022"><param name="Name" value="innerBrowRaise"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_measurements.html#aef8a69847556ceb0ca19e5f0f9a8fb50"><param name="Name" value="interocularDistance"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_detector.html#afc7c85c9efe7d4c278634880d5d59a19"><param name="Name" value="isRunning"></OBJECT>
@@ -514,6 +521,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_emojis.html#abe8b0728cb23f7355822080c07c74971"><param name="Name" value="stuckOutTongueWinkingEye"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_emotions.html#ade8cd2b1be2ab4f1b91455b9ce465a73"><param name="Name" value="surprise"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_expressions.html#aa58177c245fe9e9ea9c4fc5e0808688b"><param name="Name" value="upperLipRaise"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_frame.html#a3349a25ff943c9f728597c6532e4f462a80f19215877b3d6ad57075cc4e1aa8fc"><param name="Name" value="UPRIGHT"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structaffdex_1_1_emotions.html#a6272b85f641ead39bdb586f3679abd34"><param name="Name" value="valence"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceaffdex.html#a83737ccb7eaa84d56cab782bbaadb4a4"><param name="Name" value="VecFeaturePoint"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classaffdex_1_1_video_detector.html#aa4c2e540d00d780a188a828aab01aca6"><param name="Name" value="VideoDetector"></OBJECT>
