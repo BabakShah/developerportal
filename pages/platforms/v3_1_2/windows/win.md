@@ -11,6 +11,8 @@ metadata: false
 ---
 {% include linkrefs.html %}
 
+<img src="/images/thanksgiving.png" alt="thanksgiving invite" />
+
 SDK Developer Guide Release 3.1.2
 
 ## Using the SDK
