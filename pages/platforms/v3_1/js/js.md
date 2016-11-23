@@ -17,6 +17,9 @@ SDK Developer Guide Release 3.1
 
 The purpose of the SDK is to detect facial expressions and their underlying emotions, appearance and emojis from facial images.
 
+## Video Tutorial
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/5ZiIK5TheXE?list=PL4uhb2yWZJbytOZkYxMlsuYUp_jP6ygG5" frameborder="0" allowfullscreen></iframe>
+
 ## Getting started
 
 ##### 1. Add the Affdex API to your project  

@@ -22,7 +22,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 * **StreamingAssets:** The classifier data files required by the libraries.
 
 ## Video Tutorial
-<iframe width="100%" height="400px" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/yQ9vnzopMm0?list=PL4uhb2yWZJbytOZkYxMlsuYUp_jP6ygG5" frameborder="0" allowfullscreen></iframe>
 
 ## Getting started
 

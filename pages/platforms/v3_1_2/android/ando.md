@@ -18,6 +18,9 @@ SDK Developer Guide Release 3.1.2
 
 The SDK is distributed as an Android ".aar" archive. It can be included in an app by declaring a dependency on the SDK in the app's build.gradle file.
 
+## Video Tutorial
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/ovQWlzIN9_4?list=PL4uhb2yWZJbytOZkYxMlsuYUp_jP6ygG5" frameborder="0" allowfullscreen></iframe>
+
 ##### 1. Add Affectiva's repository as a remote repo for your application.  This tells gradle that it should scan the Affectiva software distribution site for the app's dependencies.  Add a declaration to the app's root build.gradle file:
 ```groovy
 allprojects {

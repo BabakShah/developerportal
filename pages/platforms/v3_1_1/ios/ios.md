@@ -18,6 +18,9 @@ SDK Developer Guide Release 3.1.1
 
 __The Affdex SDK for iOS is distributed as a [CocoaPod](https://cocoapods.org/pods/AffdexSDK-iOS). If you do not have CocoaPods installed on your Mac, please install it using the instructions in the [CocoaPods Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html).__
 
+## Video Tutorial
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/PttejE_4DqE?list=PL4uhb2yWZJbytOZkYxMlsuYUp_jP6ygG5" frameborder="0" allowfullscreen></iframe>
+
 #### 1. Create a Podfile
 
 After you have installed CocoaPods on your Mac, create a file named "Podfile" in your project directory.  This is the directory which contains the .xcodeproj and/or .xcworkspace files for your project.  The Podfile is a plain-text file which describes the framework and library dependencies that your project contains.  Installing the pod file will load and configure the Affdex SDK framework for use with your project.

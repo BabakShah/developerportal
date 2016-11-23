@@ -8,6 +8,9 @@ The Emotion as a Service API lets clients use our affective science services. Wi
 
 This document is an add-on to the Cloud API Overview and assumes that the reader has read that document.
 
+## Video Tutorial
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/VPYCCN2OZgg?list=PL4uhb2yWZJbytOZkYxMlsuYUp_jP6ygG5" frameborder="0" allowfullscreen></iframe>
+
 ## Resources
 
 There are two resources exposed through the API:
