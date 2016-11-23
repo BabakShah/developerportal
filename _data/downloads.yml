@@ -15,6 +15,12 @@ platforms:
     salesForcePoIPlatform: Android
     versions:
       - status: stable
+        release_notes: android-sdk-32
+        architecture: "ARM7"
+        version: "3.2.0"
+        install: /v3_2/android/
+        size: 7.0 MB
+      - status: legacy
         release_notes: android-sdk-312
         architecture: "ARM7"
         version: "3.1.2"

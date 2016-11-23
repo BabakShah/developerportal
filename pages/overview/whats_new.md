@@ -16,6 +16,12 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Jan 2017***
 
+##### Android SDK 3.2
+* Added support for “brightness” metric to measure the face lighting condition. See documentation for [[qualities]({{ site.baseurl }}/pages/platforms/v3_2/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.html#qualities)] field in [[Face]({{ site.baseurl }}/pages/platforms/v3_2/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.html)] class
+* Fix bug [SDK-1053](https://affectiva.atlassian.net/browse/SDK-1053) - analytics frame records' timestamps should follow detector-specific rules
+* Fix bug [SDK-1003](https://affectiva.atlassian.net/browse/SDK-1003) - SDK should still send start/stop analytics records for non-empty sessions when analytics are disabled
+* Fix bug [SDK-529](https://affectiva.atlassian.net/browse/SDK-529) - native crash if Detector's process method() is called after stop()
+
 ##### Windows SDK 3.3
 
 * Added support for "brightness" metric to measure the face lighting condition. See documentation for faceQuality field in Face class [[c++]({{ site.baseurl }}/pages/platforms/v3_3/windows/classdocs/affdex-native/classaffdex_1_1_face.html)], and FaceQuality property in Face class [[c#]({{ site.baseurl }}/pages/platforms/v3_3/windows/classdocs/Affdex/html/6ba06b80-e3de-63ab-3985-5555663602f7.htm)]

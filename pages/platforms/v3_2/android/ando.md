@@ -1,6 +1,7 @@
 ---
 title: Affdex SDK for Android
-permalink: /v3_1_2/android/
+permalink: /v3_2/android/
+redirect_from: "/android/"
 tags: [android, sdk]
 audience: writer, designer
 keywords:
@@ -11,16 +12,11 @@ metadata: false
 
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.1.2
+SDK Developer Guide Release 3.2
 
 ## Using the SDK
 
 The SDK is distributed as an Android ".aar" archive. It can be included in an app by declaring a dependency on the SDK in the app's build.gradle file.
-
-Watch the video tutorial below to help you get started on how to use the SDK:
-<iframe width="100%" height="400px" src="https://www.youtube.com/embed/ovQWlzIN9_4" frameborder="0" allowfullscreen></iframe>
-
-***
 
 ##### 1. Add Affectiva's repository as a remote repo for your application.  This tells gradle that it should scan the Affectiva software distribution site for the app's dependencies.  Add a declaration to the app's root build.gradle file:
 ```groovy
@@ -33,13 +29,13 @@ allprojects {
     }
 }
 ```
-For an example please see the [AffdexMe sample app's top-level build.gradle file](https://github.com/Affectiva/affdexme-android/blob/master/build.gradle#L15-L19).
+For an example please see the [AffdexMe sample app](https://github.com/Affectiva/affdexme-android/blob/master/build.gradle#L15-L19).
 
 ##### 2. Add a dependency declaration to your app's build.gradle file.  This will pick up the most recent bug fix release in the 3.x series.
 ```groovy
 dependencies {
     ...
-    compile 'com.affectiva.android:affdexsdk:3.1.2'
+    compile 'com.affectiva.android:affdexsdk:3.2.0'
     ...
 }
 ```
@@ -95,19 +91,18 @@ You can then add your own "allowBackup" and "label" attributes:
 ##### 4. Capture and analyze faces
 
 Facial images can be captured from different sources. For each of the different sources, the SDK defines a detector class that can handle processing images acquired from that source:
-<!--- note: same as 3.1.1, so reuse that content -->
 
-* [How to analyze a camera feed]({{ site.baseurl }}/v3_1_1/android/analyze-camera/)
-* [How to analyze a recorded video file]({{ site.baseurl }}/v3_1_1/android/analyze-video/)
-* [How to analyze a video frame stream]({{ site.baseurl }}/v3_1_1/android/analyze-frames/)
-* [How to analyze a photo]({{ site.baseurl }}/v3_1_1/android/analyze-photo/)
+
+* [How to analyze a camera feed]({{ site.baseurl }}/v3_2/android/analyze-camera/)
+* [How to analyze a recorded video file]({{ site.baseurl }}/v3_2/android/analyze-video/)
+* [How to analyze a video frame stream]({{ site.baseurl }}/v3_2/android/analyze-frames/)
+* [How to analyze a photo]({{ site.baseurl }}/v3_2/android/analyze-photo/)
 
 ##### 5. Check out sample applications on GitHub
 Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/android-sdk-samples)
 
 ## Class documentation
-<!--- note: same as 3.1.1, so reuse that javadoc -->
-* class docs: [[HTML]({{ site.baseurl }}/pages/platforms/v3_1_1/android/javadoc/index.html)]
+* class docs: [[HTML]({{ site.baseurl }}/pages/platforms/v3_2/android/javadoc/index.html)]
 
 ## Requirements & Dependencies
 
