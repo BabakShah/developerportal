@@ -10,8 +10,6 @@ summary:
 metadata: false
 ---
 {% include linkrefs.html %}
-<a target="blank_" href="https://download.affectiva.com/windows/AffdexMe-1170-win32.exe">
-<img src="/images/thanksgiving.png" alt="thanksgiving invite" />
 
 SDK Developer Guide Release 3.1.2
 
