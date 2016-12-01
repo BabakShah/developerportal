@@ -20,8 +20,10 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 * **affdex-native:** C++ Namespace headers and library files.
 * **data:** The classifier data files required by both affdex-native and Affdex libraries runtime.
 
-## Video Tutorial
-<iframe width="100%" height="400px" src="https://www.youtube.com/embed/8tSx3xlWNnc?list=PL4uhb2yWZJbytOZkYxMlsuYUp_jP6ygG5" frameborder="0" allowfullscreen></iframe>
+Watch the video tutorial below to help you get started on how to use the SDK:
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/8tSx3xlWNnc" frameborder="0" allowfullscreen></iframe>
+
+***
 
 ## Getting started
 

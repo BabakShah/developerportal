@@ -18,8 +18,10 @@ SDK Developer Guide Release 3.1.1
 
 __The Affdex SDK for iOS is distributed as a [CocoaPod](https://cocoapods.org/pods/AffdexSDK-iOS). If you do not have CocoaPods installed on your Mac, please install it using the instructions in the [CocoaPods Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html).__
 
-## Video Tutorial
-<iframe width="100%" height="400px" src="https://www.youtube.com/embed/PttejE_4DqE?list=PL4uhb2yWZJbytOZkYxMlsuYUp_jP6ygG5" frameborder="0" allowfullscreen></iframe>
+Watch the video tutorial below to help you get started on how to use the SDK:
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/PttejE_4DqE" frameborder="0" allowfullscreen></iframe>
+
+***
 
 #### 1. Create a Podfile
 

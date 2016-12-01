@@ -10,10 +10,13 @@ metadata: false
 ---
 {% include linkrefs.html %}
 
-The face provides a rich canvas of emotion. Humans are innately programmed to express and communicate emotion through facial expressions. Affdex scientifically measures and reports the emotions and facial expressions using sophisticated computer vision and machine learning techniques. When you use the Affdex SDK in your applications, you will receive facial expression output in the form of Affdex metrics: seven emotion metrics, 20 facial expression metrics, 13 emojis, and four appearance metrics.
+The face provides a rich canvas of emotion. Humans are innately programmed to express and communicate emotion through facial expressions. Affdex scientifically measures and reports the emotions and facial expressions using sophisticated computer vision and machine learning techniques. 
 
-## Video Tutorial
-<iframe width="100%" height="400px" src="https://www.youtube.com/embed/PKjzkPmi5IU?list=PL4uhb2yWZJbytOZkYxMlsuYUp_jP6ygG5" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/PKjzkPmi5IU" frameborder="0" allowfullscreen></iframe>
+
+***
+
+When you use the Affdex SDK in your applications, you will receive facial expression output in the form of Affdex metrics: seven emotion metrics, 20 facial expression metrics, 13 emojis, and four appearance metrics.
 
 ## Emotions
 

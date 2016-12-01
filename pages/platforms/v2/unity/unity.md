@@ -38,8 +38,10 @@ SDK Developer Guide Release 2.0.x
 *   Windows 7 and above
 *   OS 10.9.5 and above
 
-## Video Tutorial
+Watch the video tutorial below to help you get started on how to use the SDK:
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
+
+***
 
 ## Class Documentation
 The classes that come with this asset are viewable [here](http://developer.affectiva.com/pages/platforms/v2/unity/AffdexUnityHelp/index.html).  

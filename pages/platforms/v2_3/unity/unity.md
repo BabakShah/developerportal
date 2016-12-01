@@ -21,8 +21,10 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 * **Affdex:** C# code and required libraries.
 * **StreamingAssets:** The classifier data files required by the libraries.
 
-## Video Tutorial
+Watch the video tutorial below to help you get started on how to use the SDK:
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/e7N88nLllzk" frameborder="0" allowfullscreen></iframe>
+
+***
 
 ## Getting started
 
