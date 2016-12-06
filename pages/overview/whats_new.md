@@ -14,6 +14,15 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ---
 
+***Dec 2016***
+
+##### Unity SDK 2.4
+
+* Fix bug [SDK-1007](https://affectiva.atlassian.net/browse/SDK-1007) - Example scenes use metric font that's too small to read
+* Fix bug [SDK-977](https://affectiva.atlassian.net/browse/SDK-977) - Example scene camera preview appears sideways when mobile device is rotated to landscape
+
+---
+
 ***Nov 2016***
 
 ##### Windows SDK 3.1.2

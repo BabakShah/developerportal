@@ -1,7 +1,7 @@
 ### Getting results
 
 The <code>Detector</code> uses callback methods to communicate events and results:
-The <code>ImageResultsListener</code> interface defines methods that are invoked when the <code>Detector</code> has started or stopped tracking a face, and when it has detection results for a face. The <code>OnFaceLost</code>, <code>OnFaceFound</code>, and <code>OnImageResults</code> methods must be defined as part of a class attached as a component within Unity.  Here is an example:  
+The <code>ImageResultsListener</code> interface defines methods that are invoked when the <code>Detector</code> has started or stopped tracking a face, and when it has detection results for a face. The <code>OnFaceLost</code>, <code>OnFaceFound</code>, and <code>OnImageResults</code> methods must be defined as part of a class attached as a component within Unity.  Here is an example:
 
 ```csharp
 using Affdex;
@@ -60,14 +60,14 @@ public class PlayerEmotions : ImageResultsListener
 
 <code>OnImageResults</code> delivers the detection results via a dictionary of <code>Face</code> objects, which contain the values of all expressions and emotions for a face in a frame.  It also allows you to get the interocular distance, facial feature point locations, and the orientation of the face.  Note that in the current release, the dictionary will contain at most one face; multiple faces are not supported yet.
 
-For a fully implemented sample, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).  You can use <code>OnFaceLost</code> to pause a game.  If you use Time.timeScale to pause, the camera script will also pause, as it uses the same time values.  
+For a fully implemented sample, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).  You can use <code>OnFaceLost</code> to pause a game.  If you use Time.timeScale to pause, the camera script will also pause, as it uses the same time values.
 
 
 ### Data Structures
 
 #### Frame
 
-The <code>Frame</code> class is used for passing images to the <code>Detector</code>. The <code>Frame</code> class' constructor requires the width and height of the frame, the color format of the incoming image must be supplied, and a timestamp.  If the source of the image content has an associated timestamp, you should use that; otherwise, if the images are coming from a real time source, you could use <code>Time.realtimeSinceStartup</code>.    
+The <code>Frame</code> class is used for passing images to the <code>Detector</code>. The <code>Frame</code> class' constructor requires the width and height of the frame, the color format of the incoming image must be supplied, and a timestamp.  If the source of the image content has an associated timestamp, you should use that; otherwise, if the images are coming from a real time source, you could use <code>Time.realtimeSinceStartup</code>.
 
 There are two versions of the <code>Frame</code> constructor.  The first expects an upright image:
 
@@ -83,7 +83,7 @@ Frame(Color32[] rgba, int width, int height, Orientation orientation, float time
 
 #### Face
 
-The Face class represents a face found within a processed frame. It contains results for detected expressions, emotions, and head measurements.  
+The Face class represents a face found within a processed frame. It contains results for detected expressions, emotions, and head measurements.
 
 ```csharp
 Face.Expressions
@@ -91,7 +91,7 @@ Face.Emotions
 Face.Measurements
 ```
 
-The Face object also enables users to retrieve the feature points associated with a face:  
+The Face object also enables users to retrieve the feature points associated with a face:
 
 ```csharp
 Face.FeaturePoints
@@ -99,7 +99,7 @@ Face.FeaturePoints
 
 #### Expressions
 
-<code>Expressions</code> is a representation of the probabilities of the facial expressions detected. Each value represents a probability between 0 to 100 of the presence of the expression in the frame analyzed:  
+<code>Expressions</code> is a representation of the probabilities of the facial expressions detected. Each value represents a probability between 0 to 100 of the presence of the expression in the frame analyzed:
 
 ```csharp
 struct Expressions
@@ -124,7 +124,7 @@ struct Expressions
 
 #### Emotions
 
-<code>Emotions</code> is a representation of the probabilities of the emotions detected. Each value represents a probability between 0 to 100 of the presence of the emotion in the frame analyzed. Valence, a measure of positivity or negativity of the expressions, ranges from -100 to 100:  
+<code>Emotions</code> is a representation of the probabilities of the emotions detected. Each value represents a probability between 0 to 100 of the presence of the emotion in the frame analyzed. Valence, a measure of positivity or negativity of the expressions, ranges from -100 to 100:
 
 ```csharp
 struct Emotions
@@ -143,7 +143,7 @@ struct Emotions
 
 #### Measurements
 
-<code>Measurements</code> is a representation of the head and face measurements. The Interocular distance is defined as the distance between the two outer eye corners in pixels:  
+<code>Measurements</code> is a representation of the head and face measurements. The Interocular distance is defined as the distance between the two outer eye corners in pixels:
 
 ```csharp
 struct Expressions
@@ -169,7 +169,7 @@ struct Orientation
 
 #### FeaturePoint
 
-<code>FeaturePoint</code> is the cartesian coordinates of a facial feature on the source image and is defined as the following:  
+<code>FeaturePoint</code> is the cartesian coordinates of a facial feature on the source image and is defined as the following:
 
 ```csharp
 struct FeaturePoint
