@@ -194,7 +194,7 @@ platforms:
       release_notes: unity-sdk-24
       architecture: OSX i386/x86_64, Windows x86/x86_64, Android ARM7/x86, iOS ARM64/ARM7
       version: "2.4"
-      package: https://download.affectiva.com/unity/AffdexDelivery_2_4.unitypackage
+      package: https://download.affectiva.com/unity/AffdexDelivery_2_4_0.unitypackage
       size: 199 MB
 
     - status: legacy
