@@ -14,6 +14,14 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ---
 
+***Dec 2016***
+
+##### Windows SDK 3.2
+
+* blurb
+
+---
+
 ***Nov 2016***
 
 ##### Windows SDK 3.1.2
