@@ -16,8 +16,12 @@ Watch the video tutorial below to help you get started on how to use the SDK:
 ## Resources
 
 There are two resources exposed through the API:
-<strong>Job</strong> - a job tracks a request to process a piece of media.  It has one input (the media to process) and one result (the metrics).
-<strong>Entry</strong> - an entry represents one piece of media, for example, an MP4 video or a json document containing metrics.
+
+Job
+: a job tracks a request to process a piece of media.  It has one input (the media to process) and one result (the metrics)
+
+Entry
+: an entry represents one piece of media, for example, an MP4 video or a json document containing metrics.
 
 ### Job Names
 
@@ -70,7 +74,7 @@ A multipart encoded form POST to the Job Service URL creates a new job. There is
 | parameter | description | optionality |
 |---|---|---|
 | entry_job[input] | a media file to be processed | required |
-| entry_job[name] | the job name o process the file. Valid names are no-op, pa-pack, ct-pack-linear, ct-pack-hybrid, and current-pack | optional: if no name defined, current-pack is assumed |
+| entry_job[name] | the job name o process the file. Valid names are multiface, no-op, ct-pack-linear, and ct-pack-hybrid | optional: if no name defined, multiface is assumed |
 
 The Accept request header should be Accept: application/json. By default the server will try to guess the media's content type based on its filename.
 
@@ -118,7 +122,8 @@ Each media entry (inputs and results) in the output of the Job’s content list 
 Example CSV-encoded result representation data:
 
 ```json
-"representations": [
+{
+  "representations": [
     {
         "content_type": "application/vnd.affectiva.session.v0+json",
         "file_name": "face-video.mp4-metrics.json",
@@ -131,7 +136,8 @@ Example CSV-encoded result representation data:
         "media": "URL to download this representation's media",
         "self": "URL of this representation"
     }
-]
+  ]
+}
 ```
 
 ### Media Content Types
