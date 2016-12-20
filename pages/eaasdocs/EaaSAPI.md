@@ -65,7 +65,7 @@ Jobs start in the queued state and stay in that state until they have been picke
 
 Clients should use the job service only via a URL provided by the Index Service.  The Cloud API Overview describes how to use the Index Service.
 
-In the JSON­formatted index, the Job Service URL will be the value associated with the key "jobs".
+In the JSON-formatted index, the Job Service URL will be the value associated with the key "jobs".
 
 ### Creating Jobs
 
@@ -74,7 +74,7 @@ A multipart encoded form POST to the Job Service URL creates a new job. There is
 | parameter | description | optionality |
 |---|---|---|
 | entry_job[input] | a media file to be processed | required |
-| entry_job[name] | the job name o process the file. Valid names are multiface, no-op, ct-pack-linear, and ct-pack-hybrid | optional: if no name defined, multiface is assumed |
+| entry_job[name] | the job name to process the media. Valid names are multiface, no-op, ct-pack-linear, and ct-pack-hybrid | optional: if no name is provided, multiface is assumed |
 
 The Accept request header should be Accept: application/json. By default the server will try to guess the media's content type based on its filename.
 
