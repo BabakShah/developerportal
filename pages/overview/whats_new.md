@@ -14,11 +14,19 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ---
 
-***Dec 2016***
+***Jan 2017***
+
+##### Windows SDK 3.3
+
+* Added Brightness metric to measure the face lighting condition. See documentation for affdex::Face::faceQuality
 
 ##### Windows SDK 3.2
 
-* blurb
+* Revised Nose Wrinkle and Smirk models to lower their false positive rates
+* Updated Valence model to recalibrate the low Valence range
+* Updated Expressiveness to use the new Nose Wrinkle model
+* Updated Fear, Surprise, Anger, Disgust, Sadness, and Contempt emotions to include latest expression models
+
 
 ---
 
