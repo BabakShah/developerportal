@@ -56,7 +56,7 @@ Facial images can be captured from different sources. For each of the different 
 ##### 4. Check out sample applications on GitHub
 Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/cpp-sdk-samples)
 
-##### 5. Check out [AffdexMe](https://download.affectiva.com/windows/AffdexMe-1106-win32.exe)
+##### 5. Check out [AffdexMe](https://download.affectiva.com/windows/AffdexMe-3.3.0-1223-win32.exe)
 AffdexMe is an open source application that demonstrates the use of the Affdex SDK. It uses the camera connected to your device to view, process and analyze live video of your face. Start the app and you will see your own face on the screen, and metrics describing your facial expression of emotion.
 
 ## Class documentation
