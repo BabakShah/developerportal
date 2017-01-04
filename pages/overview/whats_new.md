@@ -18,7 +18,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ##### Windows SDK 3.3
 
-* Added Brightness metric to measure the face lighting condition. See documentation for affdex::Face::faceQuality
+* Added support for "brightness" metric to measure the face lighting condition. See documentation for faceQuality field in Face class [[c++]({{ site.baseurl }}/pages/platforms/v3_3/windows/classdocs/affdex-native/classaffdex_1_1_face.html)], and FaceQuality property in Face class [[c#]({{ site.baseurl }}/pages/platforms/v3_3/windows/classdocs/Affdex/html/6ba06b80-e3de-63ab-3985-5555663602f7.htm)]
 
 ##### Windows SDK 3.2
 
