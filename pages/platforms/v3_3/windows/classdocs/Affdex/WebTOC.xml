@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="6a3f6702-898a-4835-88e4-8a2429ea454b" Title="Affdex" Url="html/b8038333-b12e-8ea1-a2ce-74c8d611fa89.htm">
-    <HelpTOCNode Id="3b4bf54b-c037-44c0-a0e0-8b41dfc1c8c7" Title="AffdexException Class" Url="html/35a0541d-b78d-9d83-429d-6bc6c6d38004.htm">
-      <HelpTOCNode Id="16d05d2b-2557-46fd-b235-9d9b45e0305d" Title="AffdexException Constructor " Url="html/8986af36-45f5-73de-e0eb-de9f7d5cde1c.htm">
+  <HelpTOCNode Id="c5cd7f99-8b21-4813-a357-eae95bfffc32" Title="Affdex" Url="html/b8038333-b12e-8ea1-a2ce-74c8d611fa89.htm">
+    <HelpTOCNode Id="da3d381d-c0dc-4d49-8f3f-3d23d7b08cd4" Title="AffdexException Class" Url="html/35a0541d-b78d-9d83-429d-6bc6c6d38004.htm">
+      <HelpTOCNode Id="e0ce945c-17d1-41e7-9b6f-b3a5279a6654" Title="AffdexException Constructor " Url="html/8986af36-45f5-73de-e0eb-de9f7d5cde1c.htm">
         <HelpTOCNode Title="AffdexException Constructor (String)" Url="html/77bc58ad-d742-e3c7-339e-66476551f79f.htm" />
         <HelpTOCNode Title="AffdexException Constructor (String, Exception)" Url="html/98b46099-9c84-a0b5-aea6-465db8e89e86.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="90fc0a44-56ed-43d3-9ac2-f761263a5140" Title="AffdexException Methods" Url="html/552db8bc-e668-86b7-0809-776c1255612d.htm">
+      <HelpTOCNode Id="e5e11827-e756-42af-9dcf-c6046e155358" Title="AffdexException Methods" Url="html/552db8bc-e668-86b7-0809-776c1255612d.htm">
         <HelpTOCNode Title="GetAffdexExceptionMessage Method " Url="html/7c3947b1-e9b0-08cd-1268-4eb9a087a620.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="AffdexException Properties" Url="html/a820f8fd-9968-3393-d4f6-0eff53778cb4.htm" />
     </HelpTOCNode>
     <HelpTOCNode Title="Age Enumeration" Url="html/c586285a-087d-d999-4465-b4f7658df0f4.htm" />
-    <HelpTOCNode Id="fad76468-a94e-45f7-b01a-99d9f19d45e8" Title="Appearance Class" Url="html/d9d5f2ee-464c-105a-a607-1dc95fbdd0af.htm">
+    <HelpTOCNode Id="ac5df7e0-93d3-4178-bc98-ade481ee33d7" Title="Appearance Class" Url="html/d9d5f2ee-464c-105a-a607-1dc95fbdd0af.htm">
       <HelpTOCNode Title="Appearance Constructor " Url="html/19dda12f-0f88-d449-9c9c-fc1eec52356d.htm" />
       <HelpTOCNode Title="Appearance Methods" Url="html/8ae6cd70-98cc-63d5-fd9c-e5e1d5472a22.htm" />
-      <HelpTOCNode Id="2dc6242f-58b5-40d8-be86-ad1f5d40cdca" Title="Appearance Properties" Url="html/1b46dea0-af0e-fb2a-7c40-7ccabb22417c.htm">
+      <HelpTOCNode Id="c14b3715-cf84-493b-a98e-25dd34179387" Title="Appearance Properties" Url="html/1b46dea0-af0e-fb2a-7c40-7ccabb22417c.htm">
         <HelpTOCNode Title="Age Property " Url="html/16b10138-9123-b1c0-7f24-2fbe71345d7d.htm" />
         <HelpTOCNode Title="Ethnicity Property " Url="html/5164a8f2-20be-a7fe-1179-4e003b1124a4.htm" />
         <HelpTOCNode Title="Gender Property " Url="html/51c61bb2-bf64-5bc8-e330-2dc29df179d8.htm" />
         <HelpTOCNode Title="Glasses Property " Url="html/d5aefe0f-89e7-5689-0926-846a6ac5f1c0.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="1d57062a-0ff4-4ea5-a64e-9bdc681b9375" Title="CameraDetector Class" Url="html/1d7a795f-92f8-e0e5-f48a-79d1d1941091.htm">
-      <HelpTOCNode Id="4dda7b82-40df-42ac-b572-4dc96cf1bd7f" Title="CameraDetector Constructor " Url="html/02795d43-120e-0e43-2c2c-42e39cfcd8eb.htm">
+    <HelpTOCNode Id="eed23736-3d91-406d-8408-f1d0219bc89b" Title="CameraDetector Class" Url="html/1d7a795f-92f8-e0e5-f48a-79d1d1941091.htm">
+      <HelpTOCNode Id="bf170f07-aab9-4cc5-9acd-ba1a1466fc34" Title="CameraDetector Constructor " Url="html/02795d43-120e-0e43-2c2c-42e39cfcd8eb.htm">
         <HelpTOCNode Title="CameraDetector Constructor " Url="html/63b794d9-d92a-2be5-84a5-e8221f1b8abd.htm" />
         <HelpTOCNode Title="CameraDetector Constructor (Int32, Double, Double)" Url="html/7020da62-fbd6-8f7d-2425-3a80037701fa.htm" />
         <HelpTOCNode Title="CameraDetector Constructor (Int32, Double, Double, UInt32, FaceDetectorMode)" Url="html/6112e453-f91b-f856-8171-365e60700fa0.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ecfa5f7b-8f7e-4687-bec6-6e250d1ae2c8" Title="CameraDetector Methods" Url="html/743fc2bd-d432-aac5-0c0a-1fa47785f2ef.htm">
+      <HelpTOCNode Id="d2ffbcaa-7b0c-4359-9e01-2ec71268cbcb" Title="CameraDetector Methods" Url="html/743fc2bd-d432-aac5-0c0a-1fa47785f2ef.htm">
         <HelpTOCNode Title="setCameraFPS Method " Url="html/c0196851-105c-cf2d-537e-41dbce20f456.htm" />
         <HelpTOCNode Title="setCameraId Method " Url="html/1ab65470-14ba-13fa-291d-63793c45018f.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="32e0d5bd-f37a-4bf7-b802-10022e15485e" Title="Detector Class" Url="html/e77adb8c-90bf-d7f1-5c6c-2f3c419b5c61.htm">
+    <HelpTOCNode Id="8cbc6cfb-188d-4f56-a6e1-7d653a5aed6c" Title="Detector Class" Url="html/e77adb8c-90bf-d7f1-5c6c-2f3c419b5c61.htm">
       <HelpTOCNode Title="Detector Constructor " Url="html/bafa86a0-0d4f-3122-d8b4-9eed123c94ad.htm" />
-      <HelpTOCNode Id="5b3e9f81-40f1-45bf-94b4-39a7fa180486" Title="Detector Methods" Url="html/3bfd71ee-9c7e-bcf3-fa87-220d05ab7ed8.htm">
+      <HelpTOCNode Id="e6d1df81-970c-42dc-8767-7005a15e5659" Title="Detector Methods" Url="html/3bfd71ee-9c7e-bcf3-fa87-220d05ab7ed8.htm">
         <HelpTOCNode Title="Dispose Method " Url="html/db75c109-6eee-b161-cb9e-96c45e9a8dd6.htm" />
         <HelpTOCNode Title="getDetectAge Method " Url="html/1640730c-a813-3b2b-6470-9cd7c33670ae.htm" />
         <HelpTOCNode Title="getDetectAnger Method " Url="html/37059d17-0858-aaca-02e2-01b3c56d47bb.htm" />
@@ -118,7 +118,7 @@
         <HelpTOCNode Title="setFaceListener Method " Url="html/8503a17d-9ea9-1503-3a01-54948b9cc1c6.htm" />
         <HelpTOCNode Title="setImageListener Method " Url="html/2d7c04d0-fbd9-4948-146c-b13790ff5724.htm" />
         <HelpTOCNode Title="setLicensePath Method " Url="html/1bb65e9c-e74b-1be8-7a2e-e9f723af9f02.htm" />
-        <HelpTOCNode Id="0a93bf76-0029-4db8-8213-cbc31fb8a65c" Title="setLicenseString Method " Url="html/6ee64faf-c72e-fc60-9227-0051bf66c928.htm">
+        <HelpTOCNode Id="af4d79a7-34f3-43c2-be05-865640925d33" Title="setLicenseString Method " Url="html/6ee64faf-c72e-fc60-9227-0051bf66c928.htm">
           <HelpTOCNode Title="setLicenseString Method (Byte[])" Url="html/44811370-38d7-f168-8ec9-957f8719a6ea.htm" />
           <HelpTOCNode Title="setLicenseString Method (String)" Url="html/18cce5ef-18c5-4623-eb0d-b2555bac1c2f.htm" />
         </HelpTOCNode>
@@ -128,10 +128,10 @@
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="Emoji Enumeration" Url="html/fefec3fe-63af-49d9-3049-99eb7094650a.htm" />
-    <HelpTOCNode Id="9af80f76-52d5-4760-b925-a9b1bec94119" Title="Emojis Class" Url="html/3104e9db-bc67-b620-0e20-a251d1c06b47.htm">
+    <HelpTOCNode Id="37ea66ec-089d-4a9e-92d7-f5168a2988c7" Title="Emojis Class" Url="html/3104e9db-bc67-b620-0e20-a251d1c06b47.htm">
       <HelpTOCNode Title="Emojis Constructor " Url="html/b4adeadb-ad16-2828-3d03-b6f0e76cfb97.htm" />
       <HelpTOCNode Title="Emojis Methods" Url="html/63a6ca71-e7b7-fce9-2f10-55da84d01598.htm" />
-      <HelpTOCNode Id="6787765c-93f4-4c8f-ae61-01c50256fb5b" Title="Emojis Properties" Url="html/e883e5e1-a16c-6b78-d599-d723548cccc7.htm">
+      <HelpTOCNode Id="574ce80c-df98-4a14-b324-28f48f545e6f" Title="Emojis Properties" Url="html/e883e5e1-a16c-6b78-d599-d723548cccc7.htm">
         <HelpTOCNode Title="disappointed Property " Url="html/b6a4f4d6-f35a-af96-3143-3382bd3e1fb0.htm" />
         <HelpTOCNode Title="dominantEmoji Property " Url="html/95613d8b-30f2-292f-b577-a229cee67eb3.htm" />
         <HelpTOCNode Title="flushed Property " Url="html/be6c3bf0-d15f-11e8-041c-4bdbed612ec4.htm" />
@@ -147,10 +147,10 @@
         <HelpTOCNode Title="wink Property " Url="html/84940b45-ac27-8ce3-dae9-ccb3949bb6cd.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="09ef5d6f-04fe-4e37-aac4-c307cbb11b02" Title="Emotions Class" Url="html/9a91bf5d-8e50-6614-c638-00b4d1b60255.htm">
+    <HelpTOCNode Id="185846ad-7649-4f5f-a7fc-9045933c6552" Title="Emotions Class" Url="html/9a91bf5d-8e50-6614-c638-00b4d1b60255.htm">
       <HelpTOCNode Title="Emotions Constructor " Url="html/d04c578a-8dfa-7d9a-b1e7-609a15dd63fb.htm" />
       <HelpTOCNode Title="Emotions Methods" Url="html/1e89924b-a5e6-9ad8-1aec-51f968b721b7.htm" />
-      <HelpTOCNode Id="521a6d95-9697-44b9-ac9e-aa6af9164069" Title="Emotions Properties" Url="html/ed155d62-debd-7762-4950-15b49d0520fe.htm">
+      <HelpTOCNode Id="1e295c49-0eee-4082-927d-ebf57da0d244" Title="Emotions Properties" Url="html/ed155d62-debd-7762-4950-15b49d0520fe.htm">
         <HelpTOCNode Title="Anger Property " Url="html/81ddc69f-227e-bfe2-8bb8-70142c3dfe8b.htm" />
         <HelpTOCNode Title="Contempt Property " Url="html/b69f1f29-587a-c5fa-0b52-95ad600d8135.htm" />
         <HelpTOCNode Title="Disgust Property " Url="html/02d0a94f-b670-91a7-43de-4812071f6923.htm" />
@@ -163,10 +163,10 @@
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="Ethnicity Enumeration" Url="html/8dd25c8b-1540-671b-55d8-47cdf6105ce6.htm" />
-    <HelpTOCNode Id="850b2feb-fad5-46bb-a22a-eca4a885172e" Title="Expressions Class" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm">
+    <HelpTOCNode Id="f927a983-48c3-40dd-ba57-0e91d5ea2062" Title="Expressions Class" Url="html/c2356a25-c7a9-25f6-516a-a2f99ccdca3b.htm">
       <HelpTOCNode Title="Expressions Constructor " Url="html/4c57f5c0-bdcb-d3fc-7d6b-48797a1d77aa.htm" />
       <HelpTOCNode Title="Expressions Methods" Url="html/7197e3e9-e3fc-bb2f-b2d5-34722bae646c.htm" />
-      <HelpTOCNode Id="43ed189c-5f00-464e-8c75-26c930d2af4f" Title="Expressions Properties" Url="html/18b23007-e9b2-e71c-67ad-cffb6fff4c30.htm">
+      <HelpTOCNode Id="ae230ab5-b7df-4dcd-8489-9f28d9f73643" Title="Expressions Properties" Url="html/18b23007-e9b2-e71c-67ad-cffb6fff4c30.htm">
         <HelpTOCNode Title="Attention Property " Url="html/ff466ca0-7e3c-3ba8-76af-6433774f7e91.htm" />
         <HelpTOCNode Title="BrowFurrow Property " Url="html/028ca3c8-ed6c-d99f-2fa6-6edeb451f83d.htm" />
         <HelpTOCNode Title="BrowRaise Property " Url="html/f13a7936-25e7-a0b0-a853-47aeeb7fc18a.htm" />
@@ -190,12 +190,12 @@
         <HelpTOCNode Title="UpperLipRaise Property " Url="html/fd67678a-8226-a4bc-2d5d-94d8027fe7c1.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c4cbd55b-f4b4-4081-875b-563ad0b073c1" Title="Face Class" Url="html/6ba06b80-e3de-63ab-3985-5555663602f7.htm">
+    <HelpTOCNode Id="e3dfb23a-be38-4532-af73-140986d9a484" Title="Face Class" Url="html/6ba06b80-e3de-63ab-3985-5555663602f7.htm">
       <HelpTOCNode Title="Face Constructor " Url="html/8de4cef3-a6d0-446e-e427-0f0a6d2f2634.htm" />
-      <HelpTOCNode Id="96d5f3b7-0be0-432d-b4bf-1be73e52dab3" Title="Face Methods" Url="html/a1a22e16-0ca8-5857-a6ae-7cf5971a2ee2.htm">
+      <HelpTOCNode Id="c14ab78c-41d0-4a8e-813e-56251a2ecb44" Title="Face Methods" Url="html/a1a22e16-0ca8-5857-a6ae-7cf5971a2ee2.htm">
         <HelpTOCNode Title="Dispose Method " Url="html/4f2f6fb0-b9a0-9c8f-c76e-446c91378c33.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ea006408-a68a-40fb-878d-3e954c1f89dc" Title="Face Properties" Url="html/cf730829-6ee7-025d-449e-1c1cc0d553dd.htm">
+      <HelpTOCNode Id="d16bc5d1-5209-4f77-a571-8317127d7b43" Title="Face Properties" Url="html/cf730829-6ee7-025d-449e-1c1cc0d553dd.htm">
         <HelpTOCNode Title="Appearance Property " Url="html/9286e9ca-cea6-9d74-a6c0-093349a3d3a4.htm" />
         <HelpTOCNode Title="Emojis Property " Url="html/50cf452a-3579-78ba-8b89-66b66fbf499e.htm" />
         <HelpTOCNode Title="Emotions Property " Url="html/12edc6a7-cd35-0bf2-252c-12e5bf02d4de.htm" />
@@ -207,34 +207,34 @@
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="FaceDetectorMode Enumeration" Url="html/bdd475a6-8f7c-741f-cb3a-50a6df57c3a6.htm" />
-    <HelpTOCNode Id="97b1d398-4e4c-4898-8939-ef545aac53a9" Title="FaceListener Interface" Url="html/0ac8bd67-3ba3-050a-3646-0bcce794bec0.htm">
-      <HelpTOCNode Id="c17df1b9-a8f6-4e24-bc71-51b64fa1c46f" Title="FaceListener Methods" Url="html/7039fdb6-9e25-3b4a-f70c-43755bb57fa1.htm">
+    <HelpTOCNode Id="0514f98d-407c-403b-879b-8cd6d23f343c" Title="FaceListener Interface" Url="html/0ac8bd67-3ba3-050a-3646-0bcce794bec0.htm">
+      <HelpTOCNode Id="abfdbda9-5456-4854-b93b-954578dc3799" Title="FaceListener Methods" Url="html/7039fdb6-9e25-3b4a-f70c-43755bb57fa1.htm">
         <HelpTOCNode Title="onFaceFound Method " Url="html/c81e90ec-a78c-941b-303e-02b125b06a0d.htm" />
         <HelpTOCNode Title="onFaceLost Method " Url="html/b3101bb3-ea5d-d15e-7e05-601733ab4df2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="6a24a5e3-7d5f-4afe-a886-fa727edeac2e" Title="FaceQuality Class" Url="html/0b57a8b8-b9de-4dfc-0037-08a18df51c35.htm">
+    <HelpTOCNode Id="b5a03dc1-15b3-4a64-afcf-887daf5eeb84" Title="FaceQuality Class" Url="html/0b57a8b8-b9de-4dfc-0037-08a18df51c35.htm">
       <HelpTOCNode Title="FaceQuality Constructor " Url="html/8d04f676-5ad7-1aef-8d07-edf94b369f71.htm" />
       <HelpTOCNode Title="FaceQuality Methods" Url="html/027bc483-5440-5e6e-e75e-504fd091870b.htm" />
-      <HelpTOCNode Id="be47aea1-6dd4-4f02-90e4-1a7da56a9468" Title="FaceQuality Properties" Url="html/4d0b0af4-37b2-a679-db9c-bc2fa8b36bdc.htm">
+      <HelpTOCNode Id="5a69bb1d-add6-427f-a6e3-4b93728d2d35" Title="FaceQuality Properties" Url="html/4d0b0af4-37b2-a679-db9c-bc2fa8b36bdc.htm">
         <HelpTOCNode Title="Brightness Property " Url="html/ea88fa03-264a-37d0-1273-3e21209c019b.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="37095531-c2f6-4234-a084-3a8e34831ffd" Title="FeaturePoint Class" Url="html/0b0c5d5a-9928-8aee-4a34-4ec9527b75b6.htm">
+    <HelpTOCNode Id="d5152281-6176-4298-96da-9e50212204ce" Title="FeaturePoint Class" Url="html/0b0c5d5a-9928-8aee-4a34-4ec9527b75b6.htm">
       <HelpTOCNode Title="FeaturePoint Constructor " Url="html/f8604371-1b51-0ea9-bf6f-455bdc2ea784.htm" />
       <HelpTOCNode Title="FeaturePoint Methods" Url="html/15d4c46f-88ba-af3a-d92f-5e06280d5939.htm" />
-      <HelpTOCNode Id="f6e69ca6-f59d-4ece-952d-68265cf1873a" Title="FeaturePoint Properties" Url="html/c7482b82-eff0-5432-8b69-8a7a25d579fb.htm">
+      <HelpTOCNode Id="19ade578-bfe9-413c-8c22-488032fd8d68" Title="FeaturePoint Properties" Url="html/c7482b82-eff0-5432-8b69-8a7a25d579fb.htm">
         <HelpTOCNode Title="Id Property " Url="html/7b7ebf2b-1e8e-7ed5-669b-4f16e0d95b46.htm" />
         <HelpTOCNode Title="X Property " Url="html/db0f0dab-8704-e01a-0984-9412d7bc8da1.htm" />
         <HelpTOCNode Title="Y Property " Url="html/4e29319e-01ef-1017-9178-abb51aab8f4d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="260992ed-a1b2-4a36-a585-46b49a5db58d" Title="Frame Class" Url="html/cd246c18-3a71-0684-a69f-c70e8124b5e6.htm">
-      <HelpTOCNode Id="f2e9dc11-6378-427b-ba1a-6907cfe4b739" Title="Frame Constructor " Url="html/735a2002-c0f7-fd06-3cee-025388b4589d.htm">
+    <HelpTOCNode Id="f50b93e0-77d9-45aa-ad00-b260273a449c" Title="Frame Class" Url="html/cd246c18-3a71-0684-a69f-c70e8124b5e6.htm">
+      <HelpTOCNode Id="0d63f009-6ea8-4f12-a558-6b7fb51d8f6c" Title="Frame Constructor " Url="html/735a2002-c0f7-fd06-3cee-025388b4589d.htm">
         <HelpTOCNode Title="Frame Constructor (Int32, Int32, Byte[], Frame.COLOR_FORMAT)" Url="html/3c1c822d-3d2d-40bf-f2d1-be8a30cc0860.htm" />
         <HelpTOCNode Title="Frame Constructor (Int32, Int32, Byte[], Frame.COLOR_FORMAT, Single)" Url="html/26e8f15d-bf23-34fb-1ad5-bf280bc9c1ec.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="dc9c8dff-88fe-43d3-b7ca-3f15e7859728" Title="Frame Methods" Url="html/c2f05c89-5e53-adc9-fa69-cbe281d75c04.htm">
+      <HelpTOCNode Id="8f806a69-5509-4e34-93b3-a97cbf3315de" Title="Frame Methods" Url="html/c2f05c89-5e53-adc9-fa69-cbe281d75c04.htm">
         <HelpTOCNode Title="Dispose Method " Url="html/c1612247-8a6d-5e0f-11a1-6b66b4cc3655.htm" />
         <HelpTOCNode Title="getBGRByteArray Method " Url="html/1e1fbe50-fb5b-2872-4d2f-7d0a1fbe3627.htm" />
         <HelpTOCNode Title="getBGRByteArrayLength Method " Url="html/5ef40977-347c-2fe3-ea17-82056bea4289.htm" />
@@ -246,64 +246,64 @@
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="Frame.COLOR_FORMAT Enumeration" Url="html/a1445d0f-454e-dbd5-fa6c-ce461c2f81fb.htm" />
-    <HelpTOCNode Id="400114e3-3a5b-4ebb-930b-76f271f3a183" Title="FrameDetector Class" Url="html/bd91c0f9-9c20-5ef9-0df9-565cb08997b9.htm">
-      <HelpTOCNode Id="83684826-8097-429b-b1fe-0e674d1e0953" Title="FrameDetector Constructor " Url="html/a8ca2ac7-e6fd-d6c6-d89b-22989b18ca2d.htm">
+    <HelpTOCNode Id="68dbf10c-f0d2-4bde-a14b-b9d7a8133466" Title="FrameDetector Class" Url="html/bd91c0f9-9c20-5ef9-0df9-565cb08997b9.htm">
+      <HelpTOCNode Id="ae8def09-a6fd-4638-9a9e-51aefc025b21" Title="FrameDetector Constructor " Url="html/a8ca2ac7-e6fd-d6c6-d89b-22989b18ca2d.htm">
         <HelpTOCNode Title="FrameDetector Constructor (Int32)" Url="html/844abf40-42af-5eb9-316d-30e0b9bd7540.htm" />
         <HelpTOCNode Title="FrameDetector Constructor (Int32, Single, UInt32, FaceDetectorMode)" Url="html/4500a270-5ee1-fa53-b275-dd3ebde6d5b9.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="3d7b1813-3b0a-4591-94ca-5c3425f8d3c3" Title="FrameDetector Methods" Url="html/340bed7e-5abe-bb59-52ea-bdcfdde35370.htm">
+      <HelpTOCNode Id="7d49801d-3313-491f-97d1-6b51ce2be7f7" Title="FrameDetector Methods" Url="html/340bed7e-5abe-bb59-52ea-bdcfdde35370.htm">
         <HelpTOCNode Title="process Method " Url="html/da70edaf-1333-1f9c-1675-67893736cb19.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="Gender Enumeration" Url="html/7cc24380-2383-0ee2-8d82-118d35ff664f.htm" />
     <HelpTOCNode Title="Glasses Enumeration" Url="html/5f8c117c-6c47-ebd0-e315-713b92699003.htm" />
-    <HelpTOCNode Id="c15e0c37-9ca2-471b-a900-ec6e77d7e256" Title="ImageListener Interface" Url="html/01540d38-9ade-2974-0182-44633d8b0722.htm">
-      <HelpTOCNode Id="0fe05483-8fae-4efb-9850-90d96b7ef345" Title="ImageListener Methods" Url="html/a310d3e7-0e6e-6043-337e-6103aa9e1064.htm">
+    <HelpTOCNode Id="cbd3c741-220c-41d2-a465-ec67c756d16a" Title="ImageListener Interface" Url="html/01540d38-9ade-2974-0182-44633d8b0722.htm">
+      <HelpTOCNode Id="414aa3ee-b132-4d99-aff4-8dd3aaf5c49e" Title="ImageListener Methods" Url="html/a310d3e7-0e6e-6043-337e-6103aa9e1064.htm">
         <HelpTOCNode Title="onImageCapture Method " Url="html/7c72d640-9c52-b194-64bc-43c9f516348d.htm" />
         <HelpTOCNode Title="onImageResults Method " Url="html/29b31fa9-c880-2fc1-d033-d4d8ead4e8fa.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="93ddabc7-d96a-4060-96dd-49e7ad9af787" Title="Measurements Class" Url="html/250758ee-f31b-3c62-f84a-0b5504debb9b.htm">
+    <HelpTOCNode Id="5a74214e-121a-4707-bb99-ad32cee4ec50" Title="Measurements Class" Url="html/250758ee-f31b-3c62-f84a-0b5504debb9b.htm">
       <HelpTOCNode Title="Measurements Constructor " Url="html/2fe0674f-55b7-a6fc-7907-f2c3fad683b8.htm" />
-      <HelpTOCNode Id="0f01e34c-ac8a-46eb-aede-983144d30bd9" Title="Measurements Fields" Url="html/4c6e3a01-4ba2-6f21-6357-ea127852a23b.htm">
+      <HelpTOCNode Id="dbc2b1d6-d6f1-4b11-ac63-b85cb8b9c470" Title="Measurements Fields" Url="html/4c6e3a01-4ba2-6f21-6357-ea127852a23b.htm">
         <HelpTOCNode Title="Orientation Field" Url="html/808c8ef3-df64-66da-0756-9694a61965d7.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="Measurements Methods" Url="html/a9670b71-74b6-3754-db8b-a79cb3e42fa1.htm" />
-      <HelpTOCNode Id="d7431c05-6815-421e-bc4b-ad5c9601fbc1" Title="Measurements Properties" Url="html/0c96d963-271e-7670-f233-99dbcde43107.htm">
+      <HelpTOCNode Id="9816a081-1319-4820-a79d-5c0363644dbf" Title="Measurements Properties" Url="html/0c96d963-271e-7670-f233-99dbcde43107.htm">
         <HelpTOCNode Title="InterocularDistance Property " Url="html/b35cd17c-ed64-74bf-bd7b-1c68e749b394.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="200f1306-4bcc-44cd-a12c-88e70719eeec" Title="Orientation Class" Url="html/da9654eb-f118-91b7-5fb0-5595664a9ea5.htm">
+    <HelpTOCNode Id="d02362cd-3d0b-4c56-b73e-7c463d6f76a4" Title="Orientation Class" Url="html/da9654eb-f118-91b7-5fb0-5595664a9ea5.htm">
       <HelpTOCNode Title="Orientation Constructor " Url="html/7b290df6-af7a-942e-45ec-e33b68970f85.htm" />
       <HelpTOCNode Title="Orientation Methods" Url="html/8bc8e195-0ea0-f8b4-573f-abefd3a8b3f5.htm" />
-      <HelpTOCNode Id="5dbdc416-fd08-4313-892f-a94fe73dc47b" Title="Orientation Properties" Url="html/30f2a433-ec22-a004-b424-2c8f9e6ca5ec.htm">
+      <HelpTOCNode Id="6d92e34e-9dae-4b30-ba98-c816b9579e3b" Title="Orientation Properties" Url="html/30f2a433-ec22-a004-b424-2c8f9e6ca5ec.htm">
         <HelpTOCNode Title="Pitch Property " Url="html/8e5a6c41-9c68-372c-cc20-164713dd2087.htm" />
         <HelpTOCNode Title="Roll Property " Url="html/e39500f8-404a-6c2e-3372-b2856c24a914.htm" />
         <HelpTOCNode Title="Yaw Property " Url="html/e0fc8cbd-c563-eeda-3cbb-b7ba3dd8637e.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="9941d286-4e25-4773-bafc-64a7c1c782a3" Title="PhotoDetector Class" Url="html/1bdd6e83-b415-70d3-5b67-2697a768b717.htm">
-      <HelpTOCNode Id="cd92ed9e-2b91-49cf-a038-13d1a556efc6" Title="PhotoDetector Constructor " Url="html/b5e7fac7-dc34-b87b-966a-77313fef3216.htm">
+    <HelpTOCNode Id="f12e3e93-5635-4a44-a8c5-3b591bbfbe4d" Title="PhotoDetector Class" Url="html/1bdd6e83-b415-70d3-5b67-2697a768b717.htm">
+      <HelpTOCNode Id="c6bbdbd9-a982-42de-9c48-a84a11cd9841" Title="PhotoDetector Constructor " Url="html/b5e7fac7-dc34-b87b-966a-77313fef3216.htm">
         <HelpTOCNode Title="PhotoDetector Constructor " Url="html/99ea111f-37b4-ac14-b1c4-708f001168a4.htm" />
         <HelpTOCNode Title="PhotoDetector Constructor (UInt32, FaceDetectorMode)" Url="html/707d0c1d-d924-0c81-a544-86793117e50d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2e07aa3f-8622-4378-8916-185bebec3fb5" Title="PhotoDetector Methods" Url="html/8321afec-204c-d599-103f-3a1a784b5a18.htm">
+      <HelpTOCNode Id="f74af04a-b0c2-47ae-b39a-c80558187f95" Title="PhotoDetector Methods" Url="html/8321afec-204c-d599-103f-3a1a784b5a18.htm">
         <HelpTOCNode Title="process Method " Url="html/7da26dd9-6142-945f-9a24-631301d1e773.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5cea3e5c-291e-4a72-985e-9c830037a32f" Title="ProcessStatusListener Interface" Url="html/d9d08bc0-b022-4114-64d1-4ef3ed7e1bab.htm">
-      <HelpTOCNode Id="8f9fbda8-d492-41b1-9b33-fcb0b1e7212e" Title="ProcessStatusListener Methods" Url="html/0355dca1-29e7-782f-ea37-7c4c30402b4a.htm">
+    <HelpTOCNode Id="c90a7e70-ff63-404c-8e1d-46c2eecd00dd" Title="ProcessStatusListener Interface" Url="html/d9d08bc0-b022-4114-64d1-4ef3ed7e1bab.htm">
+      <HelpTOCNode Id="c26cd716-2ccc-4bc4-a16c-b237046f7805" Title="ProcessStatusListener Methods" Url="html/0355dca1-29e7-782f-ea37-7c4c30402b4a.htm">
         <HelpTOCNode Title="onProcessingException Method " Url="html/7856167f-5d88-b7ef-d3df-bf7274ae48a1.htm" />
         <HelpTOCNode Title="onProcessingFinished Method " Url="html/ccfe9fc1-88b6-fabf-8bc1-1160264f449a.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="19a4385b-fee0-405c-9832-83928b4cf9d4" Title="VideoDetector Class" Url="html/6e4b1996-68bf-4750-439a-731c2be17537.htm">
-      <HelpTOCNode Id="fc0a29e0-cd2c-447d-b622-4460a3fb240d" Title="VideoDetector Constructor " Url="html/526793a6-5853-c6e3-c6c8-d55b71a9d9a3.htm">
+    <HelpTOCNode Id="a893a5d2-08b6-430f-8397-2c5b49bafbf9" Title="VideoDetector Class" Url="html/6e4b1996-68bf-4750-439a-731c2be17537.htm">
+      <HelpTOCNode Id="341eb7eb-a334-4f4a-9714-7155f1ac2521" Title="VideoDetector Constructor " Url="html/526793a6-5853-c6e3-c6c8-d55b71a9d9a3.htm">
         <HelpTOCNode Title="VideoDetector Constructor " Url="html/49841bec-ac6c-ab7e-099e-55761a1ea1b6.htm" />
         <HelpTOCNode Title="VideoDetector Constructor (Double)" Url="html/4e975602-6968-bbb8-fff6-d065371ce5a7.htm" />
         <HelpTOCNode Title="VideoDetector Constructor (Double, UInt32, FaceDetectorMode)" Url="html/ab2ca345-2a1c-f765-da6e-f9fce05516c3.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a4172b9a-96ff-48ec-85fc-e259eed3a9d2" Title="VideoDetector Methods" Url="html/5a9c4e25-62d7-f55c-9fd9-237b0d6871f6.htm">
+      <HelpTOCNode Id="875b9845-7b9a-4e00-9edc-b23df2f4a873" Title="VideoDetector Methods" Url="html/5a9c4e25-62d7-f55c-9fd9-237b0d6871f6.htm">
         <HelpTOCNode Title="process Method " Url="html/22a99988-1f6d-3c2b-4eaa-96fa005f50c9.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
