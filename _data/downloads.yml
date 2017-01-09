@@ -225,6 +225,38 @@ platforms:
     salesForcePoIPlatform: Windows
     versions:
       - status: stable
+        release_notes: windows-sdk-33
+        doc: /v3_3/windows/
+        architecture: i386
+        version: "3.3.0-1223"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.3.0-1223-win32.exe
+        size: 18.6 MB
+
+      - status: stable
+        release_notes: windows-sdk-33
+        doc: /v3_3/windows/
+        architecture: x86_64
+        version: "3.3.0-522"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.3.0-522-win64.exe
+        size: 29.4 MB
+
+      - status: legacy
+        release_notes: windows-sdk-32
+        doc: /v3_1_2/windows/
+        architecture: i386
+        version: "3.2.0-1204"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.2.0-1204-win32.exe
+        size: 18.6 MB
+
+      - status: legacy
+        release_notes: windows-sdk-32
+        doc: /v3_1_2/windows/
+        architecture: x86_64
+        version: "3.2.0-515"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.2.0-515-win64.exe
+        size: 29.4 MB
+
+      - status: legacy
         release_notes: windows-sdk-312
         doc: /v3_1_2/windows/
         architecture: i386
@@ -232,7 +264,7 @@ platforms:
         package: https://download.affectiva.com/windows/AffdexSDK-3.1.2-1162-win32.exe
         size: 19.1 MB
 
-      - status: stable
+      - status: legacy
         release_notes: windows-sdk-312
         doc: /v3_1_2/windows/
         architecture: x86_64
@@ -363,7 +395,7 @@ affdexme:
   - name: Windows
     img: /images/download/windows.png
     style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
-    package: https://download.affectiva.com/windows/AffdexMe-1162-win32.exe
+    package: https://download.affectiva.com/windows/AffdexMe-3.3.0-1223-win32.exe
 ################################
 ################################
 ################################
