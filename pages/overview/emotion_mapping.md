@@ -25,12 +25,12 @@ The Valence metric likelihood is calculated based on a set of observed facial ex
 Engagement or expressiveness is a weighted sum of the following facial expressions:
 
 * Brow raise
-* Brow lower
+* Brow furrow
 * Nose wrinkle
 * Lip corner depressor
 * Chin raise
 * Lip pucker
 * Lip press
-* Lips part
+* Mouth open
 * Lip suck
 * Smile
