@@ -383,7 +383,7 @@ platforms:
         size: 19.1 MB
 
   - name: API
-    logo: /images/api.png
+    logo: /images/API.png
     salesForcePoIPlatform: EaaS
     versions:
       - status: stable
