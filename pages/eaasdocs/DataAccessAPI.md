@@ -1,5 +1,5 @@
 ---
-title: MR Data Access API
+title: Market Research Data Access API
 permalink: /dataapi/
 metadata: false
 ---

@@ -382,6 +382,17 @@ platforms:
         package: https://download.affectiva.com/windows/AffdexSDK-build550-win32.exe
         size: 19.1 MB
 
+  - name: API
+    logo: /images/api.png
+    salesForcePoIPlatform: EaaS
+    versions:
+      - status: stable
+        release_notes: web-sdk-31
+        doc: /apioverview/
+        architecture: "REST"
+        version: ""
+        install: /apioverview/
+        size: 0
 affdexme:
   - name: macOS
     img: /images/download/mac_app_store.png

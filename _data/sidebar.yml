@@ -141,7 +141,7 @@ entries:
       print: true
 
       items:
-        - title: Overview
+        - title: Connecting to the APIs
           url: /apioverview/
           audience: developer, designer
           platform: all
@@ -149,7 +149,7 @@ entries:
           version: all
           print: true
 
-        - title: Emotion as a Service
+        - title: Media Processing API
           url: /eaasapi/
           audience: developer, designer
           platform: all
@@ -157,8 +157,16 @@ entries:
           version: all
           print: true
 
-        - title: MR Access
+        - title: Market Research Data API
           url: /dataapi/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Media Annotation API
+          url: /annotationapi/
           audience: developer, designer
           platform: all
           product: all

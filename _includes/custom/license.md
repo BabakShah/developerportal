@@ -1,4 +1,6 @@
-We offer two licensing tiers as governed by our [License Agreement]({{site.baseurl}}/sdklicense/):
+
+
+**For the SDK usage,** we offer two licensing tiers as governed by our [License Agreement]({{site.baseurl}}/sdklicense/):
 
 * **Basic Free License**
 The SDKs are free for use in personal and open source projects and for companies generating less than $1,000,000 in yearly revenue. Exclusions apply for market research and academic research, please see the [license agreement]({{site.baseurl}}/sdklicense/).
@@ -6,3 +8,6 @@ The SDKs are free for use in personal and open source projects and for companies
 * **Enterprise License**
 For companies generating $1,000,000 or more in yearly revenue.
 Please [contact our sales team](mailto:sales@affectiva.com?subject=Affdex SDK Licensing Inquiry, Commercial Application) for more information about getting an enterprise license.
+
+
+**For the API usage,** we charge $1 per min of video processed billed on a monthly basis.
