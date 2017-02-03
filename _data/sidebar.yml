@@ -94,7 +94,7 @@ entries:
           print: true
 
         - title: Linux (C++)
-          url: /v3_1_1/linux/
+          url: /v3_2/linux/
           audience: developer, designer
           platform: all
           product: all
@@ -126,7 +126,7 @@ entries:
           print: true
 
         - title: Windows (C++, C#)
-          url: /v3_3/windows/
+          url: /v3_4/windows/
           audience: developer, designer
           platform: all
           product: all

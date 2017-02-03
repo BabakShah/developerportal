@@ -132,12 +132,25 @@ platforms:
         install: /web/
         size: 12.6 MB
 
-
   - name: linux
     logo: /images/linux.png
     salesForcePoIPlatform: Linux
     versions:
     - status: stable
+      release_notes: linux-sdk-32
+      doc: /v3_2/linux/
+      architecture: CentOS-7 x86_64
+      version: "3.2-2893"
+      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.2-2893-centos-7-64bit.tar.gz
+      size: 23.59 MB
+    - status: stable
+      release_notes: linux-sdk-32
+      doc: /v3_2/linux/
+      architecture: Ubuntu-16.04 x86_64
+      version: "3.2-20"
+      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.2-20-ubuntu-xenial-xerus-64bit.tar.gz
+      size: 23.40 MB
+    - status: legacy
       release_notes: windowslinuxandroid-sdk-311
       doc: /v3_1_1/linux/
       architecture: x86_64
@@ -231,6 +244,22 @@ platforms:
     salesForcePoIPlatform: Windows
     versions:
       - status: stable
+        release_notes: windows-sdk-34
+        doc: /v3_4/windows/
+        architecture: i386
+        version: "3.4.0-1308"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.4.0-1308-win32.exe
+        size: 18.6 MB
+
+      - status: stable
+        release_notes: windows-sdk-34
+        doc: /v3_4/windows/
+        architecture: x86_64
+        version: "3.4.0-550"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.4.0-550-win64.exe
+        size: 29.4 MB
+
+      - status: legacy
         release_notes: windows-sdk-33
         doc: /v3_3/windows/
         architecture: i386
@@ -238,7 +267,7 @@ platforms:
         package: https://download.affectiva.com/windows/AffdexSDK-3.3.0-1223-win32.exe
         size: 18.6 MB
 
-      - status: stable
+      - status: legacy
         release_notes: windows-sdk-33
         doc: /v3_3/windows/
         architecture: x86_64
@@ -412,7 +441,7 @@ affdexme:
   - name: Windows
     img: /images/download/windows.png
     style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
-    package: https://download.affectiva.com/windows/AffdexMe-3.3.0-1223-win32.exe
+    package: https://download.affectiva.com/windows/AffdexMe-1308-win32.exe
 ################################
 ################################
 ################################

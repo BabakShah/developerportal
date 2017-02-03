@@ -14,6 +14,16 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ---
 
+***Feb 2017***
+
+##### Windows SDK 3.4
+* Added data collection APIs. See documentation for [[enableAnalytics()]({{site.baseurl}}/pages/platforms/v3_4/windows/classdocs/affdex-native/classaffdex_1_1_detector.html#af54e0259e824d4425db980546b374497)] and [[disableAnalytics()]({{site.baseurl}}/pages/platforms/v3_4/windows/classdocs/affdex-native/classaffdex_1_1_detector.html#aaac2694f11b4a4308de6f8e3a1127ad7)]
+
+##### Linux SDK 3.2
+* Added data collection APIs. See documentation for [[enableAnalytics()]({{site.baseurl}}/pages/platforms/v3_2/cpp/classdocs/affdex-native/classaffdex_1_1_detector.html#af54e0259e824d4425db980546b374497)] and [[disableAnalytics()]({{site.baseurl}}/pages/platforms/v3_2/cpp/classdocs/affdex-native/classaffdex_1_1_detector.html#aaac2694f11b4a4308de6f8e3a1127ad7)]
+
+---
+
 ***Jan 2017***
 
 ##### Android SDK 3.2
