@@ -28,9 +28,13 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ##### Android SDK 3.2
 * Added support for “brightness” metric to measure the face lighting condition. See documentation for [[qualities]({{ site.baseurl }}/pages/platforms/v3_2/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.html#qualities)] field in [[Face]({{ site.baseurl }}/pages/platforms/v3_2/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.html)] class
-* Fix bug [SDK-1053](https://affectiva.atlassian.net/browse/SDK-1053) - analytics frame records' timestamps should follow detector-specific rules
-* Fix bug [SDK-1003](https://affectiva.atlassian.net/browse/SDK-1003) - SDK should still send start/stop analytics records for non-empty sessions when analytics are disabled
-* Fix bug [SDK-529](https://affectiva.atlassian.net/browse/SDK-529) - native crash if Detector's process method() is called after stop()
+* Revised Nose Wrinkle and Smirk models to lower their false positive rates
+* Updated Valence model to recalibrate the low Valence range
+* Updated Expressiveness to use the new Nose Wrinkle model
+* Updated Fear, Surprise, Anger, Disgust, Sadness, and Contempt emotions to include latest expression models
+* Fixed bug [SDK-1053](https://affectiva.atlassian.net/browse/SDK-1053) - analytics frame records' timestamps should follow detector-specific rules
+* Fixed bug [SDK-1003](https://affectiva.atlassian.net/browse/SDK-1003) - SDK should still send start/stop analytics records for non-empty sessions when analytics are disabled
+* Fixed bug [SDK-529](https://affectiva.atlassian.net/browse/SDK-529) - native crash if Detector's process method() is called after stop()
 
 ##### Windows SDK 3.3
 
@@ -50,7 +54,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ##### Windows SDK 3.1.2
 
-* Fix bug [SDK-763](https://affectiva.atlassian.net/browse/SDK-763) - Added the RGBA, BGRA, YUV_NV21, YUV_I420, YUV_YUY2 color formats for the enum in Frame class
+* Fixed bug [SDK-763](https://affectiva.atlassian.net/browse/SDK-763) - Added the RGBA, BGRA, YUV_NV21, YUV_I420, YUV_YUY2 color formats for the enum in Frame class
 
 ---
 
@@ -101,7 +105,7 @@ This page contains the release notes for the different versions of the Affdex SD
 * Improved emotion metrics. The valence includes new expressions in its calculation.
 * Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
 * Added models for new [expressions](/metrics#facial-expressions): cheek raise, dimpler, eye widen, lid tighten, lip stretch and jaw drop.
-* Fix bug [SCI-86](https://affectiva.atlassian.net/browse/SCI-86) - Disgust false positives due to the occurrence of the smile expression.  
+* Fixed bug [SCI-86](https://affectiva.atlassian.net/browse/SCI-86) - Disgust false positives due to the occurrence of the smile expression.
 
 ##### Web SDK 3.1
 
@@ -129,9 +133,9 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ##### iOS SDK 3.0.1
 
-* Fix bug [SDK-1](https://affectiva.atlassian.net/browse/SDK-1) - iOS Framework builds v3.0 are much bigger in size than v2.0.
-* Fix bug [SDK-38](https://affectiva.atlassian.net/browse/SDK-38) - iOS device Framework contains i386 and x86_64 architectures.
-* Fix bug [SDK-404](https://affectiva.atlassian.net/browse/SDK-404) - didStopDetectingFace: can pass nil for the face parameter.
+* Fixed bug [SDK-1](https://affectiva.atlassian.net/browse/SDK-1) - iOS Framework builds v3.0 are much bigger in size than v2.0.
+* Fixed bug [SDK-38](https://affectiva.atlassian.net/browse/SDK-38) - iOS device Framework contains i386 and x86_64 architectures.
+* Fixed bug [SDK-404](https://affectiva.atlassian.net/browse/SDK-404) - didStopDetectingFace: can pass nil for the face parameter.
 
 ##### Linux SDK 3.0
 
