@@ -10,4 +10,4 @@ For companies generating $1,000,000 or more in yearly revenue.
 Please [contact our sales team](mailto:sales@affectiva.com?subject=Affdex SDK Licensing Inquiry, Commercial Application) for more information about getting an enterprise license.
 
 
-**For the API usage,** Pricing starts at $1.45 per min of video processed billed on a monthly basis. For more information [please contact us](mailto:sales@affectiva.com?subject=Inquire about pricing for API)
+**For the API usage,** A free 30 day trial (1,000 API calls) is available. Pricing starts at $1.5 per API call (video or image) processed billed on a monthly basis.
