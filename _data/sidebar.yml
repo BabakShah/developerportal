@@ -118,7 +118,7 @@ entries:
           print: true
 
         - title: Web (JavaScript)
-          url: /v3_1/javascript/
+          url: /v3_2/javascript/
           audience: developer, designer
           platform: all
           product: all

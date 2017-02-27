@@ -1,7 +1,7 @@
 ---
 title: Affdex SDK for the Web
-permalink: /v3_1/javascript/
-redirect_from:
+permalink: /v3_2/javascript/
+redirect_from: "/web/"
 tags: [js, sdk]
 audience: writer, designer
 keywords:
@@ -11,7 +11,7 @@ metadata: false
 ---
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.1
+SDK Developer Guide Release 3.2
 
 ## Using the SDK
 
@@ -27,20 +27,20 @@ Watch the video tutorial below to help you get started on how to use the SDK:
 ##### 1. Add the Affdex API to your project  
 
 ```js
-<script src="https://download.affectiva.com/js/3.1/affdex.js"/>
+<script src="https://download.affectiva.com/js/3.2/affdex.js"/>
 ```
 
 ##### 2. Capture and analyze faces
 
 Facial images can be captured from different sources. For each of the different sources, the SDK defines a detector class that can handle processing images acquired from that source:
 
-* [How to analyze a camera feed]({{ site.baseurl }}/v3_1/javascript/analyze-camera/)
-* [How to analyze a video frame stream]({{ site.baseurl }}/v3_1/javascript/analyze-frames/)
-* [How to analyze a photo]({{ site.baseurl }}/v3_1/javascript/analyze-photo/)
+* [How to analyze a camera feed]({{ site.baseurl }}/v3_2/javascript/analyze-camera/)
+* [How to analyze a video frame stream]({{ site.baseurl }}/v3_2/javascript/analyze-frames/)
+* [How to analyze a photo]({{ site.baseurl }}/v3_2/javascript/analyze-photo/)
 
 
 
-##### 4. Check out sample applications on GitHub
+##### 3. Check out sample applications on GitHub
 Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/js-sdk-sample-apps)
 
 

@@ -125,6 +125,13 @@ platforms:
     salesForcePoIPlatform: JavaScript
     versions:
       - status: stable
+        release_notes: web-sdk-32
+        doc: /v3_2/javascript/
+        architecture: "JS VM"
+        version: "3.2-582"
+        install: /web/
+        size: 12.6 MB
+      - status: legacy
         release_notes: web-sdk-31
         doc: /v3_1/javascript/
         architecture: "JS VM"
