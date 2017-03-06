@@ -5,7 +5,7 @@ redirect_from: "/api/"
 metadata: false
 ---
 
-The cloud APIs provide access to Affectiva latest Emotion AI. They can be used to upload and analyze images and videos to look for [emotion metrics](/metrics). In addition, submit annotations, such as subjects age and gender, context labels that are associated with the uploaded media.
+The cloud APIs provide access to Affectiva's latest Emotion AI. Clients using the APIs can upload and analyze images and videos to look for [emotion metrics](/metrics), and can also submit annotations (such as age and gender) that are associated with the uploaded media.
 
 ***
 
@@ -19,7 +19,7 @@ Check [the pricing section](/#pricing) for more details on the different pricing
 
 ### Connecting to the APIs
 
-Our APIs use HTTP Basic Access Authentication to authenticate clients.  HTTP Basic Authentication relies on a TLS transport to ensure that the credentials cannot be seen by a third party, so all API communications must be transmitted over a TLS-protected channel.  Please ensure that your Index Service API begins with “https” before using it.
+Our APIs use HTTP Basic Access Authentication to authenticate clients.  HTTP Basic Authentication relies on a TLS transport to ensure that the credentials cannot be seen by a third party, so all API communications must be transmitted over a TLS-protected channel.  Please ensure that your Index Service URL begins with “https” before using it.
 
 Credentials should be encoded in an Authorization header per section 10.2 of RFC 1945.  This technique is recommended and is typically well-supported by HTTP client programming toolkits. The user names typically include an @ character which needs to be URL-encoded as %40.  The password also needs to be URL-encoded.
 
@@ -27,8 +27,7 @@ Credentials should be encoded in an Authorization header per section 10.2 of RFC
 
 ### The Index Service
 
-
-The index service is the "root" of our APIs. Begin the API session by requesting the index from the index service which then can be used to locate the API to interact with. An API client should be able to perform all of its operations given only one pre-configured URL: https://index.affectiva.com/.  Any other URL should be provided by the service.
+The index service is the "root" of our APIs. Begin the API session by requesting the index from the index service which can then be used to locate the API to interact with. An API client should be able to perform all of its operations given only one pre-configured URL: https://index.affectiva.com/.  Any other URL should be provided by the service.
 
 The index service is read-only, so the only HTTP operation supported is GET. The index is available in two representations: JSON, and HTML. JSON is intended for machine consumption and HTML is human-readable.
 
