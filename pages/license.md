@@ -1,5 +1,5 @@
 ---
-title:
+title: Affectiva SDK License Agreement
 permalink: /sdklicense/
 tags: [overview, license]
 audience: writer, designer
@@ -9,11 +9,9 @@ summary:
 metadata: false
 ---
 
-# AFFECTIVA SDK LICENSE AGREEMENT
+*version 2.12.18*
 
-*version 2.12.17*
-
-ANY PERSON, COMPANY OR ORGANIZATION WHICH DOWNLOADS, USES OR ACCESSES THE AFFDEX SDK AGREES THAT, AS A CONDITION OF DOWNLOADING, USING OR ACCESSING THE AFFDEX SDK, THEY ARE A “LICENSEE” BOUND BY THE TERMS OF THIS AGREEMENT. Affectiva, Inc. (“Affectiva”) is located at 465 Waverly Oaks Road, Waltham, MA 02452.
+ANY PERSON, COMPANY OR ORGANIZATION WHICH DOWNLOADS, USES OR ACCESSES THE AFFDEX SDK AGREES THAT, AS A CONDITION OF DOWNLOADING, USING OR ACCESSING THE AFFDEX SDK, THEY ARE A “LICENSEE” BOUND BY THE TERMS OF THIS AGREEMENT. Affectiva, Inc. (“Affectiva”) is located at 294 Washington Street, Boston, MA 02108.
 
 #### 1. License
 
