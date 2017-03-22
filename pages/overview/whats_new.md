@@ -11,6 +11,13 @@ metadata: false
 
 This page contains the release notes for the different versions of the Affdex SDK(s).
 
+---
+
+**March 2017***
+
+##### Windows SDK 3.4.1
+* Fix bug - shared state affecting initialization of multiple detectors
+
 
 ---
 
