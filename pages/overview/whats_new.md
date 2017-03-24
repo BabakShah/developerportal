@@ -13,10 +13,17 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ---
 
-**March 2017***
+***Mar 2017***
 
 ##### Windows SDK 3.4.1
 * Fix bug - shared state affecting initialization of multiple detectors
+* Fix bug - reduced memory usage in long running sessions
+
+##### Linux SDK 3.2.1
+* Fix bug - reduced memory usage in long running sessions
+
+##### Web SDK 3.2.1
+* Fix bug - reduced memory usage in long running sessions
 
 
 ---
