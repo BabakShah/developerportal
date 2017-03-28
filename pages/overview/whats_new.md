@@ -18,9 +18,11 @@ This page contains the release notes for the different versions of the Affdex SD
 ##### Windows SDK 3.4.1
 * Fix bug - shared state affecting initialization of multiple detectors
 * Fix bug - reduced memory usage in long running sessions
+* Fix bug - matrix format exception when initializing frame with YUV_YUY2 color format
 
 ##### Linux SDK 3.2.1
 * Fix bug - reduced memory usage in long running sessions
+* Fix bug - matrix format exception when initializing frame with YUV_YUY2 color format
 
 ##### Web SDK 3.2.1
 * Fix bug - reduced memory usage in long running sessions
