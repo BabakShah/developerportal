@@ -271,7 +271,7 @@ textarea {
   background-image: none;
 }
 a {
-  color: #248EC2;
+  color: #eb008b;
   text-decoration: none;
 }
 a:hover,
@@ -3906,8 +3906,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 /* orange #f6a707, #fcc769 */
 /* blue #036f7b, #0290a0 */
 .navbar-inverse {
-  background-color: #007a91;
-  border-color: #007a91;
+  background-color: #eb008b;
+  border-color: #eb008b;
 }
 
 .navbar-inverse .navbar-brand {
@@ -3933,7 +3933,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #5c8840;
+  background-color: #84e064;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -3958,7 +3958,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #5c8840;
+  background-color: #84e064;
   color: #ffffff;
 }
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
@@ -3977,7 +3977,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #5c8840;
+    border-color: #84e064;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #f9faf9;
@@ -3991,7 +3991,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #5c8840;
+    background-color: #84e064;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4207,7 +4207,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #5c8840;
+  background-color: #84e064;
 }
 .label-success {
   background-color: #5cb85c;

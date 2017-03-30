@@ -302,7 +302,7 @@ margin-top:10px;
 }
 
 .post-content .rssfeedLink {
-color: #248EC2;
+color: #84e064;
 }
 
 footer {
@@ -374,7 +374,7 @@ text-decoration: none;
 }
 
 .nav > li.active > a  {
-    background-color: #248ec2;
+    background-color: #84e064;
 }
 
 .nav li a {
@@ -402,7 +402,7 @@ ul#mysidebar {
 
 .nav li.thirdlevel > a {
 background-color: #FAFAFA !important;
-color: #248EC2;
+color: #84e064;
 font-weight:bold;
 }
 
@@ -529,7 +529,7 @@ section table tr.danger, table tr.preference, table tr.preference > td.sorting_1
 }
 
 table.profile thead tr th {
-background-color: #248ec2;
+background-color: #84e064;
 }
 
 table.request thead tr th {
@@ -588,7 +588,7 @@ i.border {
 }
 
 a[data-toggle] {
-  color: #248EC2;
+  color: #84e064;
 }
 
 .summary {
@@ -655,7 +655,7 @@ h3 {font-weight:normal; font-size:155%;}
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #248ec2;
+    background-color: #84e064;
     color: white;
 }
 
