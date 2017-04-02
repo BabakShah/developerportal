@@ -261,16 +261,16 @@ platforms:
         release_notes: windows-sdk-341
         doc: /v3_4_1/windows/
         architecture: i386
-        version: "3.4.1-1317"
-        package: https://download.affectiva.com/windows/AffdexSDK-3.4.1-1317-win32.exe
+        version: "3.4.1-1320"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.4.1-1320-win32.exe
         size: 18.6 MB
 
       - status: stable
         release_notes: windows-sdk-341
         doc: /v3_4_1/windows/
         architecture: x86_64
-        version: "3.4.1-572"
-        package: https://download.affectiva.com/windows/AffdexSDK-3.4.1-572-win64.exe
+        version: "3.4.1-575"
+        package: https://download.affectiva.com/windows/AffdexSDK-3.4.1-575-win64.exe
         size: 29.4 MB
 
       - status: legacy
