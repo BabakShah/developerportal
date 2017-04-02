@@ -35,7 +35,7 @@ For an example please see the [AffdexMe sample app](https://github.com/Affectiva
 ```groovy
 dependencies {
     ...
-    compile 'com.affectiva.android:affdexsdk:3.2.0'
+    compile 'com.affectiva.android:affdexsdk:3.2'
     ...
 }
 ```
