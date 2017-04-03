@@ -471,7 +471,7 @@ affdexme:
   - name: Windows
     img: /images/download/windows.png
     style: "width: 100%; max-width: 10.2em; margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:0px"
-    package: https://download.affectiva.com/windows/AffdexMe-1320-win32.exe
+    package: https://download.affectiva.com/windows/AffdexMe-3.4.1-1320-win32.exe
 ################################
 ################################
 ################################
