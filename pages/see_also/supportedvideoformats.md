@@ -2,15 +2,15 @@
 title: Supported Video Formats
 permalink: /supportedvideoformats/
 audience: writer, designer
-tags: 
-keywords: 
-last_updated: 
+tags:
+keywords:
+last_updated:
 summary:
 metadata: false
 ---
-{% include linkrefs.html %} 
+{% include linkrefs.html %}
 
-## for Video Processing using the Windows SDK 
+## for Video Processing using the SDKs and Media Processing APIs 
 
 <br />
 
