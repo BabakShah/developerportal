@@ -15,6 +15,15 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Apr 2017***
 
+##### Linux ARM SDK 3.2
+* Fix bug [SDK-1202](https://affectiva.atlassian.net/browse/SDK-1202): VideoDetector is unable to decode videos
+* Fix bug - reduced memory usage in long running sessions
+* Revised Nose Wrinkle and Smirk models to lower their false positive rates
+* Updated Valence model to recalibrate the low Valence range
+* Updated Expressiveness to use the new Nose Wrinkle model
+* Updated Fear, Surprise, Anger, Disgust, Sadness, and Contempt emotions to include latest expression models
+
+
 ##### Windows SDK 3.4.1
 * Fix bug - shared state affecting initialization of multiple detectors
 * Fix bug - reduced memory usage in long running sessions

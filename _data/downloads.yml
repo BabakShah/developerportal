@@ -157,7 +157,14 @@ platforms:
       version: "3.2-20"
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.2-20-ubuntu-xenial-xerus-64bit.tar.gz
       size: 23.40 MB
-    - status: beta
+    - status: stable
+      release_notes: linuxarm-sdk-32
+      doc: /v3_2/linux/
+      architecture: arm-linux-gnueabihf
+      version: "3.2-53"
+      package: http://download.affectiva.com/linux/arm/affdex-cpp-sdk-3.2-53-linux-arm7.tar.gz
+      size: 23.40 MB
+    - status: legacy
       release_notes: windowslinuxandroid-sdk-31
       doc: /v3_1/linux/
       architecture: arm-linux-gnueabihf
