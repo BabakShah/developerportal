@@ -134,7 +134,7 @@ entries:
           print: true
 
         - title: Raspberry Pi (C++)
-          url: /raspberrypi/
+          url: /v3_2/raspberrypi/
           audience: developer, designer
           platform: all
           product: all
