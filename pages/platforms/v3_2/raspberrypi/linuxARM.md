@@ -15,16 +15,16 @@ SDK Developer Guide Release 3.2
 
 ## Using the SDK
 
-The purpose of the SDK is to detect facial expressions and their underlying emotions, appearance and emojis from facial images. The SDK is distributed as a tarball. Its included assemblies enable integration with C++ applications and the data folder required by API in runtime:
+The purpose of the SDK is to detect facial expressions and their underlying emotions, appearance and emojis from facial images. The SDK is distributed as a tarball. Its included assemblies enable integration with C++ applications and the data folder required by the API in runtime:
 
 * **affdex-native:** C++ Namespace headers and library files.
-* **data:** The classifier data files required by both affdex-native and Affdex libraries runtime.
+* **data:** The classifier data files required by affdex-native library in runtime.
 
 ## Getting started
 
 ##### 1. Download and extract the SDK archive
 
-Click on the download link from the table for the desired architecture:
+Click on the download link from the table:
 
 {% include custom/download_link.html platform="raspberry pi" build_version="3.2-" %}
 
@@ -90,7 +90,3 @@ If the number of faces tracked is greater than the number of available CPU threa
 ##### Compiler Requirements
 
 * GCC v5.4.0
-
-##### Supported operating systems
-
-*	Ubuntu 16.04 and above

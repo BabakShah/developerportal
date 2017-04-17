@@ -11,7 +11,7 @@ The cloud APIs provide access to Affectiva's latest Emotion AI. Clients using th
 
 ### Credentials to access the APIs
 
-To get credentials to use the API, [please contact us](mailto:sdk@affectiva.com?subject=Sign up to use the API).
+To get credentials to use the API, [please contact us](mailto:sales@affectiva.com?subject=Sign up to use the API).
 
 Check [the pricing section](/#pricing) for more details on the different pricing options.
 
