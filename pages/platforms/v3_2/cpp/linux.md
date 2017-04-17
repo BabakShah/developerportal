@@ -33,8 +33,6 @@ Click on the download link from the table for the desired architecture:
 
 {% include custom/download_link.html platform="linux" build_version="3.2-" %}
 
-**For ARM Architecture:** A build of SDK for ARM architecture [is now available]({{ site.baseurl }}/arm/). Use it to build apps for embedded platforms such as raspberry pi.
-
 ***
 
 Extract the archive:

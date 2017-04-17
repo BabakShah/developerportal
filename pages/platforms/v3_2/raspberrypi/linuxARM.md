@@ -1,7 +1,7 @@
 ---
 title: Affdex SDK for Linux (ARM)
-permalink: /v3_2/linux/arm/
-redirect_from: "/arm/"
+permalink: /v3_2/raspberrypi
+redirect_from: "/raspberrypi/"
 tags: [cpp, linux, sdk]
 audience: writer, designer
 keywords:
@@ -26,13 +26,13 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 Click on the download link from the table for the desired architecture:
 
-{% include custom/download_link.html platform="linux" build_version="3.1-40-beta" %}
+{% include custom/download_link.html platform="raspberrypi" build_version="3.2-" %}
 
 Extract the archive:
 
 ```bash
 mkdir $HOME/affdex-sdk
-tar -xzvf affdex-cpp-sdk-3.2-53-linux-arm7.tar.gz -C $HOME/affdex-sdk
+tar -xzvf affdex-cpp-sdk-3.2-62-linux-arm7.tar.gz -C $HOME/affdex-sdk
 ```
 
 ##### 2. Import an affdex API into your application

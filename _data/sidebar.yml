@@ -133,6 +133,14 @@ entries:
           version: all
           print: true
 
+        - title: Raspberry Pi (C++)
+          url: /raspberrypi/
+          audience: developer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
     - title: Cloud APIs
       audience: developer, designer
       platform: all
