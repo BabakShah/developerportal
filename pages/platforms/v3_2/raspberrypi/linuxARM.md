@@ -26,7 +26,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 Click on the download link from the table for the desired architecture:
 
-{% include custom/download_link.html platform="raspberrypi" build_version="3.2-" %}
+{% include custom/download_link.html platform="raspberry pi" build_version="3.2-" %}
 
 Extract the archive:
 

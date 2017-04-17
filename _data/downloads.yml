@@ -193,8 +193,8 @@ platforms:
       package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.0-298-linux-64bit.tar.gz
       size: 22.8 MB
 
-  - name: raspberrypi
-    logo: /images/raspberrypi.png
+  - name: raspberry pi
+    logo: /images/raspberry pi.png
     salesForcePoIPlatform: Linux
     versions:
     - status: stable
