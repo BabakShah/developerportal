@@ -15,7 +15,7 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ***Apr 2017***
 
-##### RaspberryPi SDK 3.2
+##### Raspberry Pi SDK 3.2
 * Fix bug [SDK-1202](https://affectiva.atlassian.net/browse/SDK-1202): VideoDetector is unable to decode videos
 * Fix bug - reduced memory usage in long running sessions
 * Revised Nose Wrinkle and Smirk models to lower their false positive rates
