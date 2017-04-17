@@ -1,6 +1,6 @@
 ---
 title: Affdex SDK for Linux (ARM)
-permalink: /v3_2/raspberrypi
+permalink: /v3_2/raspberrypi/
 redirect_from: "/raspberrypi/"
 tags: [cpp, linux, sdk]
 audience: writer, designer
