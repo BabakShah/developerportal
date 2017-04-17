@@ -198,7 +198,7 @@ platforms:
     salesForcePoIPlatform: Linux
     versions:
     - status: stable
-      release_notes: raspberrypi-sdk-32
+      release_notes: raspberry-pi-sdk-32
       doc: /v3_2/raspberrypi/
       architecture: arm-linux-gnueabihf
       version: "3.2-62"
