@@ -8,7 +8,7 @@ last_updated:
 summary:
 metadata: false
 ---
-**classdoc:** VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)]
+**classdoc:** VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_3/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)]
 
 A common use of the SDK is to process previously captured video files. The VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3_3/cpp/classdocs/affdex-native/classaffdex_1_1_video_detector.html)] helps streamline this effort by decoding and processing frames from a video file. Like the `FrameDetector`, the constructor accepts a parameter for processing frames per second. This parameter regulates how many frames from the video stream get processed. During processing, the <code>VideoDetector</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list]({{ site.baseurl }}/supportedvideoformats/) of accepted file types and recommended video codecs that are compatible with the detector.
 
