@@ -1,6 +1,7 @@
 ---
 title: Affdex SDK for Linux
-permalink: /v3_2/linux/
+permalink: /v3_3/linux/
+redirect_from: "/linux/"
 tags: [cpp, linux, sdk]
 audience: writer, designer
 keywords:
@@ -10,14 +11,14 @@ metadata: false
 ---
 {% include linkrefs.html %}
 
-SDK Developer Guide Release 3.2
+SDK Developer Guide Release 3.3
 
 ## Using the SDK
 
-The purpose of the SDK is to detect facial expressions and their underlying emotions, appearance and emojis from facial images. The SDK is distributed as a tarball. Its included assemblies enable integration with C++ applications and the data folder required by API in runtime:
+The purpose of the SDK is to detect facial expressions and their underlying emotions, appearance and emojis from facial images. The SDK is distributed as a tarball. Its included assemblies enable integration with C++ applications and the data folder required by the API in runtime:
 
 * **affdex-native:** C++ Namespace headers and library files.
-* **data:** The classifier data files required by both affdex-native and Affdex libraries runtime.
+* **data:** The classifier data files required by the affdex-native library in runtime.
 
 Watch the video tutorial below to help you get started on how to use the SDK:
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/8tSx3xlWNnc" frameborder="0" allowfullscreen></iframe>
@@ -30,7 +31,7 @@ Watch the video tutorial below to help you get started on how to use the SDK:
 
 Click on the download link from the table for the desired architecture:
 
-{% include custom/download_link.html platform="linux" build_version="3.2-" %}
+{% include custom/download_link.html platform="linux" build_version="3.3-" %}
 
 **For ARM Architecture:** A beta build of SDK for ARM architecture [is now available]({{ site.baseurl }}/v3_1/linux/arm/). Use it to build apps for embedded platforms such as raspberry pi.
 
@@ -40,7 +41,7 @@ Extract the archive:
 
 ```bash
 mkdir $HOME/affdex-sdk
-tar -xzvf affdex-cpp-sdk-3.2-2893-linux-64bit.tar.gz -C $HOME/affdex-sdk
+tar -xzvf affdex-cpp-sdk-3.3-2914-centos-7-x86_64bit.tar.gz -C $HOME/affdex-sdk
 ```
 
 ##### 2. Installing the runtime dependencies
@@ -111,7 +112,7 @@ If the number of faces tracked is greater than the number of available CPU threa
 
 ##### Runtime Requirements
 
-*	GLIBC 3.4
+* GLIBC 3.4
 * GLIBCXX 3.4.9
 * GCC v4.8
 * libcurl
@@ -120,5 +121,5 @@ If the number of faces tracked is greater than the number of available CPU threa
 
 ##### Supported operating systems
 
-*	Ubuntu 14.04 and above
+* Ubuntu 14.04 and above
 * CentOS 7 and above

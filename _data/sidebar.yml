@@ -94,7 +94,7 @@ entries:
           print: true
 
         - title: Linux (C++)
-          url: /v3_2/linux/
+          url: /v3_3/linux/
           audience: developer, designer
           platform: all
           product: all
