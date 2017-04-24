@@ -148,14 +148,14 @@ platforms:
       doc: /v3_3/linux/
       architecture: CentOS-7 x86_64
       version: "3.3-2914"
-      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.3-2914-centos-7-64bit.tar.gz
+      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.3-2914-centos-7-x86_64bit.tar.gz
       size: 23.59 MB
     - status: stable
       release_notes: linux-sdk-33
       doc: /v3_3/linux/
       architecture: Ubuntu-16.04 x86_64
       version: "3.3-40"
-      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.3-40-ubuntu-xenial-xerus-64bit.tar.gz
+      package: https://download.affectiva.com/linux/affdex-cpp-sdk-3.3-40-ubuntu-xenial-xerus-x86_64bit.tar.gz
       size: 23.40 MB
     - status: legacy
       release_notes: linux-sdk-32
