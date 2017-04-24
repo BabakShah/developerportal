@@ -48,7 +48,7 @@ tar -xzvf affdex-cpp-sdk-3.3-2914-centos-7-x86_64bit.tar.gz -C $HOME/affdex-sdk
 
 To compile in Linux, you must have the header files for libcurl, libopenssl, and libuuid. The packages are typically available in your package manager.
 
-Ubuntu : ```sudo apt-get install libcurl-dev uuid-dev```
+Ubuntu : ```sudo apt-get install libcurl4-openssl-dev uuid-dev```
 
 CentOS : ``` sudo yum install libcurl-devel.x86_64 libuuid-devel.x86_64```
 
