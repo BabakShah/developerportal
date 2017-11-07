@@ -86,6 +86,13 @@ platforms:
     salesForcePoIPlatform: IOS
     versions:
     - status: stable
+      release_notes: iosmacos-sdk-400
+      architecture: "ARM64/ARM7"
+      version: "4.0.0"
+      install: /v4_0_0/ios/
+      package: https://download.affectiva.com/apple/affdex-sdk_ios_4.0_22.tar.gz
+      size: 302.7 MB
+    - status: legacy
       release_notes: iosmacos-sdk-311
       architecture: "ARM7"
       version: "3.1.1"
